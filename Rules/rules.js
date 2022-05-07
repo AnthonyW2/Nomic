@@ -8,6 +8,8 @@ JavaScript functions used by the Rules page
 2022-4-7 - 2022-5-7
 */
 
+"use strict";
+
 //Store a reference to the rules-list element
 var rulesListElement;
 ///var ruleSummaryTableElement;
