@@ -1,0 +1,99 @@
+Initial Set
+
+Rules in the initial set are mutable unless they have an {I} after their path.
+
+RULES
+|
+|--> 1.1 Winning
+|  | When a player or players win the game, the game is over.
+|  |
+|  `--> 1.1.1 End of Viable Play {I}
+|       If the rules are changed so that further play is impossible, or if the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning, not overruled, a move appears equally legal and illegal, then the first player who is unable to complete a turn is the winner. This rule takes precedence over every other rule determining the winner.
+|
+|--> 1.2 Players {I}
+|  | A player is a person or group of people that must always abide by all the rules of Nomic then in effect, in the form in which they are in effect.
+|  |
+|  |--> 1.2.1 TOS
+|  |    A player may not participate in Nomic in a way that violates rules, laws, terms of service, or other similar documents related to places or services being used to access Nomic.
+|  |
+|  |--> 1.2.2 Entering
+|  |  | A person or group of people, none of whom are currently acting as a player or a part of a player, may request to become a player at any time. All players may vote (up or down) on allowing the player to join.
+|  |  |
+|  |  `--> 1.2.2.1 Placement
+|  |       If the request (see Players > Entering) is accepted by a majority of players, then that person or group of people becomes a player and has their turn placed before that of the current turn at the time of their request.
+|  |
+|  `--> 1.2.3 Exiting
+|     | A player always has the option of forfeiting the game rather than continuing to play or incurring a game penalty. No penalty worse than losing, in the judgement of the player incurring the penalty, may be imposed. 
+|     |
+|     `--> 1.2.3.1 Special Case
+|          In the case of a player consisting of multiple people, individual people may leave the player. A player only leaves the game when its last player does.
+|
+|
+
+    3.1 Propositions
+    A proposition consists of a set of rules (including paths) and/or the deletion or transmutation of rules currently in effect, posted to #propositions.
+    
+    3.2 Propositions > Voting
+    A proposition that has been legally proposed may be voted on.
+    
+    3.3 Propositions > Voting > Eligibility
+    Every player is an eligible voter.
+    
+    3.4 Propositions > Voting > Casting Votes
+    Each eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an up- or down- vote. An eligible voter may change their vote at any time before voting ends.
+    
+    3.5 Propositions > Voting > Adoption
+    A proposition will be adopted if and when it receives over 50% of its possible votes as up-votes. The changes to the rules outlined in the proposition will then be effected.
+    
+    3.6 Propositions > Retroactivity {I}
+    A proposition may not have retroactive effect.
+    
+    *3.7 Propositions > Paths
+    Every rule has an associated path (for example, this rule's path is "Propositions > Paths") and ordinal number. Rules must refer to other rules using their paths and/or ordinal number.
+    
+    3.8 Propositions > Paths > Conflicts
+    No two rules may have the same path. If a proposition's rule has the same path as an existing rule, the new rule replaces the old rule if the proposition is adopted.
+    
+    3.9 Propositions > Transmutations
+    A transmutation causes a mutable rule to become immutable, or vice versa.
+    
+    3.10 Propositions > Immutable Rules {I}
+    Propositions may not alter immutable rules in any way, with the exception of transmutation.
+    
+    *3.11 Propositions > Making Changes
+    A proponent may make any changes to their proposition before any votes have been cast on it and only spelling and grammar changes after votes have been cast.
+    
+    
+    
+    4.1 Inconsistencies {I}
+    If a portion of an immutable rule conflicts with a portion of a mutable rule, the immutable rule takes precedent. The inconsistent portion of the mutable rule is without effect.
+    
+    *4.2 Inconsistencies > Complex
+    If two or more mutable rules conflict with one another, or if two or more immutable rules conflict with one another, the rule with the lowest ordinal number takes precedence. If at least one of the rules explicitly states that it defers to another rule (or type of rule) or takes precedence over another rule (or type of rule), such provisions must supersede the numerical method of determining precedence. If two or more rules claim to take precedence over one another or to defer to one another, the numerical method must again govern.
+    
+    
+    
+    *5.1 Turns
+    Players take turns according to the the turn order (see Turns > Order). A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.
+    
+    5.2 Turns > Order
+    The current turn order is as follows:
+    
+    5.3 Turns > Rounds
+    After the last player in the turn order ends their turn, a new round begins, starting with the first person in the turn order.
+    
+    *5.4 Turns > Propositions
+    A player may submit one proposition on their turn.
+    
+    5.5 Turns > Passing
+    At any point during their turn, a player may prematurely end it. This overrides anything that would normally be required to do before the end of their turn. However, it does not end voting time on their proposition(s) if they exist.
+    
+    6.1 Judge
+    If a disagreement arises during a player’s turn about how a rule and its effects are interpreted, the decision is decided by a judge, who has the final word on the topic.
+    6.2 Judge > choosing Judge
+    The Judge is defined as the person in the turn order before the player whose turn the disagreement arises on. Judges are not bound by past Judge’s decisions (if the same disagreement occurs twice in play it may be ruled in different ways).
+    6.3 Judge > decision overthrow
+    If n - 3 players, where n is the total number of players, disagree with the Judge’s decision, the ruling is overthrown and a new Judge is chosen to make a decision.
+    6.4 Judge > choosing Judge > overthrow fallout
+    If a Judge is overthrown, the player before the overthrown Judge in the turn order becomes the new Judge.
+  

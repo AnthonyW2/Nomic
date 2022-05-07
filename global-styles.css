@@ -1,0 +1,295 @@
+/*
+Anthony Wilson
+
+Nomic Automation System
+
+These CSS rules apply to all pages on the site
+These rules are for general elements and important variables
+
+2022-4-7 - 2022-5-7
+*/
+
+
+
+/*
+Z-Indexes:
+0   - body
+50  - #settings-menu
+99  - #dimmer
+100 - #nav-bar
+*/
+
+
+
+/* ======== Declare Variables ======== */
+:root {
+  
+  /* ==== Color Themes ==== */
+  
+  /* Light color scheme */
+  --BG1-light: #FFFFFF;
+  --BG2-light: #F0F2F5;
+  --BG3-light: #EAEBEE;
+  --BG4-light: #E4E4E7;
+  --Text1-light: #1F1F1F;
+  --Text2-light: #303030;
+  --Symbol-light: #545F73;
+  --Border-light: #B8B8B8;
+  --LinkText-light: #1A0DAB;
+  
+  /* Dark color scheme */
+  --BG1-dark: #1E2228;
+  --BG2-dark: #2D333B;
+  --BG3-dark: #272D34;
+  --BG4-dark: #22272E;
+  --Text1-dark: #CDD9E5;
+  --Text2-dark: #ADBAC7;
+  --Symbol-dark: #ADBAC7;
+  --Border-dark: #434B55;
+  --LinkText-dark: #6997F4;
+  
+  
+  /* Use light color scheme by default */
+  --BG1: var(--BG1-light);
+  --BG2: var(--BG2-light);
+  --BG3: var(--BG3-light);
+  --BG4: var(--BG4-light);
+  --Text1: var(--Text1-light);
+  --Text2: var(--Text2-light);
+  --Symbol: var(--Symbol-light);
+  --Border: var(--Border-light);
+  --LinkText: var(--LinkText-light);
+  
+  
+  /* ==== Font Themes ==== */
+  
+  /* 1st theme is default */
+  
+  --Font1: Arial, Helvetica, sans-serif;
+  --Font2: serif;
+  --Font3: comic-sans;
+  
+  --FontMono: monospace;
+  
+  --FontSize: 20px;
+  --NavBtnFontSize: 24px;
+  
+}
+
+/* Change styles depending on the color theme */
+@media (prefers-color-scheme: dark) {
+  
+  :root {
+    /* Use the dark color scheme */
+    --BG1: var(--BG1-dark);
+    --BG2: var(--BG2-dark);
+    --BG3: var(--BG3-dark);
+    --BG4: var(--BG4-dark);
+    --Text1: var(--Text1-dark);
+    --Text2: var(--Text2-dark);
+    --Symbol: var(--Symbol-dark);
+    --Border: var(--Border-dark);
+    --LinkText: var(--LinkText-dark);
+  }
+  
+}
+
+
+
+/* ======== Global Styles ======== */
+
+* {
+  
+  /* This makes positions and dimensions unaffected by borders or padding */
+  box-sizing: border-box;
+  
+  /* Set fonts */
+  font-family: var(--Font1);
+  
+  font-size: var(--FontSize);
+  
+}
+
+
+
+/* ========== Element Styles ========== */
+
+/* Body styles */
+body {
+  z-index: 0;
+  
+  position: absolute;
+  
+  /* Honestly this should be default */
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  
+  /* Unsetting the margin removes the small border around the edge of the page */
+  margin: unset;
+  padding: unset;
+  border: none;
+  
+  color: var(--Text1);
+  background-color: var(--BG1);
+  
+}
+
+/* Override link styles */
+a {
+  color: var(--LinkText);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+
+/* Textbox placeholder opacity needs to be reset, due to the "all: unset" rule being applied to textboxes */
+::placeholder {
+  opacity: 0.5;
+}
+
+
+/* Mostly for re-coloring links */
+.inherit-color {
+  color: inherit;
+}
+
+
+.dim-text {
+  color: var(--Text2);
+}
+
+
+h1 {
+  font-size: 30px;
+  /*font-family: var(--Font2);*/
+}
+
+h2 {
+  font-size: 24px;
+}
+
+
+table, th, td {
+  border: 1px solid var(--Text1);
+  border-collapse: collapse;
+}
+
+
+code {
+  font-family: var(--FontMono);
+  font-size: var(--FontSize);
+}
+
+
+
+
+
+/** /* ======== Responsive CSS ======== */
+/** 
+/** /* Change the layout if the screen width is smaller than 1000px */
+/** @media screen and (max-width: 1000px) {
+/**   
+/**   /* Put the classroom info below the map */
+/**   #classroom-info-container {
+/**     
+/**     /*top: 950px;*/
+/**     top: calc(70% + 102px);
+/**     left: 25px;
+/**     
+/**     width: calc(100% - 50px);
+/**     height: 850px;
+/**     
+/**   }
+/**   
+/** }
+/** 
+/** /* Change the menu-bar to the phone layout if the screen width is smaller than 800px */
+/** @media screen and (max-width: 800px) {
+/**   
+/**   #nav-bar {
+/**     height: 98px;
+/**   }
+/**   
+/**   .nav-link {
+/**     width: calc(33.4% + 3px);
+/**   }
+/**   
+/**   #nav-link-gallery {
+/**     left: calc(33.4% - 2px);
+/**   }
+/**   #nav-link-booking {
+/**     left: unset;
+/**     right: -2px;
+/**   }
+/**   #nav-link-login {
+/**     top: 46px;
+/**     right: 94px;
+/**     
+/**     width: calc(33.4% - 93px);
+/**   }
+/**   #nav-link-help {
+/**     top: 46px;
+/**   }
+/**   
+/**   #nav-search {
+/**     top: 46px;
+/**     left: -2px;
+/**     
+/**     width: calc(66.6% + 4px);
+/**   }
+/**   #search-menu {
+/**     top: 94px;
+/**     left: -2px;
+/**     
+/**     width: calc(66.6% + 3px);
+/**   }
+/**   
+/**   /* Make the login button a set width if the screen width is smaller than 570px */
+/**   @media (max-width: 570px) {
+/**     
+/**     #nav-link-login {
+/**       width: 96px;
+/**     }
+/**     
+/**     #nav-search {
+/**       width: calc(100% - 186px);
+/**     }
+/**     #search-menu {
+/**       width: calc(100% + 4px);
+/**     }
+/**     
+/**   }
+/**   
+/**   #nav-settings-btn {
+/**     top: 46px;
+/**   }
+/**   
+/**   #settings-menu {
+/**     top: 96px;
+/**   }
+/**   
+/**   #classroom-info-container {
+/**     top: calc(70% + 150px);
+/**   }
+/**   
+/**   @media (max-width: 600px) {
+/**     
+/**     #classroom-info-container {
+/**       top: calc(60% + 150px);
+/**     }
+/**     
+/**   }
+/**   
+/**   #docs-container {
+/**     top: 98px;
+/**   }
+/**   
+/** } */

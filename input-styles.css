@@ -1,0 +1,88 @@
+/*
+Anthony Wilson
+
+Nomic Automation System
+
+These CSS rules apply to all pages on the site
+These rules are for input/form elements
+
+2022-4-7 - 2022-4-26
+*/
+
+
+
+/* Override button styles */
+button {
+  
+  color: inherit;
+  
+  font-family: inherit;
+  
+  /* For iOS */
+  border-radius: 0;
+  
+  /* Prevent double-tap zoom */
+  touch-action: manipulation;
+  
+  transition: background 250ms;
+  
+}
+
+
+/* All inputs should have a color transition */
+input {
+  transition: background 250ms;
+}
+input:hover {
+  background-color: var(--BG3);
+}
+input:focus {
+  background-color: var(--BG4);
+}
+
+/* Style all textboxes */
+input[type="text"] {
+  
+  /* Clear all default textbox styles */
+  all: unset;
+  
+  position: absolute;
+  
+  box-sizing: border-box;
+  
+  padding-top: 1px;
+  padding-left: 10px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: left;
+  
+  color: var(--Text1);
+  background-color: var(--BG2);
+  border: 2px solid var(--Border);
+  
+  transition: background 250ms;
+  
+}
+input[type="text"]:hover {
+  background-color: var(--BG3);
+}
+input[type="text"]:focus {
+  background-color: var(--BG4);
+}
+
+select {
+  
+  color: var(--Text1);
+  background-color: var(--BG2);
+  border: 2px solid var(--Border);
+  
+  transition: background 250ms;
+}
+select:hover {
+  background-color: var(--BG3);
+}
+select:focus {
+  background-color: var(--BG4);
+}
+

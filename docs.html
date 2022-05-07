@@ -3,7 +3,7 @@ Anthony Wilson
 
 Nomic Automation System
 
-Main page
+Documentation page
 
 2022-4-7 - 2022-5-7
 -->
@@ -14,7 +14,7 @@ Main page
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Nomic</title>
+    <title>Docs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="./global-styles.css">
@@ -46,49 +46,61 @@ Main page
     
     <div id="main-page-content">
       
-      <h1>Nomic Season 3</h1>
+      <h1>Documentation</h1>
+      <!--span>Nomic Automation System</span-->
+      
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#NAS">Nomic Automation System</a></li>
+        <li><a href="#nomic-bot">Nomic Bot</a></li>
+        <li><a href="#website">Website</a></li>
+      </ul>
+      
+      <h2 id="NAS">Nomic Automation System (NAS)</h2>
+      
+      
       
       <br>
       
+      <h2 id="nomic-bot">Nomic Bot</h2>
+      
       <p>
-        <h2>Website</h2>
-        
-        This website serves two main purposes:
-        <ul>
-          <li>To be a repository of all information related to this season of Nomic.</li>
-          <li>To interact with the automation system (Nomic Bot).</li>
-        </ul>
-        
-        For information about how to use this site or the Discord bot, see the <a href="./docs.html">documentation</a> page.
+        The Nomic Bot Discord bot is used to manage the NAS from the Nomic Discord server, or through Discord direct messages.
         
       </p>
       
-      <br>
-      
+      <h3 id="nomic-bot-commands">Commands</h3>
       <p>
-        <h2>Players</h2>
-        
-        <div id="players-list">
-          <a href="./players.html?p=0">Anthony</a><br>
-          <a href="./players.html?p=1">player 1</a><br>
-          <a href="./players.html?p=2">player 2</a><br>
-          <a href="./players.html?p=3">player 3</a><br>
-          <a href="./players.html?p=4">player 4</a><br>
-        </div>
-        
+        Nomic Bot commands can be executed through global/guild-specific slash commands, or by prepending the command prefix <code>$</code> to the command and space-delimited arguments.
       </p>
+      <ul id="nomic-bot-command-list">
+        <li>
+          <code id="nomic-bot-commands-help">help</code><br>
+          Send a list of commands to control Nomic Bot<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-ping">ping</code><br>
+          Test to see if Nomic Bot is online, and get ping time in ms<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-players">players</code>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-rand">rand</code>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-roll">roll</code>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-listrand">listrand</code>
+        </li>
+      </ul>
       
       <br>
       
-      <p>
-        <h2>Rules</h2>
-        
-        Amount of rules: <span id="rule-count">NA</span><br>
-        Deleted rules: <span id="rule-count">NA</span><br>
-        
-      </p>
-      
-      <br>
+      <h2 id="website">Website</h2>
       
     </div>
     
@@ -97,7 +109,6 @@ Main page
       const root = ".";
     </script>
     <script src="./main.js"></script>
-    <!--script src="./Rules/rules.js"></script-->
     
   </body>
 </html>
