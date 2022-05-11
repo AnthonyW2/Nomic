@@ -69,11 +69,7 @@ Main page
         <h2>Players</h2>
         
         <div id="players-list">
-          <a href="./players.html?p=0">Anthony</a><br>
-          <a href="./players.html?p=1">player 1</a><br>
-          <a href="./players.html?p=2">player 2</a><br>
-          <a href="./players.html?p=3">player 3</a><br>
-          <a href="./players.html?p=4">player 4</a><br>
+          Loading players...
         </div>
         
       </p>
@@ -84,7 +80,7 @@ Main page
         <h2>Rules</h2>
         
         Amount of rules: <span id="rule-count">NA</span><br>
-        Deleted rules: <span id="rule-count">NA</span><br>
+        <!--Deleted rules: <span id="rule-count">NA</span><br> -->
         
       </p>
       
@@ -98,7 +94,34 @@ Main page
     </script>
     <script src="./main.js"></script>
     <script src="./Rules/rule-class.js"></script>
-    <!--script src="./Rules/rules.js"></script-->
+    <script>
+      
+      body.addEventListener("ruleload", e => {
+        
+        document.getElementById("rule-count").innerHTML = rules.getSubruleCount()+1;
+        
+      });
+      
+      body.addEventListener("playerload", e => {
+        
+        var playerListElement = document.getElementById("players-list");
+        playerListElement.innerHTML = "";
+        
+        for(var p = 0;p < players.length;p ++){
+          
+          var playerLink = document.createElement("a");
+          
+          playerLink.href = "./players.html?p="+p;
+          playerLink.innerHTML = players[p].name;
+          
+          playerListElement.appendChild(playerLink);
+          playerListElement.appendChild(document.createElement("br"));
+          
+        }
+        
+      });
+      
+    </script>
     
   </body>
 </html>

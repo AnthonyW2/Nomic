@@ -28,6 +28,8 @@ var DisplayRules = () => {
   rulesListElement = document.getElementById("rule-tree");
   ///ruleSummaryTableElement = document.getElementById("rule-summary-table");
   
+  rulesListElement.innerHTML = "";
+  
   console.log("Root rule:",rules);
   
   var ruleTree = createRuleBranch(rules);

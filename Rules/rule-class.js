@@ -70,12 +70,26 @@ class Rule {
     
   }
   
+  getSubruleCount() {
+    
+    var count = this.subrules.length;
+    
+    for(var r = 0;r < this.subrules.length;r ++){
+      
+      count += this.subrules[r].getSubruleCount();
+      
+    }
+    
+    return count;
+    
+  }
+  
 }
 
 //This is here so that I use the Rule class as a NodeJS module or use it in a webpage
-try{
+try {
   exports.Rule = Rule;
-}catch(err){
+} catch(err) {
   //Do nothing
 }
 

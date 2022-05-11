@@ -3,63 +3,40 @@ Anthony Wilson
 
 Nomic Automation System
 
-JavaScript functions used by the Rules page
+JavaScript functions used by the Players page
 
-2022-4-7 - 2022-5-2
+2022-4-7 - 2022-5-7
 */
 
-//Store a reference to the rules-list element
-var rulesListElement;
+"use strict";
 
-var rules = [];
+//Store a reference to the players-list element
+var playerListElement;
 
-//Run when the body finishes loading
-var LoadRules = () => {
+body.addEventListener("playerload", e => {
   
-  //Get the reference to the rules-list element
-  rulesListElement = document.getElementById("rules-list");
+  //Display the players when the players finish loading from players.json
+  DisplayPlayers();
   
-  
-  var xmlhttp = new XMLHttpRequest();
-  
-  xmlhttp.onreadystatechange = () => {
-    
-    //Test if the request is finished
-    if(xmlhttp.readyState == 4){
-      
-      //Test if the status resolved to 200
-      if(xmlhttp.status == 200){
-        
-        rules = JSON.parse(xmlhttp.responseText);
-        
-        console.log(xmlhttp.responseText);
-        
-        DisplayRules();
-        
-      }else{
-        
-        console.error("Failed to retrieve rules from rules.json");
-        
-      }
-      
-    }
-    
-    console.log(xmlhttp.readyState);
-    
-  }
-  
-  xmlhttp.open("GET", "rules.json", true);
-  xmlhttp.send();
-  
-}
+});
 
-var DisplayRules = () => {
+
+var DisplayPlayers = () => {
   
-  console.log(rules);
+  //Get the reference to the player-list element
+  playerListElement = document.getElementById("player-list");
   
-  for(var r = 0;r < rules.length;r ++){
+  playerListElement.innerHTML = "";
+  
+  for(var p = 0;p < players.length;p ++){
     
-    rulesListElement.innerHTML += r+": "+rules[r].content+"<br>";
+    var playerLink = document.createElement("a");
+    
+    playerLink.href = "./players.html?p="+p;
+    playerLink.innerHTML = players[p].name;
+    
+    playerListElement.appendChild(playerLink);
+    playerListElement.appendChild(document.createElement("br"));
     
   }
   
