@@ -1,54 +1,67 @@
 [
   {
     "name": "Anthony",
-    "PID": 0
+    "PID": 0,
+    "pastseasons": [true,true]
   },
   {
     "name": "Xeya",
-    "PID": 1
+    "PID": 1,
+    "pastseasons": [true,true]
   },
   {
     "name": "lime",
-    "PID": 2
+    "PID": 2,
+    "pastseasons": [true,true]
   },
   {
     "name": "Fathom",
-    "PID": 3
+    "PID": 3,
+    "pastseasons": [true,true]
   },
   {
     "name": "Ryan",
-    "PID": 4
+    "PID": 4,
+    "pastseasons": [true,true]
   },
   {
     "name": "jeck",
-    "PID": 5
+    "PID": 5,
+    "pastseasons": [false,true]
   },
   {
     "name": "Holly :)",
-    "PID": 6
+    "PID": 6,
+    "pastseasons": [false,true]
   },
   {
     "name": "Ballard",
-    "PID": 7
+    "PID": 7,
+    "pastseasons": [false,false]
   },
   {
     "name": "player 8",
-    "PID": 8
+    "PID": 8,
+    "pastseasons": [false,false]
   },
   {
     "name": "Red",
-    "PID": 9
+    "PID": 9,
+    "pastseasons": [false,false]
   },
   {
     "name": "player 10",
-    "PID": 10
+    "PID": 10,
+    "pastseasons": [false,false]
   },
   {
     "name": "entropic",
-    "PID": 11
+    "PID": 11,
+    "pastseasons": [false,false]
   },
   {
     "name": "Rodas",
-    "PID": 12
+    "PID": 12,
+    "pastseasons": [false,false]
   }
 ]

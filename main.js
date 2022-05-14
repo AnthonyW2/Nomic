@@ -1,12 +1,13 @@
-/*
-Anthony Wilson
+/**
+ * Nomic website global JS functionality
+ * Required by all pages on the Nomic website
+ * 
+ * @author Anthony Wilson
+ * 
+ * @since 2022-4-7
+ */
 
-Nomic Automation System
 
-Main JavaScript functions used by all pages on the site
-
-2022-4-7 - 2022-5-7
-*/
 
 "use strict";
 

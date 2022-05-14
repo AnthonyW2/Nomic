@@ -4,6 +4,7 @@
   "summary": "Rules",
   "content": "",
   "tags": [],
+  "author": -1,
   "subrules": [
     {
       "id": 1,
@@ -11,6 +12,7 @@
       "summary": "Winning",
       "content": "When a player or players win the game, the game is over.",
       "tags": ["initial","winning"],
+      "author": -1,
       "subrules": [
         {
           "id": 3,
@@ -18,6 +20,7 @@
           "summary": "End of Viable Play",
           "content": "If the rules are changed so that further play is impossible, or if the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning, not overruled, a move appears equally legal and illegal, then the first player who is unable to complete a turn is the winner. This rule takes precedence over every other rule determining the winner.",
           "tags": ["immutable","initial","winning"],
+          "author": -1,
           "subrules": []
         }
       ]
@@ -28,6 +31,7 @@
       "summary": "Players",
       "content": "A player is a person or group of people that must always abide by all the rules of Nomic then in effect, in the form in which they are in effect.",
       "tags": ["immutable","initial","players"],
+      "author": -1,
       "subrules": [
         {
           "id": 5,
@@ -35,6 +39,7 @@
           "summary": "TOS",
           "content": "A player may not participate in Nomic in a way that violates rules, laws, terms of service, or other similar documents related to places or services being used to access Nomic.",
           "tags": ["initial","players"],
+          "author": -1,
           "subrules": []
         },
         {
@@ -43,6 +48,7 @@
           "summary": "Entering",
           "content": "A person or group of people, none of whom are currently acting as a player or a part of a player, may request to become a player at any time. All players may vote (up or down) on allowing the player to join.",
           "tags": ["initial","players"],
+          "author": -1,
           "subrules": [
             {
               "id": 7,
@@ -50,6 +56,7 @@
               "summary": "Placement",
               "content": "If the request (see Players > Entering) is accepted by a majority of players, then that person or group of people becomes a player and has their turn placed before that of the current turn at the time of their request.",
               "tags": ["initial","players"],
+              "author": -1,
               "subrules": []
             }
           ]
@@ -60,6 +67,7 @@
           "summary": "Exiting",
           "content": "A player always has the option of forfeiting the game rather than continuing to play or incurring a game penalty. No penalty worse than losing, in the judgement of the player incurring the penalty, may be imposed. ",
           "tags": ["initial","players"],
+          "author": -1,
           "subrules": [
             {
               "id": 9,
@@ -67,6 +75,7 @@
               "summary": "Special Case",
               "content": "In the case of a player consisting of multiple people, individual people may leave the player. A player only leaves the game when its last player does.",
               "tags": ["initial","players"],
+              "author": -1,
               "subrules": []
             }
           ]
@@ -79,9 +88,8 @@
       "summary": "Another rule",
       "content": "This is a test",
       "tags": [],
-      "subrules": [
-        
-      ]
+      "author": -1,
+      "subrules": []
     }
   ]
 }

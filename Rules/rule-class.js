@@ -1,10 +1,12 @@
-/*
-Anthony Wilson
+/**
+ * Definition of the Rule class for use both in Nomic Bot and on the website
+ * 
+ * @author Anthony Wilson
+ * 
+ * @since 2022-4-7
+ */
 
-Nomic Automation System
 
-Definition of the Rule class for use both in Nomic Bot and on the website
-*/
 
 "use strict";
 

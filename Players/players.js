@@ -1,12 +1,12 @@
-/*
-Anthony Wilson
+/**
+ * JavaScript functions used by the Players page
+ * 
+ * @author Anthony Wilson
+ * 
+ * @since 2022-4-7
+ */
 
-Nomic Automation System
 
-JavaScript functions used by the Players page
-
-2022-4-7 - 2022-5-7
-*/
 
 "use strict";
 
