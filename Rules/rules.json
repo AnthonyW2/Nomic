@@ -226,7 +226,7 @@
       "id": 24,
       "relid": 4,
       "summary": "Turns",
-      "content": "Players take turns according to the the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.",
+      "content": "Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.",
       "tags": ["initial","turns"],
       "author": -1,
       "subrules": [

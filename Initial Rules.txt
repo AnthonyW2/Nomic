@@ -70,7 +70,7 @@
 |       A proponent may make any changes to their proposition while there are no votes cast on the proposition, and only spelling and grammar changes after votes have been cast.
 |
 |--> 4 Turns
-|  | Players take turns according to the the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.
+|  | Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.
 |  |
 |  |--> 4.1 Order
 |  |    The current turn order is as follows:
