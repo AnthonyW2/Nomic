@@ -226,7 +226,7 @@
       "id": 24,
       "relid": 4,
       "summary": "Turns",
-      "content": "Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.",
+      "content": "Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority, unless it has already ended.",
       "tags": ["initial","turns"],
       "author": -1,
       "subrules": [
@@ -253,7 +253,7 @@
           "relid": 3,
           "summary": "Propositions",
           "content": "A player may submit one proposition on their turn.",
-          "tags": ["initial","turns"],
+          "tags": ["initial","turns","propositions"],
           "author": -1,
           "subrules": []
         },
@@ -271,7 +271,7 @@
     {
       "id": 29,
       "relid": 5,
-      "summary": "Clarification",
+      "summary": "Clarifications",
       "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in #propositions. Subrules of this rule are not affected by rules outside of this branch.",
       "tags": ["initial","clarification"],
       "author": -1,

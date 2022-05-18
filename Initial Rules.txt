@@ -70,7 +70,7 @@
 |       A proponent may make any changes to their proposition while there are no votes cast on the proposition, and only spelling and grammar changes after votes have been cast.
 |
 |--> 4 Turns
-|  | Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority.
+|  | Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority, unless it has already ended.
 |  |
 |  |--> 4.1 Order
 |  |    The current turn order is as follows:
@@ -85,7 +85,7 @@
 |  `--> 4.4 Passing
 |       At any point during their turn, a player may prematurely end it. This overrides anything that would normally be required to do before the end of their turn.
 |
-|--> 5 Clarification
+|--> 5 Clarifications
 |  | If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in #propositions. Subrules of this rule are not affected by rules outside of this branch.
 |  |
 |  |--> 5.1 Choosing a Judge
