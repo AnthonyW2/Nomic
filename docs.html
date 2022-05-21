@@ -51,12 +51,13 @@ Documentation page
       
       <h3>Table of Contents</h3>
       <ul>
-        <li><a href="#NAS">Nomic Automation System</a></li>
+        <!--<li><a href="#NAS">Nomic Automation System</a></li>-->
         <li><a href="#nomic-bot">Nomic Bot</a></li>
+        <li><a href="#propositions">Propositions</a></li>
         <li><a href="#website">Website</a></li>
       </ul>
       
-      <h2 id="NAS">Nomic Automation System (NAS)</h2>
+      <!--<h2 id="NAS">Nomic Automation System (NAS)</h2>-->
       
       
       
@@ -85,22 +86,141 @@ Documentation page
           <br>
         </li>
         <li>
-          <code id="nomic-bot-commands-players">players</code>
+          <code id="nomic-bot-commands-players">players</code><br>
+          Get a list of players in the turn order<br>
+          <br>
         </li>
         <li>
-          <code id="nomic-bot-commands-rand">rand</code>
+          <code id="nomic-bot-commands-votes">votes [message ID]</code><br>
+          Get the votes on a proposition<br>
+          To get the ID of a message, ensure "Developer Mode" is on in Discord's Advanced Settings, right-click the message, and select "Copy ID".<br>
+          <br>
         </li>
         <li>
-          <code id="nomic-bot-commands-roll">roll</code>
+          <code id="nomic-bot-commands-rand">rand [lower bound] [upper bound]</code><br>
+          Generate a random integer between the lower and upper bounds (inclusive).<br>
+          If no bounds are given, this command returns a random number between 0 (inclusive) and 1 (exclusive).<br>
+          <br>
         </li>
         <li>
-          <code id="nomic-bot-commands-listrand">listrand</code>
+          <code id="nomic-bot-commands-roll">roll [XdY]</code><br>
+          Roll X dice of size Y.<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-listrand">listrand [list]</code><br>
+          Randomise a given space-/comma-separated list.<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-randplayer">randplayer</code><br>
+          Return a random player.<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-randplayerlist">randplayerlist</code><br>
+          Return the list of players in a random order.<br>
+          <br>
         </li>
       </ul>
       
       <br>
       
+      <h2 id="propositions">Propositions</h2>
+      
+      <p>
+        All in-game propositions should be made in the #propositions channel on the Nomic Discord guild.
+      </p>
+      
+      <h3 id="proposition-syntax">Syntax</h3>
+      
+      <p>
+        [A syntax guide is coming soon]
+      </p>
+      
+      <!--<p>
+        The following are 3 examples of how to propose your rules:<br>
+        <br>
+        <b>Example 1 - Tree Structure</b><br>
+        Use this if you want to choose where on the tree your rule is placed, and you're willing to put some extra time into making your rule branch readable. This is great for proposing or editing large branches of rules.<br>
+        <br>
+        <code>[Path (ID and/or Title), such as x.y.z]
+        [Title]
+        [Content]
+        |
+        |  [Path - x.y.z.1]
+        |  [Title]
+        |  [Content]
+        |
+        |  [Path - x.y.z.2]
+        |  [Title]
+        |  [Content]
+        |  |
+        |  |  [Path - x.y.z.2.1]
+        |  |  [Title]
+        |  |  [Content]
+        |
+        |  [Path - x.y.z.3]
+        |  [Title]
+        |  [Content]
+
+        [Path - a.b.c.d]
+        [Title]
+        [Content]
+
+        Example 2 - Paths Only
+        Use this if you want to choose where on the tree your rule is placed, but you don't want to bother with fancy tree syntax or indenting:
+        [Path (ID and/or Title), such as x.y.z]
+        [Title]
+        [Content]
+
+        [Path - x.y.z.1]
+        [Title]
+        [Content]
+
+        [Path - x.y.z.2]
+        [Title]
+        [Content]
+
+        [Path - x.y.z.2.1]
+        [Title]
+        [Content]
+
+        [Path - x.y.z.3]
+        [Title]
+        [Content]
+
+        [Path - a.b.c.d]
+        [Title]
+        [Content]</code>
+
+        Example 3 - Simple Rule Addition
+        Use this if you'd like another player to choose where on the rule tree your rule(s) go if your proposition passes.
+        [Title 1]
+        [Rule 1 content]
+
+        [Title 2]
+        [Rule 2 content]
+
+        How paths work
+        The different path formats for the rule which controls the placement of new players in the turn order (called "Placement") is as follows:
+        ID Path:
+        2.2.1
+        Title Path:
+        Players > Entering > Placement
+
+        Note: Every rule has a unique "Global ID" which is an integer assigned to it when it is accepted into the rule tree (which makes the global ID chronological). This can also be used to refer to rules, though for the purposes of human readability it is recommended that you use a path.
+        For example, the Global ID of the above rule ("Placement") is:
+        #6
+      </p>-->
+      
+      <br>
+      
       <h2 id="website">Website</h2>
+      
+      <p>
+        This website will contain all information relevant to the game.
+      </p>
       
     </div>
     

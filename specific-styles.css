@@ -22,11 +22,11 @@ Z-Indexes:
 
 
 /* ======== Declare Variables ======== */
-:root {
+/*:root {
   
   
   
-}
+}*/
 
 
 
@@ -117,13 +117,13 @@ Z-Indexes:
   left: calc(12.5% + 154px);
 }
 
-/*#nav-link-login {
-  right: 94px;
+#nav-link-docs {
+  left: calc(25% + 152px);
 }
-#nav-link-help {
-  width: 50px;
-  right: 46px;
-}*/
+
+#nav-link-propositions {
+  left: calc(37.5% + 150px);
+}
 
 
 
@@ -133,9 +133,9 @@ Z-Indexes:
 #nav-search {
   
   top: -2px;
-  width: calc(50% - 84px);
+  width: calc(50% - 194px);
   
-  left: calc(37.5% - 8px);
+  left: calc(50% + 148px);
   height: 50px;
   
 }
@@ -147,9 +147,9 @@ Z-Indexes:
   box-sizing: border-box;
   
   top: 46px;
-  width: calc(50% - 84px);
+  width: calc(50% - 194px);
   
-  left: calc(37.5% - 8px);
+  left: calc(50% + 148px);
   height: 50px;
   
   padding-top: 10px;
@@ -424,9 +424,9 @@ Z-Indexes:
   
 }
 
-#rule-tree {
+/*#rule-tree {
   
-}
+}*/
 
 .rule {
   
