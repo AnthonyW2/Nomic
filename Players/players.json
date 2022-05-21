@@ -2,71 +2,91 @@
   {
     "name": "Anthony",
     "PID": 0,
-    "pastseasons": [true,true]
+    "pastseasons": [true,true],
+    "turn": 1
   },
   {
     "name": "Xeya",
     "PID": 1,
-    "pastseasons": [true,true]
+    "pastseasons": [true,true],
+    "turn": 4
   },
   {
     "name": "lime",
     "PID": 2,
-    "pastseasons": [true,true]
+    "pastseasons": [true,true],
+    "turn": 2
   },
   {
     "name": "Fathom",
     "PID": 3,
-    "pastseasons": [true,true]
+    "pastseasons": [true,true],
+    "turn": 0
   },
   {
     "name": "Ryan",
     "PID": 4,
-    "pastseasons": [true,true]
+    "pastseasons": [true,true],
+    "turn": 5
   },
   {
     "name": "jeck",
     "PID": 5,
-    "pastseasons": [false,true]
+    "pastseasons": [false,true],
+    "turn": 12
   },
   {
     "name": "Holly :)",
     "PID": 6,
-    "pastseasons": [false,true]
+    "pastseasons": [false,true],
+    "turn": 3
   },
   {
     "name": "Ballard",
     "PID": 7,
-    "pastseasons": [false,false]
+    "pastseasons": [false,false],
+    "turn": 6
   },
   {
-    "name": "player 8",
+    "name": "gradsys",
     "PID": 8,
-    "pastseasons": [false,false]
+    "pastseasons": [false,false],
+    "turn": 13
   },
   {
     "name": "Red",
     "PID": 9,
-    "pastseasons": [false,false]
+    "pastseasons": [false,false],
+    "turn": 8
   },
   {
-    "name": "player 10",
+    "name": "Chris",
     "PID": 10,
-    "pastseasons": [false,false]
-  },
-  {
-    "name": "entropic",
-    "PID": 11,
-    "pastseasons": [false,false]
+    "pastseasons": [false,false],
+    "turn": 9
   },
   {
     "name": "Rodas",
-    "PID": 12,
-    "pastseasons": [false,false]
+    "PID": 11,
+    "pastseasons": [false,false],
+    "turn": 7
   },
   {
-    "name": "Player 13",
+    "name": "amannixthatpanics",
+    "PID": 12,
+    "pastseasons": [false,false],
+    "turn": 14
+  },
+  {
+    "name": "flora246",
     "PID": 13,
-    "pastseasons": [false,false]
+    "pastseasons": [false,false],
+    "turn": 11
+  },
+  {
+    "name": "Calum",
+    "PID": 14,
+    "pastseasons": [false,false],
+    "turn": 10
   }
 ]
