@@ -43,7 +43,7 @@ var createRuleBranch = (rule) => {
   
   var ruleElement = document.createElement("div");
   
-  ruleElement.innerHTML = rule.getIDPath()+" - "+rule.summary+"<br>"+rule.content.replaceAll("\n","<br>\n");
+  ruleElement.innerHTML = rule.getIDPath().substring(2)+" - "+rule.summary+"<br>"+rule.content.replaceAll("\n","<br>\n");
   ruleElement.classList.add("rule");
   ruleElement.id = "rule-"+rule.id;
   
