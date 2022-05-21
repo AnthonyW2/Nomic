@@ -234,7 +234,7 @@
           "id": 25,
           "relid": 1,
           "summary": "Order",
-          "content": "The current turn order is as follows:\n[Turn order here]",
+          "content": "The current turn order is as follows:\n1 - Fathom\n2 - Anthony\n3 - lime\n4 - Holly\n5 - Xeya\n6 - Ryan\n7 - Ballard\n8 - Rodas\n9 - Red\n10 - Chris\n11 - Calum\n12 - flora246\n13 - jeck\n14 - gradsys\n15 - ammannixthatpanics",
           "tags": ["initial","turns"],
           "author": -1,
           "subrules": []
