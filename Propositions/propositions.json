@@ -45,34 +45,12 @@
   },
   {
     "author": 0,
-    "content": "$git status",
-    "path": "",
-    "timestamp": 1653102756123,
-    "messageid": "977408543416262656",
-    "votes": [
-      0,
-      0
-    ]
-  },
-  {
-    "author": 0,
-    "content": "```On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   Propositions/propositions.json\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n```",
-    "path": "",
-    "timestamp": 1653102756858,
-    "messageid": "977408546499100712",
-    "votes": [
-      0,
-      0
-    ]
-  },
-  {
-    "author": 0,
     "content": "**Rule Edit:**\n--> 1.3.1.2 Propositions > Voting > Casting Votes\nEach eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote. An eligible voter may change their vote at any time before voting ends. \n\n--> 1.3.1.2.1 Propositions > Voting > Casting Votes > Leftvoting\nIn the event of a leftvote majority, the proponent must propose a modified version of their proposition within 72 hours of the proposition reaching leftvote majority. Failure to provide a modified proposition within this timeframe results in the proposition failing (equivalent to a downvote majority). \n\n--> 1.3.1.2.2 Propositions > Voting > Casting Votes > Rightvoting\nYou may abstain from voting by rightvoting. \n\n--> 1.3.1.4 Propositions > Voting > Ties\nIf the votes on a proposition result in a downvote majority or a tie between upvotes and downvotes for majority, the proposition is instead leftvote majority if the sum of upvotes and leftvotes votes is greater than the amount of downvotes.",
     "path": "",
     "timestamp": 1653105600596,
     "messageid": "977420474000769074",
     "votes": [
-      6,
+      8,
       1
     ]
   }

@@ -111,10 +111,29 @@
               "id": 12,
               "relid": 2,
               "summary": "Casting Votes",
-              "content": "Each eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote or downvote. An eligible voter may change their vote at any time before voting ends.",
+              "content": "Each eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote. An eligible voter may change their vote at any time before voting ends.",
               "tags": ["initial","propositions"],
               "author": -1,
-              "subrules": []
+              "subrules": [
+                {
+                  "id": 33,
+                  "relid": 1,
+                  "summary": "Leftvoting",
+                  "content": "In the event of a leftvote majority, the proponent must propose a modified version of their proposition within 72 hours of the proposition reaching leftvote majority. Failure to provide a modified proposition within this timeframe results in the proposition failing (equivalent to a downvote majority).",
+                  "tags": ["propositions"],
+                  "author": 3,
+                  "subrules": []
+                },
+                {
+                  "id": 34,
+                  "relid": 2,
+                  "summary": "Rightvoting",
+                  "content": "You may abstain from voting by rightvoting.",
+                  "tags": ["propositions"],
+                  "author": 3,
+                  "subrules": []
+                }
+              ]
             },
             {
               "id": 13,
@@ -123,6 +142,15 @@
               "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied. Voting instantly ends when any majority is reached.",
               "tags": ["initial","propositions"],
               "author": -1,
+              "subrules": []
+            },
+            {
+              "id": 35,
+              "relid": 4,
+              "summary": "Ties",
+              "content": "If the votes on a proposition result in a downvote majority or a tie between upvotes and downvotes for majority, the proposition is instead leftvote majority if the sum of upvotes and leftvotes votes is greater than the amount of downvotes.",
+              "tags": ["propositions"],
+              "author": 3,
               "subrules": []
             }
           ]
