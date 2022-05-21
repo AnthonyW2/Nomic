@@ -62,7 +62,7 @@ let LoadRules = async () => {
     
   }
   
-  xmlhttp.open("GET", root+"/Rules/rules.json", true);
+  xmlhttp.open("GET", root+"/Rules/rules.json?nocache="+(new Date()).getTime(), true);
   xmlhttp.send();
   
 }
@@ -95,7 +95,7 @@ var LoadPlayers = async () => {
     
   }
   
-  xmlhttp.open("GET", root+"/Players/players.json", true);
+  xmlhttp.open("GET", root+"/Players/players.json?nocache="+(new Date()).getTime(), true);
   xmlhttp.send();
   
 }
