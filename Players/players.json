@@ -86,7 +86,7 @@
   {
     "name": "Calum",
     "PID": 14,
-    "pastseasons": [false,false],
+    "pastseasons": [false,true],
     "turn": 10
   }
 ]
