@@ -1,57 +1,86 @@
 [
   {
     "author": 0,
-    "content": "Final test",
-    "path": "",
-    "timestamp": 1652504564336,
-    "messageid": "974899545211285514",
-    "votes": [
-      1,
-      0
-    ]
-  },
-  {
-    "author": 0,
     "content": "This is a test proposition. Feel free to upvote by reacting with <:upvote:835128418970501191> or downvote by reacting with <:downvote:835128415165349898>",
     "path": "",
     "timestamp": 1652504613533,
-    "messageid": "974899751558455319",
+    "messageID": "974899751558455319",
     "votes": [
       4,
-      3
-    ]
-  },
-  {
-    "author": 0,
-    "content": "Test 1",
-    "path": "",
-    "timestamp": 1653102508599,
-    "messageid": "977407505225355284",
-    "votes": [
+      2,
       0,
       0
-    ]
+    ],
+    "majority": false
   },
   {
-    "author": 0,
-    "content": "Test 2",
-    "path": "",
-    "timestamp": 1653102691698,
-    "messageid": "977408273198231552",
-    "votes": [
-      0,
-      0
-    ]
-  },
-  {
-    "author": 0,
+    "author": 3,
     "content": "**Rule Edit:**\n--> 1.3.1.2 Propositions > Voting > Casting Votes\nEach eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote. An eligible voter may change their vote at any time before voting ends. \n\n--> 1.3.1.2.1 Propositions > Voting > Casting Votes > Leftvoting\nIn the event of a leftvote majority, the proponent must propose a modified version of their proposition within 72 hours of the proposition reaching leftvote majority. Failure to provide a modified proposition within this timeframe results in the proposition failing (equivalent to a downvote majority). \n\n--> 1.3.1.2.2 Propositions > Voting > Casting Votes > Rightvoting\nYou may abstain from voting by rightvoting. \n\n--> 1.3.1.4 Propositions > Voting > Ties\nIf the votes on a proposition result in a downvote majority or a tie between upvotes and downvotes for majority, the proposition is instead leftvote majority if the sum of upvotes and leftvotes votes is greater than the amount of downvotes.",
     "path": "",
     "timestamp": 1653105600596,
-    "messageid": "977420474000769074",
+    "messageID": "977420474000769074",
     "votes": [
       8,
+      1,
+      0,
+      0
+    ],
+    "majority": true
+  },
+  {
+    "author": 0,
+    "content": "**Addition**\n> Propositions > Creation (3.6)\nA player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- It has been no less than 48 hours since the player last made a proposition.\n\n**Addition**\n> Propositions > Active Propositions (3.7)\nA proposition is \"active\" if it has not yet reached a majority of votes.\n\n**Content Edit**\n> Propositions > Voting > Adoption (3.1.3)\nA proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making it inactive.\n\n**Content Edit**\n> Propositions > Voting > Ties (3.1.4)\nIf a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\n\n**Addition**\n> Propositions > Voting > Time Limit (3.1.5)\n48 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.\n\n**Content Edit**\n> Propositions > Voting > Casting Votes > Leftvoting (3.1.2.1)\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time after their proposition reaches leftvote majority.\nThis rule overrides the time limit defined by __Propositions > Creation__.\n\n**Deletion**\n> Turns (4)\nThe entire turns branch is removed.\n\n**Path Edit**\n> Clarifications (5)\nNew ID path: 4\n\n**Content Edit**\n> Clarifications > Choosing a Judge (4.1)\nThe Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.\n\n**Addition**\n> Clarifications > Choosing a Judge > Candidates (4.1.1)\nAt any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+    "path": "",
+    "timestamp": 1653206196873,
+    "messageID": "977842405367775324",
+    "votes": [
+      0,
+      0,
+      7,
       1
-    ]
+    ],
+    "majority": true
+  },
+  {
+    "author": 0,
+    "content": "**Addition**\n> 3.6 - Creation\nA player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- It has been at least 72 hours since the player last made a proposition.\nUnless specified, the conditions in this rule take priority over conflicting rules.\n\n**Addition**\n> 3.7 - Active Propositions\nA proposition is \"active\" if it has not yet reached a majority of votes or timed out.\n\n**Content Edit**\n> 3.1.3 - Adoption\nA proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.\n\n**Content & Title Edit**\n> 3.1.4 - Leftvote Majority\nIf a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by __Propositions > Creation__.\n\n**Addition**\n> 3.1.5 - Time Limit\n72 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.\n\n**Deletion**\n> 3.1.2.1 - Leftvoting\n\n**Deletion**\n> 4 - Turns\n[The entire turns branch is removed]\n\n**Path Edit**\n> 5 - Clarifications\nNew ID path: 4\n\n**Content Edit**\n> 4.1 - Choosing a Judge\nThe Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.\n\n**Addition**\n> 4.1.1 - Candidates\nAt any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+    "path": "",
+    "timestamp": 1653376133328,
+    "messageID": "978555170520698900",
+    "votes": [
+      7,
+      0,
+      0,
+      1
+    ],
+    "majority": true
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World*\nAll players exist on a board. This board consists of an infinitely large, and procedurally generated grid of adjacent hexagons, henceforth referred to as hexes. \n\n**Addition**\n> *World > Origin*\nAll players start on the origin, an unremarkable Meadow hex (with the 'Nothing' landmark). \n\n**Addition**\n> *World > Actions*\nIn each 3 day period, a player has up to 2 action points that they may spend to perform an action at any time during the round. \n\n**Addition**\n> *World > Actions > Scout*\nFor the cost of 1 action point, the player selects 1 hex that is adjacent to their current location and generate it. \n\n**Addition**\n> *World > Actions > Traverse*\nFor the cost of 1 action point, the player moves into an adjacent hex, generating it if it is not already generated. Costs 1 Action point. \n\n**Addition**\n> *World > Generation*\nWhen a hex is generated, 1 of each of the following are determined (with 'Weight' referring to the number of times it is in the draw):\n- __Biome:__\n\\> Meadow (Weight: 7)\n- __Landmark:__\n\\> Nothing (Weight: 20)\n\\> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected) \n\n**Addition**\n> *World > Generation > Updates*\nWhen a Biome or Landmark is added (as a proposition or otherwise), the list in *World > Generation* is updated to reflect it.",
+    "path": "",
+    "timestamp": 1653467035992,
+    "messageID": "978936443927945266",
+    "votes": [
+      4,
+      0,
+      2,
+      1
+    ],
+    "majority": false
+  },
+  {
+    "author": 3,
+    "content": "**Addition**\n> Counting\nThere is a counting channel in the Discord server. \n**Addition**\n> Counting > Restrictions\nYou cannot post two or more times in a row. \nA message you send in the counting channel must be a number equal to the successor of the previous number. \n**Addition**\n> Counting > Rewards\nNone :)",
+    "path": "",
+    "timestamp": 1653468200504,
+    "messageID": "978941328245288970",
+    "votes": [
+      3,
+      4,
+      1,
+      0
+    ],
+    "majority": false
   }
 ]
