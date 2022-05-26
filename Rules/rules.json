@@ -198,21 +198,6 @@
               ],
               "subrules": [
                 {
-                  "id": 33,
-                  "relid": 1,
-                  "summary": "Leftvoting",
-                  "content": "In the event of a leftvote majority, the proponent must propose a modified version of their proposition within 72 hours of the proposition reaching leftvote majority. Failure to provide a modified proposition within this timeframe results in the proposition failing (equivalent to a downvote majority).",
-                  "tags": ["propositions"],
-                  "author": 3,
-                  "history": [
-                    {
-                      "player": 3,
-                      "time": "1653128419"
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
                   "id": 34,
                   "relid": 2,
                   "summary": "Rightvoting",
@@ -233,13 +218,17 @@
               "id": 13,
               "relid": 3,
               "summary": "Adoption",
-              "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied. Voting instantly ends when any majority is reached.",
-              "tags": ["initial","propositions"],
+              "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.",
+              "tags": ["propositions"],
               "author": -1,
               "history": [
                 {
                   "player": -1,
                   "time": "1653105600"
+                },
+                {
+                  "player": 0,
+                  "time": "1653466564"
                 }
               ],
               "subrules": []
@@ -247,14 +236,33 @@
             {
               "id": 35,
               "relid": 4,
-              "summary": "Ties",
-              "content": "If the votes on a proposition result in a downvote majority or a tie between upvotes and downvotes for majority, the proposition is instead leftvote majority if the sum of upvotes and leftvotes votes is greater than the amount of downvotes.",
+              "summary": "Leftvote Majority",
+              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by Propositions > Creation.",
               "tags": ["propositions"],
               "author": 3,
               "history": [
                 {
                   "player": 3,
                   "time": "1653128419"
+                },
+                {
+                  "player": 0,
+                  "time": "1653466564"
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 38,
+              "relid": 5,
+              "summary": "Time Limit",
+              "content": "72 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.",
+              "tags": ["propositions"],
+              "author": 0,
+              "history": [
+                {
+                  "player": 0,
+                  "time": "1653466564"
                 }
               ],
               "subrules": []
@@ -413,79 +421,33 @@
             }
           ],
           "subrules": []
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "relid": 4,
-      "summary": "Turns",
-      "content": "Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority, unless it has already ended.",
-      "tags": ["initial","turns"],
-      "author": -1,
-      "history": [
+        },
         {
-          "player": -1,
-          "time": "1653105600"
-        }
-      ],
-      "subrules": [
-        {
-          "id": 25,
-          "relid": 1,
-          "summary": "Order",
-          "content": "The current turn order is as follows:\n1 - Fathom\n2 - Anthony\n3 - lime\n4 - Holly\n5 - Xeya\n6 - Ryan\n7 - Ballard\n8 - Rodas\n9 - Red\n10 - Chris\n11 - Calum\n12 - flora246\n13 - jeck\n14 - gradsys\n15 - ammannixthatpanics",
-          "tags": ["initial","turns"],
-          "author": -1,
+          "id": 36,
+          "relid": 6,
+          "summary": "Creation",
+          "content": "A player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- It has been at least 72 hours since the player last made a proposition.\nUnless specified, the conditions in this rule take priority over conflicting rules.",
+          "tags": ["propositions"],
+          "author": 0,
           "history": [
             {
-              "player": -1,
-              "time": "1653105600"
+              "player": 0,
+              "time": "1653466564"
             }
           ],
           "subrules": []
         },
         {
-          "id": 26,
-          "relid": 2,
-          "summary": "Rounds",
-          "content": "After the last player in the turn order ends their turn, a new round begins, starting with the first person in the turn order.",
-          "tags": ["initial","turns"],
-          "author": -1,
+          "id": 37,
+          "relid": 7,
+          "summary": "Active Propositions",
+          "content": "A proposition is \"active\" if it has not yet reached a majority of votes or timed out.",
+          "tags": ["propositions"],
+          "author": 0,
           "history": [
             {
-              "player": -1,
-              "time": "1653105600"
-            }
-          ],
-          "subrules": []
-        },
-        {
-          "id": 27,
-          "relid": 3,
-          "summary": "Propositions",
-          "content": "A player may submit one proposition on their turn.",
-          "tags": ["initial","turns","propositions"],
-          "author": -1,
-          "history": [
-            {
-              "player": -1,
-              "time": "1653105600"
-            }
-          ],
-          "subrules": []
-        },
-        {
-          "id": 28,
-          "relid": 4,
-          "summary": "Passing",
-          "content": "At any point during their turn, a player may prematurely end it. This overrides anything that would normally be required to do before the end of their turn.",
-          "tags": ["initial","turns"],
-          "author": -1,
-          "history": [
-            {
-              "player": -1,
-              "time": "1653105600"
+              "player": 0,
+              "time": "1653466564"
             }
           ],
           "subrules": []
@@ -494,7 +456,7 @@
     },
     {
       "id": 29,
-      "relid": 5,
+      "relid": 4,
       "summary": "Clarifications",
       "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in #propositions.\nSubrules of this rule are not affected by rules outside of this branch.",
       "tags": ["initial","clarification"],
@@ -510,16 +472,36 @@
           "id": 30,
           "relid": 1,
           "summary": "Choosing a Judge",
-          "content": "The Judge is defined as the person in the turn order before the player whose turn the disagreement arises on. If another Judge is required, the player before the previous Judge in the turn order becomes the new Judge. The Judge is not bound by the previous Judge’s suggestion(s).",
-          "tags": ["initial","clarification"],
+          "content": "The Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.",
+          "tags": ["clarification"],
           "author": -1,
           "history": [
             {
               "player": -1,
               "time": "1653105600"
+            },
+            {
+              "player": 0,
+              "time": "1653466564"
             }
           ],
-          "subrules": []
+          "subrules": [
+            {
+              "id": 38,
+              "relid": 1,
+              "summary": "Candidates",
+              "content": "At any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+              "tags": ["clarification"],
+              "author": 0,
+              "history": [
+                {
+                  "player": 0,
+                  "time": "1653466564"
+                }
+              ],
+              "subrules": []
+            }
+          ]
         },
         {
           "id": 31,
