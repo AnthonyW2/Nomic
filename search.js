@@ -1,6 +1,12 @@
-//The following functions handle search functionality on most pages
+/**
+ * JavaScript functions to handle search functionality on most pages
+ * 
+ * @author Anthony Wilson
+ */
 
 
+
+"use strict";
 
 //Store element references
 const searchBox = document.getElementById("nav-search");

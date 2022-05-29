@@ -2,8 +2,6 @@
  * Definition of the Rule class for use both in Nomic Bot and on the website
  * 
  * @author Anthony Wilson
- * 
- * @since 2022-4-7
  */
 
 
@@ -24,6 +22,8 @@ class Rule {
     this.summary = obj.summary;
     this.content = obj.content;
     this.tags = obj.tags;
+    
+    this.history = obj.history;
     
     this.subrules = [];
     
@@ -83,6 +83,24 @@ class Rule {
     }
     
     return count;
+    
+  }
+  
+  getLargestID() {
+    
+    var largest = this.id;
+    
+    for(var r = 0;r < this.subrules.length;r ++){
+      
+      var largestSubruleID = this.subrules[r].getLargestID();
+      
+      if(largestSubruleID > largest){
+        largest = largestSubruleID;
+      }
+      
+    }
+    
+    return largest;
     
   }
   

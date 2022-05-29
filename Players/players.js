@@ -2,8 +2,6 @@
  * JavaScript functions used by the Players page
  * 
  * @author Anthony Wilson
- * 
- * @since 2022-4-7
  */
 
 
@@ -32,7 +30,7 @@ var DisplayPlayers = () => {
     
     var playerLink = document.createElement("a");
     
-    playerLink.href = "./players.html?p="+p;
+    playerLink.href = "./?p="+p;
     playerLink.innerHTML = players[p].name;
     
     playerListElement.appendChild(playerLink);

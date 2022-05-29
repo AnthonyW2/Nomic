@@ -1,11 +1,7 @@
 <!--
-Anthony Wilson
-
-Nomic Automation System
-
-Documentation page
-
-2022-4-7 - 2022-5-7
+  Documentation page
+  
+  Anthony Wilson
 -->
 
 
@@ -40,11 +36,25 @@ Documentation page
     
     <div id="nav-bar">
       <a id="nav-link-site-logo" class="nav-link" href="./">Nomic S3</a>
+      
       <a id="nav-link-rules" class="nav-link" href="./Rules">Rules</a>
+      
       <a id="nav-link-players" class="nav-link" href="./Players">Players</a>
+      
+      <a id="nav-link-docs" class="nav-link" href="./docs.html">Docs</a>
+      
+      <a id="nav-link-propositions" class="nav-link" href="./Propositions">Propositions</a>
+      
+      <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
+      <div id="search-menu" hidden></div>
+      
+      <button id="nav-settings-btn" title="Open/Close the settings menu" onclick="toggleSettingsMenu()" settingsopen="false">
+        <div></div>
+      </button>
+      
     </div>
     
-    <div id="main-page-content">
+    <div class="page-content-container">
       
       <h1>Documentation</h1>
       <!--span>Nomic Automation System</span-->
@@ -229,6 +239,7 @@ Documentation page
       const root = ".";
     </script>
     <script src="./main.js"></script>
+    <script src="./search.js"></script>
     <script src="./Rules/rule-class.js"></script>
     
   </body>

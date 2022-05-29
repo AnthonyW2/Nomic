@@ -2,91 +2,196 @@
   {
     "name": "Anthony",
     "PID": 0,
-    "pastseasons": [true,true],
-    "turn": 1
+    "pastseasons": [
+      true,
+      true
+    ],
+    "turn": 1,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Xeya",
     "PID": 1,
-    "pastseasons": [true,true],
-    "turn": 4
+    "pastseasons": [
+      true,
+      true
+    ],
+    "turn": 3,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "lime",
     "PID": 2,
-    "pastseasons": [true,true],
-    "turn": 2
+    "pastseasons": [
+      true,
+      true
+    ],
+    "turn": 2,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Fathom",
     "PID": 3,
-    "pastseasons": [true,true],
-    "turn": 0
+    "pastseasons": [
+      true,
+      true
+    ],
+    "turn": 0,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Ryan",
     "PID": 4,
-    "pastseasons": [true,true],
-    "turn": 5
+    "pastseasons": [
+      true,
+      true
+    ],
+    "turn": 4,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "jeck",
     "PID": 5,
-    "pastseasons": [false,true],
-    "turn": 12
+    "pastseasons": [
+      false,
+      true
+    ],
+    "turn": 11,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Holly :)",
     "PID": 6,
-    "pastseasons": [false,true],
-    "turn": 3
+    "pastseasons": [
+      false,
+      true
+    ],
+    "turn": -1,
+    "active": false,
+    "playing": false,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 1653734840
   },
   {
     "name": "Ballard",
     "PID": 7,
-    "pastseasons": [false,false],
-    "turn": 6
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 5,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "gradsys",
     "PID": 8,
-    "pastseasons": [false,false],
-    "turn": 13
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 12,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Red",
     "PID": 9,
-    "pastseasons": [false,false],
-    "turn": 8
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 7,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Chris",
     "PID": 10,
-    "pastseasons": [false,false],
-    "turn": 9
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 8,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Rodas",
     "PID": 11,
-    "pastseasons": [false,false],
-    "turn": 7
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 6,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "amannixthatpanics",
     "PID": 12,
-    "pastseasons": [false,false],
-    "turn": 14
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 13,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "flora246",
     "PID": 13,
-    "pastseasons": [false,false],
-    "turn": 11
+    "pastseasons": [
+      false,
+      false
+    ],
+    "turn": 10,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   },
   {
     "name": "Calum",
     "PID": 14,
-    "pastseasons": [false,true],
-    "turn": 10
+    "pastseasons": [
+      false,
+      true
+    ],
+    "turn": 9,
+    "active": true,
+    "playing": true,
+    "jointimestamp": 1653098400,
+    "quittimestamp": 0
   }
 ]

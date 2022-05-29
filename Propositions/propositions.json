@@ -1,85 +1,284 @@
 [
   {
-    "author": 0,
-    "content": "This is a test proposition. Feel free to upvote by reacting with <:upvote:835128418970501191> or downvote by reacting with <:downvote:835128415165349898>",
-    "path": "",
-    "timestamp": 1652504613533,
-    "messageID": "974899751558455319",
-    "votes": [
-      4,
-      2,
-      0,
-      0
-    ],
-    "majority": false
-  },
-  {
     "author": 3,
     "content": "**Rule Edit:**\n--> 1.3.1.2 Propositions > Voting > Casting Votes\nEach eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote. An eligible voter may change their vote at any time before voting ends. \n\n--> 1.3.1.2.1 Propositions > Voting > Casting Votes > Leftvoting\nIn the event of a leftvote majority, the proponent must propose a modified version of their proposition within 72 hours of the proposition reaching leftvote majority. Failure to provide a modified proposition within this timeframe results in the proposition failing (equivalent to a downvote majority). \n\n--> 1.3.1.2.2 Propositions > Voting > Casting Votes > Rightvoting\nYou may abstain from voting by rightvoting. \n\n--> 1.3.1.4 Propositions > Voting > Ties\nIf the votes on a proposition result in a downvote majority or a tie between upvotes and downvotes for majority, the proposition is instead leftvote majority if the sum of upvotes and leftvotes votes is greater than the amount of downvotes.",
-    "path": "",
-    "timestamp": 1653105600596,
+    "timestamp": 1653105600,
     "messageID": "977420474000769074",
     "votes": [
-      8,
-      1,
-      0,
-      0
+      [
+        1,
+        0,
+        5,
+        4,
+        13,
+        8,
+        9,
+        14
+      ],
+      [
+        2
+      ],
+      [],
+      [
+        6
+      ]
     ],
     "majority": true
   },
   {
     "author": 0,
     "content": "**Addition**\n> Propositions > Creation (3.6)\nA player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- It has been no less than 48 hours since the player last made a proposition.\n\n**Addition**\n> Propositions > Active Propositions (3.7)\nA proposition is \"active\" if it has not yet reached a majority of votes.\n\n**Content Edit**\n> Propositions > Voting > Adoption (3.1.3)\nA proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making it inactive.\n\n**Content Edit**\n> Propositions > Voting > Ties (3.1.4)\nIf a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\n\n**Addition**\n> Propositions > Voting > Time Limit (3.1.5)\n48 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.\n\n**Content Edit**\n> Propositions > Voting > Casting Votes > Leftvoting (3.1.2.1)\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time after their proposition reaches leftvote majority.\nThis rule overrides the time limit defined by __Propositions > Creation__.\n\n**Deletion**\n> Turns (4)\nThe entire turns branch is removed.\n\n**Path Edit**\n> Clarifications (5)\nNew ID path: 4\n\n**Content Edit**\n> Clarifications > Choosing a Judge (4.1)\nThe Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.\n\n**Addition**\n> Clarifications > Choosing a Judge > Candidates (4.1.1)\nAt any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
-    "path": "",
-    "timestamp": 1653206196873,
+    "timestamp": 1653206196,
     "messageID": "977842405367775324",
     "votes": [
-      0,
-      0,
-      7,
-      1
+      [],
+      [],
+      [
+        1,
+        3,
+        5,
+        4,
+        2,
+        9,
+        14
+      ],
+      [
+        13,
+        6
+      ]
     ],
     "majority": true
   },
   {
     "author": 0,
     "content": "**Addition**\n> 3.6 - Creation\nA player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- It has been at least 72 hours since the player last made a proposition.\nUnless specified, the conditions in this rule take priority over conflicting rules.\n\n**Addition**\n> 3.7 - Active Propositions\nA proposition is \"active\" if it has not yet reached a majority of votes or timed out.\n\n**Content Edit**\n> 3.1.3 - Adoption\nA proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.\n\n**Content & Title Edit**\n> 3.1.4 - Leftvote Majority\nIf a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by __Propositions > Creation__.\n\n**Addition**\n> 3.1.5 - Time Limit\n72 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.\n\n**Deletion**\n> 3.1.2.1 - Leftvoting\n\n**Deletion**\n> 4 - Turns\n[The entire turns branch is removed]\n\n**Path Edit**\n> 5 - Clarifications\nNew ID path: 4\n\n**Content Edit**\n> 4.1 - Choosing a Judge\nThe Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.\n\n**Addition**\n> 4.1.1 - Candidates\nAt any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
-    "path": "",
-    "timestamp": 1653376133328,
+    "timestamp": 1653376133,
     "messageID": "978555170520698900",
     "votes": [
-      7,
-      0,
-      0,
-      1
+      [
+        1,
+        3,
+        5,
+        4,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        8,
+        6
+      ]
     ],
     "majority": true
   },
   {
     "author": 4,
     "content": "**Addition**\n> *World*\nAll players exist on a board. This board consists of an infinitely large, and procedurally generated grid of adjacent hexagons, henceforth referred to as hexes. \n\n**Addition**\n> *World > Origin*\nAll players start on the origin, an unremarkable Meadow hex (with the 'Nothing' landmark). \n\n**Addition**\n> *World > Actions*\nIn each 3 day period, a player has up to 2 action points that they may spend to perform an action at any time during the round. \n\n**Addition**\n> *World > Actions > Scout*\nFor the cost of 1 action point, the player selects 1 hex that is adjacent to their current location and generate it. \n\n**Addition**\n> *World > Actions > Traverse*\nFor the cost of 1 action point, the player moves into an adjacent hex, generating it if it is not already generated. Costs 1 Action point. \n\n**Addition**\n> *World > Generation*\nWhen a hex is generated, 1 of each of the following are determined (with 'Weight' referring to the number of times it is in the draw):\n- __Biome:__\n\\> Meadow (Weight: 7)\n- __Landmark:__\n\\> Nothing (Weight: 20)\n\\> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected) \n\n**Addition**\n> *World > Generation > Updates*\nWhen a Biome or Landmark is added (as a proposition or otherwise), the list in *World > Generation* is updated to reflect it.",
-    "path": "",
-    "timestamp": 1653467035992,
+    "timestamp": 1653467035,
     "messageID": "978936443927945266",
     "votes": [
-      4,
-      0,
-      2,
-      1
+      [
+        5,
+        13,
+        9
+      ],
+      [],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        8,
+        6
+      ]
     ],
-    "majority": false
+    "majority": true
   },
   {
     "author": 3,
     "content": "**Addition**\n> Counting\nThere is a counting channel in the Discord server. \n**Addition**\n> Counting > Restrictions\nYou cannot post two or more times in a row. \nA message you send in the counting channel must be a number equal to the successor of the previous number. \n**Addition**\n> Counting > Rewards\nNone :)",
-    "path": "",
-    "timestamp": 1653468200504,
+    "timestamp": 1653468200,
     "messageID": "978941328245288970",
     "votes": [
-      3,
-      4,
-      1,
-      0
+      [
+        4,
+        6,
+        8,
+        2
+      ],
+      [
+        1,
+        0,
+        5,
+        13
+      ],
+      [
+        9
+      ],
+      []
+    ],
+    "majority": true
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World*\nAll players exist on a board. This board consists of an infinitely large, and procedurally generated grid of adjacent hexagons, henceforth referred to as hexes. \n\n**Addition**\n> *World > Origin*\nAll players start on the origin, an unremarkable Meadow hex (with the 'Nothing' landmark). \n\n**Addition**\n> *World > Actions*\nEvery week (commencing on Sunday 00:00 UTC) is divided into a 72 hour and 96 hour period. In each period, a player has up to 2 action points that they may spend to perform an action at any time during the round. \n\n**Addition**\n> *World > Actions > Scout*\nFor the cost of 1 action point, the player selects 1 hex that is adjacent to their current location and generate it if it has not been already.\n\n**Addition**\n> *World > Actions > Traverse*\nFor the cost of 1 action point, the player moves into an adjacent hex, generating it if it is not already generated. \n\n**Addition**\n> *World > Generation*\nWhen a hex is generated, 1 of each of the following are determined (with 'Weight' referring to the number of times it is in the draw):\n- Biome:\n> Meadow (Weight: 7)\n- Landmark:\n> Nothing (Weight: 20)\n> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected) \n\n**Addition**\n> *World > Generation > Updates*\nWhen a Biome or Landmark is added (as a proposition or otherwise), the list in World > Generation is updated to reflect it.",
+    "timestamp": 1653726636,
+    "messageID": "980025287775485982",
+    "votes": [
+      [
+        1,
+        0,
+        5,
+        13,
+        8,
+        2,
+        9
+      ],
+      [],
+      [
+        3
+      ],
+      [
+        6
+      ]
+    ],
+    "majority": true
+  },
+  {
+    "author": 2,
+    "content": "Mice > Mice\nPlayers can own and train mice. Each player can have up to 3 mice at one time. Players can perform a Mouse Action twice every period.\n\nMice > Mice > acquiring mice\nA player can create a new mouse every 5 periods. When creating a mouse, the player must create a name, eye colour, favourite food and age for the mouse as well as a 50-100 word blurb describing them, and use dice to determine their statistics. A picture is recommended but not necessary.\n\nMice > Mice > killing mice\nA mouse can be killed by the player who created it, removing it from Nomic, and that player’s list of mice. For5 periods after killing a mouse, all Mouse Actions have a 1 in 3 chance to fail, instead doing nothing.\n\nMice > Mouse stats\nMice have the following starting statistics; 1 energy, 1d2 Mischief, 1d2 Wits, 2d3 Power and 1d4 Curiosity. None of these statistics can become negative. A mouse cannot have the total of their statistics (excluding energy) when added together cannot exceed 23. Energy cannot exceed 20.\n\nMice > Mouse Actions\nMouse Actions are as follows; eat, exercise, enrich, entice and explore.\n\nMice > Mouse Actions > Eat\nMaking a mouse eat causes the mouse to gain 1 energy. Eating specific foods can have additional effects.\n\nMice > Mouse Actions > Exercise\nExercising a mouse costs 2 of that mouse’s energy. After exercising a mouse, there is a 80% chance the mouse’s Power increases by one.\n\nMice > Mouse Actions > Enrich\nEnriching a mouse costs 2 of that mouse’s energy.  After enriching a mouse there is a 70% chance that the mouse’s Curiosity or Mischief increases (player’s choice).\n\nMice > Mouse Actions > Entice\nEnticing a mouse costs one of that mouse’s energy. The mouse becomes “enticed” for two periods. During this time, attempts to Exercise or Enrich the mouse have a 90% and 80% chance (respectively) to work, however the mouse cannot Explore during this time.",
+    "timestamp": 1653728974,
+    "messageID": "980035094691598366",
+    "votes": [
+      [],
+      [],
+      [
+        1,
+        0,
+        3,
+        5,
+        4,
+        13,
+        9
+      ],
+      [
+        6
+      ]
+    ],
+    "majority": true
+  },
+  {
+    "author": 1,
+    "content": "**Addition**",
+    "timestamp": 1653729550,
+    "messageID": "980037508580671500",
+    "votes": [
+      [],
+      [],
+      [
+        0,
+        3,
+        5,
+        4,
+        13,
+        2,
+        9
+      ],
+      [
+        6
+      ]
+    ],
+    "majority": true
+  },
+  {
+    "author": 3,
+    "content": "**Addition**\n> 3.1.2.1 - Inactivity\nIf a player does not cast any votes on the 5 most recent propositions that have reached majority, they are classified as inactive. If an inactive player changes or casts a vote, they are no longer classified as inactive. \n\n**Addition**\n> 3.1.2.1.1 - Inactivity > Voting\nAn inactive player's vote is automatically cast as a rightvote, however, they may change this as with any other vote before a majority is reached. \n\n**Content Edit**\n> 3.1.2.2 - Rightvoting\nYou may abstain from voting by rightvoting. Majority is not determined until there is at least 1 vote other than a rightvote on a proposition. This takes precedence over all other rules for ending voting and determining majority.",
+    "timestamp": 1653730798,
+    "messageID": "980042744686837860",
+    "votes": [
+      [
+        13,
+        8
+      ],
+      [],
+      [
+        1,
+        0,
+        5,
+        4,
+        9
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    "majority": false
+  },
+  {
+    "author": 1,
+    "content": "**Addition**\n> Misc > Dice\nAn expression of the form xdy or xDy, where x and y are natural numbers, means to roll x dice, each with y faces labelled with integers from 1 to y (or any other method of generating y random integers from 1 to y), and take the sum of all of their results.\nThe x can be omitted, in which case it is assumed to be 1.",
+    "timestamp": 1653739692,
+    "messageID": "980080049946492978",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        4,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true
+  },
+  {
+    "author": 5,
+    "content": "**Addition**\n\n> World > Trading*\n\nPlayers can participate in 1 on 1 trades with other players. This requires the two participating players to be on the same hex. This does not cost an action point for either player.\n\n**Addition**\n\n> *World > Trading > Currency*\n\nPlayers can earn the currency “Moustaches”, with the symbol -*m*-. As an example, 50 Moustaches would be represented by 50-*m*-. These can be earned through working, or can be obtained by trading with another player. All Moustaches are stored in a player’s “spacious Pants Hole” in their inventory.\n\n**Addition**\n\n> *World > Trading > Currency > Capitalism*\n\nPlayers can now work by spending one action point on a hex. The type of hex the player is currently residing on determines the job they work and the pay they earn. If a player is residing on a meadows hex with no landmark at the time they spend an action point to work, they work as a farmer and earn 250-*m*-. If they are residing on any hex with a town landmark, they work as a guard and earn 500-*m*-. After a player spends their action point to work, they immediately get paid and are labelled as their job title (farmer or guard) until they spend another action point to work.",
+    "timestamp": 1653740140,
+    "messageID": "980081927891587082",
+    "votes": [
+      [],
+      [
+        2
+      ],
+      [
+        0,
+        3,
+        4,
+        9
+      ],
+      [
+        6
+      ]
+    ],
+    "majority": false
+  },
+  {
+    "author": 2,
+    "content": "**ALL ADDITIONS**\nMice > Mice\nPlayers can own and train mice. Each player can have up to 3 mice at one time. Players can declare that they perform a Mouse Action twice every period.\n\nMice > Mice > acquiring mice\nA player can create a new mouse every 4 periods. When creating a mouse, the player must create a name, eye colour, favourite food and age for the mouse as well as a 50-100 word blurb describing them, and use dice to determine their statistics. A picture is recommended but not necessary.\n\nMice > Mice > killing mice\n*Well, down the toilet it is! They can’t all be winners…*\nA mouse can be killed by the player who owns it, removing it from Nomic, and that player’s list of mice. For 6 periods after killing a mouse, all Mouse Actions have a 1 in 3 chance to fail, instead doing nothing.\n\nMice > Mouse stats\nMice have the following starting statistics; 1 energy, 1d2 Mischief, 1d2 Wits, 2d3 Power and 1d4 Curiosity. None of these statistics can become negative. A mouse cannot have the sum of their statistics (excluding energy) exceed 23. Energy cannot exceed 20.\n\nMice > Mouse Actions\nMouse Actions are as follows; eat, exercise, enrich, entice and explore.\n\nMice > Mouse Actions > Eat\nMaking a mouse eat causes the mouse to gain 1 energy. Eating specific foods can have additional effects.\n\nMice > Mouse Actions > Exercise\nExercising a mouse costs 2 of that mouse’s energy. After exercising a mouse, there is a 80% chance the mouse’s Power increases by one.\n\nMice > Mouse Actions > Enrich\nEnriching a mouse costs 2 of that mouse’s energy.  After enriching a mouse there is a 70% chance that the mouse’s Curiosity or Mischief increases (player’s choice) by one.\n\nMice > Mouse Actions > Entice\nEnticing a mouse costs one of that mouse’s energy. The mouse becomes “enticed” for two periods. During this time, attempts to Exercise or Enrich the mouse have a 90% and 80% chance (respectively) to work, however the mouse cannot Explore during this time.",
+    "timestamp": 1653798652,
+    "messageID": "980327343405006938",
+    "votes": [
+      [
+        5,
+        4
+      ],
+      [],
+      [],
+      [
+        6
+      ]
     ],
     "majority": false
   }

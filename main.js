@@ -13,14 +13,16 @@
 
 const body = document.body;
 
-console.log(body);
-
 var rules;
-var players = [];
+var players;
+var propositions;
+
+var largestRuleID;
 
 //Create custom events triggered when the rules/players lists finish loading
 const ruleLoadEvent = new Event("ruleload");
 const playerLoadEvent = new Event("playerload");
+const propositionLoadEvent = new Event("propositionload");
 
 
 //Run when the body finishes loading
@@ -30,6 +32,7 @@ var StartJS = () => {
   
   LoadRules();
   LoadPlayers();
+  LoadPropositions();
   
 }
 
@@ -97,5 +100,50 @@ var LoadPlayers = async () => {
   
   xmlhttp.open("GET", root+"/Players/players.json?nocache="+(new Date()).getTime(), true);
   xmlhttp.send();
+  
+}
+
+//Run by StartJS() to load the proposition list from Propositions/propositions.json
+var LoadPropositions = async () => {
+  
+  var xmlhttp = new XMLHttpRequest();
+  
+  xmlhttp.onreadystatechange = () => {
+    
+    //Test if the request is finished
+    if(xmlhttp.readyState == 4){
+      
+      //Test if the status resolved to 200
+      if(xmlhttp.status == 200){
+        
+        propositions = JSON.parse(xmlhttp.responseText);
+        
+        //Trigger the custom playerload event
+        body.dispatchEvent(propositionLoadEvent);
+        
+      }else{
+        
+        console.error("Failed to retrieve propositions from propositions.json");
+        
+      }
+      
+    }
+    
+  }
+  
+  xmlhttp.open("GET", root+"/Propositions/propositions.json?nocache="+(new Date()).getTime(), true);
+  xmlhttp.send();
+  
+}
+
+
+
+//Generate a vote icon
+var VoteIcon = (type, amount) => {
+  
+  var types = ["up","down","left","right"];
+  var altStrings = ["UP","DOWN","LEFT","RIGHT"];
+  
+  return "<div class=\"vote\"><img src=\"../Resources/"+types[type]+"vote.png\" alt=\""+altStrings[type]+"\" class=\"vote-icon\"> "+amount+"</div>";
   
 }

@@ -1,12 +1,10 @@
-/*
-Anthony Wilson
+/**
+ * JavaScript functions used by the Rules page
+ * 
+ * @author Anthony Wilson
+ */
 
-Nomic Automation System
 
-JavaScript functions used by the Rules page
-
-2022-4-7 - 2022-5-7
-*/
 
 "use strict";
 

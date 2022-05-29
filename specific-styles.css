@@ -396,33 +396,11 @@ Z-Indexes:
 
 /* ======== Main Page ======== */
 
-#main-page-content {
-  
-  position: absolute;
-  
-  top: 50px;
-  
-  /*width: calc(100% - 1.5em);*/
-  
-  padding-left: 1em;
-  
-}
+/* */
 
 
 
 /* ======== Rules ======== */
-
-#rules-page-content {
-  
-  position: absolute;
-  
-  top: 50px;
-  
-  /*width: calc(100% - 1.5em);*/
-  
-  padding-left: 1em;
-  
-}
 
 /*#rule-tree {
   
@@ -472,23 +450,13 @@ Z-Indexes:
 
 /* ======== Players ======== */
 
-#players-page-content {
-  
-  position: absolute;
-  
-  top: 50px;
-  
-  /*width: calc(100% - 1.5em);*/
-  
-  padding-left: 1em;
-  
-}
+/* */
 
 
 
 /* ======== Documentation ======== */
 
-#docs-container {
+/*#docs-container {
   
   position: absolute;
   
@@ -500,23 +468,18 @@ Z-Indexes:
   
   font-size: 20px;
   
-}
+}*/
 
 
 
-/* ======== About Page ======== */
+/* ======== Propositions ======== */
 
-#about-container {
+.proposition {
   
-  position: absolute;
+  margin: 1em;
   
-  top: 50px;
+  padding: 1em;
   
-  width: calc(100% - 1.5em);
-  
-  padding-left: 1em;
-  
-  font-size: 20px;
+  border: 1px solid white;
   
 }
-

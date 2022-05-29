@@ -56,7 +56,7 @@
       
     </div>
     
-    <div id="main-page-content">
+    <div class="page-content-container">
       
       <h1>Nomic Season 3</h1>
       
@@ -92,6 +92,7 @@
         <h2>Rules</h2>
         
         Amount of rules: <span id="rule-count">NA</span><br>
+        Largest global ID: <span id="largest-rule-id">NA</span><br>
         <!--Deleted rules: <span id="rule-count">NA</span><br> -->
         
       </p>
@@ -99,7 +100,9 @@
       <br>
       
       <p>
-        <h2>Ongoing Propositions</h2>
+        <h2>Propositions</h2>
+        
+        Amount of propositions: <span id="proposition-count">NA</span><br>
         
         <div id="ongoing-propositions-container"></div>
         
@@ -121,6 +124,7 @@
       body.addEventListener("ruleload", e => {
         
         document.getElementById("rule-count").innerHTML = rules.getSubruleCount()+1;
+        document.getElementById("largest-rule-id").innerHTML = rules.getLargestID();
         
       });
       
@@ -133,13 +137,20 @@
           
           var playerLink = document.createElement("a");
           
-          playerLink.href = "./Players?p="+p;
+          playerLink.href = "./Players/?p="+p;
           playerLink.innerHTML = players[p].name;
           
           playerListElement.appendChild(playerLink);
           playerListElement.appendChild(document.createElement("br"));
           
         }
+        
+      });
+      
+      body.addEventListener("propositionload", e => {
+        
+        document.getElementById("proposition-count").innerHTML = propositions.length;
+        //document.getElementById("largest-rule-id").innerHTML = rules.getLargestID();
         
       });
       

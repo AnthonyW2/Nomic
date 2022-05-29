@@ -189,6 +189,40 @@ code {
 }
 
 
+.page-content-container {
+  
+  position: absolute;
+  
+  top: 50px;
+  
+  /*width: calc(100% - 1.5em);*/
+  
+  padding-left: 1em;
+  
+}
+
+
+.vote {
+  
+  display: inline;
+  
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  
+  background-color: var(--BG2);
+  border-radius: 4px;
+  
+}
+
+.vote-icon {
+  
+  width: var(--FontSize);
+  height: var(--FontSize);
+  
+}
+
+
 
 
 
