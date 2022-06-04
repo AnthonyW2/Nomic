@@ -23,7 +23,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 0,
@@ -47,7 +48,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 0,
@@ -71,7 +73,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 4,
@@ -96,7 +99,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 3,
@@ -121,7 +125,8 @@
       ],
       []
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 4,
@@ -146,7 +151,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 2,
@@ -169,7 +175,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 1,
@@ -192,7 +199,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 3,
@@ -217,7 +225,8 @@
         6
       ]
     ],
-    "majority": false
+    "majority": true,
+    "link": ""
   },
   {
     "author": 1,
@@ -240,7 +249,8 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
   },
   {
     "author": 5,
@@ -264,7 +274,8 @@
         6
       ]
     ],
-    "majority": false
+    "majority": true,
+    "link": ""
   },
   {
     "author": 2,
@@ -287,6 +298,151 @@
         6
       ]
     ],
-    "majority": true
+    "majority": true,
+    "link": ""
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Biome > Deceased Dunes*\nWeight: 4\nWhen a player moves into a Deceased Dunes hex, there is a 20% chance that they are moved by the buffeting winds into a random adjacent hex (generating it if it is not already) for no additional action point cost.",
+    "timestamp": 1653986751,
+    "messageID": "981116286245416990",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        5,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": ""
+  },
+  {
+    "author": 1,
+    "content": "**Content Edit**\n> 3.6 - Creation\nA player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- The player has not submitted a proposition in the current period.\nUnless specified, the conditions in this rule take priority over conflicting rules.",
+    "timestamp": 1654240246,
+    "messageID": "982179522722005062",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        4,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": ""
+  },
+  {
+    "author": 3,
+    "content": "**Addition**\n> 3.1.2.1 - Inactivity\nIf a player has not cast a vote on at least 1 of the 5 most recent propositions to have reached a majority, they are classified as inactive. If an inactive player changes or casts a vote, they are no longer classified as inactive.\n\n**Addition**\n> 3.1.2.1.1 - Voting\nAn inactive player's vote is automatically cast as a rightvote, however, they may change this as with any other vote before a majority is reached.\n\n**Content Edit**\n> 3.1.2.2 - Rightvoting\nYou may abstain from voting by rightvoting.\nMajority is not determined until there is at least 1 vote other than a rightvote on a proposition. This takes precedence over all other rules for ending voting and determining majority.\n\n**Addition**\n> 3.1.6 - True Majority\nA proposition cannot pass in less than 12 hours unless it reaches a \"true majority\" - where inactive players' votes are classified as remaining rather than rightvotes.",
+    "timestamp": 1654244078,
+    "messageID": "982195595345276948",
+    "votes": [
+      [
+        1,
+        0,
+        5,
+        4,
+        13,
+        9
+      ],
+      [],
+      [],
+      [
+        2,
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/982195595345276948"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Landmark > Mouse hut*\nWeight: 1 or Weight: 0 if a Meadow Biome is selected.\nA player located in a hex with a mouse hut may use the exercise or enrich mouse action for 1 energy instead.",
+    "timestamp": 1654246055,
+    "messageID": "982203885949177896",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        5,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/982203885949177896"
+  },
+  {
+    "author": 2,
+    "content": "**edit**\n> World > Generation\nWhen a hex is generated, a biome, and then a landmark are determined for the tile.\n\n**additions**\n> World > Generation > Biome\nA biome is determined by observing the generated hexes adjacent to the hex to be generated (henceforth the \"new hex\"), and then randomly selecting a Biome based on the masses they belong to.\n\nIf the new hex is adjacent to only one mass, the new hex will either be of the same Biome or of a (fairly) randomly selected Biome, with probability based on the number of hexes connected to the new hex, as follows:\n1 hex: 70%\n2 hexes: 80%\n3 hexes: 85%\n4 hexes: 90%\n5 hexes: 95%\n6 hexes: 100%\n\nIf the new hex is adjacent to more than one mass, but two of the masses are of the same Biome, a random Biome will be selected out of the Biomes that have the highest number of masses connected to the new hex.\n\nIf the new hex is adjacent to more than one mass and they are all of different Biomes, the Biome of the new hex is generated as follows:\n-Create a list of the Biomes of the masses adjacent to the new hex.\n-Create a list of the sizes of these masses (in hexes) in the same order.\n-Invert the first list.\n-Randomly generate a Biome by using the numbers in the second list as weighted odds of the Biomes in the same position of the first list.\n\n\n> World > Generation > Landmark\nA landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw):\n\\> Nothing (Weight: 20)\n\\> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected)\n\n\n> World > Masses\nA mass, in the context of the board, is defined as a continuous (may have holes, but must be entirely navigable by moving in only single steps) section of the board such that all hexes within that section are of one Biome, and all adjacent hexes are of a different Biome.",
+    "timestamp": 1654315640,
+    "messageID": "982495746978897950",
+    "votes": [
+      [],
+      [],
+      [
+        1,
+        0,
+        3,
+        5,
+        4,
+        13,
+        9
+      ],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/982495746978897950"
+  },
+  {
+    "author": 0,
+    "content": "**Addition**\n> 3.3.4 - Gaps\nIf the relative IDs of the subrules of a rule contain a gap (skip at least one integer), the rules after the gap are moved up (their relative ID is decreased) by one to fill the gap.\n\n**Content Edit**\n> 4.2 - Suggestion Voting\nAfter the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached within 72 hours, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.\n\n**Addition**\n> 4.4 - Time Limit\nIf a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.\n\n**Content Edit**\n> 5.2 - Actions\nIn each period, a player has up to 2 action points that they may spend to perform an action at any time during the round.\n\n**Title Edit**\n> 6 - Miscellaneous\n\n**Addition**\n> 6.2 - Periods\nEvery week (commencing on Sunday 00:00 UTC) is divided into a 72 hour period, followed by a 96 hour period.\n\n**Title Edit**\n> 7.1.1 - Aquisition\n\n**Title Edit**\n> 7.1.2 - Killing\n\n**Title Edit**\n> 7.2 - Statistics",
+    "timestamp": 1654315670,
+    "messageID": "982495874376683540",
+    "votes": [
+      [
+        1,
+        3,
+        5,
+        4,
+        13,
+        9,
+        14
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/982495874376683540"
   }
 ]

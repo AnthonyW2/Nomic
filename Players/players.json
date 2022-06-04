@@ -6,11 +6,12 @@
       true,
       true
     ],
-    "turn": 1,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [-1,1],
+    "mice": []
   },
   {
     "name": "Xeya",
@@ -19,11 +20,12 @@
       true,
       true
     ],
-    "turn": 3,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [2,-4],
+    "mice": []
   },
   {
     "name": "lime",
@@ -32,11 +34,28 @@
       true,
       true
     ],
-    "turn": 2,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [-1,1],
+    "mice": [
+      {
+        "name": "Rat God",
+        "eye_color": "Pink",
+        "fav_food": "Sugar Cookies",
+        "age": "7 years and 3 months",
+        "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
+        "picture": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
+        "statistics": {
+          "energy": 1,
+          "mischief": 2,
+          "wits": 1,
+          "power": 2,
+          "curiosity": 1
+        }
+      }
+    ]
   },
   {
     "name": "Fathom",
@@ -45,11 +64,28 @@
       true,
       true
     ],
-    "turn": 0,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [-1,2],
+    "mice": [
+      {
+        "name": "Gregald",
+        "eye_color": "no",
+        "fav_food": "bit",
+        "age": "1 month",
+        "blurb": "Just glides along the ground as it does not have any known limbs, and has an rgb led scroll wheel. Has no eyes or mouth, instead having two 'buttons' that it uses to echolocate, and is also used for communication. Regardless of these handicaps, it is currently the most powerful mouse currently known to exist. Mainly white.",
+        "picture": "https://cdn.discordapp.com/attachments/980754575944458260/980755014089850880/unknown.png",
+        "statistics": {
+          "energy": 1,
+          "mischief": 2,
+          "wits": 1,
+          "power": 6,
+          "curiosity": 1
+        }
+      }
+    ]
   },
   {
     "name": "Ryan",
@@ -58,11 +94,28 @@
       true,
       true
     ],
-    "turn": 4,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [2,-3],
+    "mice": [
+      {
+        "name": "raidshadowlegendsquaza",
+        "eye_color": "Ultraviolet",
+        "fav_food": "Mud Pies",
+        "age": "420 Centuries",
+        "blurb": "raidshadowlegendsquaza is extremely spritely despite his intense age and declining relevance as an internet meme. He is greatly driven by an obscene desire to sponsor morally dubious Youtubers to promote the game of his namesake. In addition, His long serpentine body assists him in worming his way into Google's targeting advertisements. He also has a big d-",
+        "picture": "https://cdn.discordapp.com/attachments/980754575944458260/980755036869107712/unknown.png",
+        "statistics": {
+          "energy": 2,
+          "mischief": 2,
+          "wits": 2,
+          "power": 4,
+          "curiosity": 1
+        }
+      }
+    ]
   },
   {
     "name": "jeck",
@@ -71,11 +124,28 @@
       false,
       true
     ],
-    "turn": 11,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [-1,-1],
+    "mice": [
+      {
+        "name": "Hoe (cause it's a hoe)",
+        "eye_color": "Hoe keeps its eyes shut like an idiot, no one knows.",
+        "fav_food": "Seafood (cause it's gross)",
+        "age": "500 years. Hoe is an ancient dumbass",
+        "blurb": "Hoe is the reason people in this world experience negative emotions. If you're ever feeling depressed, it's Hoe's fault. Hoe is an idiot, and has no redeeming qualities. If there was one thing I wanted to do in this world, it would be making Hoe suffer. I don't understand why it exists and I wish it didn't.",
+        "picture": "https://cdn.discordapp.com/attachments/980754575944458260/980754885001764915/unknown.png",
+        "statistics": {
+          "energy": 1,
+          "mischief": 2,
+          "wits": 1,
+          "power": 3,
+          "curiosity": 1
+        }
+      }
+    ]
   },
   {
     "name": "Holly :)",
@@ -84,11 +154,12 @@
       false,
       true
     ],
-    "turn": -1,
     "active": false,
     "playing": false,
     "jointimestamp": 1653098400,
-    "quittimestamp": 1653734840
+    "quittimestamp": 1653734840,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "Ballard",
@@ -97,11 +168,12 @@
       false,
       false
     ],
-    "turn": 5,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "gradsys",
@@ -110,11 +182,12 @@
       false,
       false
     ],
-    "turn": 12,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "Red",
@@ -123,11 +196,12 @@
       false,
       false
     ],
-    "turn": 7,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "Chris",
@@ -136,11 +210,12 @@
       false,
       false
     ],
-    "turn": 8,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "Rodas",
@@ -149,11 +224,12 @@
       false,
       false
     ],
-    "turn": 6,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "amannixthatpanics",
@@ -162,11 +238,12 @@
       false,
       false
     ],
-    "turn": 13,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "flora246",
@@ -175,11 +252,12 @@
       false,
       false
     ],
-    "turn": 10,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   },
   {
     "name": "Calum",
@@ -188,10 +266,11 @@
       false,
       true
     ],
-    "turn": 9,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
-    "quittimestamp": 0
+    "quittimestamp": 0,
+    "position": [0,0],
+    "mice": []
   }
 ]

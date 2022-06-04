@@ -1,0 +1,14 @@
+{
+  "tiles": [
+    {
+      "biome": "meadow",
+      "landmarks": []
+    }
+  ],
+  "tilemap": [
+    [0],
+    [],
+    [],
+    []
+  ]
+}

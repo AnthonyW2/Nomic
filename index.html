@@ -14,6 +14,7 @@
     <meta charset="utf-8">
     <title>Nomic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     
     <link rel="stylesheet" type="text/css" href="./global-styles.css">
     <link rel="stylesheet" type="text/css" href="./input-styles.css">
@@ -36,7 +37,9 @@
   </head>
   <body onload="StartJS()">
     
+    <!-- Navigation Bar -->
     <div id="nav-bar">
+      
       <a id="nav-link-site-logo" class="nav-link" href="./">Nomic S3</a>
       
       <a id="nav-link-rules" class="nav-link" href="./Rules">Rules</a>
@@ -45,25 +48,70 @@
       
       <a id="nav-link-docs" class="nav-link" href="./docs.html">Docs</a>
       
-      <a id="nav-link-propositions" class="nav-link" href="./Propositions">Propositions</a>
+      <a id="nav-link-propositions" class="nav-link" href="./Propositions">
+        <span id="nav-link-propositions-text-1">Propositions</span>
+        <span id="nav-link-propositions-text-2">Props</span>
+      </a>
+      
+      <a id="nav-link-world" class="nav-link" href="./World">World</a>
       
       <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
       <div id="search-menu" hidden></div>
       
-      <button id="nav-settings-btn" title="Open/Close the settings menu" onclick="toggleSettingsMenu()" settingsopen="false">
-        <div></div>
+      <button id="nav-menu-btn" title="Open/Close the overflow menu" onclick="toggleOverflowMenu()" menuopen="false">
+        <div id="nav-menu-btn-icon">
+          <div id="nav-menu-btn-icon-bar-1" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-2" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-3" class="nav-menu-btn-icon-bar"></div>
+        </div>
       </button>
       
     </div>
     
+    
+    <!-- Overflow Menu -->
+    <div id="overflow-menu" hidden>
+      
+      <div id="settings-color-scheme-title" class="overflow-menu-subtitle">Colour Scheme:</div>
+      <select id="settings-color-scheme-select" onchange="updateColorScheme()">
+        <option value="0">Light</option>
+        <option value="1">Dark</option>
+        <option value="2">Fruity</option>
+        <option value="3">Eye-Searing Neon</option>
+        <option value="4">Pastel Sunset</option>
+        <option value="5">Layan</option>
+        <!--<option value="5"></option>-->
+      </select>
+      
+      <div id="settings-font-theme-title" class="overflow-menu-subtitle">Font Theme:</div>
+      <select id="settings-font-theme-select" onchange="updateFontTheme()">
+        <option value="0">Default</option>
+        <option value="1">Serif</option>
+        <option value="2">Sans-Serif</option>
+        <option value="3">Comic Sans</option>
+      </select>
+      
+      <!--<a id="settings-link-leave-feedback" class="settings-menu-subtitle inherit-color" href="">Leave Feedback</a>-->
+      
+      <!--<a id="settings-link-docs" class="settings-menu-subtitle inherit-color" href="">Documentation</a>-->
+      
+      <!--<a id="settings-link-about" class="settings-menu-subtitle inherit-color" href="">About</a>-->
+      
+    </div>
+    
+    <div id="dimmer" onclick="toggleOverflowMenu()" hidden></div>
+    
+    
+    <!-- Page Content -->
     <div class="page-content-container">
       
       <h1>Nomic Season 3</h1>
       
       <br>
       
-      <p>
-        <h2>Website</h2>
+      <!--<p>
+        <a href="./docs.html" class="heading-link">Website</a>
+        <br>
         
         This website serves two main purposes:
         <ul>
@@ -75,10 +123,25 @@
         
       </p>
       
+      <br>-->
+      
+      <p>
+        <a href="./Propositions" class="heading-link">Propositions</a>
+        <br>
+        
+        Amount of propositions: <span id="proposition-count">NA</span><br>
+        Amount of active propositions: <span id="active-proposition-count">NA</span><br>
+        
+        <h3>Active Propositions:</h3>
+        <div id="active-propositions-container">NA</div>
+        
+      </p>
+      
       <br>
       
       <p>
-        <h2>Players</h2>
+        <a href="./Players" class="heading-link">Players</a>
+        <br>
         
         <div id="players-list">
           Loading players...
@@ -89,22 +152,12 @@
       <br>
       
       <p>
-        <h2>Rules</h2>
+        <a href="./Rules" class="heading-link">Rules</a>
+        <br>
         
         Amount of rules: <span id="rule-count">NA</span><br>
         Largest global ID: <span id="largest-rule-id">NA</span><br>
         <!--Deleted rules: <span id="rule-count">NA</span><br> -->
-        
-      </p>
-      
-      <br>
-      
-      <p>
-        <h2>Propositions</h2>
-        
-        Amount of propositions: <span id="proposition-count">NA</span><br>
-        
-        <div id="ongoing-propositions-container"></div>
         
       </p>
       
@@ -118,6 +171,7 @@
     </script>
     <script src="./main.js"></script>
     <script src="./search.js"></script>
+    <script src="./menu.js"></script>
     <script src="./Rules/rule-class.js"></script>
     <script>
       
@@ -145,14 +199,47 @@
           
         }
         
+        populateActivePropositions();
+        
       });
       
       body.addEventListener("propositionload", e => {
         
-        document.getElementById("proposition-count").innerHTML = propositions.length;
-        //document.getElementById("largest-rule-id").innerHTML = rules.getLargestID();
+        populateActivePropositions();
         
       });
+      
+      var populateActivePropositions = () => {
+        
+        //Check if both the propositions and players lists are available
+        if(!players || !propositions){
+          return;
+        }
+        
+        document.getElementById("proposition-count").innerHTML = propositions.length;
+        var activePropContainer = document.getElementById("active-propositions-container");
+        activePropContainer.innerHTML = "";
+        
+        var active = 0;
+        
+        for(var p = 0;p < propositions.length;p ++){
+          
+          if(!propositions[p].majority){
+            active ++;
+            
+            activePropContainer.innerHTML += players[propositions[p].author].name + " - <a href=\"" + propositions[p].link + "\" target=\"_blank\">discord.com</a><br>";
+            
+          }
+          
+        }
+        
+        if(active == 0){
+          activePropContainer.innerHTML = "NA";
+        }
+        
+        document.getElementById("active-proposition-count").innerHTML = active;
+        
+      }
       
     </script>
     

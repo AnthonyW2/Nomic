@@ -48,10 +48,10 @@ var DisplayPropositions = () => {
     propositionElement.classList.add("proposition");
     propositionElement.innerHTML = "<b>"+players[propositions[p].author].name+"</b> - "+dateStr+"<br>";
     propositionElement.innerHTML += voteStr;
-    propositionElement.innerHTML += " - "+(propositions[p].majority ? "Majority Reached" : "Awaiting Votes")+"<br><br>";
+    propositionElement.innerHTML += " - <a href=\"" + propositions[p].link + "\" target=\"_blank\">"+(propositions[p].majority ? "Majority Reached" : "Awaiting Votes")+"</a><br><br>";
     propositionElement.innerHTML += "Content: "+propositions[p].content.replaceAll("\n","<br>\n");
     
-    propositionListElement.appendChild(propositionElement);
+    propositionListElement.insertBefore(propositionElement, propositionListElement.children[0]);
     
   }
   

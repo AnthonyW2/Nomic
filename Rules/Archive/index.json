@@ -1,0 +1,62 @@
+[
+  {
+    "ruleset": 0,
+    "timestamp": 1653105600,
+    "proposition": null,
+    "summary": "Initial"
+  },
+  {
+    "ruleset": 1,
+    "timestamp": 1653128419,
+    "proposition": 0,
+    "summary": "Voting changed by Fathom"
+  },
+  {
+    "ruleset": 2,
+    "timestamp": 1653466564,
+    "proposition": null,
+    "summary": "Turns removed by Anthony"
+  },
+  {
+    "ruleset": 3,
+    "timestamp": 1653739239,
+    "proposition": null,
+    "summary": "World added by Ryan"
+  },
+  {
+    "ruleset": 4,
+    "timestamp": 1653790511,
+    "proposition": null,
+    "summary": "Dice defined by Xeya"
+  },
+  {
+    "ruleset": 5,
+    "timestamp": 1653894736,
+    "proposition": null,
+    "summary": "Mice added by Lime"
+  },
+  {
+    "ruleset": 6,
+    "timestamp": 1654061467,
+    "proposition": null,
+    "summary": "Deceased Dunes added by Ryan"
+  },
+  {
+    "ruleset": 7,
+    "timestamp": 1654260138,
+    "proposition": null,
+    "summary": "Proposition time rules changed by Xeya"
+  },
+  {
+    "ruleset": 8,
+    "timestamp": 1654315938,
+    "proposition": null,
+    "summary": "Mouse Huts added by Ryan"
+  },
+  {
+    "ruleset": 9,
+    "timestamp": 1654327752,
+    "proposition": null,
+    "summary": "Many fixes applied by Anthony"
+  }
+]

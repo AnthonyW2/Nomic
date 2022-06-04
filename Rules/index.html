@@ -12,6 +12,7 @@
     <meta charset="utf-8">
     <title>Rules</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     
     <link rel="stylesheet" type="text/css" href="../global-styles.css">
     <link rel="stylesheet" type="text/css" href="../input-styles.css">
@@ -35,6 +36,7 @@
   <body onload="StartJS()">
     
     <div id="nav-bar">
+      
       <a id="nav-link-site-logo" class="nav-link" href="../">Nomic S3</a>
       
       <a id="nav-link-rules" class="nav-link" href="../Rules">Rules</a>
@@ -45,18 +47,114 @@
       
       <a id="nav-link-propositions" class="nav-link" href="../Propositions">Propositions</a>
       
+      <a id="nav-link-world" class="nav-link" href="../World">World Map</a>
+      
       <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
       <div id="search-menu" hidden></div>
       
-      <button id="nav-settings-btn" title="Open/Close the settings menu" onclick="toggleSettingsMenu()" settingsopen="false">
-        <div></div>
+      <button id="nav-menu-btn" title="Open/Close the overflow menu" onclick="toggleOverflowMenu()" menuopen="false">
+        <div id="nav-menu-btn-icon">
+          <div id="nav-menu-btn-icon-bar-1" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-2" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-3" class="nav-menu-btn-icon-bar"></div>
+        </div>
       </button>
       
     </div>
     
+    
+    <!-- Overflow Menu -->
+    <div id="overflow-menu" hidden>
+      
+      <div id="settings-color-scheme-title" class="overflow-menu-subtitle">Colour Scheme:</div>
+      <select id="settings-color-scheme-select" onchange="updateColorScheme()">
+        <option value="0">Light</option>
+        <option value="1">Dark</option>
+        <option value="2">Fruity</option>
+        <option value="3">Eye-Searing Neon</option>
+        <option value="4">Pastel Sunset</option>
+        <option value="5">Layan</option>
+        <!--<option value="5"></option>-->
+      </select>
+      
+      <div id="settings-font-theme-title" class="overflow-menu-subtitle">Font Theme:</div>
+      <select id="settings-font-theme-select" onchange="updateFontTheme()">
+        <option value="0">Default</option>
+        <option value="1">Serif</option>
+        <option value="2">Sans-Serif</option>
+        <option value="3">Comic Sans</option>
+      </select>
+      
+      <!--<a id="settings-link-leave-feedback" class="settings-menu-subtitle inherit-color" href="">Leave Feedback</a>-->
+      
+      <!--<a id="settings-link-docs" class="settings-menu-subtitle inherit-color" href="">Documentation</a>-->
+      
+      <!--<a id="settings-link-about" class="settings-menu-subtitle inherit-color" href="">About</a>-->
+      
+    </div>
+    
+    <div id="dimmer" onclick="toggleOverflowMenu()" hidden></div>
+    
+    
+    <!-- Page Content -->
     <div class="page-content-container">
       
       <h1>Rules</h1>
+      
+      <div id="rule-display-control-container">
+        
+        <!--<div id="rule-display-control-current-container" class="rule-display-control-subcontainer">
+          <span>Ruleset:</span>
+          <select>
+            <option value="past">Old</option>
+            <option value="current" selected>Current</option>
+            <option value="future">Preview</option>
+          </select>
+        </div>-->
+        
+        <div id="rule-display-control-style-container" class="rule-display-control-subcontainer">
+          <span>Display Style:</span>
+          <select id="rule-display-style-select" onchange="updateRuleDisplayStyle()">
+            <option value="boxes">Nested Boxes</option>
+            <option value="tree">Tree</option>
+            <option value="table">List</option>
+          </select>
+        </div>
+        
+        <!--<div id="rule-display-control-preview-container" class="rule-display-control-subcontainer">
+          <span>Previewing:</span>
+          <select>
+            <option value="0">[Player 1]'s Proposition</option>
+            <option value="1">[Player 2]'s Proposition</option>
+          </select>
+        </div>-->
+        
+        <!--<div id="rule-display-control-archive-container" class="rule-display-control-subcontainer">
+          <span>Archived Ruleset:</span>
+          <select>
+            <option value="0">0 - 2022-x-y</option>
+            <option value="1">1 - 2022-x-y</option>
+          </select>
+        </div>-->
+        
+        <!--<div id="rule-display-control-shown-elements-container" class="rule-display-control-subcontainer">
+          <span>Show:</span>
+          <div class="rule-display-control-shown-elements-div">
+            Tags
+            <input type="checkbox">
+          </div>
+          <div class="rule-display-control-shown-elements-div">
+            Edit History
+            <input type="checkbox">
+          </div>
+        </div>-->
+        
+        <!--<div id="rule-display-control-word-wrap-container" class="rule-display-control-subcontainer">
+          <span>Word Wrap:</span>
+          <input type="checkbox" checked>
+        </div>-->
+        
+      </div>
       
       <!--table id="rule-summary-table">
         <tr>
@@ -71,6 +169,9 @@
       <!-- Automatically populated by DisplayRules() in rules.js -->
       <div id="rule-tree">Loading rules...</div>
       
+      <br>
+      <br>
+      
     </div>
     
     
@@ -79,6 +180,7 @@
     </script>
     <script src="../main.js"></script>
     <script src="../search.js"></script>
+    <script src="../menu.js"></script>
     <script src="./rule-class.js"></script>
     <script src="./rules.js"></script>
     

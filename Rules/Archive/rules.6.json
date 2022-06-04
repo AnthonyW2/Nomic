@@ -186,7 +186,7 @@
               "subrules": [
                 {
                   "id": 34,
-                  "relid": 1,
+                  "relid": 2,
                   "summary": "Rightvoting",
                   "content": "You may abstain from voting by rightvoting.",
                   "tags": ["propositions"],
@@ -222,7 +222,7 @@
               "id": 35,
               "relid": 4,
               "summary": "Leftvote Majority",
-              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by <a href=\"#rule-36\">Propositions > Creation</a>.",
+              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by Propositions > Creation.",
               "tags": ["propositions"],
               "history": [
                 {
@@ -320,20 +320,6 @@
                 }
               ],
               "subrules": []
-            },
-            {
-              "id": 62,
-              "relid": 4,
-              "summary": "Gaps",
-              "content": "If the relative IDs of the subrules of a rule contain a gap (skip at least one integer), the rules after the gap are moved up (their relative ID is decreased) by one to fill the gap.",
-              "tags": ["propositions"],
-              "history": [
-                {
-                  "player": 0,
-                  "time": 1654327752
-                }
-              ],
-              "subrules": []
             }
           ]
         },
@@ -413,16 +399,12 @@
           "id": 36,
           "relid": 6,
           "summary": "Creation",
-          "content": "A player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- The player has not submitted a proposition in the current period.\nUnless specified, the conditions in this rule take priority over conflicting rules.",
+          "content": "A player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- It has been at least 72 hours since the player last made a proposition.\nUnless specified, the conditions in this rule take priority over conflicting rules.",
           "tags": ["propositions"],
           "history": [
             {
               "player": 0,
               "time": 1653466564
-            },
-            {
-              "player": 1,
-              "time": 1654260138
             }
           ],
           "subrules": []
@@ -493,16 +475,12 @@
           "id": 31,
           "relid": 2,
           "summary": "Suggestion Voting",
-          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached within 72 hours, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
-          "tags": ["clarification"],
+          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+          "tags": ["initial","clarification"],
           "history": [
             {
               "player": -1,
               "time": 1653105600
-            },
-            {
-              "player": 0,
-              "time": 1654327752
             }
           ],
           "subrules": []
@@ -517,20 +495,6 @@
             {
               "player": -1,
               "time": 1653105600
-            }
-          ],
-          "subrules": []
-        },
-        {
-          "id": 63,
-          "relid": 4,
-          "summary": "Time Limit",
-          "content": "If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.",
-          "tags": ["clarification"],
-          "history": [
-            {
-              "player": 0,
-              "time": 1654327752
             }
           ],
           "subrules": []
@@ -568,16 +532,12 @@
           "id": 41,
           "relid": 2,
           "summary": "Actions",
-          "content": "In each period, a player has up to 2 action points that they may spend to perform an action at any time during the round.",
+          "content": "Every week (commencing on Sunday 00:00 UTC) is divided into a 72 hour and 96 hour period. In each period, a player has up to 2 action points that they may spend to perform an action at any time during the round.",
           "tags": ["world"],
           "history": [
             {
               "player": 4,
               "time": 1653739239
-            },
-            {
-              "player": 0,
-              "time": 1654327752
             }
           ],
           "subrules": [
@@ -615,7 +575,7 @@
           "id": 44,
           "relid": 3,
           "summary": "Generation",
-          "content": "When a hex is generated, 1 of each of the following are determined (with 'Weight' referring to the number of times it is in the draw):\n- Biome:\n> Meadow (Weight: 7)\n> Deceased Dunes (Weight: 4)\n- Landmark:\n> Nothing (Weight: 20)\n> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected)\n> Mouse Hut (Weight: 1 or Weight: 0 if a Meadow Biome is selected)",
+          "content": "When a hex is generated, 1 of each of the following are determined (with 'Weight' referring to the number of times it is in the draw):\n- Biome:\n> Meadow (Weight: 7)\n> Deceased Dunes (Weight: 4)\n- Landmark:\n> Nothing (Weight: 20)\n> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected)",
           "tags": ["world"],
           "history": [
             {
@@ -625,10 +585,6 @@
             {
               "player": 4,
               "time": 1654061467
-            },
-            {
-              "player": 4,
-              "time": 1654315938
             }
           ],
           "subrules": [
@@ -674,35 +630,6 @@
                   "subrules": []
                 }
               ]
-            },
-            {
-              "id": 60,
-              "relid": 3,
-              "summary": "Landmark",
-              "content": "",
-              "tags": ["world"],
-              "history": [
-                {
-                  "player": 4,
-                  "time": 1654315938
-                }
-              ],
-              "subrules": [
-                {
-                  "id": 61,
-                  "relid": 1,
-                  "summary": "Mouse Hut",
-                  "content": "Weight: 1 or Weight: 0 if a Meadow Biome is selected.\nA player located in a hex with a mouse hut may use the exercise or enrich mouse action for 1 energy instead.",
-                  "tags": ["world"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1654315938
-                    }
-                  ],
-                  "subrules": []
-                }
-              ]
             }
           ]
         }
@@ -711,17 +638,13 @@
     {
       "id": 46,
       "relid": 6,
-      "summary": "Miscellaneous",
+      "summary": "Misc",
       "content": "",
-      "tags": ["misc"],
+      "tags": ["miscellaneous"],
       "history": [
         {
           "player": 1,
           "time": 1653790511
-        },
-        {
-          "player": 0,
-          "time": 1654327752
         }
       ],
       "subrules": [
@@ -730,25 +653,11 @@
           "relid": 1,
           "summary": "Dice",
           "content": "An expression of the form xdy or xDy, where x and y are natural numbers, means to roll x dice, each with y faces labelled with integers from 1 to y (or any other method of generating y random integers from 1 to y), and take the sum of all of their results.\nThe x can be omitted, in which case it is assumed to be 1.",
-          "tags": ["misc"],
+          "tags": ["miscellaneous"],
           "history": [
             {
               "player": 1,
               "time": 1653790511
-            }
-          ],
-          "subrules": []
-        },
-        {
-          "id": 64,
-          "relid": 2,
-          "summary": "Periods",
-          "content": "Every week (commencing on Sunday 00:00 UTC) is divided into a 72 hour period, followed by a 96 hour period.",
-          "tags": ["misc"],
-          "history": [
-            {
-              "player": 0,
-              "time": 1654327752
             }
           ],
           "subrules": []
@@ -784,17 +693,13 @@
             {
               "id": 50,
               "relid": 1,
-              "summary": "Aquisition",
+              "summary": "Aquiring Mice",
               "content": "A player can create a new mouse every 4 periods. When creating a mouse, the player must create a name, eye colour, favourite food and age for the mouse as well as a 50-100 word blurb describing them, and use dice to determine their statistics. A picture is recommended but not necessary.",
               "tags": ["mice"],
               "history": [
                 {
                   "player": 2,
                   "time": 1653894736
-                },
-                {
-                  "player": 0,
-                  "time": 1654327752
                 }
               ],
               "subrules": []
@@ -802,17 +707,13 @@
             {
               "id": 51,
               "relid": 2,
-              "summary": "Killing",
+              "summary": "Killing Mice",
               "content": "<i>Well, down the toilet it is! They can't all be winners…</i>\nA mouse can be killed by the player who owns it, removing it from Nomic, and that player's list of mice. For 6 periods after killing a mouse, all Mouse Actions have a 1 in 3 chance to fail, instead doing nothing.",
               "tags": ["mice"],
               "history": [
                 {
                   "player": 2,
                   "time": 1653894736
-                },
-                {
-                  "player": 0,
-                  "time": 1654327752
                 }
               ],
               "subrules": []
@@ -822,17 +723,13 @@
         {
           "id": 52,
           "relid": 2,
-          "summary": "Statistics",
+          "summary": "Mouse Stats",
           "content": "Mice have the following starting statistics; 1 energy, 1d2 Mischief, 1d2 Wits, 2d3 Power and 1d4 Curiosity. None of these statistics can become negative. A mouse cannot have the sum of their statistics (excluding energy) exceed 23. Energy cannot exceed 20.",
           "tags": ["mice"],
           "history": [
             {
               "player": 2,
               "time": 1653894736
-            },
-            {
-              "player": 0,
-              "time": 1654327752
             }
           ],
           "subrules": [

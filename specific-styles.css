@@ -1,32 +1,19 @@
-/*
-Anthony Wilson
-
-Nomic Automation System
-
-These CSS rules apply to all pages on the site
-These rules are for specific element IDs and classes (specific parts of pages)
-
-2022-4-7 - 2022-5-7
-*/
+/**
+ * These CSS rules apply to all pages on the site
+ * These rules are for specific element IDs and classes (specific parts of pages)
+ * 
+ * Anthony Wilson
+ */
 
 
 
 /*
 Z-Indexes:
 0   - body
-50  - #settings-menu
+50  - #overflow-menu
 99  - #dimmer
 100 - #nav-bar
 */
-
-
-
-/* ======== Declare Variables ======== */
-/*:root {
-  
-  
-  
-}*/
 
 
 
@@ -67,6 +54,8 @@ Z-Indexes:
   font-size: 24px;
   text-align: center;
   
+  white-space: nowrap;
+  
   background-color: var(--BG2);
   border: 2px solid var(--Border);
   
@@ -103,9 +92,9 @@ Z-Indexes:
   
   width: 160px;
   
-  padding-top: 6px;
+  padding-top: 7px;
   
-  font-size: 30px;
+  font-size: 28px;
   
 }
 
@@ -124,6 +113,18 @@ Z-Indexes:
 #nav-link-propositions {
   left: calc(37.5% + 150px);
 }
+#nav-link-propositions-text-1 {
+  font-size: inherit;
+  display: inline;
+}
+#nav-link-propositions-text-2 {
+  font-size: inherit;
+  display: none;
+}
+
+#nav-link-world {
+  left: calc(50% + 148px);
+}
 
 
 
@@ -132,10 +133,12 @@ Z-Indexes:
 /* Search bar at the top of the page */
 #nav-search {
   
-  top: -2px;
-  width: calc(50% - 194px);
+  position: absolute;
   
-  left: calc(50% + 148px);
+  top: -2px;
+  width: calc(37.5% - 192px);
+  
+  left: calc(62.5% + 146px);
   height: 50px;
   
 }
@@ -147,16 +150,15 @@ Z-Indexes:
   box-sizing: border-box;
   
   top: 46px;
-  width: calc(50% - 194px);
+  width: calc(37.5% - 192px);
   
-  left: calc(50% + 148px);
+  left: calc(62.5% + 146px);
   height: 50px;
   
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   text-align: left;
   
@@ -170,10 +172,10 @@ Z-Indexes:
 
 
 
-/* ======== Settings Menu ======== */
+/* ======== Overflow Menu ======== */
 
-/* Settings button in the top-right corner of the page */
-#nav-settings-btn {
+/* Overflow menu button in the top-right corner of the page */
+#nav-menu-btn {
   
   position: absolute;
   
@@ -183,8 +185,6 @@ Z-Indexes:
   right: -2px;
   height: 50px;
   
-  padding-top: 10px;
-  
   background-color: var(--BG2);
   border: 2px solid var(--Border);
   
@@ -193,27 +193,40 @@ Z-Indexes:
   cursor: pointer;
   
 }
-#nav-settings-btn:hover,
-#nav-settings-btn:focus {
+#nav-menu-btn:hover,
+#nav-menu-btn:focus {
   background-color: var(--BG3);
 }
-/* Change the color of the settings button when the settings menu is open */
-#nav-settings-btn[settingsopen="true"] {
+/* Change the color of the menu button when the menu is open */
+#nav-menu-btn[menuopen="true"] {
   background-color: var(--BG4);
 }
 
-#nav-settings-btn-svg {
-  transform:
-    translate(-0.5px, -3px)
-    scale(1.5, 1.5);
+#nav-menu-btn-icon {
+  
+  width: 25px;
+  height: 20px;
+  
+  /* Centre the icon */
+  margin: auto;
+  
 }
 
-#nav-settings-btn-svg-path {
-  fill: var(--Text1);
+.nav-menu-btn-icon-bar {
+  
+  height: 2px;
+  
+  padding: 0px;
+  margin-bottom: 7px;
+  border: none;
+  
+  background-color: var(--Text1);
+  
 }
 
-/* The container for the settings menu */
-#settings-menu {
+
+/* The container for the overflow menu */
+#overflow-menu {
   
   z-index: 99;
   
@@ -222,8 +235,7 @@ Z-Indexes:
   top: 48px;
   right: 0px;
   
-  /* The strange amount of pixels here is to prevent misalignment of the left edge of the menu with the login button on some screen sizes */
-  width: calc(12.5% + 95.5px);
+  width: calc(12.5% + 96px);
   height: calc(100% - 48px);
   
   background-color: var(--BG3);
@@ -231,17 +243,17 @@ Z-Indexes:
   
 }
 
-/* Make the settings menu a set width if the screen width is smaller than 1800px */
+/* Make the overflow menu a set width if the screen width is smaller than 1800px */
 @media screen and (max-width: 1200px) {
   
-  #settings-menu {
+  #overflow-menu {
     width: 245px;
   }
   
 }
 
-/* Dim the rest of the page when the settings menu is open */
-#dimmer, #search-dimmer {
+/* Dim the rest of the page when the overflow menu is open */
+#dimmer {
   
   z-index: 50;
   
@@ -257,19 +269,22 @@ Z-Indexes:
   
 }
 
-.settings-menu-subtitle {
+.overflow-menu-subtitle {
   
   position: absolute;
   
-  left: -2px;
+  /*left: -2px;*/
+  left: 25px;
   
-  width: calc(100% + 4px);
+  /*width: calc(100% + 4px);*/
+  width: calc(100% - 50px);
   height: 50px;
   
   padding-top: 10px;
+  padding-left: 10px;
   
   font-size: 24px;
-  text-align: center;
+  text-align: left;
   
   background-color: var(--BG2);
   border: 2px solid var(--Border);
@@ -277,119 +292,135 @@ Z-Indexes:
 }
 
 
-/* Light/Dark mode settings switch */
+/* Color-scheme settings selector */
 #settings-color-scheme-title {
-  top: -2px;
+  top: 25px;
 }
 
-#settings-color-scheme-switch-light,
-#settings-color-scheme-switch-dark {
+#settings-color-scheme-select {
   
   position: absolute;
   
-  top: 46px;
+  top: 73px;
+  left: 25px;
   
-  width: calc(50% + 3px);
+  width: calc(100% - 50px);
   height: 50px;
   
-  background-color: var(--BG2);
-  border: 2px solid var(--Border);
-  
-  /*padding-top: 10px;*/ /* Button text is vertically aligned by default, so this just breaks things */
+  /*padding-top: 10px;*/
+  padding-left: 8px;
   
   font-size: 24px;
   
-  background-color: var(--BG2);
-  border: 2px solid var(--Border);
-  
-  transition: background 250ms;
-  
-  cursor: pointer;
-  
-}
-#settings-color-scheme-switch-light:hover,
-#settings-color-scheme-switch-dark:hover,
-#settings-color-scheme-switch-light:focus,
-#settings-color-scheme-switch-dark:focus {
-  background-color: var(--BG3);
-}
-#settings-color-scheme-switch-light {
-  left: -2px;
-}
-#settings-color-scheme-switch-dark {
-  right: -2px;
 }
 
 
-/* UI Scale settings switch */
-/*#settings-UI-scale-title {
-  top: 118px;
+/* Font theme settings selector */
+#settings-font-theme-title {
+  top: 148px;
 }
 
-#settings-UI-scale-switch-small,
-#settings-UI-scale-switch-medium,
-#settings-UI-scale-switch-large {
+#settings-font-theme-select {
   
   position: absolute;
   
-  top: 166px;
+  top: 196px;
+  left: 25px;
   
-  width: calc(33.4% + 3px);
+  width: calc(100% - 50px);
   height: 50px;
   
-  background-color: var(--BG2);
-  border: 2px solid var(--Border);
+  /*padding-top: 10px;*/
+  padding-left: 8px;
   
   font-size: 24px;
   
-  /*padding-left: 0px;*/ /* For whatever reason this prevents the text from being re-aligned in WebKit on iOS */
-  /*text-align: center;
-  
-  background-color: var(--BG2);
-  border: 2px solid var(--Border);
-  
-  transition: background 250ms;
-  
-  cursor: pointer;
-  
 }
-#settings-UI-scale-switch-small:hover,
-#settings-UI-scale-switch-medium:hover,
-#settings-UI-scale-switch-large:hover,
-#settings-UI-scale-switch-small:focus,
-#settings-UI-scale-switch-medium:focus,
-#settings-UI-scale-switch-large:focus {
-  background-color: var(--BG3);
-}
-#settings-UI-scale-switch-small {
-  left: -2px;
-  font-size: 20px;
-}
-#settings-UI-scale-switch-medium {
-  left: calc(33.4% - 1px);
-}
-#settings-UI-scale-switch-large {
-  right: -2px;
-  font-size: 28px;
-}*/
 
 
-/* Links */
-#settings-link-leave-feedback {
-  /*top: 238px;*/
-  top: 118px;
+
+/* ======== Navigation Bar Responsiveness ======== */
+
+@media screen and (max-width: 1150px) {
+  
+  #nav-link-propositions-text-1 {
+    display: none;
+  }
+  #nav-link-propositions-text-2 {
+    display: inline;
+  }
+  
 }
-#settings-link-docs {
-  /*top: 310px;*/
-  top: 190px;
-}
-#settings-link-about {
-  /*top: 382px;*/
-  top: 262px;
-}
-#settings-link-admin-tools {
-  /*top: 454px;*/
-  top: 334px;
+
+@media screen and (max-width: 900px) {
+  
+  #nav-bar {
+    height: 98px;
+  }
+  
+  /*#nav-link-site-logo {
+    
+  }*/
+  
+  #nav-link-rules {
+    left: 156px;
+    width: calc(33.4% - 50px);
+  }
+  
+  #nav-link-players {
+    left: calc(33.3% + 104px);
+    width: calc(33.4% - 50px);
+  }
+  
+  #nav-link-docs {
+    left: calc(66.6% + 52px);
+    width: calc(33.3% - 49px);
+  }
+  
+  #nav-link-propositions {
+    left: -2px;
+    top: 46px;
+    width: 25%;
+  }
+  
+  #nav-link-world {
+    left: calc(25% - 4px);
+    top: 46px;
+    width: 25%;
+  }
+  
+  #nav-search {
+  
+    top: 46px;
+    width: calc(50% - 40px);
+    
+    left: calc(50% - 6px);
+    
+  }
+  
+  #search-menu {
+    
+    top: 94px;
+    width: calc(50% - 40px);
+    
+    left: calc(50% - 6px);
+    
+  }
+  
+  #nav-menu-btn {
+  
+    top: 46px;
+    
+  }
+  
+  #overflow-menu {
+    
+    top: 96px;
+    
+    height: calc(100% - 96px);
+    
+  }
+  
 }
 
 
@@ -406,13 +437,67 @@ Z-Indexes:
   
 }*/
 
-.rule {
+/*.rule {
   
-  margin: 1em;
+}*/
+
+.rule-style-boxes {
+  
+  margin-top: 1em;
   
   padding: 1em;
   
-  border: 1px solid white;
+  border: 1px solid var(--Text2);
+  
+}
+
+.rule-style-tree {
+  
+  position: relative;
+  
+  padding-top: 1em;
+  padding-left: 1em;
+  
+}
+
+.rule-tree-branch-line-horizontal {
+  
+  position: absolute;
+  
+  height: 0px;
+  width: 1.5em;
+  
+  margin-top: 0.6em;
+  margin-left: -1.5em;
+  
+  border-top: 2px solid var(--Text2);
+  
+}
+.rule-tree-branch-line-horizontal-end {
+  height: calc(100% - 2em);
+  background-color: var(--BG1);
+}
+
+.rule-tree-branch-line-vertical {
+  
+  position: absolute;
+  
+  height: calc(100% - 4.5em);
+  width: 0px;
+  
+  margin-top: 0.6em;
+  margin-left: -0.5em;
+  
+  border-left: 2px solid var(--Text2);
+  
+}
+
+.rule-style-table {
+  
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  
+  border-top: 1px solid var(--Text2);
   
 }
 
@@ -425,6 +510,46 @@ Z-Indexes:
   
   background-color: var(--BG2);
   border-radius: 4px;
+  
+}
+
+
+#rule-display-control-container {
+  
+  width: calc(100% - 1em);
+  
+  background-color: var(--BG3);
+  border: 2px solid var(--Border);
+  
+}
+
+.rule-display-control-subcontainer {
+  
+  display: inline-block;
+  
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: -4px;
+  
+  padding: 0.5em;
+  
+  background-color: var(--BG1);
+  border: 2px solid var(--Border);
+  
+}
+
+.rule-display-control-shown-elements-div {
+  
+  display: inline-block;
+  
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  
+  background-color: var(--BG2);
+  border: 2px solid var(--Border);
   
 }
 
@@ -450,25 +575,59 @@ Z-Indexes:
 
 /* ======== Players ======== */
 
-/* */
+.player-list-block {
+  
+  padding: 0.5em;
+  
+  margin: 0.5em;
+  
+  background-color: var(--BG3);
+  border: 2px solid var(--Border);
+  
+}
+
+.player-mice-container {
+  
+  display: none;
+  
+  border: 1px solid var(--Text2);
+  
+}
 
 
 
 /* ======== Documentation ======== */
 
-/*#docs-container {
+#proposition-syntax-template {
   
-  position: absolute;
+  padding: 0.5em;
+  margin-top: 0px;
   
-  top: 50px;
+  background-color: var(--BG3);
+  border: 2px solid var(--Border);
   
-  width: calc(100% - 1.5em);
+}
+
+#proposition-syntax-example {
   
-  padding-left: 1em;
+  padding: 0.5em;
+  margin-top: 0px;
   
-  font-size: 20px;
+  background-color: var(--BG3);
+  border: 2px solid var(--Border);
   
-}*/
+}
+
+.discord-quote-indent {
+  
+  height: 1em;
+  width: 0px;
+  
+  margin-right: 0.5em;
+  
+  border-left: 3px solid var(--Text2);
+  
+}
 
 
 
@@ -480,6 +639,6 @@ Z-Indexes:
   
   padding: 1em;
   
-  border: 1px solid white;
+  border: 1px solid var(--Text2);
   
 }

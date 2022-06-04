@@ -1,20 +1,16 @@
-/*
-Anthony Wilson
-
-Nomic Automation System
-
-These CSS rules apply to all pages on the site
-These rules are for general elements and important variables
-
-2022-4-7 - 2022-5-7
-*/
+/**
+ * These CSS rules apply to all pages on the site
+ * These rules are for general elements and important variables
+ * 
+ * Anthony Wilson
+ */
 
 
 
 /*
 Z-Indexes:
 0   - body
-50  - #settings-menu
+50  - #overflow-menu
 99  - #dimmer
 100 - #nav-bar
 */
@@ -48,6 +44,61 @@ Z-Indexes:
   --Border-dark: #434B55;
   --LinkText-dark: #6997F4;
   
+  /* Fruity color scheme */
+  --BG1-fruity: #B4CF66;
+  --BG2-fruity: #FFEC5C;
+  --BG3-fruity: #FFD25C;
+  --BG4-fruity: #FFBD5C;
+  --Text1-fruity: #146152;
+  --Text2-fruity: #44803F;
+  --Symbol-fruity: #146152;
+  --Border-fruity: #FF5A33;
+  --LinkText-fruity: #44803F;
+  
+  /* Eye-Searing Neon color scheme */
+  --BG1-neon-1: #77F000;
+  --BG2-neon-1: #77F000;
+  --BG3-neon-1: #69D100;
+  --BG4-neon-1: #58B000;
+  --Text1-neon-1: #FF00FF;
+  --Text2-neon-1: #D300DC;
+  --Symbol-neon-1: #FF00FF;
+  --Border-neon-1: #69D100;
+  --LinkText-neon-1: #D300DC;
+  
+  /* Pastel Sunset color scheme */
+  --BG1-pastel-sunset: #F39189;
+  --BG2-pastel-sunset: #BB8082;
+  --BG3-pastel-sunset: #B8665E;
+  --BG4-pastel-sunset: #A6514C;
+  --Text1-pastel-sunset: #046582;
+  --Text2-pastel-sunset: #6E7582;
+  --Symbol-pastel-sunset: #046582;
+  --Border-pastel-sunset: #8F442F;
+  --LinkText-pastel-sunset: #6E7582;
+  
+  /* Layan color scheme */
+  --BG1-layan: #252433;
+  --BG2-layan: #252433;
+  --BG3-layan: #5B48CC;
+  --BG4-layan: #5657F5;
+  --Text1-layan: #FFFFFF;
+  --Text2-layan: #C7C5D8;
+  --Symbol-layan: #FFFFFF;
+  --Border-layan: #5B48CC;
+  --LinkText-layan: #5657F5;
+  
+  /* __ color scheme */
+  /*--BG1-test: #2192BF;
+  --BG2-test: #3BBF82;
+  --BG3-test: #FFD25C;
+  --BG4-test: #FFBD5C;
+  --Text1-test: #F22248;
+  --Text2-test: #A62D65;
+  --Symbol-test: #F22248;
+  --Border-test: #F2A922;
+  --LinkText-test: #A62D65;*/
+  
   
   /* Use light color scheme by default */
   --BG1: var(--BG1-light);
@@ -63,13 +114,14 @@ Z-Indexes:
   
   /* ==== Font Themes ==== */
   
-  /* 1st theme is default */
+  --Font-default: default;
+  --Font-serif: "Times New Roman", "serif";
+  --Font-sans-serif: "Arial", "Helvetica", "sans-serif";
+  --Font-comic-sans: "Comic Sans MS", "Comic Sans";
   
-  --Font1: Arial, Helvetica, sans-serif;
-  --Font2: serif;
-  --Font3: comic-sans;
-  
+  --Font: var(--Font-default);
   --FontMono: monospace;
+  
   
   --FontSize: 20px;
   --NavBtnFontSize: 24px;
@@ -104,9 +156,11 @@ Z-Indexes:
   box-sizing: border-box;
   
   /* Set fonts */
-  font-family: var(--Font1);
+  font-family: var(--Font);
   
   font-size: var(--FontSize);
+  
+  scroll-padding-top: 60px;
   
 }
 
@@ -123,7 +177,8 @@ body {
   /* Honestly this should be default */
   width: 100%;
   height: 100%;
-  min-width: 350px;
+  /*min-width: 350px;*/
+  min-width: 750px;
   
   /* Unsetting the margin removes the small border around the edge of the page */
   margin: unset;
@@ -175,11 +230,22 @@ h1 {
 h2 {
   font-size: 24px;
 }
+.heading-link {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--Text1);
+}
 
 
 table, th, td {
   border: 1px solid var(--Text1);
   border-collapse: collapse;
+}
+
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 
@@ -198,6 +264,14 @@ code {
   /*width: calc(100% - 1.5em);*/
   
   padding-left: 1em;
+  
+}
+
+@media screen and (max-width: 900px) {
+  
+  .page-content-container {
+    top: 100px;
+  }
   
 }
 
@@ -221,109 +295,3 @@ code {
   height: var(--FontSize);
   
 }
-
-
-
-
-
-/** /* ======== Responsive CSS ======== */
-/** 
-/** /* Change the layout if the screen width is smaller than 1000px */
-/** @media screen and (max-width: 1000px) {
-/**   
-/**   /* Put the classroom info below the map */
-/**   #classroom-info-container {
-/**     
-/**     /*top: 950px;*/
-/**     top: calc(70% + 102px);
-/**     left: 25px;
-/**     
-/**     width: calc(100% - 50px);
-/**     height: 850px;
-/**     
-/**   }
-/**   
-/** }
-/** 
-/** /* Change the menu-bar to the phone layout if the screen width is smaller than 800px */
-/** @media screen and (max-width: 800px) {
-/**   
-/**   #nav-bar {
-/**     height: 98px;
-/**   }
-/**   
-/**   .nav-link {
-/**     width: calc(33.4% + 3px);
-/**   }
-/**   
-/**   #nav-link-gallery {
-/**     left: calc(33.4% - 2px);
-/**   }
-/**   #nav-link-booking {
-/**     left: unset;
-/**     right: -2px;
-/**   }
-/**   #nav-link-login {
-/**     top: 46px;
-/**     right: 94px;
-/**     
-/**     width: calc(33.4% - 93px);
-/**   }
-/**   #nav-link-help {
-/**     top: 46px;
-/**   }
-/**   
-/**   #nav-search {
-/**     top: 46px;
-/**     left: -2px;
-/**     
-/**     width: calc(66.6% + 4px);
-/**   }
-/**   #search-menu {
-/**     top: 94px;
-/**     left: -2px;
-/**     
-/**     width: calc(66.6% + 3px);
-/**   }
-/**   
-/**   /* Make the login button a set width if the screen width is smaller than 570px */
-/**   @media (max-width: 570px) {
-/**     
-/**     #nav-link-login {
-/**       width: 96px;
-/**     }
-/**     
-/**     #nav-search {
-/**       width: calc(100% - 186px);
-/**     }
-/**     #search-menu {
-/**       width: calc(100% + 4px);
-/**     }
-/**     
-/**   }
-/**   
-/**   #nav-settings-btn {
-/**     top: 46px;
-/**   }
-/**   
-/**   #settings-menu {
-/**     top: 96px;
-/**   }
-/**   
-/**   #classroom-info-container {
-/**     top: calc(70% + 150px);
-/**   }
-/**   
-/**   @media (max-width: 600px) {
-/**     
-/**     #classroom-info-container {
-/**       top: calc(60% + 150px);
-/**     }
-/**     
-/**   }
-/**   
-/**   #docs-container {
-/**     top: 98px;
-/**   }
-/**   
-/** } */

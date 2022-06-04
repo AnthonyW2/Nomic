@@ -1,13 +1,9 @@
-/*
-Anthony Wilson
-
-Nomic Automation System
-
-These CSS rules apply to all pages on the site
-These rules are for input/form elements
-
-2022-4-7 - 2022-4-26
-*/
+/**
+ * These CSS rules apply to all pages on the site
+ * These rules are for input/form elements
+ * 
+ * Anthony Wilson
+ */
 
 
 
@@ -46,14 +42,14 @@ input[type="text"] {
   /* Clear all default textbox styles */
   all: unset;
   
-  position: absolute;
+  /*position: absolute;*/
   
   box-sizing: border-box;
   
   padding-top: 1px;
   padding-left: 10px;
   
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 24px;
   text-align: left;
   
@@ -78,6 +74,9 @@ select {
   border: 2px solid var(--Border);
   
   transition: background 250ms;
+  
+  cursor: pointer;
+  
 }
 select:hover {
   background-color: var(--BG3);

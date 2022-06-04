@@ -1,0 +1,521 @@
+{
+  "id": 0,
+  "relid": 1,
+  "summary": "Rules",
+  "content": "",
+  "tags": [],
+  "history": [
+    {
+      "player": -1,
+      "time": "1653105600"
+    }
+  ],
+  "subrules": [
+    {
+      "id": 1,
+      "relid": 1,
+      "summary": "Winning",
+      "content": "When a player or players win the game, the game is over.",
+      "tags": ["initial","winning"],
+      "history": [
+        {
+          "player": -1,
+          "time": "1653105600"
+        }
+      ],
+      "subrules": [
+        {
+          "id": 2,
+          "relid": 1,
+          "summary": "End of Viable Play",
+          "content": "If the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then the first player who is unable to complete a turn is the winner. This rule takes precedence over every other rule determining the winner.",
+          "tags": ["initial","winning"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "relid": 2,
+      "summary": "Players",
+      "content": "A player is a person or group of people that must always abide by all the rules of Nomic currently in effect.",
+      "tags": ["initial","players"],
+      "history": [
+        {
+          "player": -1,
+          "time": "1653105600"
+        }
+      ],
+      "subrules": [
+        {
+          "id": 4,
+          "relid": 1,
+          "summary": "TOS",
+          "content": "A player may not participate in Nomic in a way that violates rules, laws, terms of service, or other similar documents related to places or services being used to access Nomic.",
+          "tags": ["initial","players"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 5,
+          "relid": 2,
+          "summary": "Entering",
+          "content": "A person or group of people, none of whom are currently acting as a player or a part of a player, may request to become a player at any time. All players may vote (up or down) on allowing the player to join.",
+          "tags": ["initial","players"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": [
+            {
+              "id": 6,
+              "relid": 1,
+              "summary": "Placement",
+              "content": "If the aforementioned request is accepted by a majority of players, then that person or group of people becomes a player and has their turn placed before that of the current turn at the time of their request.",
+              "tags": ["initial","players"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "relid": 3,
+          "summary": "Exiting",
+          "content": "A player always has the option of forfeiting the game. No penalty worse than losing, in the opinion of the player incurring the penalty, may be imposed.",
+          "tags": ["initial","players"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": [
+            {
+              "id": 8,
+              "relid": 1,
+              "summary": "Player Groups",
+              "content": "In the case of a player consisting of multiple people, individual people may leave the player. A player only leaves the game when its last person does.",
+              "tags": ["initial","players"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "relid": 3,
+      "summary": "Propositions",
+      "content": "A proposition consists of a set of modifications or additions to rules (including paths) and/or the deletion or transmutation of rules currently in effect, posted to #propositions.",
+      "tags": ["initial","propositions"],
+      "history": [
+        {
+          "player": -1,
+          "time": "1653105600"
+        }
+      ],
+      "subrules": [
+        {
+          "id": 10,
+          "relid": 1,
+          "summary": "Voting",
+          "content": "A proposition that has been legally proposed may be voted on.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": [
+            {
+              "id": 11,
+              "relid": 1,
+              "summary": "Eligibility",
+              "content": "Every player is an eligible voter.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 12,
+              "relid": 2,
+              "summary": "Casting Votes",
+              "content": "Each eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote.\nAn eligible voter may change their vote at any time before voting ends.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                },
+                {
+                  "player": 3,
+                  "time": "1653128419"
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 33,
+                  "relid": 1,
+                  "summary": "Leftvoting",
+                  "content": "In the event of a leftvote majority, the proponent must propose a modified version of their proposition within 72 hours of the proposition reaching leftvote majority. Failure to provide a modified proposition within this timeframe results in the proposition failing (equivalent to a downvote majority).",
+                  "tags": ["propositions"],
+                  "history": [
+                    {
+                      "player": 3,
+                      "time": "1653128419"
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 34,
+                  "relid": 2,
+                  "summary": "Rightvoting",
+                  "content": "You may abstain from voting by rightvoting.",
+                  "tags": ["propositions"],
+                  "history": [
+                    {
+                      "player": 3,
+                      "time": "1653128419"
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "relid": 3,
+              "summary": "Adoption",
+              "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied. Voting instantly ends when any majority is reached.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 35,
+              "relid": 4,
+              "summary": "Ties",
+              "content": "If the votes on a proposition result in a downvote majority or a tie between upvotes and downvotes for majority, the proposition is instead leftvote majority if the sum of upvotes and leftvotes votes is greater than the amount of downvotes.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": 3,
+                  "time": "1653128419"
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "relid": 2,
+          "summary": "Retroactivity",
+          "content": "A proposition may not have retroactive effect.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 15,
+          "relid": 3,
+          "summary": "Paths",
+          "content": "All rules are defined as part of a tree of rules. Rules must refer to other rules using their ID paths or title paths.",
+          "tags": ["initial","propositions","syntax"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": [
+            {
+              "id": 16,
+              "relid": 1,
+              "summary": "Relative ID Path",
+              "content": "Each rule has a relative ID which is used to form its \"ID path\" when combined with the ID path of its parent rule.",
+              "tags": ["initial","propositions","syntax"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 17,
+              "relid": 2,
+              "summary": "Title Path",
+              "content": "Each rule has a title which is used to form its \"title path\" when combined with the title path of its parent rule.",
+              "tags": ["initial","propositions","syntax"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 18,
+              "relid": 3,
+              "summary": "Conflicts",
+              "content": "No two rules may have the same path. If a proposition's rule has the same path as an existing rule, the new rule replaces the old rule if the proposition is adopted.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "relid": 4,
+          "summary": "Immutability",
+          "content": "Propositions may not alter immutable rules in any way, with the exception of transmutation.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": [
+            {
+              "id": 20,
+              "relid": 1,
+              "summary": "Transmutations",
+              "content": "A transmutation causes a mutable rule to become immutable, or vice versa.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 21,
+              "relid": 2,
+              "summary": "Precedence",
+              "content": "If a portion of an immutable rule conflicts with a portion of a mutable rule, the immutable rule takes precedent. The inconsistent portion of the mutable rule is without effect.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": "1653105600"
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 22,
+                  "relid": 1,
+                  "summary": "Conflicts",
+                  "content": "If multiple mutable rules conflict with one another, or if multiple immutable rules conflict with one another, the rule edited most recently takes precedence. If at least one of the rules explicitly states that it defers to another rule or takes precedence over another rule, such provisions must supersede the chronological method of determining precedence. If multiple rules claim to take precedence over one another or to defer to one another, the chronological method must again govern.",
+                  "tags": ["initial","propositions"],
+                  "history": [
+                    {
+                      "player": -1,
+                      "time": "1653105600"
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "relid": 5,
+          "summary": "Making Changes",
+          "content": "A proponent may make any changes to their proposition while there are no votes cast on the proposition, and only spelling and grammar changes after votes have been cast.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "relid": 4,
+      "summary": "Turns",
+      "content": "Players take turns according to the turn order. A player's turn begins when they have been notified it is their turn, and ends when their proposition reaches a majority, unless it has already ended.",
+      "tags": ["initial","turns"],
+      "history": [
+        {
+          "player": -1,
+          "time": "1653105600"
+        }
+      ],
+      "subrules": [
+        {
+          "id": 25,
+          "relid": 1,
+          "summary": "Order",
+          "content": "The current turn order is as follows:\n1 - Fathom\n2 - Anthony\n3 - lime\n4 - Holly\n5 - Xeya\n6 - Ryan\n7 - Ballard\n8 - Rodas\n9 - Red\n10 - Chris\n11 - Calum\n12 - flora246\n13 - jeck\n14 - gradsys\n15 - ammannixthatpanics",
+          "tags": ["initial","turns"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 26,
+          "relid": 2,
+          "summary": "Rounds",
+          "content": "After the last player in the turn order ends their turn, a new round begins, starting with the first person in the turn order.",
+          "tags": ["initial","turns"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 27,
+          "relid": 3,
+          "summary": "Propositions",
+          "content": "A player may submit one proposition on their turn.",
+          "tags": ["initial","turns","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 28,
+          "relid": 4,
+          "summary": "Passing",
+          "content": "At any point during their turn, a player may prematurely end it. This overrides anything that would normally be required to do before the end of their turn.",
+          "tags": ["initial","turns"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "relid": 5,
+      "summary": "Clarifications",
+      "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in #propositions.\nSubrules of this rule are not affected by rules outside of this branch.",
+      "tags": ["initial","clarification"],
+      "history": [
+        {
+          "player": -1,
+          "time": "1653105600"
+        }
+      ],
+      "subrules": [
+        {
+          "id": 30,
+          "relid": 1,
+          "summary": "Choosing a Judge",
+          "content": "The Judge is defined as the person in the turn order before the player whose turn the disagreement arises on. If another Judge is required, the player before the previous Judge in the turn order becomes the new Judge. The Judge is not bound by the previous Judge’s suggestion(s).",
+          "tags": ["initial","clarification"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 31,
+          "relid": 2,
+          "summary": "Suggestion Voting",
+          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+          "tags": ["initial","clarification"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 32,
+          "relid": 3,
+          "summary": "Deferring",
+          "content": "If a player chosen to be the Judge does not wish to make a suggestion, a new Judge is chosen to make a suggestion.",
+          "tags": ["initial","clarification"],
+          "history": [
+            {
+              "player": -1,
+              "time": "1653105600"
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    }
+  ]
+}
