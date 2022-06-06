@@ -58,5 +58,11 @@
     "timestamp": 1654327752,
     "proposition": null,
     "summary": "Many fixes applied by Anthony"
+  },
+  {
+    "ruleset": 10,
+    "timestamp": 1654503834,
+    "proposition": null,
+    "summary": "Fathom introduced inactive players"
   }
 ]

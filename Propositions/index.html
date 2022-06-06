@@ -67,18 +67,18 @@
     <div id="overflow-menu" hidden>
       
       <div id="settings-color-scheme-title" class="overflow-menu-subtitle">Colour Scheme:</div>
-      <select id="settings-color-scheme-select" onchange="updateColorScheme()">
+      <select id="settings-color-scheme-select" onchange="updateColorScheme()" onclick="themeSwitchWarning()">
         <option value="0">Light</option>
         <option value="1">Dark</option>
         <option value="2">Fruity</option>
         <option value="3">Eye-Searing Neon</option>
         <option value="4">Pastel Sunset</option>
         <option value="5">Layan</option>
-        <!--<option value="5"></option>-->
+        <option value="6">Mint</option>
       </select>
       
       <div id="settings-font-theme-title" class="overflow-menu-subtitle">Font Theme:</div>
-      <select id="settings-font-theme-select" onchange="updateFontTheme()">
+      <select id="settings-font-theme-select" onchange="updateFontTheme()" onclick="themeSwitchWarning()">
         <option value="0">Default</option>
         <option value="1">Serif</option>
         <option value="2">Sans-Serif</option>

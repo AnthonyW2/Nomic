@@ -88,16 +88,16 @@ Z-Indexes:
   --Border-layan: #5B48CC;
   --LinkText-layan: #5657F5;
   
-  /* __ color scheme */
-  /*--BG1-test: #2192BF;
-  --BG2-test: #3BBF82;
-  --BG3-test: #FFD25C;
-  --BG4-test: #FFBD5C;
-  --Text1-test: #F22248;
-  --Text2-test: #A62D65;
-  --Symbol-test: #F22248;
-  --Border-test: #F2A922;
-  --LinkText-test: #A62D65;*/
+  /* Mint color scheme */
+  --BG1-mint: #1e2228;
+  --BG2-mint: #1e2228;
+  --BG3-mint: #12735F;
+  --BG4-mint: #12735F;
+  --Text1-mint: #2dcca7;
+  --Text2-mint: #2dcca7;
+  --Symbol-mint: #2dcca7;
+  --Border-mint: #1fbc9d;
+  --LinkText-mint: #03c0c1;
   
   
   /* Use light color scheme by default */

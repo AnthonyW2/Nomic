@@ -34,7 +34,7 @@ const colorThemes = [
   "neon-1",
   "pastel-sunset",
   "layan",
-  "test"
+  "mint"
 ];
 
 const fontThemes = [

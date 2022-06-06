@@ -55,12 +55,10 @@ var displayPlayerInfo = (player) => {
   var playerBlock = document.createElement("div");
   playerBlock.classList.add("player-list-block");
   
-  var playerLink = document.createElement("a");
-    
-  playerLink.href = "./?p="+player.PID;
-  playerLink.innerHTML = player.name;
+  var playerName = document.createElement("span");
+  playerName.innerHTML = player.name;
   
-  playerBlock.appendChild(playerLink);
+  playerBlock.appendChild(playerName);
   
   playerBlock.appendChild(displayMice(player));
   

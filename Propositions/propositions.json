@@ -370,7 +370,7 @@
         6
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/982195595345276948"
   },
   {
@@ -444,5 +444,56 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/982495874376683540"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *Mice > Statistics > Pure Statistics*\nIf a mouse has a total of 23 statistics, the owner may use 20 of that mouse's energy to gain a random pure statistic for that mouse. A mouse may only have 1 pure statistic and this cannot be changed once determined. \n\n**Addition**\n> *Mice > Statistics > Pure Statistics > Duplicates*\nFor multiple mice with pure statistics, the effects are applied additively where applicable (denoted with a '+' for the same effect). \n\n**Addition**\n> *Mice > Statistics > Pure Statistics > Speedrunner*\nIf the owner uses the traverse action, (in the same period) they may move +1 hex for no additional action point cost per period (doing so is not classified as performing an action). Additionally, the traverse action always costs at most 1 action point. \n\n**Addition**\n> *Mice > Statistics > Pure Statistics > Vigor*\nAfter the owner uses an (regular, not mouse) action, there is a +10% chance that they will gain 1 action point (for use in the same period). \n\n**Addition**\n> *Mice > Statistics > Pure Statistics > Farsight*\nIf the owner uses the scout action, each hex adjacent to the generated hex has a +20% chance to be generated if it is not already. This also occurs for hexes generated through this process. \n\n**Addition**\n> *Mice > Statistics > Pure Statistics > World Bender*\nIf the owner uses the scout action on a generated hex, it is re-generated. \n\n**Addition**\n> *Mice > Statistics > Pure Statistics > Manipulator*\nIf the player uses the scout action, they may choose the Biome that would be generated for the selected hex. The player does not determine the landmark.",
+    "timestamp": 1654387540,
+    "messageID": "982797316417257512",
+    "votes": [
+      [
+        3,
+        2,
+        9
+      ],
+      [],
+      [
+        1,
+        5
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/982797316417257512"
+  },
+  {
+    "author": 5,
+    "content": "**Addition**\n> *World > Trading*\nPlayers can participate in 1 on 1 trades with other players. This requires the two participating players to be on the same hex. This does not cost an action point for either player.\n\n**Addition**\n> *World > Trading > Currency*\nPlayers can earn the currency “Moustaches”, with the symbol *~~m~~*. As an example, 50 Moustaches would be represented by 50*~~m~~*. These can be earned through working, or can be obtained by trading with another player. All Moustaches are stored in a player’s “spacious Pants Hole” in their inventory.\n\n**Addition**\n> *World > Trading > Currency > Capitalism*\nFor the cost of 2 action points, players may work. The type of hex the player is currently residing on determines the job they work (job title) and the pay they will earn. After working, the player is immediately paid and is labelled as their job title until they work again.\n\n**Addition**\n> *World > Trading > Currency > Capitalism > Meadow*\nWhen a player uses the work action on a Meadow hex with the Nothing landmark, they work as a Farmer and earn 250*~~m~~*.\n\n**Addition**\n> *World > Trading > Currency > Capitalism > Town*\nWhen a player uses the work action on a hex with the Town landmark, they work as a Guard and earn 500*~~m~~*.\n\n**Addition**\n> *World > Trading > Currency > Capitalism > Deceased Dunes*\nWhen a player uses the work action on a Deceased Dunes hex with the Nothing landmark, they work as a Dunes Sweeper and earn 300*~~m~~*.\n\n**Addition**\n> *World > Trading > Currency > Capitalism > Mouse Hut*\nWhen a player uses the work action on a hex with the Mouse Hut landmark, they work as a Keyboard and earn 100*~~m~~*.",
+    "timestamp": 1654496675,
+    "messageID": "983255062094700584",
+    "votes": [
+      [
+        1,
+        3,
+        4,
+        13,
+        2,
+        14
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/983255062094700584"
   }
 ]

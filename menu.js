@@ -120,3 +120,11 @@ var changeFontTheme = (theme) => {
 }
 
 
+//Warn a user that theme switching doesn't work properly if the theme is changed on a page other than the main page
+var themeSwitchWarning = () => {
+  
+  alert("Warning: Your colour or font theme will not save properly if you change it on any page other than the main page.");
+  
+}
+
+
