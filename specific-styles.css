@@ -33,7 +33,7 @@ Z-Indexes:
   min-width: 350px;
   height: 50px;
   
-  background-color: var(--BG2);
+  background-color: var(--BG-Menu);
   border: 2px solid var(--Border);
   
 }
@@ -56,10 +56,10 @@ Z-Indexes:
   
   white-space: nowrap;
   
-  background-color: var(--BG2);
+  color: var(--Text-Input);
+  background-color: var(--BG-Input);
   border: 2px solid var(--Border);
   
-  color: var(--Text1);
   
   transition: background 250ms;
   
@@ -67,14 +67,15 @@ Z-Indexes:
 /* Change the color of the navigation links when the mouse hovers over them */
 .nav-link:hover,
 .nav-link:focus {
-  background-color: var(--BG3);
+  color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
 }
 /* Style the link which corresponds to the current page */
-.nav-link[currentpage] {
-  background-color: var(--BG4);
-}
+/*.nav-link[currentpage] {
+  background-color: var(--BG-Main);
+}*/
 /* Style unavailable links */
-.nav-link[unavailable] {
+/*.nav-link[unavailable] {
   
   text-decoration: none;
   
@@ -83,7 +84,7 @@ Z-Indexes:
   
   cursor: not-allowed;
   
-}
+}*/
 
 /* Styles for the individual links in the navigation bar */
 #nav-link-site-logo {
@@ -108,6 +109,14 @@ Z-Indexes:
 
 #nav-link-docs {
   left: calc(25% + 152px);
+}
+#nav-link-docs-text-1 {
+  font-size: inherit;
+  display: inline;
+}
+#nav-link-docs-text-2 {
+  font-size: inherit;
+  display: none;
 }
 
 #nav-link-propositions {
@@ -147,8 +156,6 @@ Z-Indexes:
   
   position: absolute;
   
-  box-sizing: border-box;
-  
   top: 46px;
   width: calc(37.5% - 192px);
   
@@ -164,8 +171,8 @@ Z-Indexes:
   
   overflow-y: auto;
   
-  color: var(--Text1);
-  background-color: var(--BG2);
+  color: var(--Text);
+  background-color: var(--BG-Menu);
   border: 2px solid var(--Border);
   
 }
@@ -185,7 +192,11 @@ Z-Indexes:
   right: -2px;
   height: 50px;
   
-  background-color: var(--BG2);
+  padding: 0px;
+  
+  color: var(--Text-Input);
+  --nav-menu-btn-icon-color: var(--Text-Input);
+  background-color: var(--BG-Input);
   border: 2px solid var(--Border);
   
   transition: background 250ms;
@@ -195,11 +206,15 @@ Z-Indexes:
 }
 #nav-menu-btn:hover,
 #nav-menu-btn:focus {
-  background-color: var(--BG3);
+  color: var(--Text-Input-Hover);
+  --nav-menu-btn-icon-color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
 }
 /* Change the color of the menu button when the menu is open */
 #nav-menu-btn[menuopen="true"] {
-  background-color: var(--BG4);
+  color: var(--Text-Input-Focus);
+  --nav-menu-btn-icon-color: var(--Text-Input-Focus);
+  background-color: var(--BG-Input-Focus);
 }
 
 #nav-menu-btn-icon {
@@ -220,7 +235,8 @@ Z-Indexes:
   margin-bottom: 7px;
   border: none;
   
-  background-color: var(--Text1);
+  /*background-color: var(--Text);*/
+  background-color: var(--nav-menu-btn-icon-color);
   
 }
 
@@ -238,7 +254,7 @@ Z-Indexes:
   width: calc(12.5% + 96px);
   height: calc(100% - 48px);
   
-  background-color: var(--BG3);
+  background-color: var(--BG-Menu);
   border: 2px solid var(--Border);
   
 }
@@ -286,18 +302,20 @@ Z-Indexes:
   font-size: 24px;
   text-align: left;
   
-  background-color: var(--BG2);
+  white-space: nowrap;
+  
+  background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
 }
 
 
-/* Color-scheme settings selector */
-#settings-color-scheme-title {
+/* Color-theme settings selector */
+#settings-color-theme-title {
   top: 25px;
 }
 
-#settings-color-scheme-select {
+#settings-color-theme-select {
   
   position: absolute;
   
@@ -341,6 +359,17 @@ Z-Indexes:
 
 /* ======== Navigation Bar Responsiveness ======== */
 
+@media screen and (max-width: 1400px) {
+  
+  #nav-link-docs-text-1 {
+    display: none;
+  }
+  #nav-link-docs-text-2 {
+    display: inline;
+  }
+  
+}
+
 @media screen and (max-width: 1150px) {
   
   #nav-link-propositions-text-1 {
@@ -376,11 +405,23 @@ Z-Indexes:
     left: calc(66.6% + 52px);
     width: calc(33.3% - 49px);
   }
+  #nav-link-docs-text-1 {
+    display: inline;
+  }
+  #nav-link-docs-text-2 {
+    display: none;
+  }
   
   #nav-link-propositions {
     left: -2px;
     top: 46px;
     width: 25%;
+  }
+  #nav-link-propositions-text-1 {
+    display: inline;
+  }
+  #nav-link-propositions-text-2 {
+    display: none;
   }
   
   #nav-link-world {
@@ -421,6 +462,24 @@ Z-Indexes:
     
   }
   
+  @media screen and (max-width: 700px) {
+  
+    #nav-link-docs-text-1 {
+      display: none;
+    }
+    #nav-link-docs-text-2 {
+      display: inline;
+    }
+  
+    #nav-link-propositions-text-1 {
+      display: none;
+    }
+    #nav-link-propositions-text-2 {
+      display: inline;
+    }
+    
+  }
+  
 }
 
 
@@ -447,7 +506,7 @@ Z-Indexes:
   
   padding: 1em;
   
-  border: 1px solid var(--Text2);
+  border: 1px solid var(--Border);
   
 }
 
@@ -465,30 +524,30 @@ Z-Indexes:
   position: absolute;
   
   height: 0px;
-  width: 1.5em;
+  width: 1.8em;
   
   margin-top: 0.6em;
-  margin-left: -1.5em;
+  margin-left: -2em;
   
-  border-top: 2px solid var(--Text2);
+  border-top: 2px solid var(--Border);
   
 }
 .rule-tree-branch-line-horizontal-end {
   height: calc(100% - 2em);
-  background-color: var(--BG1);
+  background-color: var(--BG-Main);
 }
 
 .rule-tree-branch-line-vertical {
   
   position: absolute;
   
-  height: calc(100% - 4.5em);
+  height: calc(100% - 3.5em);
   width: 0px;
   
-  margin-top: 0.6em;
-  margin-left: -0.5em;
+  margin-top: calc(0.6em + 2px);
+  margin-left: -1em;
   
-  border-left: 2px solid var(--Text2);
+  border-left: 2px solid var(--Border);
   
 }
 
@@ -497,7 +556,7 @@ Z-Indexes:
   padding-top: 0.5em;
   margin-top: 0.5em;
   
-  border-top: 1px solid var(--Text2);
+  border-top: 1px solid var(--Border);
   
 }
 
@@ -508,7 +567,7 @@ Z-Indexes:
   padding-left: 2px;
   padding-right: 2px;
   
-  background-color: var(--BG2);
+  background-color: var(--BG-Vote-Tag);
   border-radius: 4px;
   
 }
@@ -518,7 +577,7 @@ Z-Indexes:
   
   width: calc(100% - 1em);
   
-  background-color: var(--BG3);
+  background-color: var(--BG-Menu);
   border: 2px solid var(--Border);
   
 }
@@ -534,7 +593,7 @@ Z-Indexes:
   
   padding: 0.5em;
   
-  background-color: var(--BG1);
+  background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
 }
@@ -548,7 +607,7 @@ Z-Indexes:
   padding-left: 2px;
   padding-right: 2px;
   
-  background-color: var(--BG2);
+  background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
 }
@@ -581,7 +640,7 @@ Z-Indexes:
   
   margin: 0.5em;
   
-  background-color: var(--BG3);
+  background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
 }
@@ -590,7 +649,7 @@ Z-Indexes:
   
   display: none;
   
-  border: 1px solid var(--Text2);
+  border: 1px solid var(--Border);
   
 }
 
@@ -603,7 +662,7 @@ Z-Indexes:
   padding: 0.5em;
   margin-top: 0px;
   
-  background-color: var(--BG3);
+  background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
 }
@@ -613,7 +672,7 @@ Z-Indexes:
   padding: 0.5em;
   margin-top: 0px;
   
-  background-color: var(--BG3);
+  background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
 }
@@ -625,7 +684,7 @@ Z-Indexes:
   
   margin-right: 0.5em;
   
-  border-left: 3px solid var(--Text2);
+  border-left: 3px solid var(--Text-Alt);
   
 }
 
@@ -636,9 +695,10 @@ Z-Indexes:
 .proposition {
   
   margin: 1em;
+  margin-left: 0px;
   
   padding: 1em;
   
-  border: 1px solid var(--Text2);
+  border: 1px solid var(--Border);
   
 }

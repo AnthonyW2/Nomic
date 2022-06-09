@@ -30,19 +30,25 @@ input {
   transition: background 250ms;
 }
 input:hover {
-  background-color: var(--BG3);
+  background-color: var(--BG-Input-Hover);
 }
 input:focus {
-  background-color: var(--BG4);
+  background-color: var(--BG-Input-Focus);
 }
+
+
+/* Textbox placeholder opacity needs to be reset, due to the "all: unset" rule being applied to textboxes */
+::placeholder {
+  color: var(--Text-Alt);
+  opacity: 0.5;
+}
+
 
 /* Style all textboxes */
 input[type="text"] {
   
   /* Clear all default textbox styles */
   all: unset;
-  
-  /*position: absolute;*/
   
   box-sizing: border-box;
   
@@ -53,24 +59,36 @@ input[type="text"] {
   font-size: 24px;
   text-align: left;
   
-  color: var(--Text1);
-  background-color: var(--BG2);
+  color: var(--Text-Input);
+  background-color: var(--BG-Input);
   border: 2px solid var(--Border);
   
   transition: background 250ms;
   
 }
 input[type="text"]:hover {
-  background-color: var(--BG3);
+  color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
 }
 input[type="text"]:focus {
-  background-color: var(--BG4);
+  color: var(--Text-Input-Focus);
+  background-color: var(--BG-Input-Focus);
+}
+input[type="text"]:hover::placeholder {
+  color: var(--Text-Input-Hover);
+}
+input[type="text"]:focus::placeholder {
+  color: var(--Text-Input-Focus);
 }
 
 select {
   
-  color: var(--Text1);
-  background-color: var(--BG2);
+  /* For iOS */
+  border-radius: 0;
+  /*-webkit-appearance: none;*/ /* This removes the arrow too, which I don't want */
+  
+  color: var(--Text-Input);
+  background-color: var(--BG-Input);
   border: 2px solid var(--Border);
   
   transition: background 250ms;
@@ -79,9 +97,11 @@ select {
   
 }
 select:hover {
-  background-color: var(--BG3);
+  color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
 }
 select:focus {
-  background-color: var(--BG4);
+  color: var(--Text-Input-Focus);
+  background-color: var(--BG-Input-Focus);
 }
 

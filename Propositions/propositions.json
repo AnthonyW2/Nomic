@@ -24,7 +24,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/977420474000769074"
   },
   {
     "author": 0,
@@ -49,7 +49,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/977842405367775324"
   },
   {
     "author": 0,
@@ -74,7 +74,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/978555170520698900"
   },
   {
     "author": 4,
@@ -100,7 +100,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/978936443927945266"
   },
   {
     "author": 3,
@@ -126,7 +126,7 @@
       []
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/978941328245288970"
   },
   {
     "author": 4,
@@ -152,7 +152,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980025287775485982"
   },
   {
     "author": 2,
@@ -176,7 +176,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980035094691598366"
   },
   {
     "author": 1,
@@ -200,7 +200,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980037508580671500"
   },
   {
     "author": 3,
@@ -226,7 +226,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980042744686837860"
   },
   {
     "author": 1,
@@ -250,7 +250,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980080049946492978"
   },
   {
     "author": 5,
@@ -275,7 +275,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980081927891587082"
   },
   {
     "author": 2,
@@ -299,7 +299,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/980327343405006938"
   },
   {
     "author": 4,
@@ -323,7 +323,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/981116286245416990"
   },
   {
     "author": 1,
@@ -347,7 +347,7 @@
       ]
     ],
     "majority": true,
-    "link": ""
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/982179522722005062"
   },
   {
     "author": 3,
@@ -452,6 +452,7 @@
     "messageID": "982797316417257512",
     "votes": [
       [
+        0,
         3,
         2,
         9
@@ -467,10 +468,11 @@
         8,
         10,
         11,
-        12
+        12,
+        14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/982797316417257512"
   },
   {
@@ -485,6 +487,7 @@
         4,
         13,
         2,
+        9,
         14
       ],
       [],
@@ -493,7 +496,140 @@
         6
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/983255062094700584"
+  },
+  {
+    "author": 1,
+    "content": "**Addition**\nWorld > Masses\nA mass, in the context of the board, is defined as a continuous (may have holes, but must be entirely navigable by moving in only single steps) section of the board such that all hexes within that section are of one Biome, and all adjacent hexes are of a different Biome.",
+    "timestamp": 1654583626,
+    "messageID": "983619762049417276",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        4,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/983619762049417276"
+  },
+  {
+    "author": 0,
+    "content": "**Content Edit**\n> 3.5 - Making Changes\nThe proponent may make any changes to their proposition while there are no votes (excluding rightvotes) cast on the proposition, and only spelling and grammar changes after votes (excluding rightvotes) have been cast.\n\n**Addition**\n> 3.3.5 - Updating Paths\nIf a rule is moved or has its title modified, any references to it (using a path) in other rules will be updated accordingly.\n\n**Content Edit**\n> 3.1.2.1 - Inactivity\nA player is classified as \"active\" if they have cast a vote on at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.\n\n**Content Edit**\n> 3.1.2.1.1 - Voting\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though they may change their vote as with any other vote before a majority is reached.\n\n**Deletion**\n> 3.1.6 - True Majority",
+    "timestamp": 1654583736,
+    "messageID": "983620222441369611",
+    "votes": [
+      [
+        1,
+        3,
+        5,
+        4,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/983620222441369611"
+  },
+  {
+    "author": 2,
+    "content": "**Edit**\nWorld > Generation\nWhen a hex is generated, a biome, and then a landmark are determined for the tile.\n\n**additions**\nWorld > Generation > Biome\nA biome is determined by observing the generated hexes adjacent to the hex to be generated (henceforth the \"new hex\"), and then randomly selecting a Biome based on the masses they belong to.\n\nIf the new hex is adjacent to only one mass, the new hex will either be of the same Biome or of a randomly selected Biome, with probability of the biome being the same based on the number of hexes connected to the new hex, as follows:\n1 hex: 50%\n2 hexes: 70%\n3 hexes: 75%\n4 hexes: 80%\n5 hexes: 85%\n6 hexes: 90%\nRandomly selected Biomes are weighted. See individual biomes' rules for weights.\n\nIf the new hex is adjacent to more than one mass, but two of the masses are of the same Biome, a random Biome will be selected out of the Biomes that have the highest number of masses connected to the new hex.\n\nIf the new hex is adjacent to more than one mass and they are all of different Biomes, the Biome of the new hex is generated as follows:\n-Create a list of the Biomes of the masses adjacent to the new hex.\n-Create a list of the sizes of these masses (in hexes) in the same order.\n-Invert the first list.\n-Randomly generate a Biome by using the numbers in the second list as weighted odds of the Biomes in the same position of the first list.\n\n\nWorld > Generation > Landmark\nA landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw):\n> Nothing (Weight: 20)\n> Town (Weight: 2 or Weight: 1 if a Biome other than Meadow is selected)\n> Mouse Hut (Weight: 1 or Weight: 0 if a Meadow Biome is selected)\n\nWorld > Generation > Biomes > Meadow\nMeadow is a biome with no additional effects on the player.\nWeight: 6",
+    "timestamp": 1654599713,
+    "messageID": "983687236920934410",
+    "votes": [
+      [],
+      [],
+      [
+        0,
+        3,
+        5,
+        4,
+        13,
+        9
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/983687236920934410"
+  },
+  {
+    "author": 3,
+    "content": "**Addition**\n> 5.2.2.1 - Fast Travel\nFor the cost of 1000m and 2 action points, a player can travel between any two towns situated on the same mass.",
+    "timestamp": 1654600428,
+    "messageID": "983690235240144957",
+    "votes": [
+      [
+        0,
+        9
+      ],
+      [
+        5,
+        4,
+        13,
+        2
+      ],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/983690235240144957"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Landmark > Town > Economy*\nWhen a player is on a hex with the Town landmark, they may buy and sell items from/to that town. Every town has an initial budget of 2500*~~m~~* and an initial inventory dependent on the biome of their hex. \n\n**Addition**\n> *World > Generation > Landmark > Town > Economy > Meadow*\nTowns in the Meadow biome have the following initial inventory:\n- Wood ×25 Value: 100*~~m~~*\n- Stone ×12 Value: 250*~~m~~*\n- Steel ×5 Value: 5000*~~m~~*\n- Thread ×7 Value: 1000*~~m~~*\n- Hide ×2 Value: 3000*~~m~~*\n- Resin ×1 Value: 6000*~~m~~*\n- Quartz ×0 Value: 12500*~~m~~*\n- Copper ×0 Value: 20000*~~m~~*\n- Gold ×0 Value: 50000*~~m~~*\n- Morbium ×0 Value: 1000000000 \n\n**Addition**\n> *World > Generation > Landmark > Town > Economy > Deceased Dunes*\nTowns in the Deceased Dunes biome have the following initial inventory:\n- Wood ×10 Value: 100*~~m~~*\n- Stone ×15 Value: 250*~~m~~*\n- Steel ×4 Value: 5000*~~m~~*\n- Thread ×5 Value: 1000*~~m~~*\n- Hide ×1 Value: 3000*~~m~~*\n- Resin ×0 Value: 6000*~~m~~*\n- Quartz ×1 Value: 12500*~~m~~*\n- Copper ×0 Value: 20000*~~m~~*\n- Gold ×0 Value: 50000*~~m~~*\n- Morbium ×0 Value: 1000000000 \n\n**Addition**\n> *World > Generation > Landmark > Town > Economy > Transactions*\nWhen a player purchases or sells items, there is a transfer of items and Moustaches between the player and the town.\nWhen a player purchases an item, the cost (value) is added to the town's budget and subtracted from the player.\nWhen a player sells an item, the profit (value) is subtracted from the town's budget and added to the player.\nA player or town's budget or inventory (individual item stock) cannot be negative, if a player attempts to buy or sell and this would result in either of these conditions, the transaction does not occur.",
+    "timestamp": 1654666407,
+    "messageID": "983966969877377034",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        5,
+        9,
+        14
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/983966969877377034"
   }
 ]

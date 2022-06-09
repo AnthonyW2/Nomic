@@ -34,6 +34,7 @@
   </head>
   <body onload="StartJS()">
     
+    <!-- Navigation Bar -->
     <div id="nav-bar">
       
       <a id="nav-link-site-logo" class="nav-link" href="../">Nomic S3</a>
@@ -42,11 +43,17 @@
       
       <a id="nav-link-players" class="nav-link" href="../Players">Players</a>
       
-      <a id="nav-link-docs" class="nav-link" href="../docs.html">Docs</a>
+      <a id="nav-link-docs" class="nav-link" href="../docs.html">
+        <span id="nav-link-docs-text-1">Documentation</span>
+        <span id="nav-link-docs-text-2">Docs</span>
+      </a>
       
-      <a id="nav-link-propositions" class="nav-link" href="../Propositions">Propositions</a>
+      <a id="nav-link-propositions" class="nav-link" href="../Propositions">
+        <span id="nav-link-propositions-text-1">Propositions</span>
+        <span id="nav-link-propositions-text-2">Props</span>
+      </a>
       
-      <a id="nav-link-world" class="nav-link" href="../World">World Map</a>
+      <a id="nav-link-world" class="nav-link" href="../World">World</a>
       
       <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
       <div id="search-menu" hidden></div>
@@ -65,19 +72,11 @@
     <!-- Overflow Menu -->
     <div id="overflow-menu" hidden>
       
-      <div id="settings-color-scheme-title" class="overflow-menu-subtitle">Colour Scheme:</div>
-      <select id="settings-color-scheme-select" onchange="updateColorScheme()" onclick="themeSwitchWarning()">
-        <option value="0">Light</option>
-        <option value="1">Dark</option>
-        <option value="2">Fruity</option>
-        <option value="3">Eye-Searing Neon</option>
-        <option value="4">Pastel Sunset</option>
-        <option value="5">Layan</option>
-        <option value="6">Mint</option>
-      </select>
+      <div id="settings-color-theme-title" class="overflow-menu-subtitle">Colour Theme:</div>
+      <select id="settings-color-theme-select" onchange="updateColorTheme()"></select>
       
       <div id="settings-font-theme-title" class="overflow-menu-subtitle">Font Theme:</div>
-      <select id="settings-font-theme-select" onchange="updateFontTheme()" onclick="themeSwitchWarning()">
+      <select id="settings-font-theme-select" onchange="updateFontTheme()">
         <option value="0">Default</option>
         <option value="1">Serif</option>
         <option value="2">Sans-Serif</option>
@@ -111,8 +110,9 @@
       const root = "..";
     </script>
     <script src="../main.js"></script>
-    <script src="../search.js"></script>
     <script src="../menu.js"></script>
+    <script src="../themes.js"></script>
+    <script src="../search.js"></script>
     <script src="../Rules/rule-class.js"></script>
     <script src="./world.js"></script>
     

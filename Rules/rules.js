@@ -12,7 +12,7 @@
 var rulesListElement;
 ///var ruleSummaryTableElement;
 
-var ruleDisplayStyle = "boxes";
+var ruleDisplayStyle = "tree";
 
 body.addEventListener("ruleload", e => {
   
@@ -58,7 +58,8 @@ var createRuleBranch = (rule, branchEnd) => {
     }
   }
   
-  ruleElement.innerHTML += path+rule.summary+"<br>"+rule.content.replaceAll("\n","<br>\n");
+  ruleElement.innerHTML += path + rule.summary+"<br>";
+  ruleElement.innerHTML += rule.content.replaceAll("\n","<br>\n").replaceAll("<m>","<i><strike>m</strike></i>");
   ruleElement.classList.add("rule");
   ruleElement.classList.add("rule-style-"+ruleDisplayStyle);
   ruleElement.id = "rule-"+rule.id;

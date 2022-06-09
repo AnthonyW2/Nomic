@@ -14,55 +14,85 @@
   {
     "ruleset": 2,
     "timestamp": 1653466564,
-    "proposition": null,
+    "proposition": 2,
     "summary": "Turns removed by Anthony"
   },
   {
     "ruleset": 3,
     "timestamp": 1653739239,
-    "proposition": null,
+    "proposition": 5,
     "summary": "World added by Ryan"
   },
   {
     "ruleset": 4,
     "timestamp": 1653790511,
-    "proposition": null,
+    "proposition": 9,
     "summary": "Dice defined by Xeya"
   },
   {
     "ruleset": 5,
     "timestamp": 1653894736,
-    "proposition": null,
+    "proposition": 11,
     "summary": "Mice added by Lime"
   },
   {
     "ruleset": 6,
     "timestamp": 1654061467,
-    "proposition": null,
+    "proposition": 12,
     "summary": "Deceased Dunes added by Ryan"
   },
   {
     "ruleset": 7,
     "timestamp": 1654260138,
-    "proposition": null,
+    "proposition": 13,
     "summary": "Proposition time rules changed by Xeya"
   },
   {
     "ruleset": 8,
     "timestamp": 1654315938,
-    "proposition": null,
+    "proposition": 15,
     "summary": "Mouse Huts added by Ryan"
   },
   {
     "ruleset": 9,
     "timestamp": 1654327752,
-    "proposition": null,
+    "proposition": 17,
     "summary": "Many fixes applied by Anthony"
   },
   {
     "ruleset": 10,
     "timestamp": 1654503834,
-    "proposition": null,
-    "summary": "Fathom introduced inactive players"
+    "proposition": 14,
+    "summary": "Inactive players introduced by Fathom"
+  },
+  {
+    "ruleset": 11,
+    "timestamp": 1654515056,
+    "proposition": 19,
+    "summary": "Trading and currency added by jeck"
+  },
+  {
+    "ruleset": 12,
+    "timestamp": 1654581951,
+    "proposition": 18,
+    "summary": "Pure Statistics introduced by Ryan"
+  },
+  {
+    "ruleset": 13,
+    "timestamp": 1654599509,
+    "proposition": 20,
+    "summary": "Masses defined by Xeya"
+  },
+  {
+    "ruleset": 14,
+    "timestamp": 1654599540,
+    "proposition": 21,
+    "summary": "Inactive player rules tweaked by Anthony"
+  },
+  {
+    "ruleset": 15,
+    "timestamp": 1654725038,
+    "proposition": 24,
+    "summary": "Transactions and economy added by Ryan"
   }
 ]

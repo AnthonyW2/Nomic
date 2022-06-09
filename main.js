@@ -26,24 +26,6 @@ const playerLoadEvent = new Event("playerload");
 const propositionLoadEvent = new Event("propositionload");
 const worldLoadEvent = new Event("worldload");
 
-//Color themes available on the site
-const colorThemes = [
-  "light",
-  "dark",
-  "fruity",
-  "neon-1",
-  "pastel-sunset",
-  "layan",
-  "mint"
-];
-
-const fontThemes = [
-  "default",
-  "serif",
-  "sans-serif",
-  "comic-sans"
-];
-
 
 //Run when the body finishes loading
 var StartJS = () => {
@@ -55,6 +37,7 @@ var StartJS = () => {
   LoadPropositions();
   LoadWorldData();
   
+  populateColorThemeSelector();
   ApplyThemes();
   
 }
@@ -193,57 +176,6 @@ var LoadWorldData = async () => {
 }
 
 
-//Apply the user's preferred color/font themes
-var ApplyThemes = () => {
-  
-  //Split the cookies into an array
-  var cookies = document.cookie.split("; ");
-  
-  //Loop through cookies
-  for(var c = 0;c < cookies.length;c ++){
-    
-    var cookie = cookies[c].split("=");
-    
-    //Check if the cookie is the one storing the theme
-    if(cookie[0] == "colortheme"){
-      
-      //Loop through the possible color themes
-      for(var t = 0;t < colorThemes.length;t ++){
-        
-        //Set the color theme is the value of the theme cookie matches the theme
-        if(cookie[1] == colorThemes[t]){
-          //Update the color theme
-          changeColorScheme(t);
-          
-          //Set the option that is selected in the overflow menu
-          document.getElementById("settings-color-scheme-select").value = t;
-        }
-        
-      }
-      
-    }else if(cookie[0] == "fonttheme"){
-      
-      //Loop through the possible font themes
-      for(var t = 0;t < fontThemes.length;t ++){
-        
-        //Set the color theme is the value of the theme cookie matches the theme
-        if(cookie[1] == fontThemes[t]){
-          //Update the font theme
-          changeFontTheme(t);
-          
-          //Set the option that is selected in the overflow menu
-          document.getElementById("settings-font-theme-select").value = t;
-        }
-        
-      }
-      
-    }
-    
-  }
-  
-}
-
-
 
 //Generate a vote icon
 var VoteIcon = (type, amount) => {
@@ -252,5 +184,20 @@ var VoteIcon = (type, amount) => {
   var altStrings = ["UP","DOWN","LEFT","RIGHT"];
   
   return "<div class=\"vote\"><img src=\"../Resources/"+types[type]+"vote.png\" alt=\""+altStrings[type]+"\" class=\"vote-icon\"> "+amount+"</div>";
+  
+}
+
+
+
+//On older JS engines the replaceAll function does not exist, so we need to define it
+if(!String.prototype.replaceAll){
+  
+  console.warn("Browser does not support String.prototype.replaceAll(), defining function...");
+  
+  String.prototype.replaceAll = function(pattern, newSubstr){
+    
+    return this.replace(new RegExp(pattern, "g"), newSubstr);
+    
+  }
   
 }
