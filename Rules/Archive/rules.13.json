@@ -188,16 +188,12 @@
                   "id": 65,
                   "relid": 1,
                   "summary": "Inactivity",
-                  "content": "A player is classified as \"active\" if they have cast a vote on at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.",
+                  "content": "If a player has not cast a vote on at least 1 of the 5 most recent propositions to have reached a majority, they are classified as inactive. If an inactive player changes or casts a vote, they are no longer classified as inactive.",
                   "tags": ["propositions"],
                   "history": [
                     {
                       "player": 3,
                       "time": 1654503834
-                    },
-                    {
-                      "player": 0,
-                      "time": 1654599540
                     }
                   ],
                   "subrules": [
@@ -205,16 +201,12 @@
                       "id": 66,
                       "relid": 1,
                       "summary": "Voting",
-                      "content": "An inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though they may change their vote as with any other vote before a majority is reached.",
+                      "content": "An inactive player's vote is automatically cast as a rightvote, however, they may change this as with any other vote before a majority is reached.",
                       "tags": ["propositions"],
                       "history": [
                         {
                           "player": 3,
                           "time": 1654503834
-                        },
-                        {
-                          "player": 0,
-                          "time": 1654599540
                         }
                       ],
                       "subrules": []
@@ -287,6 +279,20 @@
                 {
                   "player": 0,
                   "time": 1653466564
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 67,
+              "relid": 6,
+              "summary": "True Majority",
+              "content": "A proposition cannot pass in less than 12 hours unless it reaches a \"true majority\" - where inactive players' votes are classified as remaining rather than rightvotes.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": 3,
+                  "time": 1654503834
                 }
               ],
               "subrules": []
@@ -375,20 +381,6 @@
                 }
               ],
               "subrules": []
-            },
-            {
-              "id": 83,
-              "relid": 5,
-              "summary": "Updating Paths",
-              "content": "If a rule is moved or has its title modified, any references to it (using a path) in other rules will be updated accordingly.",
-              "tags": ["propositions"],
-              "history": [
-                {
-                  "player": 0,
-                  "time": 1654599540
-                }
-              ],
-              "subrules": []
             }
           ]
         },
@@ -454,16 +446,12 @@
           "id": 23,
           "relid": 5,
           "summary": "Making Changes",
-          "content": "The proponent may make any changes to their proposition while there are no votes (excluding rightvotes) cast on the proposition, and only spelling and grammar changes after votes (excluding rightvotes) have been cast.",
-          "tags": ["propositions"],
+          "content": "A proponent may make any changes to their proposition while there are no votes cast on the proposition, and only spelling and grammar changes after votes have been cast.",
+          "tags": ["initial","propositions"],
           "history": [
             {
               "player": -1,
               "time": 1653105600
-            },
-            {
-              "player": 0,
-              "time": 1654599540
             }
           ],
           "subrules": []
@@ -831,78 +819,6 @@
                     }
                   ],
                   "subrules": []
-                },
-                {
-                  "id": 84,
-                  "relid": 2,
-                  "summary": "Town",
-                  "content": "",
-                  "tags": ["world"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1654725038
-                    }
-                  ],
-                  "subrules": [
-                    {
-                      "id": 85,
-                      "relid": 1,
-                      "summary": "Economy",
-                      "content": "When a player is on a hex with the Town landmark, they may buy and sell items from/to that town. Every town has an initial budget of 2500<m> and an initial inventory dependent on the biome of their hex.",
-                      "tags": ["world","trade"],
-                      "history": [
-                        {
-                          "player": 4,
-                          "time": 1654725038
-                        }
-                      ],
-                      "subrules": [
-                        {
-                          "id": 86,
-                          "relid": 1,
-                          "summary": "Meadow",
-                          "content": "Towns in the Meadow biome have the following initial inventory:\n- Wood ×25 Value: 100<m>\n- Stone ×12 Value: 250<m>\n- Steel ×5 Value: 5000<m>\n- Thread ×7 Value: 1000<m>\n- Hide ×2 Value: 3000<m>\n- Resin ×1 Value: 6000<m>\n- Quartz ×0 Value: 12500<m>\n- Copper ×0 Value: 20000<m>\n- Gold ×0 Value: 50000<m>\n- Morbium ×0 Value: 1000000000<m>",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1654725038
-                            }
-                          ],
-                          "subrules": []
-                        },
-                        {
-                          "id": 87,
-                          "relid": 2,
-                          "summary": "Deceased Dunes",
-                          "content": "Towns in the Deceased Dunes biome have the following initial inventory:\n- Wood ×10 Value: 100<m>\n- Stone ×15 Value: 250<m>\n- Steel ×4 Value: 5000<m>\n- Thread ×5 Value: 1000<m>\n- Hide ×1 Value: 3000<m>\n- Resin ×0 Value: 6000<m>\n- Quartz ×1 Value: 12500<m>\n- Copper ×0 Value: 20000<m>\n- Gold ×0 Value: 50000<m>\n- Morbium ×0 Value: 1000000000<m>",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1654725038
-                            }
-                          ],
-                          "subrules": []
-                        },
-                        {
-                          "id": 88,
-                          "relid": 3,
-                          "summary": "Transactions",
-                          "content": "When a player purchases or sells items, there is a transfer of items and Moustaches between the player and the town.\nWhen a player purchases an item, the cost (value) is added to the town's budget and subtracted from the player.\nWhen a player sells an item, the profit (value) is subtracted from the town's budget and added to the player.\nA player or town's budget or inventory (individual item stock) cannot be negative, if a player attempts to buy or sell and this would result in either of these conditions, the transaction does not occur.",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1654725038
-                            }
-                          ],
-                          "subrules": []
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             }
