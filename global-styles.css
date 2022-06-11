@@ -95,6 +95,9 @@ Z-Indexes:
   
   scroll-padding-top: 60px;
   
+  /* Whenever any colors are changed, they should transition over 250ms */
+  transition: color 250ms, background 250ms;
+  
 }
 
 

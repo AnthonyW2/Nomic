@@ -60,9 +60,6 @@ Z-Indexes:
   background-color: var(--BG-Input);
   border: 2px solid var(--Border);
   
-  
-  transition: background 250ms;
-  
 }
 /* Change the color of the navigation links when the mouse hovers over them */
 .nav-link:hover,
@@ -198,8 +195,6 @@ Z-Indexes:
   --nav-menu-btn-icon-color: var(--Text-Input);
   background-color: var(--BG-Input);
   border: 2px solid var(--Border);
-  
-  transition: background 250ms;
   
   cursor: pointer;
   

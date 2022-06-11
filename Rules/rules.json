@@ -823,7 +823,7 @@
                   "relid": 1,
                   "summary": "Mouse Hut",
                   "content": "Weight: 1 or Weight: 0 if a Meadow Biome is selected.\nA player located in a hex with a mouse hut may use the exercise or enrich mouse action for 1 energy instead.",
-                  "tags": ["world"],
+                  "tags": ["world","mice"],
                   "history": [
                     {
                       "player": 4,
@@ -1141,7 +1141,7 @@
                   "relid": 4,
                   "summary": "Farsight",
                   "content": "If the owner uses the scout action, each hex adjacent to the generated hex has a +20% chance to be generated if it is not already. This also occurs for hexes generated through this process.",
-                  "tags": ["mice","pure stats"],
+                  "tags": ["mice","pure stats","world"],
                   "history": [
                     {
                       "player": 4,
@@ -1155,7 +1155,7 @@
                   "relid": 5,
                   "summary": "World Bender",
                   "content": "If the owner uses the scout action on a generated hex, there is a +25% chance that it is re-generated.",
-                  "tags": ["mice","pure stats"],
+                  "tags": ["mice","pure stats","world"],
                   "history": [
                     {
                       "player": 4,
@@ -1169,7 +1169,7 @@
                   "relid": 6,
                   "summary": "Manipulator",
                   "content": "If the player uses the scout action, they may choose the Biome that would be generated for the selected hex with a +25% chance for this to occur. The player does not determine the landmark.",
-                  "tags": ["mice","pure stats"],
+                  "tags": ["mice","pure stats","world"],
                   "history": [
                     {
                       "player": 4,

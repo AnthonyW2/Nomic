@@ -601,7 +601,7 @@
         12
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/983690235240144957"
   },
   {
@@ -631,5 +631,53 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/983966969877377034"
+  },
+  {
+    "author": 0,
+    "content": "**Content Edit**\n> *World > Generation*\nWhen a hex is generated, a biome, and then a landmark are determined for the tile.\n\n**Deletion**\n> *World > Generation > Updates*\n\n**Content Edit**\n> *World > Generation > Biomes*\nA biome is determined by observing the generated hexes adjacent to the hex to be generated (henceforth the \"new hex\"), and then selecting a biome based on the masses they belong to.\nThe new hex will either be of the same biome as an adjacent hex or of a randomly selected biome, with probability of the biome being the same based on the number of hexes connected to the new hex, as follows:\n- 1 hex: 50%\n- 2 hexes: 70%\n- 3 hexes: 75%\n- 4 hexes: 80%\n- 5 hexes: 85%\n- 6 hexes: 90%\nRandomly selected biomes are weighted as follows (with 'Weight' referring to the number of times it is in the draw):\n- Meadow (Weight: 7)\n- Deceased Dunes (Weight: 4)\nIf new biomes are added (through a proposition or otherwise), this list is updated to reflect them.\n\n**Content Edit**\n> *World > Generation > Landmarks*\nA landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw): \n- Nothing (Weight: 20)\n- Town (Weight: 2 or Weight: 1 if a biome other than Meadow is selected)\n- Mouse Hut (Weight: 1 or Weight: 0 if a Meadow biome is selected)\nIf new landmarks are added (through a proposition or otherwise), this list is updated to reflect them.\n\n**Addition**\n> *World > Generation > Biomes > Meadow*\nMeadow is a biome with no additional effects on the player.\nWeight: 7",
+    "timestamp": 1654818820,
+    "messageID": "984606238862094356",
+    "votes": [
+      [
+        1,
+        3,
+        4,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/984606238862094356"
+  },
+  {
+    "author": 2,
+    "content": "JUDGE'S RULING:\nThe phrase\n\"If the new hex is adjacent to more than one mass, but two of the masses are of the same Biome, a random Biome will be selected out of the Biomes that have the highest number of masses connected to the new hex.\"\nis added to rule 5.3, below it's current text. This does not replace any text within the rule.",
+    "timestamp": 1654913321,
+    "messageID": "985002604625023027",
+    "votes": [
+      [],
+      [
+        1,
+        0,
+        4
+      ],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "judgesuggestion": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/985002604625023027"
   }
 ]
