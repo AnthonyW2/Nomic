@@ -49,7 +49,7 @@ var DisplayPropositions = () => {
     propositionElement.innerHTML = "<b>"+players[propositions[p].author].name+"</b> - "+dateStr+"<br>";
     propositionElement.innerHTML += voteStr;
     propositionElement.innerHTML += " - <a href=\"" + propositions[p].link + "\" target=\"_blank\">"+(propositions[p].majority ? "Majority Reached" : "Awaiting Votes")+"</a><br><br>";
-    propositionElement.innerHTML += "Content: "+propositions[p].content.replaceAll("\n","<br>\n");
+    propositionElement.innerHTML += propositions[p].content.replaceAll("\n","<br>\n");
     
     propositionListElement.insertBefore(propositionElement, propositionListElement.children[0]);
     

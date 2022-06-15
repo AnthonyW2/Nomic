@@ -31,7 +31,11 @@ var DisplayWorldMap = () => {
     return;
   }
   
+  const worldMap = document.getElementById("world-map");
+  
   console.log("Display world map");
+  
+  console.log(worldMap);
   
   console.log(world);
   

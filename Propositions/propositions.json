@@ -669,7 +669,109 @@
       [
         1,
         0,
-        4
+        3,
+        5,
+        4,
+        13
+      ],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "judgesuggestion": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/985002604625023027"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Biomes > Corruption*\nThe Corruption biome has Weight: 1.\nThe corruption Biome may spread to other biomes, corrupting them.\n[Lore Goes Here] \n\n**Addition**\n> *World > Generation > Biomes > Corruption > Spreading*\nWhen a player moves into a corruption hex, there is a +5% chance (maximum 100%) for each corruption hex in the mass that a random hex adjacent to the edge of the mass will become 'corrupt', having its biome changed to corruption. However, its landmark is unchanged. That is except for towns, which have their inventory reset to that outlined in *World > Generation > Landmarks > Town > Economy > Corruption*. \n\n**Addition**\n> *World > Generation > Landmarks > Town > Economy > Corruption*\nTowns in the Corruption biome have the following initial inventory:\n- Resin ×1\n- Morbium ×1 \n\n**Addition**\n> *World > Actions > Capitalism > Corruption*\nIf a player uses the work action on a Corrupted hex, they work as a underling and earn 413*~~m~~*. \n\n**Addition**\n> *Resources*\nThe following comprises a list of the primary resources and their value at towns.\n- Wood Value: 100*~~m~~*\n- Stone Value: 250*~~m~~*\n- Steel Value: 5000*~~m~~*\n- Thread Value: 1000*~~m~~*\n- Hide Value: 3000*~~m~~*\n- Resin Value: 6000*~~m~~*\n- Quartz Value: 12500*~~m~~*\n- Copper Value: 20000*~~m~~*\n- Gold Value: 50000*~~m~~*\n- Morbium Value: 163000000*~~m~~* \n\n**Content Edit**\n> *World > Generation > Landmark > Town > Economy > Meadow*\nTowns in the Meadow biome have the following initial inventory:\n- Wood ×25\n- Stone ×12\n- Steel ×5\n- Thread ×7\n- Hide ×2\n- Resin ×1 \n\n**Content Edit**\n> *World > Generation > Landmark > Town > Economy > Deceased Dunes*\nTowns in the Deceased Dunes biome have the following initial inventory:\n- Wood ×10\n- Stone ×15\n- Steel ×4\n- Thread ×5\n- Hide ×1\n- Quartz ×1",
+    "timestamp": 1655084837,
+    "messageID": "985721991829024768",
+    "votes": [
+      [],
+      [],
+      [
+        1,
+        0,
+        3,
+        2,
+        9
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/985721991829024768"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Biomes > Corruption*\nWhen a hex is generated, there is a 5% chance that the biome is replaced by its corrupted variant. A corrupted biome always generates with nothing landmarks. All biomes have a corrupted variant which acts like the normal form unless otherwise specified.\nThe corruption Biome may spread to other biomes, corrupting them.\n[Insert Lore] \n\n**Addition**\n> *World > Generation > Biomes > Corruption > Spreading*\nWhen a player moves into a corruption hex, there is a +5% chance (maximum 85%) for each corrupt hex in the mass that a random hex adjacent to the edge of the mass will become 'corrupt', having its biome changed to its corrupted variant (being generated first if necessary). Its landmark is left unchanged unless it is a town, and then is replaced by the ruins landmark. \n\n**Addition**\n> *Resources*\nThe following comprises a list of the primary resources and their value at towns.\n- Wood Value: 100*~~m~~*\n- Stone Value: 250*~~m~~*\n- Steel Value: 5000*~~m~~*\n- Thread Value: 1000*~~m~~*\n- Hide Value: 3000*~~m~~*\n- Resin Value: 6000*~~m~~*\n- Quartz Value: 12500*~~m~~*\n- Copper Value: 20000*~~m~~*\n- Gold Value: 50000*~~m~~*\n- Morbium Value: 163000000*~~m~~* \n\n**Content Edit**\n> *World > Generation > Landmark > Town > Economy > Meadow*\nTowns in the Meadow biome have the following initial inventory:\n- Wood ×25\n- Stone ×12\n- Steel ×5\n- Thread ×7\n- Hide ×2\n- Resin ×1 \n\n**Content Edit**\n> *World > Generation > Landmark > Town > Economy > Deceased Dunes*\nTowns in the Deceased Dunes biome have the following initial inventory:\n- Wood ×10\n- Stone ×15\n- Steel ×4\n- Thread ×5\n- Hide ×1\n- Quartz ×1 \n\n**Content Edit**\n> *7 - Mice*\nPlayers can own and train mice. Each player can have up to 3 mice in their inventory at a time. Players can perform up to 3 Mouse Actions in each period.",
+    "timestamp": 1655281864,
+    "messageID": "986548382304722946",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        13,
+        2
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/986548382304722946"
+  },
+  {
+    "author": 0,
+    "content": "**Content Edit**\n> *World > Generation > Biomes*\nWhen a new hex is generated, each adjacent hex is added to a randomisation pool, where its weight in the pool is equal to *B/M*.\n  \"Weight\" refers to how many times it appears in the pool, and can be a fractional value.\n  \"B\" = The \"bias\" of a biome. This is a constant, equal to 10 unless otherwise specified.\n  \"M\" = The size of the mass to which the hex belongs (where \"size\" refers to how many hexes are in the mass).\nAn additional \"random\" entry with weight 2 is added to the pool.\nThe biome of the new hex is then drawn from the pool.\nIn case the \"random\" entry is chosen, a new randomisation pool is constructed with the weights of every possible biome (as listed within the relevant biome rules). The biome of the new hex is then drawn from this new pool.\n\n**Content Edit**\n> *Winning > End of Viable Play*\nIf the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then the game ends and no players are declared to be victorious. This rule takes precedence over every other rule determining the winner. \n\n**Content Edit**\n> *Clarifications*\nIf a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in <#960036851022979092>.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.\nSubrules of this rule are not affected by rules outside of this branch. \n\n**Content Edit**\n> *Clarifications > Suggestion Voting*\nAfter the Judge has made a suggestion, all players may vote (up or down) on it.\nIf an upvote majority is reached within 72 hours, the suggestion is adopted.\nAfter 72 hours, the remaining votes are ignored. If there are more upvotes than downvotes the suggestion is adopted.\nOtherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+    "timestamp": 1655286092,
+    "messageID": "986566118393135144",
+    "votes": [
+      [
+        1,
+        3,
+        4,
+        13,
+        2
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/986566118393135144"
+  },
+  {
+    "author": 0,
+    "content": "**Judge Suggestion**\nThe biome of any hexes with an indeterminable biome are randomised with equal chances for each biome.",
+    "timestamp": 1655286103,
+    "messageID": "986566164991864843",
+    "votes": [
+      [
+        3,
+        4,
+        13
+      ],
+      [
+        1
       ],
       [],
       [
@@ -677,7 +779,6 @@
       ]
     ],
     "majority": false,
-    "judgesuggestion": true,
-    "link": "https://discord.com/channels/701269326518419547/960036851022979092/985002604625023027"
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/986566164991864843"
   }
 ]
