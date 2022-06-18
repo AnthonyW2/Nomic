@@ -720,16 +720,22 @@
         1,
         0,
         3,
+        5,
         13,
         2
       ],
       [],
       [],
       [
-        6
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/986548382304722946"
   },
   {
@@ -741,6 +747,7 @@
       [
         1,
         3,
+        5,
         4,
         13,
         2
@@ -748,10 +755,15 @@
       [],
       [],
       [
-        6
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/986566118393135144"
   },
   {
@@ -761,22 +773,50 @@
     "messageID": "986566164991864843",
     "votes": [
       [
+        1,
         0,
         3,
         5,
         4,
-        13
+        13,
+        2,
+        9
       ],
-      [
-        1
-      ],
+      [],
       [],
       [
         6
       ]
     ],
-    "majority": false,
+    "majority": true,
     "judgesuggestion": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/986566164991864843"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Biomes > Forest*\nThe Forest biome has Weight: 5.\n\n**Addition**\n> *World > Generation > Landmarks > Town > Economy > Forest*\nTowns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×9\n- Hide ×3\n- Resin ×1 \n\n**Addition**\n> *World > Actions > Capitalism > Forest*\nIf a player uses the work action on a Forest hex, they work as a lawn mower and earn 400*~~m~~*.\n\n**Addition**\n> *World > Generation > Biomes > Perilous Pass*\nThe Perilous Pass biome has Weight: 3 and Bias: 5.\nThe traverse action costs 1 additional action point to use if the player is on a Perilous Pass hex unless otherwise stated (deferring to pure statistics).\n\n**Addition**\n> *World > Generation > Landmarks > Town > Economy > Perilous Pass*\nTowns in the Perilous Pass biome have the following initial inventory:\n- Wood ×15 Value: 100*~~m~~*\n- Stone ×20 Value: 250*~~m~~*\n- Steel ×7 Value: 5000*~~m~~*\n- Thread ×4 Value: 1000*~~m~~*\n- Quartz ×2 Value: 12500*~~m~~*\n- Copper ×1 Value: 20000*~~m~~*\n\n**Addition**\n> *World > Actions > Capitalism > Perilous Pass*\nIf a player uses the work action on a Perilous Pass hex, they work as a miner and earn 450*~~m~~*.\n\n**Content Edit**\n> *7.3.2 - Exercise*\nExercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is a 80% chance the mouse's Power increases by one or a 60% chance the mouse's Wit increases by one (player's choice).\n\n**Content Edit**\n> *7.3.4 - Entice*\nEnticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two complete periods. During this time, attempts to Exercise or Enrich the mouse have a 10% increased (additively) chance to succeed, however the mouse cannot Explore during this time.\n\n**Edit**\n> *2.2.1 - Placement*\nNew Title: Acceptance\nIf the aforementioned request is accepted by a majority of active players, then that person or group of people becomes a player.",
+    "timestamp": 1655328617,
+    "messageID": "986744482135412827",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        13,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/986744482135412827"
   }
 ]

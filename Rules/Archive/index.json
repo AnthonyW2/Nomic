@@ -100,5 +100,23 @@
     "timestamp": 1654863175,
     "proposition": 25,
     "summary": "World gen changed by Anthony"
+  },
+  {
+    "ruleset": 17,
+    "timestamp": 1655328182,
+    "proposition": 28,
+    "summary": "Corruption added by Ryan"
+  },
+  {
+    "ruleset": 18,
+    "timestamp": 1655329636,
+    "proposition": 29,
+    "summary": "World gen changed again by Anthony"
+  },
+  {
+    "ruleset": 19,
+    "timestamp": 1655470427,
+    "proposition": 31,
+    "summary": "Forest and Perilous Pass biomes added by Ryan"
   }
 ]

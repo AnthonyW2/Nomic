@@ -487,9 +487,11 @@ Z-Indexes:
 
 /* ======== Rules ======== */
 
-/*#rule-tree {
+#rule-tree {
   
-}*/
+  width: calc(100% - 1em);
+  
+}
 
 /*.rule {
   

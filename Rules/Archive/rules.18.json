@@ -87,17 +87,13 @@
             {
               "id": 6,
               "relid": 1,
-              "summary": "Acceptance",
-              "content": "If the aforementioned request is accepted by a majority of active players, then that person or group of people becomes a player.",
-              "tags": ["players"],
+              "summary": "Placement",
+              "content": "If the aforementioned request is accepted by a majority of players, then that person or group of people becomes a player and has their turn placed before that of the current turn at the time of their request.",
+              "tags": ["initial","players"],
               "history": [
                 {
                   "player": -1,
                   "time": 1653105600
-                },
-                {
-                  "player": 4,
-                  "time": 1655470427
                 }
               ],
               "subrules": []
@@ -752,34 +748,6 @@
                     }
                   ],
                   "subrules": []
-                },
-                {
-                  "id": 95,
-                  "relid": 5,
-                  "summary": "Forest",
-                  "content": "If a player uses the work action on a Forest hex, they work as a lawn mower and earn 400<m>.",
-                  "tags": ["world","work"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 98,
-                  "relid": 6,
-                  "summary": "Perilous Pass",
-                  "content": "If a player uses the work action on a Perilous Pass hex, they work as a miner and earn 450<m>.",
-                  "tags": ["world","work"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
                 }
               ]
             }
@@ -887,34 +855,6 @@
                       "subrules": []
                     }
                   ]
-                },
-                {
-                  "id": 93,
-                  "relid": 4,
-                  "summary": "Forest",
-                  "content": "The Forest biome has Weight: 5.",
-                  "tags": ["world"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 96,
-                  "relid": 5,
-                  "summary": "Perilous Pass",
-                  "content": "The Perilous Pass biome has Weight: 3 and Bias: 5.\nThe traverse action costs 1 additional action point to use if the player is on a Perilous Pass hex unless otherwise stated (deferring to pure statistics).",
-                  "tags": ["world"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
                 }
               ]
             },
@@ -1021,34 +961,6 @@
                             {
                               "player": 4,
                               "time": 1654725038
-                            }
-                          ],
-                          "subrules": []
-                        },
-                        {
-                          "id": 94,
-                          "relid": 4,
-                          "summary": "Forest",
-                          "content": "Towns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×9\n- Hide ×3\n- Resin ×1",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1655470427
-                            }
-                          ],
-                          "subrules": []
-                        },
-                        {
-                          "id": 97,
-                          "relid": 5,
-                          "summary": "Perilous Pass",
-                          "content": "Towns in the Perilous Pass biome have the following initial inventory:\n- Wood ×15 Value: 100<m>\n- Stone ×20 Value: 250<m>\n- Steel ×7 Value: 5000<m>\n- Thread ×4 Value: 1000<m>\n- Quartz ×2 Value: 12500<m>\n- Copper ×1 Value: 20000<m>",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1655470427
                             }
                           ],
                           "subrules": []
@@ -1370,16 +1282,12 @@
               "id": 55,
               "relid": 2,
               "summary": "Exercise",
-              "content": "Exercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is an 80% chance the mouse's Power increases by one or a 60% chance the mouse's Wit increases by one (player's choice).",
+              "content": "Exercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is a 80% chance the mouse's Power increases by one.",
               "tags": ["mice"],
               "history": [
                 {
                   "player": 2,
                   "time": 1653894736
-                },
-                {
-                  "player": 4,
-                  "time": 1655470427
                 }
               ],
               "subrules": []
@@ -1402,16 +1310,12 @@
               "id": 57,
               "relid": 4,
               "summary": "Entice",
-              "content": "Enticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two complete periods. During this time, attempts to Exercise or Enrich the mouse have a 10% increased (additively) chance to succeed, however the mouse cannot Explore during this time.",
+              "content": "Enticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two periods. During this time, attempts to Exercise or Enrich the mouse have a 90% and 80% chance (respectively) to work, however the mouse cannot Explore during this time.",
               "tags": ["mice"],
               "history": [
                 {
                   "player": 2,
                   "time": 1653894736
-                },
-                {
-                  "player": 4,
-                  "time": 1655470427
                 }
               ],
               "subrules": []

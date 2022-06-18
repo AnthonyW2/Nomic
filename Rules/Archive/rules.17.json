@@ -28,16 +28,12 @@
           "id": 2,
           "relid": 1,
           "summary": "End of Viable Play",
-          "content": "If the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then the game ends and no players are declared to be victorious. This rule takes precedence over every other rule determining the winner.",
-          "tags": ["winning"],
+          "content": "If the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then the first player who is unable to complete a turn is the winner. This rule takes precedence over every other rule determining the winner.",
+          "tags": ["initial","winning"],
           "history": [
             {
               "player": -1,
               "time": 1653105600
-            },
-            {
-              "player": 0,
-              "time": 1655329636
             }
           ],
           "subrules": []
@@ -87,17 +83,13 @@
             {
               "id": 6,
               "relid": 1,
-              "summary": "Acceptance",
-              "content": "If the aforementioned request is accepted by a majority of active players, then that person or group of people becomes a player.",
-              "tags": ["players"],
+              "summary": "Placement",
+              "content": "If the aforementioned request is accepted by a majority of players, then that person or group of people becomes a player and has their turn placed before that of the current turn at the time of their request.",
+              "tags": ["initial","players"],
               "history": [
                 {
                   "player": -1,
                   "time": 1653105600
-                },
-                {
-                  "player": 4,
-                  "time": 1655470427
                 }
               ],
               "subrules": []
@@ -514,16 +506,12 @@
       "id": 29,
       "relid": 4,
       "summary": "Clarifications",
-      "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in propositions.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.\nSubrules of this rule are not affected by rules outside of this branch.",
-      "tags": ["clarification"],
+      "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in #propositions.\nSubrules of this rule are not affected by rules outside of this branch.",
+      "tags": ["initial","clarification"],
       "history": [
         {
           "player": -1,
           "time": 1653105600
-        },
-        {
-          "player": 0,
-          "time": 1655329636
         }
       ],
       "subrules": [
@@ -564,7 +552,7 @@
           "id": 31,
           "relid": 2,
           "summary": "Suggestion Voting",
-          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it.\nIf an upvote majority is reached within 72 hours, the suggestion is adopted.\nAfter 72 hours, the remaining votes are ignored. If there are more upvotes than downvotes the suggestion is adopted.\nOtherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached within 72 hours, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
           "tags": ["clarification"],
           "history": [
             {
@@ -574,10 +562,6 @@
             {
               "player": 0,
               "time": 1654327752
-            },
-            {
-              "player": 0,
-              "time": 1655329636
             }
           ],
           "subrules": []
@@ -752,34 +736,6 @@
                     }
                   ],
                   "subrules": []
-                },
-                {
-                  "id": 95,
-                  "relid": 5,
-                  "summary": "Forest",
-                  "content": "If a player uses the work action on a Forest hex, they work as a lawn mower and earn 400<m>.",
-                  "tags": ["world","work"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 98,
-                  "relid": 6,
-                  "summary": "Perilous Pass",
-                  "content": "If a player uses the work action on a Perilous Pass hex, they work as a miner and earn 450<m>.",
-                  "tags": ["world","work"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
                 }
               ]
             }
@@ -814,7 +770,7 @@
               "id": 58,
               "relid": 1,
               "summary": "Biomes",
-              "content": "When a new hex is generated, each adjacent hex is added to a randomisation pool, where its weight in the pool is equal to B/M.\n  \"Weight\" refers to how many times it appears in the pool, and can be a fractional value.\n  \"B\" = The \"bias\" of a biome. This is a constant, equal to 10 unless otherwise specified.\n  \"M\" = The size of the mass to which the hex belongs (where \"size\" refers to how many hexes are in the mass).\nAn additional \"random\" entry with weight 2 is added to the pool.\nThe biome of the new hex is then drawn from the pool.\nIn case the \"random\" entry is chosen, a new randomisation pool is constructed with the weights of every possible biome (as listed within the relevant biome rules). The biome of the new hex is then drawn from this new pool.",
+              "content": "A biome is determined by observing the generated hexes adjacent to the hex to be generated (henceforth the \"new hex\"), and then selecting a biome based on the masses they belong to.\nThe new hex will either be of the same biome as an adjacent hex or of a randomly selected biome, with probability of the biome being the same based on the number of hexes connected to the new hex, as follows:\n- 1 hex: 50%\n- 2 hexes: 70%\n- 3 hexes: 75%\n- 4 hexes: 80%\n- 5 hexes: 85%\n- 6 hexes: 90%\nRandomly selected biomes are weighted as follows (with 'Weight' referring to the number of times it is in the draw):\n- Meadow (Weight: 7)\n- Deceased Dunes (Weight: 4)\nIf new biomes are added (through a proposition or otherwise), this list is updated to reflect them.",
               "tags": ["world"],
               "history": [
                 {
@@ -824,10 +780,6 @@
                 {
                   "player": 0,
                   "time": 1654863175
-                },
-                {
-                  "player": 0,
-                  "time": 1655329636
                 }
               ],
               "subrules": [
@@ -887,34 +839,6 @@
                       "subrules": []
                     }
                   ]
-                },
-                {
-                  "id": 93,
-                  "relid": 4,
-                  "summary": "Forest",
-                  "content": "The Forest biome has Weight: 5.",
-                  "tags": ["world"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 96,
-                  "relid": 5,
-                  "summary": "Perilous Pass",
-                  "content": "The Perilous Pass biome has Weight: 3 and Bias: 5.\nThe traverse action costs 1 additional action point to use if the player is on a Perilous Pass hex unless otherwise stated (deferring to pure statistics).",
-                  "tags": ["world"],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1655470427
-                    }
-                  ],
-                  "subrules": []
                 }
               ]
             },
@@ -1021,34 +945,6 @@
                             {
                               "player": 4,
                               "time": 1654725038
-                            }
-                          ],
-                          "subrules": []
-                        },
-                        {
-                          "id": 94,
-                          "relid": 4,
-                          "summary": "Forest",
-                          "content": "Towns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×9\n- Hide ×3\n- Resin ×1",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1655470427
-                            }
-                          ],
-                          "subrules": []
-                        },
-                        {
-                          "id": 97,
-                          "relid": 5,
-                          "summary": "Perilous Pass",
-                          "content": "Towns in the Perilous Pass biome have the following initial inventory:\n- Wood ×15 Value: 100<m>\n- Stone ×20 Value: 250<m>\n- Steel ×7 Value: 5000<m>\n- Thread ×4 Value: 1000<m>\n- Quartz ×2 Value: 12500<m>\n- Copper ×1 Value: 20000<m>",
-                          "tags": ["world","trade"],
-                          "history": [
-                            {
-                              "player": 4,
-                              "time": 1655470427
                             }
                           ],
                           "subrules": []
@@ -1370,16 +1266,12 @@
               "id": 55,
               "relid": 2,
               "summary": "Exercise",
-              "content": "Exercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is an 80% chance the mouse's Power increases by one or a 60% chance the mouse's Wit increases by one (player's choice).",
+              "content": "Exercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is a 80% chance the mouse's Power increases by one.",
               "tags": ["mice"],
               "history": [
                 {
                   "player": 2,
                   "time": 1653894736
-                },
-                {
-                  "player": 4,
-                  "time": 1655470427
                 }
               ],
               "subrules": []
@@ -1402,16 +1294,12 @@
               "id": 57,
               "relid": 4,
               "summary": "Entice",
-              "content": "Enticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two complete periods. During this time, attempts to Exercise or Enrich the mouse have a 10% increased (additively) chance to succeed, however the mouse cannot Explore during this time.",
+              "content": "Enticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two periods. During this time, attempts to Exercise or Enrich the mouse have a 90% and 80% chance (respectively) to work, however the mouse cannot Explore during this time.",
               "tags": ["mice"],
               "history": [
                 {
                   "player": 2,
                   "time": 1653894736
-                },
-                {
-                  "player": 4,
-                  "time": 1655470427
                 }
               ],
               "subrules": []
