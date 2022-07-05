@@ -353,7 +353,7 @@ var modifyRuleTree = (modifications, data, rawRules, tag) => {
     
     if(type == "add"){
       
-      var relID;
+      var relID = undefined;
       var parent;
       
       //console.log(path);
@@ -392,7 +392,7 @@ var modifyRuleTree = (modifications, data, rawRules, tag) => {
       
       if(relID != undefined){
         if(relID != parent.subrules.length + 1){
-          console.warn("New rule relative ID does not match parent");
+          console.warn("New rule relative ID does not match parent",modifications[m]);
         }
       }
       
