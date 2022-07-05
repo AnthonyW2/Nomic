@@ -33,7 +33,7 @@
     "ruleset": 5,
     "timestamp": 1653894736,
     "proposition": 11,
-    "summary": "Mice added by Lime"
+    "summary": "Mice added by lime"
   },
   {
     "ruleset": 6,
@@ -118,5 +118,47 @@
     "timestamp": 1655470427,
     "proposition": 31,
     "summary": "Forest and Perilous Pass biomes added by Ryan"
+  },
+  {
+    "ruleset": 20,
+    "timestamp": 1655674591,
+    "proposition": 32,
+    "summary": "Fishing and lakes added by Xeya"
+  },
+  {
+    "ruleset": 21,
+    "timestamp": 1655674605,
+    "proposition": 33,
+    "summary": "Explore mouse action added by Ryan"
+  },
+  {
+    "ruleset": 22,
+    "timestamp": 1655968329,
+    "proposition": 34,
+    "summary": "Construction added by Ryan"
+  },
+  {
+    "ruleset": 23,
+    "timestamp": 1656244442,
+    "proposition": 36,
+    "summary": "Swamp added by lime"
+  },
+  {
+    "ruleset": 24,
+    "timestamp": 1656546448,
+    "proposition": 38,
+    "summary": "Eating added by Ryan"
+  },
+  {
+    "ruleset": 25,
+    "timestamp": 1656816659,
+    "proposition": 39,
+    "summary": "Gnomes added by Ryan"
+  },
+  {
+    "ruleset": 26,
+    "timestamp": 1656897252,
+    "proposition": 40,
+    "summary": "Dungeons added by Ryan"
   }
 ]

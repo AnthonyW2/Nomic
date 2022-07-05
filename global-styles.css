@@ -185,6 +185,15 @@ code {
 }
 
 
+summary {
+  cursor: pointer;
+}
+.detail-content {
+  padding-left: 0.5em;
+  border-left: 2px solid var(--Border);
+}
+
+
 .page-content-container {
   
   position: absolute;
@@ -194,6 +203,7 @@ code {
   /*width: calc(100% - 1.5em);*/
   
   padding-left: 1em;
+  padding-right: 1em;
   
 }
 

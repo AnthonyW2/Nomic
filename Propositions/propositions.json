@@ -818,5 +818,279 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/986744482135412827"
+  },
+  {
+    "author": 1,
+    "content": "**Addition**\n> World > Generation > Biomes > Lake\nLakes cannot be generated under normal means.\nIf a hex that has not been generated is not attached to the infinitely large section of not-generated hexes, it generates with a Lake biome and a Nothing landmark.\nIf a player would move or be moved onto a Lake hex, they do not move.\n\n**Addition**\n> World > Actions > Fishing\nFor the cost of 1 action point, a player may fish in any Lake hex adjacent to their current location, optionally using a mouse as bait.\nWhen this occurs, the player has a 70% chance of catching a fish.\nIf a mouse is used as bait, it has a probability of 2^-(p-1), where p is the mouse's Power, of dying. This deletes the mouse.\nA player may use any Fishing Rod they own to fish. If they do not specify which, it is assumed they are using the Fishing Rod they most recently used to fish, or the Starter Rod if they have never fished.\n\n**Addition**\n> World > Actions > Fishing > Fish\nIf a player catches a fish, it can either be a Standard Fish or a Medallion Fish.\nThe chance of catching a Medallion Fish is 0% + 10% for every Medallion Fish that the player is currently eligible to catch, capping at 40%.\nIf a mouse was used as bait, 4% is added to the Medallion Fish catch rate for each point of Mischief the mouse has, capping at a 20% bonus.\nIf a fish is caught that is not a Medallion Fish, it is a Standard Fish.\nIf a fish is caught, it is added to the inventory of the player who caught it.\n\n**Addition**\n> World > Actions > Fishing > Fish > Standard Fish\nStandard Fish can be caught anywhere.\nWhen a Standard Fish is caught, a random fish is selected from the list of Standard Fish, with equal weight.\nThe list (with names separated by commas) of Standard Fish is as follows: Eel, Salmon, Tilapia, Northern Pike, Trout\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Quality\nWhen a Medallion Fish is caught, its Quality is calculated by repeatedly rolling d2 until the result is 1, with the number of rolls being the Quality of the Medallion Fish.\nEach natural number Quality less than the highest Quality Medallion Fish must be named. If someone catches a higher Quality Medallion Fish than the one currently named, they must name all the unnamed Qualities below the Quality of fish they caught.\nThe list of currently named Qualities is as follows:\n1. Garbage\n2. Bronze\n3. Silver\n4. Gold\n5. Platinum\n6. Morbium\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Quality > Score\nThe sum of the Qualities of all unique (including different Qualities of the same fish as unique) Medallion Fish in a player's inventory is their Quality Score.\n\n**Content Edit**\nWorld > Actions\nIn each period, a player has up to 2 + floor(S^0.5) action points, where S is the player's Quality Score, that they may spend to perform an action at any time during the round.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Mana Ray\nMana Rays are Medallion Fish that can be caught when the bait being used has 5 or higher Wit.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Civilised Fish\nCivilised Fish are Medallion Fish that can be caught if the fishing player is in a hex with a Town.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Studentfish\nStudentfish are Medallion Fish that can be caught if the fishing player is on the same hex as another player.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Goldfish\nGoldfish are Medallion Fish that can be caught if the mass of Lake that the fishing player is fishing in has a size of 1.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Penfish\nPenfish are Medallion Fish that can be caught if the fishing player has more than *~~m~~*2500.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Carcharias\nCarcharias are Medallion Fish that can be caught if the fishing player is in a hex with Deceased Dunes.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Catfish\nCatfish are Medallion Fish that can be caught if the fishing player is in a hex with a Mouse Hut.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Piranha\nPiranhas are Medallion Fish that can be caught if the fishing player is fishing in a hex where a Mouse has died in the current period or previous period.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Pufferfish\nPufferfish are Medallion Fish that can be caught when the bait being used has 5 or higher Mischief.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Clownfish\nClownfish are Medallion Fish that can be caught when the bait being used has 5 or higher Curiosity.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Blue Whale\nBlue Whales are Medallion Fish that can be caught if the mass of Lake that the fishing player is fishing in has a size of 5 or higher.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Anglerfish\nAnglerfish are Medallion Fish that can be caught if the bait being used has 2 or lower Wit.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Plankton\nPlankton are Medallion Fish that can be caught if the fishing player failed their two previous attempts at fishing.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Jellyfish\nJellyfish are Medallion Fish that can be caught if the fishing player did not use any bait when fishing.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Blobfish\nBlobfish are Medallion Fish that can be caught if the bait being used has 2 or lower Mischief.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > FFFFFFish\nFFFFFFish are Medallion Fish that can be caught if the bait being used has 2 or lower Curiosity.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Crocodile\nCrocodiles are Medallion Fish that can be caught if the bait being used has 9 or higher Power.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Swordfish\nSwordfish are Medallion Fish that can be caught if the bait being used has 3 or lower Power.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Pefisula\nPefisula are Medallion Fish that can be caught if the fishing player is in a hex that has exactly 5 Lake hexes connected to it.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Oarfish\nOarfish are Medallion Fish that can be caught if the mass of Lake that the fishing player is fishing in has a size of 3 or higher and has a Hamiltonian path such that no two hexes that are not in adjacent positions in the path are adjacent in the mass.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Aligned Fish\nAligned Fish are Medallion Fish that can be caught if the centre of the origin, the centre of the hex the fishing player is in, and the centre of the hex the fishing player is fishing in are collinear.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Vanille\nVanille are Medallion Fish that can be caught if the fishing player is using a Starter Rod.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Gudgeon\nGudgeons are Medallion Fish that can be caught if the fishing player is in a hex with Forest.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > Flying Fish\nFlying Fish are Medallion Fish that can be caught if the fishing player is in a hex with Perilous Pass.\n\n**Addition**\n> World > Actions > Fishing > Fish > Medallion Fish > SvGCMkWr_zQ\nSvGCMkWr_zQ are Medallion Fish that can be caught if the Lake hex the fishing player is fishing in is corrupted.\n\n**Addition**\n> World > Actions > Fishing > Fishing Rods\nAll players start with a Starter Rod.\nFishing Rods can provide extra bonuses to players who are fishing.\n\n**Addition**\n> World > Actions > Fishing > Fishing Rods > Advanced Rod\nThe Advanced Rod is a Fishing Rod that can be made with 2 Wood and 1 Thread.\nThe Advanced Rod increases the odds of catching a fish when fishing by 5% additively.\n\n**Addition**\n> World > Actions > Fishing > Fishing Rods > Classic Rod\nThe Classic Rod is a Fishing Rod that can be made with 1 Wood, 1 Thread, and 1 Hide.\nThe Classic Rod increases the odds of catching a fish when fishing by 15% additively, but cannot be used to catch Medallion Fish.\n\n**Addition**\n> World > Actions > Fishing > Fishing Rods > Reinforced Rod\nThe Reinforced Rod is a Fishing Rod that can be made with 2 Steel and 1 Thread.\nThe Reinforced Rod increases the odds of catching a fish when fishing by 10% additively.\n\n**Addition**\n> World > Actions > Fishing > Fishing Rods > Midas' Rod\nThe Midas' Rod is a Fishing Rod that can be made with 2 Gold, 1 Quartz, 1 Thread, and 1 Steel.\nThe Midas' Rod reduces the odds of catching a fish when fishing to 10%, but if a player successfully catches a fish with it, that fish will always be a Medallion Fish of quality 4 or higher if they are eligible to catch a Medallion Fish.\n\n**Addition**\n> World > Actions > Fishing > Fishing Rods > Morbius' Rod\nThe Morbius' Rod is a Fishing Rod that can be made with 2 Morbium and 1 Thread.\nThe Morbius' Rod increases the odds of catching a fish when fishing to 100%.",
+    "timestamp": 1655599628,
+    "messageID": "987881669220524072",
+    "votes": [
+      [
+        0,
+        3,
+        4,
+        13
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/987881183507521647",
+    "multimessage": true,
+    "messages": [
+      "987881183507521647",
+      "987881285563330590",
+      "987881449191538749",
+      "987881562630656061",
+      "987881605530001428",
+      "987881669220524072"
+    ]
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n> *World > Generation > Biomes > Forest*\nThe Forest biome has Weight: 5.\nIf a player uses the mouse action Explore on this hex there is a 20% chance that the mouse is killed by predators (this deletes the mouse). However, for each wits statistic that the mouse has this decreases by 5% and for each curiosity statistic increases by 1% (minimum of 0%), applied additively.\n\n**Addition**\n> *7.3.5 – Explore*\nMaking a mouse explore costs 3 of that mouse’s energy. After, it has a chance to give the player items or effects based on their current hex and the statistics of the mouse they used to explore. The following table summarises the rewards for exploring (Note: numbers in parentheses denote quantities (range) and percentage is the chance to gain that reward):\n[Table]\nThe number of a reward they gain is randomly decided (between the range, inclusive) for all rewards they gain.\nEach mouse can only Explore a maximum of once in each period.\nIf a player earns ‘+Energy’ that mouse receives energy points (the number determined by random chance within the range).\nIf a player earns ‘+Statistic’ that mouse receives +1 to a random statistic. If this would cause the mouse’s total statistics to exceed 23, they instead gain nothing.\n\n**Addition**\n> *7.3.5.1 – Mischief*\nFor each mischief statistic that the mouse has, the player has a +5% chance to be able to reroll their rewards for that Explore action. They may optionally do this once per Explore action.\n\n**Addition**\n> *7.3.5.2 – Wits*\nFor each wits statistic that the mouse has, all probabilities of finding a reward when exploring increase by 1%. This percentage is applied additively.\n\n**Addition**\n> *7.3.5.3 – Power*\nFor each power statistic, the mouse earns +10% (of the items they would earn) number of items rounded down to the nearest integer quantity. This percentage is applied additively.\n\n**Addition**\n> *7.3.5.4 – Curiosity*\nFor each curiosity statistic, the mouse has a +1% chance to replace a regular item it would earn with a [Rare] item of the same category (biome and landmark). The quantity of items gained is determined randomly with the range of the new item. This percentage is applied additively.",
+    "timestamp": 1655608649,
+    "messageID": "987919021133426719",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        13
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/987919019166273536",
+    "multimessage": true,
+    "messages": [
+      "987919019166273536",
+      "987919021133426719"
+    ]
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *Construction*\nIf a player is adjacent to or on a non-corrupt hex with the nothing landmark, they may build a unique (not naturally generating) landmark on that hex. This requires the relevant resource cost to be spent. The landmark is immediately constructed after this condition is met.\nConstructed landmarks act as the nothing landmark in all ways unless otherwise stated. \n\n**Addition**\n> *Construction > Pylon of Purity*\nResource Cost: 100× Wood, 20× Steel, 5× Gold\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms. \n\n**Addition**\n> *Construction > Stag Station*\nResource Cost: 50× Stone, 10× Steel\nA player located on a hex with the stag station landmark may travel the stagways (teleport) to any hex with the stag station landmark. This does not act as moving into that hex. If they do so, they cannot perform any more actions for the period and cannot move from this hex until the next period. \n\n**Addition**\n> *Construction > Bridge*\nResource Cost: 100× Wood\nA bridge can only be constructed on Lake hexes. A lake with a bridge landmark can be traversed onto. \n\n**Addition**\n> *5.2.3.7 - Lake*\nIf a player uses the work action on a Lake hex, they work as a Sailor and earn 500*~~m~~*. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Fishy Fish*\nFishy Fish is a Medallion Fish that can be caught if the player is on a lake hex. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Megalodon*\nMegalodons are Medallion Fish that can be caught if the mass of the lake that the fishing player is fishing in is at least size 18. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Cronus Ampora*\nCronus Ampora is a Medallion Fish that can be caught in a corrupted lake hex that has 6 adjacent corrupted hexes.",
+    "timestamp": 1655881235,
+    "messageID": "989062327536062514",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        13,
+        2,
+        9
+      ],
+      [],
+      [
+        1
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/989062327536062514"
+  },
+  {
+    "author": 2,
+    "content": "**ADDITIONS**\n5.3.1.6 - Swamp\nWeight: 4\nIf a player who is in a swamp attempts to leave swamp for another biome (swamp to meadow etc.) they must roll a d100 if the result is 7 or lower, they remain in the swamp and do not move however they do use up one action. Players on Swamp tiles are considered Soaked. Swamps cannot generate next to Deceased Dunes tiles, and vice versa.\n\n5.2.3.7 - Swamp\nIf a player uses the work action on a Swamp hex, the work as a peat farmer and earn 330 ~~m~~\n\n5.3.2.2.1.6\nTowns in the swamp biome have the following initial inventory:\nWood ×10\nStone ×4 \nThread ×8\nHide ×8\nResin ×10\n\nWorld > Actions > Fishing > Fish > Medallion Fish > Mudskipper\nMudskippers are Medallion Fish that can be caught if the fishing player is in a Swamp hex.\n\n**CONTENT REPLACEMENT**\n5.3.1.2 - Meadow\nPlayers on Meadow tiles are considered Exposed.\nWeight: 7",
+    "timestamp": 1656128324,
+    "messageID": "990098696404361277",
+    "votes": [
+      [],
+      [],
+      [
+        0,
+        3,
+        5,
+        4,
+        13,
+        9
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/990098696404361277"
+  },
+  {
+    "author": 2,
+    "content": "**ADDITIONS**\n5.3.1.6 - Swamp\nWeight: 5\nIf a player who is in a swamp attempts to leave swamp for another biome (swamp to meadow etc.) they must roll a d100 if the result is 17 or lower, they remain in the swamp and do not move however they do use up one action. Players on Swamp tiles are considered Soaked. When generating next to a Deceased Dunes hex, the weight of Swamp is 0.\n\n5.2.3.7 - Swamp\nIf a player uses the work action on a Swamp hex, the work as a peat farmer and earn 330 ~~m~~\n\n5.3.2.2.1.6\nTowns in the swamp biome have the following initial inventory:\nWood ×10\nStone ×4 \nThread ×8\nHide ×8\nResin ×5\n\nWorld > Actions > Fishing > Fish > Medallion Fish > Mudskipper\nMudskippers are Medallion Fish that can be caught if the fishing player is in a Swamp hex.\n\n**CONTENT REPLACEMENT**\n5.3.1.2 - Meadow\nWeight: 7\nPlayers on Meadow hex are considered Exposed.\n\n5.3.1.1 - Deceased Dunes\nWeight: 4\nWhen a player moves into a Deceased Dunes hex, there is a 20% chance that they are moved by the buffeting winds into a random adjacent hex (generating it if it is not already) for no additional action point cost. When generating next to a swamp, the weight of Deceased Dunes is 0.\n\n**CONTENT APPEND**\nThe following is appended to the end of the table in 7.3.5.4\n[see <#960037087405555732> ]",
+    "timestamp": 1656200022,
+    "messageID": "990399416722653214",
+    "votes": [
+      [
+        0,
+        3,
+        4,
+        9,
+        14
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/990399416722653214"
+  },
+  {
+    "author": 4,
+    "content": "> *7.3.1 - Eat*\nMaking a mouse eat causes the mouse to gain 1 energy. A player may use up to 1 food item for additional effects.\n\n> *7.3.1.1 - Smoked Salmon*\nSmoked Salmon is a food item that mice can eat. It can be crafted using the following:\n2× Salmon, 2× Wood\nAdditional Effects: Exercising instead has a 100% chance to increase wits this period.\n\n> *7.3.1.2 - Fried Eel*\nFried Eel is a food item that mice can eat. It can be crafted using the following:\n2× Eel, 2× Wood\nAdditional Effects: Exercising instead has a 100% chance to increase power this period.\n\n> *7.3.1.3 - Baked Tilapia*\nBaked Tilapia is a food item that mice can eat. It can be crafted using the following:\n2× Tilapia, 2× Wood\nAdditional Effects: Enriching instead has a 100% chance to increase curiosity this period.\n\n> *7.3.1.4 - Stuffed Pike*\nStuffed Pike is a food item that mice can eat. It can be crafted using the following:\n2× Northern Pike, 2× Wood\nAdditional Effects: Enriching instead has a 100% chance to increase mischief this period.\n\n> *7.3.1.5 - Trout Filet*\nTrout Filet is a food item that mice can eat. It can be crafted using the following:\n2× Trout, 2× Wood\nAdditional Effects: +2 mouse actions this period.\n\n> *7.3.1.6 - Fishy Banquet*\nFishy Banquet is a food item that mice can eat. It can be crafted using the following:\n1× Eel, 1× Salmon, 1× Tilapia, 1× Northern Pike, 1× Trout, 3× Wood\nAdditional Effects: +4 energy.",
+    "timestamp": 1656284998,
+    "messageID": "990755835116388432",
+    "votes": [
+      [
+        3,
+        9
+      ],
+      [],
+      [
+        1,
+        5,
+        13,
+        2
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/990755835116388432"
+  },
+  {
+    "author": 4,
+    "content": "> *7.3.1 - Eat*\nMaking a mouse eat causes the mouse to gain 1 energy. A player may use up to 1 food item for additional effects. \n\n> *Construction > Campfire*\nResource Cost: 5× Wood\nCannot be constructed on lake hexes.\nA player may cook food items at a campfire. \n\n> *7.3.1.1 - Smoked Salmon*\nSmoked Salmon is a food item that mice can eat. It can be cooked from 1× Salmon at a campfire landmark.\nAdditional Effects: Exercising instead has a 100% chance to increase wits this period. \n\n> *7.3.1.2 - Fried Eel*\nFried Eel is a food item that mice can eat. It can be cooked from 1× Eel at a campfire landmark.\nAdditional Effects: Exercising instead has a 100% chance to increase power this period. \n\n> *7.3.1.3 - Baked Tilapia*\nBaked Tilapia is a food item that mice can eat. It can be cooked from 1× Tilapia at a campfire landmark.\nAdditional Effects: Enriching instead has a 100% chance to increase curiosity this period. \n\n> *7.3.1.4 - Stuffed Pike*\nStuffed Pike is a food item that mice can eat. It can be cooked from 1× Northern Pike at a campfire landmark.\nAdditional Effects: Enriching instead has a 100% chance to increase mischief this period. \n\n> *7.3.1.5 - Trout Filet*\nTrout Filet is a food item that mice can eat. It can be cooked from 1× Trout at a campfire landmark.\nAdditional Effects: +2 mouse actions this period. \n\n> *7.3.1.6 - Fishy Banquet*\nFishy Banquet is a food item that mice can eat. It can be cooked from any 3 Standard Fish at a campfire landmark.\nAdditional Effects: +4 energy.",
+    "timestamp": 1656329002,
+    "messageID": "990940399759671336",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/990940399759671336"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *Gnomes*\nFor the cost of 5× Stone, a player can create a Gnome. This is placed on their current hex. Multiple Gnomes stack together to increase storage and rewards.\nA Gnome cannot exist on a corrupted hex and dies (is removed) if it does. \n\n**Addition**\n> *Gnomes > Anthony*\nIf the player named Anthony has at least 1 mouse in his inventory, the cost of a Gnome is reduced to 3× Stone for him and 4× Stone for every other player. \n\n**Addition**\n> *Gnomes > Storage*\nEach Gnome on a hex can store up to the following:\n- 3× Wood\n- 2× Stone\n- 1× Thread\n- 1× Quartz\nIf not listed it is assumed to be 0× for that item.\nIf a Gnome would gain items causing it to exceed storage capacity it instead does not gain the items in conflict. \n\n**Addition**\n> *Gnomes > Storage > Collection*\nA player on the hex of a Gnome may collect any items from the Gnomes on that hex, transferring them to that player's inventory.\nA player may also deposite resources into Gnomes' inventories if they are on the same hex (provided it does not exceed the Gnome's storage capacity). \n\n**Addition**\n> *Gnomes > Rewards*\nOnce in every period, up to one player may request that all Gnomes are checked. If this occurs, depending on the biomes the Gnomes reside on there are altered rewards and chances to gain 1 of the resource. For multiple Gnomes on a hex, the check is performed once for each Gnome.\nThe following is a list of rewards with chance to gain each in parentheses:\n- Meadow: Wood (20%), Stone (5%)\n- Deceased Dunes: Stone (15%), Quartz (2%)\n- Forest: Wood (30%), Wood (10%), Thread (3%)\n- Perilous Peaks: Stone (50%), Stone (10%)\n- Lake: Thread (10%)\n- Swamp: Wood (15%), Thread (1%)",
+    "timestamp": 1656557420,
+    "messageID": "991898455855345664",
+    "votes": [
+      [
+        5,
+        2,
+        9
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/991898455855345664"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Landmarks > Dungeon*\nThe Dungeon landmark has Weight: 1.5.\nWhen a hex generates with a Dungeon landmark, a dungeon is generated.\nMice cannot explore on dungeon hexes.\nPure statistics have no effects in dungeons. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation*\nWhen a dungeon is generated, a unique space separate from the World is created with 1 centre dungeon hex d:(0,0,h) (note that h is 1 for the first level of the dungeon), then the other 60 dungeon hexes are placed in the following configuration:\n[Image] \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes*\nWhen a dungeon is generated, the type of all dungeon hexes except for the centre (blank) are determined for a random dungeon.\nA random (weighted) type is chosen:\n- Blank (Weight: 16 - 2h, for h<8, if h≥8, Weight: 1)\n- Dark (Weight: 10)\n- Cobwebs (Weight: h² - 2h + 4)\n- Stone Wall (Weight: 11 + h²)\n- Steel Wall (Weight: 4 + 2h)\n- Pool (Weight: 2 + h)\n- Chest (Weight: 2 + 2h)\n- Minotaur (Weight: 2h - 1)\n- Pit (Weight: 2)\n- Switch (Weight: h)\nWhere 'h' refers to the depth of the dungeon, starting at 1 and succeeding with each nested pit.\nDungeon hexes cannot be corrupt. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Dark*\nA player without a Torch cannot traverse onto a dark dungeon hex. \n\n**Addition**\n> *Resources > Torch*\nA player may create a Torch using 3× Wood, 1× Thread and 1× Resin. A player with a Torch in their inventory can traverse onto dark dungeon hexes. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Cobwebs*\nIf an entity moves into a cobwebs dungeon hex, they are considered stuck. After a player becomes stuck, they cannot perform actions or move for their turn and their following turn.\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Stone Wall*\nA player cannot traverse onto a stone wall dungeon hex.\nIf a player is adjacent to a stone wall dungeon hex, they may use a Pickaxe (if they have one in their inventory) to break it, replacing it with a blank dungeon hex. \n\n**Addition**\n> *Resources > Pickaxe*\nA player may create a Pickaxe using 2× Wood and 3× Steel. When a player uses a Pickaxe there is a 10% chance that it is destroyed, being removed from that player's inventory. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Steel Wall*\nA player cannot traverse onto a steel wall dungeon hex. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Pool*\nPools act as lakes. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Coelacanth*\nCoelacanths are a Medallion Fish that can be caught in a pool dungeon hex. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Dead Fish*\nDead Fish are a Medallion Fish that can be caught in a pool dungeon hex adjacent to at least 1 minotaur. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Eridan Ampora*\nEridan Ampora is a Medallion Fish that can be caught in a pool dungeon hex adjacent to at least 1 other pool dungeon hex. \n\n**Addition**\n> *World > Actions > Fishing > Fish > Medallion Fish > Chest (Fish?)*\nChest (Fish?) is a Medallion Fish that can be caught in a pool dungeon hex.\nA player may open the Chest (Fish?) to gain 3 different and random pieces of chest loot, with h=2. This removes the Chest (Fish?) from their inventory. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Chest*\nA player adjacent to a chest dungeon hex may open the chest (at any time), giving that player rewards from a loot table and replacing the chest dungeon hex with a blank dungeon hex.\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Chest > Loot*\nWhen a chest is opened, loot is generated depending on the depth that the chest is located in. 3 different of the following are randomly (weighted) selected with random quantities of those in parentheses:\n- Nothing (0) Weight: 10 - 3h, for h<4, if h≥4, Weight: 0\n- Nothing (0) Weight: 8\n- Wood (3-20) Weight: 16 - h, for h<16, if h≥16, Weight: 1\n- Wood (7-9) Weight: 12\n- Wood (11-18) Weight: 11\n- Steel (1-8) Weight: 9 + h²\n- Steel (1-5) Weight: 9 + h²\n- Steel (2-3) Weight: 6 + h³\n- Thread (1-4) Weight: 8 + h\n- Thread (1-2) Weight: 9\n- Hide (1-3) Weight: 6\n- Hide (1) Weight: 4 + 2h\n- Quartz (1-3) Weight: 3 + 2h²\n- Quartz (2) Weight: 3 + 2h\n- Quartz (1-2) Weight: 5 + h\n- Copper (1-2) Weight: 4 + h² - h\n- Copper (1) Weight: 5 + h²\n- Gold (1) Weight: 2 + h\n- Gold (0-1) Weight: 2 + 2h\n- Morbium (1) Weight: h - 1\n- Dungeon Key (1) Weight: 6 + h \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Chest > Regeneration*\nWhen a chest dungeon hex is generated, each adjacent blank dungeon hex (excluding the centre dungeon hex if necessary) is regenerated with the weight of minotaur changed to 3h, dark to 12, cobwebs to h² + 4, stone wall to 13 + h² - 3h and steel wall to h² + 6. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur*\nA minotaur dungeon hex describes the position of a minotaur and is replaced by the blank dungeon hex when it moves.\nIf a minotaur and a player occupy the same dungeon hex, that player is removed from the dungeon (effected as leaving the dungeon). \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities*\nThe following are considered entities:\n- Players\n- Minotaurs\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities > Turns*\nAll entities take turns to optionally perform an action in a dungeon or level. This does not occur if there are no players in a dungeon or level.\nOn each level (depth) of a dungeon, the turn order is the list in *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities* (with relevant elements of each in random orders). An entity entering a dungeon or level has their turn placed after the previous last element of their entity type (ie. player, minotaur, etc.). Should an entity leave the dungeon or level they are removed from the list and no longer have a turn in that dungeon or level.\nIf a player does not move within 24 hours of their turn commencing, they forfeit their turn (do nothing). \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Movement*\nA minotaur cannot move into pool, chest, minotaur and pit dungeon hexes or end a turn on the centre dungeon hex d:(0,0,h).\nA minotaur will target players, acting to move into their hex.\nWhen a minotaur has its turn, it will act in one of 4 ways; charging, leaping, random movement or no movement.\nIf a minotaur does not perform any of the first 3, it does not move (no movement).\nWhen a minotaur enters the hex of a stone wall or steel wall, that dungeon hex is replaced by the blank dungeon hex. A minotaur can exist in dark, cobwebs or switch dungeon hexes.\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Movement > Charging*\nIf there is a path from the minotaur to a player (perpendicular to the edges of its dungeon hex), it will charge at the player, moving 3 hexes (in one turn) in that direction or until entering the hex of a stone wall, steel wall or player (or stopping due to being unable to move into the desired hex).\nFor multiple eligable players, it will target the closest player.\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Movement > Leaping*\nAlternatively, if a player cannot be targeted, there is a 30% chance that it will leap to a player's dungeon hex (random). It remains airborne for its turn (then landing for the following turn). (The minotaur effectively skips 2 turns.) If a player moves from their dungeon hex after a minotaur leaps, the minotaur lands on the hex where they were at the time of leaping.\nA minotaur will not leap onto a hex with another minotaur, and attempting to do so causes the leap destination to be determined again. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Movement > Random Movement*\nIf a minotaur does not leap when a player cannot be targeted, there is a 50% chance that it will move randomly. When this occurs, a random valid direction is chosen such that the minotaur can move into the adjacent hex in that direction. It then does so. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Pit*\nIf a player enters a pit dungeon hex, they immediately fall into a deeper level of the dungeon, being placed at the centre d:(0,0,h) of a 'new dungeon' that is a subset of the previous, with h increased by 1. This is generated when a player enters a pit.\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Pit > Locked*\nWhen a pit generates, there is a 40% chance that it is locked. Players cannot move onto a locked pit dungeon hex.\nA player adjacent to a locked pit may use a Dungeon Key (removing 1 from their inventory) if they have at least 1 to remove the lock. \n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Switch*\nWhilst an entity occupies the same hex as a switch, that switch is active. If all switches on a level are active any locked pit dungeon hexes are temporarily unlocked (for as long as all switches are active).\n\n**Addition**\n> *World > Generation > Landmarks > Dungeon > Entering*\nA player can enter a dungeon once per period.\nWhen a player enters a dungeon they are placed on the centre hex.\nA player can leave a dungeon at any time, removing them and placing them back on the hex with the associated Dungeon landmark in the World.\nWhilst a player is inside a dungeon, the traverse action costs 0 action points for them, though players must move in single steps. \n\n**Addition**\n> *5.2.3.8 - Dungeon*\nIf a player uses the work action on a hex with a Dungeon landmark, they work as an archeologist and earn 550*~~m~~*. A player working on any dungeon hex inside a dungeon receives the same reward. \n\n**Content Edit**\nThe following replaces the table in *7.3.5*.\n[Table] \n\n**Content Edit**\n> *Construction > Pylon of Purity*\nResource Cost: 100× Wood, 20× Steel, 5× Gold\nCannot be constructed on lake hexes.\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms.\n\n**Content Edit**\n> *Construction > Stag Station*\nResource Cost: 50× Stone, 10× Steel\nCannot be constructed on lake hexes.\nA player located on a hex with the stag station landmark may travel the stagways (teleport) to any hex with the stag station landmark. This does not act as moving into that hex. If they do so, they cannot perform any more actions for the period and cannot move from this hex until the next period. \n\n**Edit**\n> *Construction > Bridge*\n**New Title:** *Boardwalk*\nResource Cost: 10× Wood\nA lake with a boardwalk landmark can be traversed onto and a player can fish targeting the hex they are on.\nAny other hex with the boardwalk landmark does not apply its status effect, penalty, etc.",
+    "timestamp": 1656818876,
+    "messageID": "992996022697599026",
+    "votes": [
+      [
+        0,
+        5,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/992995080229113897",
+    "multimessage": true,
+    "messages": [
+      "992995080229113897",
+      "992995139452682241",
+      "992995207425568838",
+      "992995332986257458",
+      "992995652252467330",
+      "992995975864008755",
+      "992996022697599026"
+    ]
   }
 ]

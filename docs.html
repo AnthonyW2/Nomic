@@ -206,26 +206,115 @@
       So with that said, it is preferable that you use recent propositions as a reference on how to format your proposition. If you need any more clarity, see below:<br>
       <br>
       The following is the <b>official template</b> you should use to format your propositions:
-      <p id="proposition-syntax-template">
-        <b>[Modification Type]</b><br>
+      <br>
+      <div id="proposition-syntax-template" class="syntax-example-box">
+        **[Modification Type]**<br>
         &gt; [Path] - [Title]<br>
         [Content]<br>
         <br>
-        <b>[Modification Type]</b><br>
+        **[Modification Type]**<br>
         &gt; [Path] - [Title]<br>
         [Content]<br>
         <br>
         [Repeat as necessary]
-      </p>
+      </div>
+      <br><br>
       
-      <b>[Modification Type]</b> = The type of modification being made to the rule tree.<br>
+      [Modification Type] = The type of modification being made to the rule tree.<br>
       Options include:
       <ul>
-        <li>Addition</li>
-        <li>Content Edit</li>
-        <li>Path Edit</li>
-        <li>Title Edit</li>
-        <li>Deletion</li>
+        <li>
+          <details>
+            <summary>Addition</summary>
+            <div class="detail-content">
+              Add a new rule to the rule tree.<br>
+              This requires a path and a title. Content is optional.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Content Edit</summary>
+            <div class="detail-content">
+              Replace the content of a rule.<br>
+              This requires a path and the complete new rule content.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Path Edit</summary>
+            <div class="detail-content">
+              Moves a rule on the rule tree (changes its path).<br>
+              This requires the original path and the new path.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Title Edit</summary>
+            <div class="detail-content">
+              Change the title of a rule.<br>
+              This requires a path and the new title of the rule.<br>
+              <br>
+              If using a title path, the recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Title Edit**<br>
+                &gt; [Path]<br>
+                [New Title]<br>
+              </div>
+              <br><br>
+              If using an ID path, the recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Title Edit**<br>
+                &gt; [Path] - [New Title]<br>
+              </div>
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Deletion</summary>
+            <div class="detail-content">
+              Delete a rule.<br>
+              This requires a path.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Content Appendication</summary>
+            <div class="detail-content">
+              Append more content to the end of a rule.<br>
+              This requires a path and the content to append.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Transmutation</summary>
+            <div class="detail-content">
+              Transmute a rule.<br>
+              This requires a path.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Miscellaneous Change</summary>
+            <div class="detail-content">
+              Transmute a rule.<br>
+              This requires a description of the modification to be made to the game.
+            </div>
+          </details>
+        </li>
       </ul>
       
       <br>
@@ -265,7 +354,8 @@
       <br>
       
       The following is a portion of an exemplar proposition (<a href="https://discord.com/channels/701269326518419547/960036851022979092/982495874376683540">link</a>) made using all recommended syntax:
-      <p id="proposition-syntax-example">
+      <br>
+      <div id="proposition-syntax-example" class="syntax-example-box">
         
         <b>Content Edit</b><br>
         <span class="discord-quote-indent"></span> 4.2 - Suggestion Voting<br>
@@ -285,7 +375,7 @@
         <b>Title Edit</b><br>
         <span class="discord-quote-indent"></span> 7.1.1 - Aquisition<br>
         
-      </p>
+      </div>
       
       <br>
       <br>

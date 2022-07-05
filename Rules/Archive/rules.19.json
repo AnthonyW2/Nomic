@@ -1,0 +1,1438 @@
+{
+  "id": 0,
+  "relid": 1,
+  "summary": "Rules",
+  "content": "",
+  "tags": [],
+  "history": [
+    {
+      "player": -1,
+      "time": 1653105600
+    }
+  ],
+  "subrules": [
+    {
+      "id": 1,
+      "relid": 1,
+      "summary": "Winning",
+      "content": "When a player or players win the game, the game is over.",
+      "tags": ["initial","winning"],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        }
+      ],
+      "subrules": [
+        {
+          "id": 2,
+          "relid": 1,
+          "summary": "End of Viable Play",
+          "content": "If the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then the game ends and no players are declared to be victorious. This rule takes precedence over every other rule determining the winner.",
+          "tags": ["winning"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1655329636
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "relid": 2,
+      "summary": "Players",
+      "content": "A player is a person or group of people that must always abide by all the rules of Nomic currently in effect.",
+      "tags": ["initial","players"],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        }
+      ],
+      "subrules": [
+        {
+          "id": 4,
+          "relid": 1,
+          "summary": "TOS",
+          "content": "A player may not participate in Nomic in a way that violates rules, laws, terms of service, or other similar documents related to places or services being used to access Nomic.",
+          "tags": ["initial","players"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 5,
+          "relid": 2,
+          "summary": "Entering",
+          "content": "A person or group of people, none of whom are currently acting as a player or a part of a player, may request to become a player at any time. All players may vote (up or down) on allowing the player to join.",
+          "tags": ["initial","players"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 6,
+              "relid": 1,
+              "summary": "Acceptance",
+              "content": "If the aforementioned request is accepted by a majority of active players, then that person or group of people becomes a player.",
+              "tags": ["players"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                },
+                {
+                  "player": 4,
+                  "time": 1655470427
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "relid": 3,
+          "summary": "Exiting",
+          "content": "A player always has the option of forfeiting the game. No penalty worse than losing, in the opinion of the player incurring the penalty, may be imposed.",
+          "tags": ["initial","players"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 8,
+              "relid": 1,
+              "summary": "Player Groups",
+              "content": "In the case of a player consisting of multiple people, individual people may leave the player. A player only leaves the game when its last person does.",
+              "tags": ["initial","players"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "relid": 3,
+      "summary": "Propositions",
+      "content": "A proposition consists of a set of modifications or additions to rules (including paths) and/or the deletion or transmutation of rules currently in effect, posted to #propositions.",
+      "tags": ["initial","propositions"],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        }
+      ],
+      "subrules": [
+        {
+          "id": 10,
+          "relid": 1,
+          "summary": "Voting",
+          "content": "A proposition that has been legally proposed may be voted on.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 11,
+              "relid": 1,
+              "summary": "Eligibility",
+              "content": "Every player is an eligible voter.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 12,
+              "relid": 2,
+              "summary": "Casting Votes",
+              "content": "Each eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote.\nAn eligible voter may change their vote at any time before voting ends.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                },
+                {
+                  "player": 3,
+                  "time": 1653128419
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 65,
+                  "relid": 1,
+                  "summary": "Inactivity",
+                  "content": "A player is classified as \"active\" if they have cast a vote on at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.",
+                  "tags": ["propositions"],
+                  "history": [
+                    {
+                      "player": 3,
+                      "time": 1654503834
+                    },
+                    {
+                      "player": 0,
+                      "time": 1654599540
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 66,
+                      "relid": 1,
+                      "summary": "Voting",
+                      "content": "An inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though they may change their vote as with any other vote before a majority is reached.",
+                      "tags": ["propositions"],
+                      "history": [
+                        {
+                          "player": 3,
+                          "time": 1654503834
+                        },
+                        {
+                          "player": 0,
+                          "time": 1654599540
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
+                },
+                {
+                  "id": 34,
+                  "relid": 2,
+                  "summary": "Rightvoting",
+                  "content": "You may abstain from voting by rightvoting.\nMajority is not determined until there is at least 1 vote other than a rightvote on a proposition. This takes precedence over all other rules for ending voting and determining majority.",
+                  "tags": ["propositions"],
+                  "history": [
+                    {
+                      "player": 3,
+                      "time": 1653128419
+                    },
+                    {
+                      "player": 3,
+                      "time": 1654503834
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "relid": 3,
+              "summary": "Adoption",
+              "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                },
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 35,
+              "relid": 4,
+              "summary": "Leftvote Majority",
+              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by <a href=\"#rule-36\">Propositions > Creation</a>.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": 3,
+                  "time": 1653128419
+                },
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 38,
+              "relid": 5,
+              "summary": "Time Limit",
+              "content": "72 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "relid": 2,
+          "summary": "Retroactivity",
+          "content": "A proposition may not have retroactive effect.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 15,
+          "relid": 3,
+          "summary": "Paths",
+          "content": "All rules are defined as part of a tree of rules. Rules must refer to other rules using their ID paths or title paths.",
+          "tags": ["initial","propositions","syntax"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 16,
+              "relid": 1,
+              "summary": "Relative ID Path",
+              "content": "Each rule has a relative ID which is used to form its \"ID path\" when combined with the ID path of its parent rule.",
+              "tags": ["initial","propositions","syntax"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 17,
+              "relid": 2,
+              "summary": "Title Path",
+              "content": "Each rule has a title which is used to form its \"title path\" when combined with the title path of its parent rule.",
+              "tags": ["initial","propositions","syntax"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 18,
+              "relid": 3,
+              "summary": "Conflicts",
+              "content": "No two rules may have the same path. If a proposition's rule has the same path as an existing rule, the new rule replaces the old rule if the proposition is adopted.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 62,
+              "relid": 4,
+              "summary": "Gaps",
+              "content": "If the relative IDs of the subrules of a rule contain a gap (skip at least one integer), the rules after the gap are moved up (their relative ID is decreased) by one to fill the gap.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1654327752
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 83,
+              "relid": 5,
+              "summary": "Updating Paths",
+              "content": "If a rule is moved or has its title modified, any references to it (using a path) in other rules will be updated accordingly.",
+              "tags": ["propositions"],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1654599540
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "relid": 4,
+          "summary": "Immutability",
+          "content": "Propositions may not alter immutable rules in any way, with the exception of transmutation.",
+          "tags": ["initial","propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 20,
+              "relid": 1,
+              "summary": "Transmutations",
+              "content": "A transmutation causes a mutable rule to become immutable, or vice versa.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 21,
+              "relid": 2,
+              "summary": "Precedence",
+              "content": "If a portion of an immutable rule conflicts with a portion of a mutable rule, the immutable rule takes precedent. The inconsistent portion of the mutable rule is without effect.",
+              "tags": ["initial","propositions"],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 22,
+                  "relid": 1,
+                  "summary": "Conflicts",
+                  "content": "If multiple mutable rules conflict with one another, or if multiple immutable rules conflict with one another, the rule edited most recently takes precedence. If at least one of the rules explicitly states that it defers to another rule or takes precedence over another rule, such provisions must supersede the chronological method of determining precedence. If multiple rules claim to take precedence over one another or to defer to one another, the chronological method must again govern.",
+                  "tags": ["initial","propositions"],
+                  "history": [
+                    {
+                      "player": -1,
+                      "time": 1653105600
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "relid": 5,
+          "summary": "Making Changes",
+          "content": "The proponent may make any changes to their proposition while there are no votes (excluding rightvotes) cast on the proposition, and only spelling and grammar changes after votes (excluding rightvotes) have been cast.",
+          "tags": ["propositions"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1654599540
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 36,
+          "relid": 6,
+          "summary": "Creation",
+          "content": "A player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- The player has not submitted a proposition in the current period.\nUnless specified, the conditions in this rule take priority over conflicting rules.",
+          "tags": ["propositions"],
+          "history": [
+            {
+              "player": 0,
+              "time": 1653466564
+            },
+            {
+              "player": 1,
+              "time": 1654260138
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 37,
+          "relid": 7,
+          "summary": "Active Propositions",
+          "content": "A proposition is \"active\" if it has not yet reached a majority of votes or timed out.",
+          "tags": ["propositions"],
+          "history": [
+            {
+              "player": 0,
+              "time": 1653466564
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "relid": 4,
+      "summary": "Clarifications",
+      "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in propositions.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.\nSubrules of this rule are not affected by rules outside of this branch.",
+      "tags": ["clarification"],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        },
+        {
+          "player": 0,
+          "time": 1655329636
+        }
+      ],
+      "subrules": [
+        {
+          "id": 30,
+          "relid": 1,
+          "summary": "Choosing a Judge",
+          "content": "The Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.",
+          "tags": ["clarification"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1653466564
+            }
+          ],
+          "subrules": [
+            {
+              "id": 38,
+              "relid": 1,
+              "summary": "Candidates",
+              "content": "At any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+              "tags": ["clarification"],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "relid": 2,
+          "summary": "Suggestion Voting",
+          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it.\nIf an upvote majority is reached within 72 hours, the suggestion is adopted.\nAfter 72 hours, the remaining votes are ignored. If there are more upvotes than downvotes the suggestion is adopted.\nOtherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+          "tags": ["clarification"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1654327752
+            },
+            {
+              "player": 0,
+              "time": 1655329636
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 32,
+          "relid": 3,
+          "summary": "Deferring",
+          "content": "If a player chosen to be the Judge does not wish to make a suggestion, a new Judge is chosen to make a suggestion.",
+          "tags": ["initial","clarification"],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 63,
+          "relid": 4,
+          "summary": "Time Limit",
+          "content": "If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.",
+          "tags": ["clarification"],
+          "history": [
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "relid": 5,
+      "summary": "World",
+      "content": "All players exist on a board. This board consists of an infinitely large, and procedurally generated grid of adjacent hexagons, henceforth referred to as hexes.",
+      "tags": ["world"],
+      "history": [
+        {
+          "player": 4,
+          "time": 1653739239
+        }
+      ],
+      "subrules": [
+        {
+          "id": 40,
+          "relid": 1,
+          "summary": "Origin",
+          "content": "All players start on the origin, an unremarkable Meadow hex (with the 'Nothing' landmark).",
+          "tags": ["world"],
+          "history": [
+            {
+              "player": 4,
+              "time": 1653739239
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 41,
+          "relid": 2,
+          "summary": "Actions",
+          "content": "In each period, a player has up to 2 action points that they may spend to perform an action at any time during the round.",
+          "tags": ["world"],
+          "history": [
+            {
+              "player": 4,
+              "time": 1653739239
+            },
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": [
+            {
+              "id": 42,
+              "relid": 1,
+              "summary": "Scout",
+              "content": "For the cost of 1 action point, the player selects 1 hex that is adjacent to their current location and generate it if it has not been already.",
+              "tags": ["world"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1653739239
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 43,
+              "relid": 2,
+              "summary": "Traverse",
+              "content": "For the cost of 1 action point, the player moves into an adjacent hex, generating it if it is not already generated.",
+              "tags": ["world"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1653739239
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 70,
+              "relid": 3,
+              "summary": "Capitalism",
+              "content": "For the cost of 2 action points, players may work. The type of hex the player is currently residing on determines the job they work (job title) and the pay they will earn. After working, the player is immediately paid and is labelled as their job title until they work again.",
+              "tags": ["world","work"],
+              "history": [
+                {
+                  "player": 5,
+                  "time": 1654515056
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 71,
+                  "relid": 1,
+                  "summary": "Meadow",
+                  "content": "When a player uses the work action on a Meadow hex with the Nothing landmark, they work as a Farmer and earn 250<m>.",
+                  "tags": ["world","work"],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 72,
+                  "relid": 2,
+                  "summary": "Town",
+                  "content": "When a player uses the work action on a hex with the Town landmark, they work as a Guard and earn 500<m>.",
+                  "tags": ["world","work"],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 73,
+                  "relid": 3,
+                  "summary": "Deceased Dunes",
+                  "content": "When a player uses the work action on a Deceased Dunes hex with the Nothing landmark, they work as a Dunes Sweeper and earn 300<m>.",
+                  "tags": ["world","work"],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 74,
+                  "relid": 4,
+                  "summary": "Mouse Hut",
+                  "content": "When a player uses the work action on a hex with the Mouse Hut landmark, they work as a Keyboard and earn 100<m>.",
+                  "tags": ["world","work"],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 95,
+                  "relid": 5,
+                  "summary": "Forest",
+                  "content": "If a player uses the work action on a Forest hex, they work as a lawn mower and earn 400<m>.",
+                  "tags": ["world","work"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 98,
+                  "relid": 6,
+                  "summary": "Perilous Pass",
+                  "content": "If a player uses the work action on a Perilous Pass hex, they work as a miner and earn 450<m>.",
+                  "tags": ["world","work"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "relid": 3,
+          "summary": "Generation",
+          "content": "When a hex is generated, a biome, and then a landmark are determined for the tile.",
+          "tags": ["world"],
+          "history": [
+            {
+              "player": 4,
+              "time": 1653739239
+            },
+            {
+              "player": 4,
+              "time": 1654061467
+            },
+            {
+              "player": 4,
+              "time": 1654315938
+            },
+            {
+              "player": 0,
+              "time": 1654863175
+            }
+          ],
+          "subrules": [
+            {
+              "id": 58,
+              "relid": 1,
+              "summary": "Biomes",
+              "content": "When a new hex is generated, each adjacent hex is added to a randomisation pool, where its weight in the pool is equal to B/M.\n  \"Weight\" refers to how many times it appears in the pool, and can be a fractional value.\n  \"B\" = The \"bias\" of a biome. This is a constant, equal to 10 unless otherwise specified.\n  \"M\" = The size of the mass to which the hex belongs (where \"size\" refers to how many hexes are in the mass).\nAn additional \"random\" entry with weight 2 is added to the pool.\nThe biome of the new hex is then drawn from the pool.\nIn case the \"random\" entry is chosen, a new randomisation pool is constructed with the weights of every possible biome (as listed within the relevant biome rules). The biome of the new hex is then drawn from this new pool.",
+              "tags": ["world"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1654061467
+                },
+                {
+                  "player": 0,
+                  "time": 1654863175
+                },
+                {
+                  "player": 0,
+                  "time": 1655329636
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 59,
+                  "relid": 1,
+                  "summary": "Deceased Dunes",
+                  "content": "Weight: 4\nWhen a player moves into a Deceased Dunes hex, there is a 20% chance that they are moved by the buffeting winds into a random adjacent hex (generating it if it is not already) for no additional action point cost.",
+                  "tags": ["world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654061467
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 89,
+                  "relid": 2,
+                  "summary": "Meadow",
+                  "content": "Meadow is a biome with no additional effects on the player.\nWeight: 7",
+                  "tags": ["world"],
+                  "history": [
+                    {
+                      "player": 0,
+                      "time": 1654863175
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 90,
+                  "relid": 3,
+                  "summary": "Corruption",
+                  "content": "When a hex is generated, there is a 5% chance that the biome is replaced by its corrupted variant. A corrupted biome always generates with nothing landmarks. All biomes have a corrupted variant which acts like the normal form unless otherwise specified.\nThe corruption Biome may spread to other biomes, corrupting them.",
+                  "tags": ["world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655328182
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 91,
+                      "relid": 1,
+                      "summary": "Spreading",
+                      "content": "When a player moves into a corruption hex, there is a +5% chance (maximum 85%) for each corrupt hex in the mass that a random hex adjacent to the edge of the mass will become 'corrupt', having its biome changed to its corrupted variant (being generated first if necessary). Its landmark is left unchanged unless it is a town, and then is replaced by the ruins landmark.",
+                      "tags": ["world"],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1655328182
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
+                },
+                {
+                  "id": 93,
+                  "relid": 4,
+                  "summary": "Forest",
+                  "content": "The Forest biome has Weight: 5.",
+                  "tags": ["world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 96,
+                  "relid": 5,
+                  "summary": "Perilous Pass",
+                  "content": "The Perilous Pass biome has Weight: 3 and Bias: 5.\nThe traverse action costs 1 additional action point to use if the player is on a Perilous Pass hex unless otherwise stated (deferring to pure statistics).",
+                  "tags": ["world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 60,
+              "relid": 2,
+              "summary": "Landmarks",
+              "content": "A landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw): \n- Nothing (Weight: 20)\n- Town (Weight: 2 or Weight: 1 if a biome other than Meadow is selected)\n- Mouse Hut (Weight: 1 or Weight: 0 if a Meadow biome is selected)\nIf new landmarks are added (through a proposition or otherwise), this list is updated to reflect them.",
+              "tags": ["world"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1654315938
+                },
+                {
+                  "player": 0,
+                  "time": 1654863175
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 61,
+                  "relid": 1,
+                  "summary": "Mouse Hut",
+                  "content": "Weight: 1 or Weight: 0 if a Meadow Biome is selected.\nA player located in a hex with a mouse hut may use the exercise or enrich mouse action for 1 energy instead.",
+                  "tags": ["world","mice"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654315938
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 84,
+                  "relid": 2,
+                  "summary": "Town",
+                  "content": "",
+                  "tags": ["world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654725038
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 85,
+                      "relid": 1,
+                      "summary": "Economy",
+                      "content": "When a player is on a hex with the Town landmark, they may buy and sell items from/to that town. Every town has an initial budget of 2500<m> and an initial inventory dependent on the biome of their hex.",
+                      "tags": ["world","trade"],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1654725038
+                        }
+                      ],
+                      "subrules": [
+                        {
+                          "id": 86,
+                          "relid": 1,
+                          "summary": "Meadow",
+                          "content": "Towns in the Meadow biome have the following initial inventory:\n- Wood ×25\n- Stone ×12\n- Steel ×5\n- Thread ×7\n- Hide ×2\n- Resin ×1",
+                          "tags": ["world","trade"],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1654725038
+                            },
+                            {
+                              "player": 4,
+                              "time": 1655328182
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 87,
+                          "relid": 2,
+                          "summary": "Deceased Dunes",
+                          "content": "Towns in the Deceased Dunes biome have the following initial inventory:\n- Wood ×10\n- Stone ×15\n- Steel ×4\n- Thread ×5\n- Hide ×1\n- Quartz ×1",
+                          "tags": ["world","trade"],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1654725038
+                            },
+                            {
+                              "player": 4,
+                              "time": 1655328182
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 88,
+                          "relid": 3,
+                          "summary": "Transactions",
+                          "content": "When a player purchases or sells items, there is a transfer of items and Moustaches between the player and the town.\nWhen a player purchases an item, the cost (value) is added to the town's budget and subtracted from the player.\nWhen a player sells an item, the profit (value) is subtracted from the town's budget and added to the player.\nA player or town's budget or inventory (individual item stock) cannot be negative, if a player attempts to buy or sell and this would result in either of these conditions, the transaction does not occur.",
+                          "tags": ["world","trade"],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1654725038
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 94,
+                          "relid": 4,
+                          "summary": "Forest",
+                          "content": "Towns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×9\n- Hide ×3\n- Resin ×1",
+                          "tags": ["world","trade"],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655470427
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 97,
+                          "relid": 5,
+                          "summary": "Perilous Pass",
+                          "content": "Towns in the Perilous Pass biome have the following initial inventory:\n- Wood ×15 Value: 100<m>\n- Stone ×20 Value: 250<m>\n- Steel ×7 Value: 5000<m>\n- Thread ×4 Value: 1000<m>\n- Quartz ×2 Value: 12500<m>\n- Copper ×1 Value: 20000<m>",
+                          "tags": ["world","trade"],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655470427
+                            }
+                          ],
+                          "subrules": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "relid": 4,
+          "summary": "Trading",
+          "content": "Players can participate in 1 on 1 trades with other players. This requires the two participating players to be on the same hex. This does not cost an action point for either player.",
+          "tags": ["world","trade"],
+          "history": [
+            {
+              "player": 5,
+              "time": 1654515056
+            }
+          ],
+          "subrules": [
+            {
+              "id": 69,
+              "relid": 1,
+              "summary": "Currency",
+              "content": "Players can earn the currency \"Moustaches\", with the symbol <m>. As an example, 50 Moustaches would be represented by 50<m>. These can be earned through working, or can be obtained by trading with another player. All Moustaches are stored in a player's \"spacious Pants Hole\" in their inventory.",
+              "tags": ["world","trade"],
+              "history": [
+                {
+                  "player": 5,
+                  "time": 1654515056
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "relid": 5,
+          "summary": "Masses",
+          "content": "A mass, in the context of the board, is defined as a continuous (may have holes, but must be entirely navigable by moving in only single steps) section of the board such that all hexes within that section are of one Biome, and all adjacent hexes are of a different Biome.",
+          "tags": ["world"],
+          "history": [
+            {
+              "player": 1,
+              "time": 1654599509
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "relid": 6,
+      "summary": "Miscellaneous",
+      "content": "",
+      "tags": ["misc"],
+      "history": [
+        {
+          "player": 1,
+          "time": 1653790511
+        },
+        {
+          "player": 0,
+          "time": 1654327752
+        }
+      ],
+      "subrules": [
+        {
+          "id": 47,
+          "relid": 1,
+          "summary": "Dice",
+          "content": "An expression of the form xdy or xDy, where x and y are natural numbers, means to roll x dice, each with y faces labelled with integers from 1 to y (or any other method of generating y random integers from 1 to y), and take the sum of all of their results.\nThe x can be omitted, in which case it is assumed to be 1.",
+          "tags": ["misc"],
+          "history": [
+            {
+              "player": 1,
+              "time": 1653790511
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 64,
+          "relid": 2,
+          "summary": "Periods",
+          "content": "Every week (commencing on Sunday 00:00 UTC) is divided into a 72 hour period, followed by a 96 hour period.",
+          "tags": ["misc"],
+          "history": [
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "relid": 7,
+      "summary": "Mice",
+      "content": "Players can own and train mice. Each player can have up to 3 mice in their inventory at a time. Players can perform up to 3 Mouse Actions in each period.",
+      "tags": ["mice"],
+      "history": [
+        {
+          "player": 2,
+          "time": 1653894736
+        },
+        {
+          "player": 4,
+          "time": 1655328182
+        }
+      ],
+      "subrules": [
+        {
+          "id": 49,
+          "relid": 1,
+          "summary": "Mice",
+          "content": "",
+          "tags": ["mice"],
+          "history": [
+            {
+              "player": 2,
+              "time": 1653894736
+            }
+          ],
+          "subrules": [
+            {
+              "id": 50,
+              "relid": 1,
+              "summary": "Aquisition",
+              "content": "A player can create a new mouse every 4 periods. When creating a mouse, the player must create a name, eye colour, favourite food and age for the mouse as well as a 50-100 word blurb describing them, and use dice to determine their statistics. A picture is recommended but not necessary.",
+              "tags": ["mice"],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 0,
+                  "time": 1654327752
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 51,
+              "relid": 2,
+              "summary": "Killing",
+              "content": "<i>Well, down the toilet it is! They can't all be winners…</i>\nA mouse can be killed by the player who owns it, removing it from Nomic, and that player's list of mice. For 6 periods after killing a mouse, all Mouse Actions have a 1 in 3 chance to fail, instead doing nothing.",
+              "tags": ["mice"],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 0,
+                  "time": 1654327752
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "relid": 2,
+          "summary": "Statistics",
+          "content": "Mice have the following starting statistics; 1 energy, 1d2 Mischief, 1d2 Wits, 2d3 Power and 1d4 Curiosity. None of these statistics can become negative. A mouse cannot have the sum of their statistics (excluding energy) exceed 23. Energy cannot exceed 20.",
+          "tags": ["mice"],
+          "history": [
+            {
+              "player": 2,
+              "time": 1653894736
+            },
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": [
+            {
+              "id": 75,
+              "relid": 1,
+              "summary": "Pure Statistics",
+              "content": "If a mouse has a total of 23 statistics, the owner may use 20 of that mouse's energy to gain a random pure statistic for that mouse. A mouse may only have 1 pure statistic and this cannot be changed once determined.",
+              "tags": ["mice","pure stats"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1654581951
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 76,
+                  "relid": 1,
+                  "summary": "Duplicates",
+                  "content": "For multiple mice with pure statistics, the effects are applied additively where applicable (denoted with a '+' for the same effect).",
+                  "tags": ["mice","pure stats"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 77,
+                  "relid": 2,
+                  "summary": "Speedrunner",
+                  "content": "If the owner uses the traverse action, (in the same period) they may move +1 hex for no additional action point cost per period (doing so is not classified as performing an action). Additionally, the traverse action always costs at most 1 action point.",
+                  "tags": ["mice","pure stats"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 78,
+                  "relid": 3,
+                  "summary": "Vigor",
+                  "content": "After the owner uses an (regular, not mouse) action, there is a +10% chance that they will gain 1 action point (for use in the same period).",
+                  "tags": ["mice","pure stats"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 79,
+                  "relid": 4,
+                  "summary": "Farsight",
+                  "content": "If the owner uses the scout action, each hex adjacent to the generated hex has a +20% chance to be generated if it is not already. This also occurs for hexes generated through this process.",
+                  "tags": ["mice","pure stats","world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 80,
+                  "relid": 5,
+                  "summary": "World Bender",
+                  "content": "If the owner uses the scout action on a generated hex, there is a +25% chance that it is re-generated.",
+                  "tags": ["mice","pure stats","world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 81,
+                  "relid": 6,
+                  "summary": "Manipulator",
+                  "content": "If the player uses the scout action, they may choose the Biome that would be generated for the selected hex with a +25% chance for this to occur. The player does not determine the landmark.",
+                  "tags": ["mice","pure stats","world"],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "relid": 3,
+          "summary": "Mouse Actions",
+          "content": "Mouse Actions are as follows; eat, exercise, enrich, entice and explore.",
+          "tags": ["mice"],
+          "history": [
+            {
+              "player": 2,
+              "time": 1653894736
+            }
+          ],
+          "subrules": [
+            {
+              "id": 54,
+              "relid": 1,
+              "summary": "Eat",
+              "content": "Making a mouse eat causes the mouse to gain 1 energy. Eating specific foods can have additional effects.",
+              "tags": ["mice"],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 55,
+              "relid": 2,
+              "summary": "Exercise",
+              "content": "Exercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is an 80% chance the mouse's Power increases by one or a 60% chance the mouse's Wit increases by one (player's choice).",
+              "tags": ["mice"],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 4,
+                  "time": 1655470427
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 56,
+              "relid": 3,
+              "summary": "Enrich",
+              "content": "Enriching a mouse costs 2 of that mouse's energy. After enriching a mouse there is a 70% chance that the mouse's Curiosity or Mischief increases (player's choice) by one.",
+              "tags": ["mice"],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 57,
+              "relid": 4,
+              "summary": "Entice",
+              "content": "Enticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two complete periods. During this time, attempts to Exercise or Enrich the mouse have a 10% increased (additively) chance to succeed, however the mouse cannot Explore during this time.",
+              "tags": ["mice"],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 4,
+                  "time": 1655470427
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "relid": 8,
+      "summary": "Resources",
+      "content": "The following comprises a list of the primary resources and their value at towns.\n- Wood Value: 100<m>\n- Stone Value: 250<m>\n- Steel Value: 5000<m>\n- Thread Value: 1000<m>\n- Hide Value: 3000<m>\n- Resin Value: 6000<m>\n- Quartz Value: 12500<m>\n- Copper Value: 20000<m>\n- Gold Value: 50000<m>\n- Morbium Value: 163000000<m>",
+      "tags": ["resources","trade"],
+      "history": [
+        {
+          "player": 4,
+          "time": 1655328182
+        }
+      ],
+      "subrules": []
+    }
+  ]
+}

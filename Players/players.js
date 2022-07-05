@@ -60,6 +60,12 @@ var displayPlayerInfo = (player) => {
   
   playerBlock.appendChild(playerName);
   
+  //Add moustaches (spacious pants hole)
+  //Add fish
+  //Add position
+  //Add other items
+  //Add remaining actions (?)
+  
   playerBlock.appendChild(displayMice(player));
   
   return playerBlock;

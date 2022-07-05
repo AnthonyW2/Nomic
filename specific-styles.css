@@ -487,12 +487,6 @@ Z-Indexes:
 
 /* ======== Rules ======== */
 
-#rule-tree {
-  
-  width: calc(100% - 1em);
-  
-}
-
 /*.rule {
   
 }*/
@@ -572,7 +566,7 @@ Z-Indexes:
 
 #rule-display-control-container {
   
-  width: calc(100% - 1em);
+  /*width: 100%;*/
   
   background-color: var(--BG-Menu);
   border: 2px solid var(--Border);
@@ -654,7 +648,19 @@ Z-Indexes:
 
 /* ======== Documentation ======== */
 
-#proposition-syntax-template {
+.syntax-example-box {
+  
+  display: inline-block;
+  
+  padding: 0.5em;
+  margin-top: 0px;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+/*#proposition-syntax-template {
   
   padding: 0.5em;
   margin-top: 0px;
@@ -672,7 +678,7 @@ Z-Indexes:
   background-color: var(--BG-Submenu);
   border: 2px solid var(--Border);
   
-}
+}*/
 
 .discord-quote-indent {
   
@@ -691,12 +697,59 @@ Z-Indexes:
 
 .proposition {
   
-  margin: 1em;
-  margin-left: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   
   padding: 1em;
   
   border: 1px solid var(--Border);
+  
+}
+
+#proposition-parse-ID-input {
+  
+  width: 3em;
+  
+  padding-left: 2px;
+  
+  font-size: 18px;
+  
+}
+
+#proposition-parse-text-input {
+  
+  width: 90%;
+  height: 20em;
+  
+  font-size: 18px;
+  
+}
+
+#proposition-parse-JSON-output {
+  
+  width: 90%;
+  height: 40em;
+  
+  font-family: var(--FontMono);
+  font-size: 14px;
+  
+}
+
+#parser-HR-output {
+  
+  padding-left: 0.5em;
+  
+  border: 2px solid var(--Border);
+  
+}
+
+#proposition-parse-rule-output {
+  
+  width: 90%;
+  height: 20em;
+  
+  font-family: var(--FontMono);
+  font-size: 14px;
   
 }
 
@@ -706,10 +759,42 @@ Z-Indexes:
 
 #world-map {
   
+  --World-Hex-Border-Color: #000000;
+  
   display: block;
   
   
   
   border: 2px solid var(--Border);
+  
+}
+
+.map-hex {
+  
+  --World-Meadow-Color: #009000;
+  --World-Deceased-Dunes-Color: #ffd900;
+  --World-Lake-Color: #0066ff;
+  
+  fill: none;
+  stroke: var(--World-Hex-Border-Color);
+  stroke-width: 1;
+  
+}
+
+.map-hex-meadow {
+  
+  fill: var(--World-Meadow-Color);
+  
+}
+
+.map-hex-dunes {
+  
+  fill: var(--World-Deceased-Dunes-Color);
+  
+}
+
+.map-hex-lake {
+  
+  fill: var(--World-Lake-Color);
   
 }

@@ -1,52 +1,150 @@
 {
+  "biomes": [
+    {
+      "name": "Meadow",
+      "shortname": "meadow"
+    },
+    {
+      "name": "Deceased Dunes",
+      "shortname": "dunes"
+    },
+    {
+      "name": "Lake",
+      "shortname": "lake"
+    },
+    {
+      "name": "Forest",
+      "shortname": "forest"
+    },
+    {
+      "name": "Perilous Pass",
+      "shortname": "pass"
+    }
+  ],
   "tiles": [
     {
-      "coords": [0,0],
-      "biome": "meadow",
+      "position": [0,0],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [0,1],
-      "biome": "meadow",
+      "position": [0,1],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [1,0],
-      "biome": "meadow",
+      "position": [1,0],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [1,-1],
-      "biome": "meadow",
+      "position": [1,-1],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [0,-1],
-      "biome": "meadow",
+      "position": [0,-1],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [-1,0],
-      "biome": "meadow",
+      "position": [-1,0],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [-1,1],
-      "biome": "meadow",
+      "position": [-1,1],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     },
     {
-      "coords": [0,2],
-      "biome": "meadow",
+      "position": [0,2],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [1,1],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [2,0],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [2,-1],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [2,-2],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [1,-2],
+      "biome": 2,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [0,-2],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [-1,-1],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [-2,0],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [-2,1],
+      "biome": 0,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [-2,2],
+      "biome": 1,
+      "corrupt": false,
+      "landmarks": []
+    },
+    {
+      "position": [-1,2],
+      "biome": 0,
+      "corrupt": false,
       "landmarks": []
     }
   ],
   "tilemap": [
-    [-1,-1, 7,-1,-1],
-    [-1, 6, 1,-1,-1],
-    [-1, 5, 0, 2,-1],
-    [-1,-1, 4, 3,-1],
-    [-1,-1,-1,-1,-1]
+    [-1,-1,-1,-1,-1,-1,-1],
+    [-1,17,18, 7,-1,-1,-1],
+    [-1,16, 6, 1, 8,-1,-1],
+    [-1,15, 5, 0, 2, 9,-1],
+    [-1,-1,14, 4, 3,10,-1],
+    [-1,-1,-1,13,12,11,-1],
+    [-1,-1,-1,-1,-1,-1,-1]
   ],
-  "tilemaporigin": [2,2]
+  "tilemaporigin": [3,3]
 }

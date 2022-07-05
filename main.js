@@ -13,6 +13,7 @@
 
 const body = document.body;
 
+var rawRules;
 var rules;
 var players;
 var propositions;
@@ -56,7 +57,8 @@ var LoadRules = async () => {
       //Test if the status resolved to 200
       if(xmlhttp.status == 200){
         
-        rules = new Rule(JSON.parse(xmlhttp.responseText));
+        rawRules = JSON.parse(xmlhttp.responseText);
+        rules = new Rule(rawRules);
         
         //Trigger the custom ruleload event
         body.dispatchEvent(ruleLoadEvent);

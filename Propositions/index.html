@@ -33,7 +33,7 @@
     <meta property="og:description" content="All propositions made in Nomic Season 3">
     
   </head>
-  <body onload="StartJS()">
+  <body onload="StartJS(); FixSelectors()">
     
     <!-- Navigation Bar -->
     <div id="nav-bar">
@@ -102,6 +102,61 @@
       
       <br>
       
+      <details>
+        <summary><b>Proposition Parsing</b></summary>
+        <div class="detail-content">
+          Input:
+          <select id="parser-input-type-selector" onchange="UpdateInputType()">
+            <option value="existing">Existing</option>
+            <option value="custom">Custom</option>
+          </select>
+          <!--<br>-->
+          Output:
+          <select id="parser-output-type-selector" onchange="UpdateOutputType()">
+            <option value="json">JSON</option>
+            <option value="hr">Human Readable</option>
+          </select>
+          
+          <br><br>
+          
+          <div id="parser-existing-input">
+            Enter the proposition ID to parse:
+            <input type="text" id="proposition-parse-ID-input" placeholder="ID"></input>
+          </div>
+          <div id="parser-custom-input" hidden>
+            Enter the proposition text to parse:<br>
+            <textarea id="proposition-parse-text-input" placeholder="Input"></textarea>
+          </div>
+          
+          <br>
+          <button onclick="ParseProposition()">Parse</button>
+          <br><br>
+          
+          Main output:
+          <div id="parser-JSON-output">
+            <textarea id="proposition-parse-JSON-output" placeholder="Output"></textarea>
+          </div>
+          <div id="parser-HR-output" hidden></div>
+          <br>
+          
+          Extra data:<br>
+          Author:
+          <select id="parser-author-selector"></select><br>
+          Timestamp: <input type="text" id="parser-timestamp-input"></input>
+          
+          <br><br>
+          <button onclick="ApplyToTree()">Apply to Tree</button>
+          <br><br>
+          
+          <textarea id="proposition-parse-rule-output" placeholder="New rule tree"></textarea>
+          
+          <br>
+          
+        </div>
+      </details>
+      
+      <br>
+      
       <div id="proposition-list"></div>
       
     </div>
@@ -116,6 +171,7 @@
     <script src="../search.js"></script>
     <script src="../Rules/rule-class.js"></script>
     <script src="./propositions.js"></script>
+    <script src="./parse.js"></script>
     
   </body>
 </html>
