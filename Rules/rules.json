@@ -2986,7 +2986,7 @@
               "id": 137,
               "relid": 5,
               "summary": "Explore",
-              "content": "Making a mouse explore costs 3 of that mouse's energy. After, it has a chance to give the player items or effects based on their current hex and the statistics of the mouse they used to explore. The following table summarises the rewards for exploring (Note: numbers in parentheses denote quantities (range) and percentage is the chance to gain that reward):\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/987919019472486441/unknown.png\" alt=\"[Table]\" width=\"400\">\n<img src=\"https://cdn.discordapp.com/attachments/960037087405555732/990399595794288671/unknown.png\" alt=\"[Table]\" width=\"400\">\nThe number of a reward they gain is randomly decided (between the range, inclusive) for all rewards they gain.\nEach mouse can only Explore a maximum of once in each period.\nIf a player earns '+Energy' that mouse receives energy points (the number determined by random chance within the range).\nIf a player earns '+Statistic' that mouse receives +1 to a random statistic. If this would cause the mouse's total statistics to exceed 23, they instead gain nothing.",
+              "content": "Making a mouse explore costs 3 of that mouse's energy. After, it has a chance to give the player items or effects based on their current hex and the statistics of the mouse they used to explore. The following table summarises the rewards for exploring (Note: numbers in parentheses denote quantities (range) and percentage is the chance to gain that reward):\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/992995975931105410/unknown.png\" alt=\"[Table]\" width=\"400\">\nThe number of a reward they gain is randomly decided (between the range, inclusive) for all rewards they gain.\nEach mouse can only Explore a maximum of once in each period.\nIf a player earns '+Energy' that mouse receives energy points (the number determined by random chance within the range).\nIf a player earns '+Statistic' that mouse receives +1 to a random statistic. If this would cause the mouse's total statistics to exceed 23, they instead gain nothing.",
               "tags": [
                 "mice"
               ],
@@ -3137,7 +3137,7 @@
           "id": 143,
           "relid": 1,
           "summary": "Pylon of Purity",
-          "content": "Resource Cost: 100× Wood, 20× Steel, 5× Gold\nCannot be constructed on lake hexes.\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms.\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/992995975931105410/unknown.png\" alt=\"[Table]\" width=\"400\">",
+          "content": "Resource Cost: 100× Wood, 20× Steel, 5× Gold\nCannot be constructed on lake hexes.\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms.",
           "tags": [
             "world",
             "construction"
