@@ -352,7 +352,7 @@
       false,
       true
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
