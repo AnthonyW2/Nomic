@@ -1132,13 +1132,15 @@
     "messageID": "997431395091755008",
     "votes": [
       [
-        1,
         3
       ],
-      [],
+      [
+        1
+      ],
       [
         0,
-        2
+        2,
+        9
       ],
       [
         13,
@@ -1151,7 +1153,7 @@
         14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/997431395091755008"
   },
   {
@@ -1169,10 +1171,71 @@
         4
       ],
       [
-        6
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/997678623127511080"
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> Winning > Land\nThe first player to reach a land score of 15 wins Season 3 of Nomic. If this is not achieved by January 15 2023, 0200 UTC, the player with the highest land score wins.\n\n**Addition**\n> Construction > Flag\nResource Cost: 3× Wood, 1× Thread  1× Stone\nCan be constructed on any hex (except corrupted hexes) and does not override the current landmark, instead coexisting.\nA flag can only be constructed on the hex of the constructor.\nA player may construct another landmark (except a flag) on a hex with a flag provided there is no other landmark already present.\nIf a hex with a flag is corrupted, the flag is removed. \n\n**Addition**\n> Construction > Flag > Land Score\nA flag increases the land score of the constructor. This depends on the pre-existing biome and landmark of the hex it is on:\nMeadow: +1\nDeceased Dunes: +1\nForest: +1\nPerilous Pass: +2\nSwamp: +2\nLake: +3\nNothing: +0\nTown: +1\nMouse Hut: +1\nRuins: +3\nDungeon: +2 \n\n**Addition**\n> Construction > Flag > Destruction\nA player with a Torch occupying the hex of another player's flag may burn the flag, removing it. They cannot do this if the player of that flag in the same hex.\nAdditionally, flags of a player that are surrounded by 6 other flags that belong to the same player, it cannot be destroyed.",
+    "timestamp": 1658021662,
+    "messageID": "998039931765145752",
+    "votes": [
+      [],
+      [
+        4,
+        13,
+        9
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
       ]
     ],
     "majority": false,
-    "link": "https://discord.com/channels/701269326518419547/960036851022979092/997678623127511080"
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/998039931765145752"
+  },
+  {
+    "author": 0,
+    "content": "**Addition**\n> *5.6 - Cardinal Directions*\nRadiating out from the origin are 6 cardinal directions with the following names (going clockwise):\n1 - North\n2 - Yeast\n3 - Mouth\n4 - South\n5 - Zest\n6 - Weast\n[Image of compass]\n\n**Content Edit**\n> *3.1.2.1 - Inactivity*\nA player is classified as \"active\" if they have cast a vote on or proposed at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.\n\n**Content Edit**\n> *3.1.4 - Leftvote Majority*\nIf a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThe modified version of their proposition does not count as a \"proposition\" in terms of the Propositions > Creation rule.",
+    "timestamp": 1658031349,
+    "messageID": "998080558905167943",
+    "votes": [
+      [
+        4,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/998080558905167943"
   }
 ]

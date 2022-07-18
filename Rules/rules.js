@@ -58,7 +58,7 @@ var createRuleBranch = (rule, branchEnd) => {
     }
   }
   
-  ruleElement.innerHTML += path + rule.summary+"<br>";
+  ruleElement.innerHTML += path + "<a href=\"#rule-"+rule.id+"\" class=\"inherit-color\">" + rule.summary+"</a><br>";
   ruleElement.innerHTML += rule.content.replaceAll("\n","<br>\n").replaceAll("<m>","<i><strike>m</strike></i>");
   ruleElement.classList.add("rule");
   ruleElement.classList.add("rule-style-"+ruleDisplayStyle);

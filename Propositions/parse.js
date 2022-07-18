@@ -34,7 +34,7 @@ var parse = (proposition) => {
   //Loop through each line of the proposition
   for(var l = 0;l < lines.length;l ++){
     
-    var line = lines[l].toLowerCase();
+    var line = lines[l].toLowerCase().replaceAll("–","-");
     
     //console.log(line);
     
@@ -165,6 +165,9 @@ var parse = (proposition) => {
       
       if(prevLineType == "type"){
         confidence ++;
+      }else if(prevLineType == "path"){
+        //May need to just prevent it from choosing a "path" as the type if the last line was a path, since this measure doesn't appear to be enough.
+        confidence -= 2;
       }
       
       if(line.charAt(0) == ">"){
