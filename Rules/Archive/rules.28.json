@@ -1071,7 +1071,7 @@
               "id": 100,
               "relid": 4,
               "summary": "Fishing",
-              "content": "For the cost of 1 action point, a player may fish in any Lake hex adjacent to their current location, optionally using a mouse as bait.\nWhen this occurs, the player has a 70% chance of catching a fish.\nIf a mouse is used as bait, it has a probability of 2^-(p-1), where p is the mouse's Power, of dying. This deletes the mouse. For powers less than 1, it has a 100% probability of dying.\nA player may use any Fishing Rod they own to fish. If they do not specify which, it is assumed they are using the Fishing Rod they most recently used to fish, or the Starter Rod if they have never fished.",
+              "content": "For the cost of 1 action point, a player may fish in any Lake hex adjacent to their current location, optionally using a mouse as bait.\nWhen this occurs, the player has a 70% chance of catching a fish.\nIf a mouse is used as bait, it has a probability of 2^-(p-1), where p is the mouse's Power, of dying. This deletes the mouse.\nA player may use any Fishing Rod they own to fish. If they do not specify which, it is assumed they are using the Fishing Rod they most recently used to fish, or the Starter Rod if they have never fished.",
               "tags": [
                 "world",
                 "fish"
@@ -1080,10 +1080,6 @@
                 {
                   "player": 1,
                   "time": 1655674591
-                },
-                {
-                  "player": 4,
-                  "time": 1658215548
                 }
               ],
               "subrules": [
@@ -1800,40 +1796,6 @@
                         {
                           "player": 1,
                           "time": 1655674591
-                        }
-                      ],
-                      "subrules": []
-                    },
-                    {
-                      "id": 204,
-                      "relid": 6,
-                      "summary": "Fishing Net",
-                      "content": "The Fishing Net is a fishing rod that can be made with 2× Thread.\nThe Fishing Net increases the odds of catching a fish by (20 - t)%, where t is the number of hexes in the targeted lake's mass (minimum of +0% bonus > thus 70% fishing chance).",
-                      "tags": [
-                        "world",
-                        "fish"
-                      ],
-                      "history": [
-                        {
-                          "player": 4,
-                          "time": 1658215548
-                        }
-                      ],
-                      "subrules": []
-                    },
-                    {
-                      "id": 205,
-                      "relid": 7,
-                      "summary": "Harpoon",
-                      "content": "The Harpoon is a fishing rod that can be made with 1× Steel and 1× Thread.\nThe Fishing Net increases the odds of catching a fish by t%, where t is the number of hexes in the targeted lake's mass (maximum of +20% bonus > thus 90% fishing chance).",
-                      "tags": [
-                        "world",
-                        "fish"
-                      ],
-                      "history": [
-                        {
-                          "player": 4,
-                          "time": 1658215548
                         }
                       ],
                       "subrules": []
@@ -3097,70 +3059,6 @@
                     }
                   ],
                   "subrules": []
-                },
-                {
-                  "id": 200,
-                  "relid": 7,
-                  "summary": "Eel Purge",
-                  "content": "Eel Purge is a food item that mice can eat. It can be cooked from 1× Eel and 1× Trout at a campfire landmark.\nAdditional Effects: Power is decreased by 1 (minimum 0).",
-                  "tags": [
-                    "mice"
-                  ],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1658215548
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 201,
-                  "relid": 8,
-                  "summary": "Salmon Lobotomy",
-                  "content": "Salmon Lobotomy is a food item that mice can eat. It can be cooked from 1× Salmon and 1× Trout at a campfire landmark.\nAdditional Effects: Wits is decreased by 1 (minimum 0).",
-                  "tags": [
-                    "mice"
-                  ],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1658215548
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 202,
-                  "relid": 9,
-                  "summary": "Pike Puncturing",
-                  "content": "Pike Puncturing is a food item that mice can eat. It can be cooked from 1× Northern Pike and 1× Trout at a campfire landmark.\nAdditional Effects: Mischief is decreased by 1 (minimum 0).",
-                  "tags": [
-                    "mice"
-                  ],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1658215548
-                    }
-                  ],
-                  "subrules": []
-                },
-                {
-                  "id": 203,
-                  "relid": 10,
-                  "summary": "Tilapia Decapitatia",
-                  "content": "Tilapia Decapitatia is a food item that mice can eat. It can be cooked from 1× Tilapia and 1× Trout at a campfire landmark.\nAdditional Effects: Curiosity is decreased by 1 (minimum 0).",
-                  "tags": [
-                    "mice"
-                  ],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1658215548
-                    }
-                  ],
-                  "subrules": []
                 }
               ]
             },
@@ -3239,7 +3137,7 @@
                   "id": 138,
                   "relid": 1,
                   "summary": "Mischief",
-                  "content": "For each mischief statistic that the mouse has, the player has a +5% chance (maximum 100%) to be able to reroll their rewards for that Explore action. They may optionally do this once per Explore action. This percentage is applied additively.",
+                  "content": "For each mischief statistic that the mouse has, the player has a +5% chance to be able to reroll their rewards for that Explore action. They may optionally do this once per Explore action. This percentage is applied additively.",
                   "tags": [
                     "mice"
                   ],
@@ -3247,10 +3145,6 @@
                     {
                       "player": 4,
                       "time": 1655674605
-                    },
-                    {
-                      "player": 4,
-                      "time": 1658215548
                     }
                   ],
                   "subrules": []
