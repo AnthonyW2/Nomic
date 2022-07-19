@@ -229,7 +229,7 @@
                   "id": 65,
                   "relid": 1,
                   "summary": "Inactivity",
-                  "content": "A player is classified as \"active\" if they have cast a vote on at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.",
+                  "content": "A player is classified as \"active\" if they have cast a vote on or proposed at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.",
                   "tags": [
                     "propositions"
                   ],
@@ -241,6 +241,10 @@
                     {
                       "player": 0,
                       "time": 1654599540
+                    },
+                    {
+                      "player": 0,
+                      "time": 1658134120
                     }
                   ],
                   "subrules": [
@@ -312,7 +316,7 @@
               "id": 35,
               "relid": 4,
               "summary": "Leftvote Majority",
-              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThis rule overrides the time restriction defined by <a href=\"#rule-36\">Propositions > Creation</a>.",
+              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThe modified version of their proposition does not count as a \"proposition\" in terms of the Propositions > Creation rule.",
               "tags": [
                 "propositions"
               ],
@@ -324,6 +328,10 @@
                 {
                   "player": 0,
                   "time": 1653466564
+                },
+                {
+                  "player": 0,
+                  "time": 1658134120
                 }
               ],
               "subrules": []
@@ -2606,6 +2614,22 @@
             {
               "player": 1,
               "time": 1654599509
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 199,
+          "relid": 6,
+          "summary": "Directions",
+          "content": "Radiating out from the origin are 6 cardinal directions with the following names (going clockwise):\n1 - North\n2 - Yeast\n3 - Mouth\n4 - South\n5 - Zest\n6 - Weast\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/998080558619959376/Compass.png\" alt=\"[Compass Image]\" width=\"256\">",
+          "tags": [
+            "world"
+          ],
+          "history": [
+            {
+              "player": 0,
+              "time": 1658134120
             }
           ],
           "subrules": []

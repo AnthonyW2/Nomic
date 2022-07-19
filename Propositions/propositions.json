@@ -1201,6 +1201,7 @@
       ],
       [
         6,
+        5,
         7,
         8,
         10,
@@ -1220,6 +1221,7 @@
     "votes": [
       [
         4,
+        13,
         2,
         9
       ],
@@ -1235,7 +1237,40 @@
         14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/998080558905167943"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *7.3.1.7 - Eel Purge*\nEel Purge is a food item that mice can eat. It can be cooked from 1× Eel and 1× Trout at a campfire landmark.\nAdditional Effects: Power is decreased by 1 (minimum 0). \n\n**Addition**\n> *7.3.1.8 - Salmon Lobotomy*\nSalmon Lobotomy is a food item that mice can eat. It can be cooked from 1× Salmon and 1× Trout at a campfire landmark.\nAdditional Effects: Wits is decreased by 1 (minimum 0). \n\n**Addition**\n> *7.3.1.9 - Pike Puncturing*\nPike Puncturing is a food item that mice can eat. It can be cooked from 1× Northern Pike and 1× Trout at a campfire landmark.\nAdditional Effects: Mischief is decreased by 1 (minimum 0). \n\n**Addition**\n> *7.3.1.10 - Tilapia Decapitatia*\nTilapia Decapitatia is a food item that mice can eat. It can be cooked from 1× Tilapia and 1× Trout at a campfire landmark.\nAdditional Effects: Curiosity is decreased by 1 (minimum 0). \n\n**Content Edit**\n> *5.2.4 - Fishing*\nFor the cost of 1 action point, a player may fish in any Lake hex adjacent to their current location, optionally using a mouse as bait.\nWhen this occurs, the player has a 70% chance of catching a fish.\nIf a mouse is used as bait, it has a probability of 2^-(p-1), where p is the mouse's Power, of dying. This deletes the mouse. For powers less than 1, it has a 100% probability of dying.\nA player may use any Fishing Rod they own to fish. If they do not specify which, it is assumed they are using the Fishing Rod they most recently used to fish, or the Starter Rod if they have never fished. \n\n**Content Edit**\n> *7.3.5.1 - Mischief*\nFor each mischief statistic that the mouse has, the player has a +5% chance (maximum 100%) to be able to reroll their rewards for that Explore action. They may optionally do this once per Explore action. This percentage is applied additively.\n\n**Addition**\n> *World > Actions > Fishing > Fishing Rods > Fishing Net*\nThe Fishing Net is a fishing rod that can be made with 2× Thread.\nThe Fishing Net increases the odds of catching a fish by (20 - t)%, where t is the number of hexes in the targeted lake's mass (minimum of +0% bonus > thus 70% fishing chance). \n\n**Addition**\n> *World > Actions > Fishing > Fishing Rods > Harpoon*\nThe Harpoon is a fishing rod that can be made with 1× Steel and 1× Thread.\nThe Fishing Net increases the odds of catching a fish by t%, where t is the number of hexes in the targeted lake's mass (maximum of +20% bonus > thus 90% fishing chance).",
+    "timestamp": 1658143810,
+    "messageID": "998552269555519618",
+    "votes": [
+      [
+        0,
+        13,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/998552255332614234",
+    "multimessage": true,
+    "messages": [
+      "998552255332614234",
+      "998552269555519618"
+    ]
   }
 ]
