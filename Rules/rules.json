@@ -2042,7 +2042,7 @@
               "id": 60,
               "relid": 2,
               "summary": "Landmarks",
-              "content": "A landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw): \n- Nothing (Weight: 20)\n- Town (Weight: 2 or Weight: 1 if a biome other than Meadow is selected)\n- Mouse Hut (Weight: 1 or Weight: 0 if a Meadow biome is selected)\nIf new landmarks are added (through a proposition or otherwise), this list is updated to reflect them.",
+              "content": "A landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw): \n- Nothing (Weight: 20)\n- Town (Weight: 2 or Weight: 1 if a biome other than Meadow is selected)\n- Mouse Hut (Weight: 1 or Weight: 0 if a Meadow biome is selected)\n- Dungeon (Weight: 1.5)\nIf new landmarks are added (through a proposition or otherwise), this list is updated to reflect them.",
               "tags": [
                 "world"
               ],
