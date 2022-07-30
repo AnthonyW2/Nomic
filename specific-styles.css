@@ -638,7 +638,17 @@ Z-Indexes:
 
 .player-mice-container {
   
-  display: none;
+  /*display: none;*/
+  
+  border: 1px solid var(--Border);
+  
+}
+
+.player-mouse {
+  
+  padding: 0.5em;
+  
+  margin-bottom: 0.5em;
   
   border: 1px solid var(--Border);
   

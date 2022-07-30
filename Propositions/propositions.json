@@ -1210,7 +1210,7 @@
         14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/998039931765145752"
   },
   {
@@ -1271,6 +1271,102 @@
     "messages": [
       "998552255332614234",
       "998552269555519618"
+    ]
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> Magic\nEach player can use their soul each period to cast a spell from their spellbook\n\n**Addition**\n> Magic > soul\nAt the start of each round, every player earns 1 soul. Magic points cannot be a negative number.\n\n**Addition**\n> magic > spellbook\nA player's spellbook can contain up to 4 spells simultaneously. One spell can be drawn from the spell deck once per round and is added to that player’s spellbook. Once a spell from a spellbook is cast, it is removed, making room for another spell. All players start with one spellbook.\n\n**Addition**\n> magic > spell deck \nThe spell deck is a list of different spells. Each spell in the spell deck appears a certain amount of times, called the spell’s weight. (eg. a spell that has a weight of 4 appears 4 times). Spells are not removed from the spell deck when they are drawn into a player’s spellbook. A spell’s “cost” refers to how much soul is used for it to be played.\n\n**Addition**\n> magic > spell deck > banish\nWeight: 2\nCost: 3\nBanish is a spell that can only be cast within dungeons. When Banish is cast, one entity on the same depth as the caster, including the caster, is targeted from the dungeon, chosen by the caster. If the target is a player, they are removed from the dungeon. If the target is a minotaur, or rot bird, they are deleted.\n\n**Addition**\n> magic > spell deck > glamour\nWeight: 3\nCost: 4\nGlamour is a spell that can only be cast within a dungeon. When Glamour is cast, for 4 turns, all entities cannot interact with the caster of the spell in any way unless specified to be able to.\n\n**Addition**\n> magic > spell deck > malice rising\nWeight: 1\nCost: 8\nMalice Rising is a spell that can only be cast within a dungeon. When Malice Rising is cast a Rot Bird landmark on a blank hex of their choice on the same depth of the dungeon as the caster and is considered under the caster’s control. It remains there until 2 periods after the caster leaves the dungeon.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird\nThe Rot Bird is an entity that can move onto blank, dark, cobwebs, chest, switch, pit, locked pit and pool hexes. If any player is on the same dungeon hex as a Rot Bird, the player is removed from the dungeon. When a Rot Bird takes a turn, it acts in one of three ways, decided by random chance; hunting, flying or controlling.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Hunting\nWhen a Rot Bird is Hunting, it selects a random entity other than itself and the caster who created it on the same depth. If this entity is within 1 hex of the rot bird or is in a cardinal direction from the Rot Bird, the Rot Bird is temporarily removed from the map. 2 turns later, it returns to the map, reappearing on the same hex as its target’s current hex. If the target is no longer on the same depth as the Rot Bird, it reappears on the last hex the  target was on and Destroys.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Flying\nWhen a Rot Bird is Flying, it moves to an adjacent hex to its previous location that it is permitted to move to.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Controlling\nWhen a Rot Bird is Controlling, the caster who created the Rot Bird chooses a hex adjacent to the Rot Bird’s position that it moves to.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Destroy\nWhen a Rot Bird Destroys, it turns the hex it is on and all adjacent hexs to it’s location other than Pits, Locked Pits and Steel walls into a Blank hex. Locked Pits instead become Pits. Pits and steel walls remain unchanged.\n\n**Addition**\n> magic > spell deck > aflame\nWeight: 3\nCost: 5\nAflame is a spell that can only be cast within a dungeon. For 4 turns after Aflame is cast, the caster cannot be removed from dungeons by Rot Birds or minotaurs. If either entity attempts to remove the caster from the dungeon, they are instead removed.\n\n**Addition**\n> magic > spell deck > Haste\nWeight: 4\nCost: 5\nHaste is a spell that can be cast on the caster either in or out of a dungeon. When Haste is cast, the target is given three more action points for the next two periods on the map or the next three turns in a dungeon. \n\n**Addition**\n> magic > spell deck > immolation\nWeight: 1\nCost: 14\nImmolation is a spell that can be cast on any meadow, forest or swamp hex that does not have a player on it and is within 2 hexes of the caster. When immolation is cast, the targeted hex changes from its current biome into a different biome. Meadow and forest biomes become Deceased Dunes. Swamp biomes become Perilous peaks.",
+    "timestamp": 1658623596,
+    "messageID": "1000564729711972462",
+    "votes": [
+      [],
+      [
+        5
+      ],
+      [
+        1,
+        0,
+        4,
+        9
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1000564623151464518",
+    "multimessage": true,
+    "messages": [
+      "1000564623151464518",
+      "1000564666583490581",
+      "1000564729711972462"
+    ]
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n> *7.1.1 - Aquisition*\nA player can create a new mouse every 4 periods. When creating a mouse, the player must create a name, eye colour, favourite food and age for the mouse as well as a short blurb describing them, and use dice to determine their statistics. An image may be included. \n\n**Content Edit**\n> *5.4 - Trading*\nPlayers can participate in 1 on 1 trades with other players provided they are situated within the same hex. Players may 'swap' items (including mice), not invoking any penalties or avoiding any restrictions of exceeding item limits (until after the trade where they must discard or kill in the case of mice accordingly). \n\n**Addition**\n> *5.4.2 - Discarding*\nA player may discard any items from their inventory or spacious pants hole at any time, removing them. A player cannot discard mice.",
+    "timestamp": 1658743004,
+    "messageID": "1001065456188264528",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        13
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1001065456188264528"
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> Magic\nEach player can use their soul each period to cast a spell from their spellbook\n\n**Addition**\n> Magic > soul\nA player can spend one action point to charge 4 soul. Soul cannot be a negative number.\n\n**Addition**\n> magic > spellbook\nA player's spellbook can contain up to 4 spells simultaneously. One spell can be drawn from the spell deck once per round and is added to that player’s spellbook. Once a spell from a spellbook is cast, it is removed, making room for another spell. All players start with one spellbook. A spell can be discarded from a player’s spellbook for the cost of one action point.\n\n**Addition**\n> magic > spell deck \nThe spell deck is a list of different spells. Each spell in the spell deck appears a certain amount of times, called the spell’s weight. (eg. a spell that has a weight of 4 appears 4 times). Spells are not removed from the spell deck when they are drawn into a player’s spellbook. A spell’s “cost” refers to how much soul is used for it to be played.\n\n**Addition**\n> magic > spell deck > banish\nWeight: 2\nCost: 4\nBanish is a spell that can only be cast within dungeons. When Banish is cast, one entity on the same depth as the caster, including the caster, is targeted from the dungeon, chosen by the caster. If the target is a player, they are removed from the dungeon. If the target is a minotaur, or rot bird, they are deleted.\n\n**Addition**\n> magic > spell deck > glamour\nWeight: 3\nCost: 6\nGlamour is a spell that can only be cast within a dungeon. When Glamour is cast, for 4 turns, all entities cannot interact with the caster of the spell in any way unless specified to be able to.\n\n**Addition**\n> magic > spell deck > malice rising\nWeight: 1\nCost: 10\nMalice Rising is a spell that can only be cast within a dungeon. When Malice Rising is cast a Rot Bird landmark on a blank hex of their choice on the same depth of the dungeon as the caster and is considered under the caster’s control. It remains there until 2 periods after the caster leaves the dungeon.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird\nThe Rot Bird is an entity that can move onto blank, dark, cobwebs, chest, switch, pit, locked pit and pool hexes. If any player is on the same dungeon hex as a Rot Bird, the player is removed from the dungeon. When a Rot Bird takes a turn, it acts in one of three ways, decided by random chance; hunting, flying or controlling.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Hunting\nWhen a Rot Bird is Hunting, it selects a random entity other than itself and the caster who created it on the same depth. If this entity is within 1 hex of the rot bird or is in a cardinal direction from the Rot Bird, the Rot Bird is temporarily removed from the map. 2 turns later, it returns to the map, reappearing on the same hex as its target’s current hex. If the target is no longer on the same depth as the Rot Bird, it reappears on the last hex the  target was on and Destroys.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Flying\nWhen a Rot Bird is Flying, it moves to an adjacent hex to its previous location that it is permitted to move to.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Controlling\nWhen a Rot Bird is Controlling, the caster who created the Rot Bird chooses a hex adjacent to the Rot Bird’s position that it moves to.\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon > Rot Bird > Destroy\nWhen a Rot Bird Destroys, it turns the hex it is on and all adjacent hexs to it’s location other than Pits, Locked Pits and Steel walls into a Blank hex. Locked Pits instead become Pits. Pits and steel walls remain unchanged. Players within the area affected are removed from the dungeon.\n\n**Addition**\n> magic > spell deck > aflame\nWeight: 3\nCost: 7\nAflame is a spell that can only be cast within a dungeon. For 4 turns after Aflame is cast, the caster cannot be removed from dungeons by Rot Birds or minotaurs. If either entity attempts they instead return to their previous position.\n\n**Addition**\n> magic > spell deck > Haste\nWeight: 4\nCost: 7\nHaste is a spell that can be cast on the caster either in or out of a dungeon. When Haste is cast, the target is given three more action points for the next two periods and can perform one additional action for the next three turns in a dungeon. \n\n**Addition**\n> magic > spell deck > immolation\nWeight: 1\nCost: 14\nImmolation is a spell that can be cast on any meadow, forest or swamp hex that does not have a player on it and is within 2 hexes of the caster. When immolation is cast, the targeted hex changes from its current biome into a different biome. Meadow and forest biomes become Deceased Dunes. Swamp biomes become Perilous Pass. \n\n**Addition**\n> x > landmark > spirit stones\nWeight: 1 in meadow, 3 elsewhere\nIf a player is on the same hex as a Spirit Stones landmark, they can charge 3 soul for zero action points once per period. Spirit Stones are destroyed by corruption, being replaced by Ruins.\n\n**Deletion**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities\n\n**Addition**\n> World > Generation > Landmarks > Dungeon > Entities\nThe following are considered entities:\n- Players\n- Minotaurs\n- Rot Birds\n\n**Path edit**\n> World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities > Turns\nWorld > Generation > Landmarks > Dungeon > Entities > Turns",
+    "timestamp": 1658904117,
+    "messageID": "1001741500184535050",
+    "votes": [
+      [
+        9
+      ],
+      [],
+      [
+        4
+      ],
+      [
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1001741216624427049",
+    "multimessage": true,
+    "messages": [
+      "1001741216624427049",
+      "1001741347121791037",
+      "1001741449672523877",
+      "1001741500184535050"
     ]
   }
 ]
