@@ -675,7 +675,7 @@
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 3
+        "amount": 4
       },
       {
         "type": "fish",
@@ -690,12 +690,12 @@
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 2
+        "amount": 4
       },
       {
         "type": "medallion-fish",
         "name": "Garbage Goldfish",
-        "amount": 1,
+        "amount": 2,
         "medallion_fish_type": "Goldfish",
         "quality": 1
       },
