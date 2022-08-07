@@ -175,60 +175,46 @@ const colorThemes = [
       "#7df9ff"  //Border
     ]
   },
-  //{
-  //  name: "Emilia",
-  //  colors: [
-  //    "#A2A629", //BG-Main
-  //    "#5F7319", //BG-Input
-  //    "#294012", //BG-Input-Hover
-  //    "#17260D", //BG-Input-Focus
-  //    "#5F7319", //BG-Menu
-  //    "#A2A629", //BG-Submenu
-  //    "#5F7319", //BG-Vote-Tag
-  //    "#8C2323", //Text
-  //    "#691612", //Text-Link
-  //    "#8C2323", //Text-Alt
-  //    "#8C2323", //Text-Input
-  //    "#8C2323", //Text-Input-Hover
-  //    "#8C2323", //Text-Input-Focus
-  //    "#8C2323", //Symbol
-  //    "#8C2323"  //Border
-  //  ]
-  //},
-  //{
-  //  name: "Dumb Arse Chemist",
-  //  colors: [
-  //    "#9BB1BF", //BG-Main
-  //    "#D9A796", //BG-Input
-  //    "#D99484", //BG-Input-Hover
-  //    "#7F512F", //BG-Input-Focus
-  //    "#D9A796", //BG-Menu
-  //    "#9BB1BF", //BG-Submenu
-  //    "#7F512F", //BG-Vote-Tag
-  //    "#1C2026", //Text
-  //    "#413A42", //Text-Link
-  //    "#1C2026", //Text-Alt
-  //    "#1C2026", //Text-Input
-  //    "#1C2026", //Text-Input-Hover
-  //    "#1C2026", //Text-Input-Focus
-  //    "#1C2026", //Symbol
-  //    "#8C5E4D"  //Border
-  //  ]
-  //}
-  //{
-  //  name: "Pastel Sunset",
-  //  colors: [
-  //    "#F39189", //BG1
-  //    "#BB8082", //BG2
-  //    "#B8665E", //BG3
-  //    "#A6514C", //BG4
-  //    "#046582", //T1
-  //    "#6E7582", //T2
-  //    "#046582", //Symbol
-  //    "#8F442F", //Border
-  //    "#6E7582"  //Link
-  //  ]
-  //}
+  {
+    name: "Fish Scales",
+    colors: [
+      "#6FDFDF", //BG-Main
+      "#6FDFDF", //BG-Input
+      "#4B7BE5", //BG-Input-Hover
+      "#A85CF9", //BG-Input-Focus
+      "#6FDFDF", //BG-Menu
+      "#6FDFDF", //BG-Submenu
+      "#A85CF9", //BG-Vote-Tag
+      "#4B7BE5", //Text
+      "#A85CF9", //Text-Link
+      "#4B7BE5", //Text-Alt
+      "#4B7BE5", //Text-Input
+      "#6FDFDF", //Text-Input-Hover
+      "#6FDFDF", //Text-Input-Focus
+      "#4B7BE5", //Symbol
+      "#5534A5"  //Border
+    ]
+  },
+  {
+    name: "Watermelon",
+    colors: [
+      "#F7F5DD", //BG-Main
+      "#E2979C", //BG-Input
+      "#A10035", //BG-Input-Hover
+      "#A10035", //BG-Input-Focus
+      "#A10035", //BG-Menu
+      "#F7F5DD", //BG-Submenu
+      "#E2979C", //BG-Vote-Tag
+      "#9BDEAC", //Text
+      "#E7305B", //Text-Link
+      "#9BDEAC", //Text-Alt
+      "#9BDEAC", //Text-Input
+      "#9BDEAC", //Text-Input-Hover
+      "#9BDEAC", //Text-Input-Focus
+      "#9BDEAC", //Symbol
+      "#E7305B"  //Border
+    ]
+  }
 ];
 
 const fontThemes = [
@@ -356,11 +342,28 @@ var ApplyThemes = () => {
         
         //Set the color theme is the value of the theme cookie matches the theme
         if(cookie[1] == t){
+          
           //Update the color theme
           changeColorTheme(t);
           
           //Set the option that is selected in the overflow menu
           document.getElementById("settings-color-theme-select").value = t;
+          
+        }else if(cookie[1] == "default"){
+          
+          var defaultTheme = 0;
+          if(window.matchMedia("(prefers-color-scheme: light)").matches){
+            defaultTheme = 0;
+          }else{
+            defaultTheme = 1;
+          }
+          
+          //Update the color theme
+          changeColorTheme(defaultTheme);
+          
+          //Set the option that is selected in the overflow menu
+          document.getElementById("settings-color-theme-select").value = defaultTheme;
+          
         }
         
       }
