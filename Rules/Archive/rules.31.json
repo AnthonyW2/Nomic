@@ -1,0 +1,3605 @@
+{
+  "id": 0,
+  "relid": 1,
+  "summary": "Rules",
+  "content": "",
+  "tags": [],
+  "history": [
+    {
+      "player": -1,
+      "time": 1653105600
+    }
+  ],
+  "subrules": [
+    {
+      "id": 1,
+      "relid": 1,
+      "summary": "Winning",
+      "content": "When a player or players win the game, the game is over.",
+      "tags": [
+        "initial",
+        "winning"
+      ],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        }
+      ],
+      "subrules": [
+        {
+          "id": 2,
+          "relid": 1,
+          "summary": "End of Viable Play",
+          "content": "If the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then the game ends and no players are declared to be victorious. This rule takes precedence over every other rule determining the winner.",
+          "tags": [
+            "winning"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1655329636
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "relid": 2,
+      "summary": "Players",
+      "content": "A player is a person or group of people that must always abide by all the rules of Nomic currently in effect.",
+      "tags": [
+        "initial",
+        "players"
+      ],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        }
+      ],
+      "subrules": [
+        {
+          "id": 4,
+          "relid": 1,
+          "summary": "TOS",
+          "content": "A player may not participate in Nomic in a way that violates rules, laws, terms of service, or other similar documents related to places or services being used to access Nomic.",
+          "tags": [
+            "initial",
+            "players"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 5,
+          "relid": 2,
+          "summary": "Entering",
+          "content": "A person or group of people, none of whom are currently acting as a player or a part of a player, may request to become a player at any time. All players may vote (up or down) on allowing the player to join.",
+          "tags": [
+            "initial",
+            "players"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 6,
+              "relid": 1,
+              "summary": "Acceptance",
+              "content": "If the aforementioned request is accepted by a majority of active players, then that person or group of people becomes a player.",
+              "tags": [
+                "players"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                },
+                {
+                  "player": 4,
+                  "time": 1655470427
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "relid": 3,
+          "summary": "Exiting",
+          "content": "A player always has the option of forfeiting the game. No penalty worse than losing, in the opinion of the player incurring the penalty, may be imposed.",
+          "tags": [
+            "initial",
+            "players"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 8,
+              "relid": 1,
+              "summary": "Player Groups",
+              "content": "In the case of a player consisting of multiple people, individual people may leave the player. A player only leaves the game when its last person does.",
+              "tags": [
+                "initial",
+                "players"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "relid": 3,
+      "summary": "Propositions",
+      "content": "A proposition consists of a set of modifications or additions to rules (including paths) and/or the deletion or transmutation of rules currently in effect, posted to #propositions.",
+      "tags": [
+        "initial",
+        "propositions"
+      ],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        }
+      ],
+      "subrules": [
+        {
+          "id": 10,
+          "relid": 1,
+          "summary": "Voting",
+          "content": "A proposition that has been legally proposed may be voted on.",
+          "tags": [
+            "initial",
+            "propositions"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 11,
+              "relid": 1,
+              "summary": "Eligibility",
+              "content": "Every player is an eligible voter.",
+              "tags": [
+                "initial",
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 12,
+              "relid": 2,
+              "summary": "Casting Votes",
+              "content": "Each eligible voter excluding the proponent may cast exactly one vote per proposition, which they can cast as an upvote (for), downvote (against), leftvote or rightvote.\nAn eligible voter may change their vote at any time before voting ends.",
+              "tags": [
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                },
+                {
+                  "player": 3,
+                  "time": 1653128419
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 65,
+                  "relid": 1,
+                  "summary": "Inactivity",
+                  "content": "A player is classified as \"active\" if they have cast a vote on or proposed at least 1 of the 5 most recent propositions. Otherwise, they are classified as inactive.",
+                  "tags": [
+                    "propositions"
+                  ],
+                  "history": [
+                    {
+                      "player": 3,
+                      "time": 1654503834
+                    },
+                    {
+                      "player": 0,
+                      "time": 1654599540
+                    },
+                    {
+                      "player": 0,
+                      "time": 1658134120
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 66,
+                      "relid": 1,
+                      "summary": "Voting",
+                      "content": "An inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though they may change their vote as with any other vote before a majority is reached.",
+                      "tags": [
+                        "propositions"
+                      ],
+                      "history": [
+                        {
+                          "player": 3,
+                          "time": 1654503834
+                        },
+                        {
+                          "player": 0,
+                          "time": 1654599540
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
+                },
+                {
+                  "id": 34,
+                  "relid": 2,
+                  "summary": "Rightvoting",
+                  "content": "You may abstain from voting by rightvoting.\nMajority is not determined until there is at least 1 vote other than a rightvote on a proposition. This takes precedence over all other rules for ending voting and determining majority.",
+                  "tags": [
+                    "propositions"
+                  ],
+                  "history": [
+                    {
+                      "player": 3,
+                      "time": 1653128419
+                    },
+                    {
+                      "player": 3,
+                      "time": 1654503834
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "relid": 3,
+              "summary": "Adoption",
+              "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.",
+              "tags": [
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                },
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 35,
+              "relid": 4,
+              "summary": "Leftvote Majority",
+              "content": "If a proposition reaches a non-upvote majority, the proposition becomes leftvote majority if the sum of upvotes and leftvotes is greater than the amount of downvotes.\nIn the event of a leftvote majority, the proponent may propose a modified version of their proposition at any time within 72 hours after their proposition reaches leftvote majority.\nThe modified version of their proposition does not count as a \"proposition\" in terms of the Propositions > Creation rule.",
+              "tags": [
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": 3,
+                  "time": 1653128419
+                },
+                {
+                  "player": 0,
+                  "time": 1653466564
+                },
+                {
+                  "player": 0,
+                  "time": 1658134120
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 38,
+              "relid": 5,
+              "summary": "Time Limit",
+              "content": "72 hours after a proposition is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.",
+              "tags": [
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "relid": 2,
+          "summary": "Retroactivity",
+          "content": "A proposition may not have retroactive effect.",
+          "tags": [
+            "initial",
+            "propositions"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 15,
+          "relid": 3,
+          "summary": "Paths",
+          "content": "All rules are defined as part of a tree of rules. Rules must refer to other rules using their ID paths or title paths.",
+          "tags": [
+            "initial",
+            "propositions",
+            "syntax"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 16,
+              "relid": 1,
+              "summary": "Relative ID Path",
+              "content": "Each rule has a relative ID which is used to form its \"ID path\" when combined with the ID path of its parent rule.",
+              "tags": [
+                "initial",
+                "propositions",
+                "syntax"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 17,
+              "relid": 2,
+              "summary": "Title Path",
+              "content": "Each rule has a title which is used to form its \"title path\" when combined with the title path of its parent rule.",
+              "tags": [
+                "initial",
+                "propositions",
+                "syntax"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 18,
+              "relid": 3,
+              "summary": "Conflicts",
+              "content": "No two rules may have the same path. If a proposition's rule has the same path as an existing rule, the new rule replaces the old rule if the proposition is adopted.",
+              "tags": [
+                "initial",
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 62,
+              "relid": 4,
+              "summary": "Gaps",
+              "content": "If the relative IDs of the subrules of a rule contain a gap (skip at least one integer), the rules after the gap are moved up (their relative ID is decreased) by one to fill the gap.",
+              "tags": [
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1654327752
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 83,
+              "relid": 5,
+              "summary": "Updating Paths",
+              "content": "If a rule is moved or has its title modified, any references to it (using a path) in other rules will be updated accordingly.",
+              "tags": [
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1654599540
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "relid": 4,
+          "summary": "Immutability",
+          "content": "Propositions may not alter immutable rules in any way, with the exception of transmutation.",
+          "tags": [
+            "initial",
+            "propositions"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": [
+            {
+              "id": 20,
+              "relid": 1,
+              "summary": "Transmutations",
+              "content": "A transmutation causes a mutable rule to become immutable, or vice versa.",
+              "tags": [
+                "initial",
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 21,
+              "relid": 2,
+              "summary": "Precedence",
+              "content": "If a portion of an immutable rule conflicts with a portion of a mutable rule, the immutable rule takes precedent. The inconsistent portion of the mutable rule is without effect.",
+              "tags": [
+                "initial",
+                "propositions"
+              ],
+              "history": [
+                {
+                  "player": -1,
+                  "time": 1653105600
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 22,
+                  "relid": 1,
+                  "summary": "Conflicts",
+                  "content": "If multiple mutable rules conflict with one another, or if multiple immutable rules conflict with one another, the rule edited most recently takes precedence. If at least one of the rules explicitly states that it defers to another rule or takes precedence over another rule, such provisions must supersede the chronological method of determining precedence. If multiple rules claim to take precedence over one another or to defer to one another, the chronological method must again govern.",
+                  "tags": [
+                    "initial",
+                    "propositions"
+                  ],
+                  "history": [
+                    {
+                      "player": -1,
+                      "time": 1653105600
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "relid": 5,
+          "summary": "Making Changes",
+          "content": "The proponent may make any changes to their proposition while there are no votes (excluding rightvotes) cast on the proposition, and only spelling and grammar changes after votes (excluding rightvotes) have been cast.",
+          "tags": [
+            "propositions"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1654599540
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 36,
+          "relid": 6,
+          "summary": "Creation",
+          "content": "A player may submit a proposition at any time, given that the following conditions are met:\n- The player has no active propositions;\n- The player has not submitted a proposition in the current period.\nUnless specified, the conditions in this rule take priority over conflicting rules.",
+          "tags": [
+            "propositions"
+          ],
+          "history": [
+            {
+              "player": 0,
+              "time": 1653466564
+            },
+            {
+              "player": 1,
+              "time": 1654260138
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 37,
+          "relid": 7,
+          "summary": "Active Propositions",
+          "content": "A proposition is \"active\" if it has not yet reached a majority of votes or timed out.",
+          "tags": [
+            "propositions"
+          ],
+          "history": [
+            {
+              "player": 0,
+              "time": 1653466564
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "relid": 4,
+      "summary": "Clarifications",
+      "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in propositions.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.\nSubrules of this rule are not affected by rules outside of this branch.",
+      "tags": [
+        "clarification"
+      ],
+      "history": [
+        {
+          "player": -1,
+          "time": 1653105600
+        },
+        {
+          "player": 0,
+          "time": 1655329636
+        }
+      ],
+      "subrules": [
+        {
+          "id": 30,
+          "relid": 1,
+          "summary": "Choosing a Judge",
+          "content": "The Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.",
+          "tags": [
+            "clarification"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1653466564
+            }
+          ],
+          "subrules": [
+            {
+              "id": 38,
+              "relid": 1,
+              "summary": "Candidates",
+              "content": "At any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+              "tags": [
+                "clarification"
+              ],
+              "history": [
+                {
+                  "player": 0,
+                  "time": 1653466564
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "relid": 2,
+          "summary": "Suggestion Voting",
+          "content": "After the Judge has made a suggestion, all players may vote (up or down) on it.\nIf an upvote majority is reached within 72 hours, the suggestion is adopted.\nAfter 72 hours, the remaining votes are ignored. If there are more upvotes than downvotes the suggestion is adopted.\nOtherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+          "tags": [
+            "clarification"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            },
+            {
+              "player": 0,
+              "time": 1654327752
+            },
+            {
+              "player": 0,
+              "time": 1655329636
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 32,
+          "relid": 3,
+          "summary": "Deferring",
+          "content": "If a player chosen to be the Judge does not wish to make a suggestion, a new Judge is chosen to make a suggestion.",
+          "tags": [
+            "initial",
+            "clarification"
+          ],
+          "history": [
+            {
+              "player": -1,
+              "time": 1653105600
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 63,
+          "relid": 4,
+          "summary": "Time Limit",
+          "content": "If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.",
+          "tags": [
+            "clarification"
+          ],
+          "history": [
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "relid": 5,
+      "summary": "World",
+      "content": "All players exist on a board. This board consists of an infinitely large, and procedurally generated grid of adjacent hexagons, henceforth referred to as hexes.",
+      "tags": [
+        "world"
+      ],
+      "history": [
+        {
+          "player": 4,
+          "time": 1653739239
+        }
+      ],
+      "subrules": [
+        {
+          "id": 40,
+          "relid": 1,
+          "summary": "Origin",
+          "content": "All players start on the origin, an unremarkable Meadow hex (with the 'Nothing' landmark).",
+          "tags": [
+            "world"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1653739239
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 41,
+          "relid": 2,
+          "summary": "Actions",
+          "content": "In each period, a player has up to 2 + floor(S^0.5) action points, where S is the player's Quality Score, that they may spend to perform an action at any time during the round.",
+          "tags": [
+            "world"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1653739239
+            },
+            {
+              "player": 0,
+              "time": 1654327752
+            },
+            {
+              "player": 1,
+              "time": 1655674591
+            }
+          ],
+          "subrules": [
+            {
+              "id": 42,
+              "relid": 1,
+              "summary": "Scout",
+              "content": "For the cost of 1 action point, the player selects 1 hex that is adjacent to their current location and generate it if it has not been already.",
+              "tags": [
+                "world"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1653739239
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 43,
+              "relid": 2,
+              "summary": "Traverse",
+              "content": "For the cost of 1 action point, the player moves into an adjacent hex, generating it if it is not already generated.",
+              "tags": [
+                "world"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1653739239
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 70,
+              "relid": 3,
+              "summary": "Work",
+              "content": "For the cost of 2 action points, a player may work. The the hex the player on determines the pay they earn. The earned pay is the sum of that of the relevant biome, landmark and other factors' earnings.",
+              "tags": [
+                "world",
+                "work"
+              ],
+              "history": [
+                {
+                  "player": 5,
+                  "time": 1654515056
+                },
+                {
+                  "player": 4,
+                  "time": 1657623581
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 71,
+                  "relid": 1,
+                  "summary": "Nothing",
+                  "content": "When a player uses the work action on a hex with the Nothing landmark, they earn +0<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 72,
+                  "relid": 2,
+                  "summary": "Meadow",
+                  "content": "When a player uses the work action on a Meadow biome hex, they earn +250<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 73,
+                  "relid": 3,
+                  "summary": "Town",
+                  "content": "When a player uses the work action on a hex with the Town landmark, they earn +250<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 74,
+                  "relid": 4,
+                  "summary": "Deceased Dunes",
+                  "content": "When a player uses the work action on a Deceased Dunes biome hex, they earn +300<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 5,
+                      "time": 1654515056
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 95,
+                  "relid": 5,
+                  "summary": "Mouse Hut",
+                  "content": "When a player uses the work action on a hex with the Mouse Hut landmark, they earn +50<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 98,
+                  "relid": 6,
+                  "summary": "Ruins",
+                  "content": "When a player uses the work action on a hex with the Ruins landmark, they earn +100<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 146,
+                  "relid": 7,
+                  "summary": "Corruption",
+                  "content": "When a player uses the work action on a hex with a corrupted biome, they earn -100<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655968329
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 151,
+                  "relid": 8,
+                  "summary": "Forest",
+                  "content": "When a player uses the work action on a Forest biome hex, they earn +350<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 2,
+                      "time": 1656244442
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 194,
+                  "relid": 9,
+                  "summary": "Perilous Pass",
+                  "content": "When a player uses the work action on a Perilous Pass biome hex, they earn +450<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656897252
+                    },
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 196,
+                  "relid": 10,
+                  "summary": "Lake",
+                  "content": "When a player uses the work action on a Lake biome hex, they earn +600<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 197,
+                  "relid": 11,
+                  "summary": "Swamp",
+                  "content": "When a player uses the work action on a Swamp biome hex, they earn +400<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 198,
+                  "relid": 12,
+                  "summary": "Dungeon",
+                  "content": "When a player uses the work action on a hex with the Dungeon landmark, they earn +300<m>.",
+                  "tags": [
+                    "world",
+                    "work",
+                    "dungeon"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 208,
+                  "relid": 13,
+                  "summary": "Quarry",
+                  "content": "When a player uses the work action on a hex with the quarry landmark, they earn +200<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1659498520
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 100,
+              "relid": 4,
+              "summary": "Fishing",
+              "content": "For the cost of 1 action point, a player may fish in any Lake hex adjacent to their current location, optionally using a mouse as bait.\nWhen this occurs, the player has a 70% chance of catching a fish.\nIf a mouse is used as bait, it has a probability of 2^-(p-1), where p is the mouse's Power, of dying. This deletes the mouse. For powers less than 1, it has a 100% probability of dying.\nA player may use any Fishing Rod they own to fish. If they do not specify which, it is assumed they are using the Fishing Rod they most recently used to fish, or the Starter Rod if they have never fished.",
+              "tags": [
+                "world",
+                "fish"
+              ],
+              "history": [
+                {
+                  "player": 1,
+                  "time": 1655674591
+                },
+                {
+                  "player": 4,
+                  "time": 1658215548
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 101,
+                  "relid": 1,
+                  "summary": "Fish",
+                  "content": "If a player catches a fish, it can either be a Standard Fish or a Medallion Fish.\nThe chance of catching a Medallion Fish is 0% + 10% for every Medallion Fish that the player is currently eligible to catch, capping at 40%.\nIf a mouse was used as bait, 4% is added to the Medallion Fish catch rate for each point of Mischief the mouse has, capping at a 20% bonus.\nIf a fish is caught that is not a Medallion Fish, it is a Standard Fish.\nIf a fish is caught, it is added to the inventory of the player who caught it.",
+                  "tags": [
+                    "world",
+                    "fish"
+                  ],
+                  "history": [
+                    {
+                      "player": 1,
+                      "time": 1655674591
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 102,
+                      "relid": 1,
+                      "summary": "Standard Fish",
+                      "content": "Standard Fish can be caught anywhere.\nWhen a Standard Fish is caught, a random fish is selected from the list of Standard Fish, with equal weight.\nThe list (with names separated by commas) of Standard Fish is as follows: Eel, Salmon, Tilapia, Northern Pike, Trout",
+                      "tags": [
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 103,
+                      "relid": 2,
+                      "summary": "Medallion Fish",
+                      "content": "",
+                      "tags": [
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": [
+                        {
+                          "id": 104,
+                          "relid": 1,
+                          "summary": "Quality",
+                          "content": "When a Medallion Fish is caught, its Quality is calculated by repeatedly rolling d2 until the result is 1, with the number of rolls being the Quality of the Medallion Fish.\nEach natural number Quality less than the highest Quality Medallion Fish must be named. If someone catches a higher Quality Medallion Fish than the one currently named, they must name all the unnamed Qualities below the Quality of fish they caught.\nThe list of currently named Qualities is as follows:\n1. Garbage\n2. Bronze\n3. Silver\n4. Gold\n5. Platinum\n6. Morbium",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": [
+                            {
+                              "id": 105,
+                              "relid": 1,
+                              "summary": "Score",
+                              "content": "The sum of the Qualities of all unique (including different Qualities of the same fish as unique) Medallion Fish in a player's inventory is their Quality Score.",
+                              "tags": [
+                                "fish"
+                              ],
+                              "history": [
+                                {
+                                  "player": 1,
+                                  "time": 1655674591
+                                }
+                              ],
+                              "subrules": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 106,
+                          "relid": 2,
+                          "summary": "Mana Ray",
+                          "content": "Mana Rays are Medallion Fish that can be caught when the bait being used has 5 or higher Wit.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 107,
+                          "relid": 3,
+                          "summary": "Civilised Fish",
+                          "content": "Civilised Fish are Medallion Fish that can be caught if the fishing player is in a hex with a Town.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 108,
+                          "relid": 4,
+                          "summary": "Studentfish",
+                          "content": "Studentfish are Medallion Fish that can be caught if the fishing player is on the same hex as another player.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 109,
+                          "relid": 5,
+                          "summary": "Goldfish",
+                          "content": "Goldfish are Medallion Fish that can be caught if the mass of Lake that the fishing player is fishing in has a size of 1.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 110,
+                          "relid": 6,
+                          "summary": "Penfish",
+                          "content": "Penfish are Medallion Fish that can be caught if the fishing player has more than 2500<m>.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 111,
+                          "relid": 7,
+                          "summary": "Carcharias",
+                          "content": "Carcharias are Medallion Fish that can be caught if the fishing player is in a hex with Deceased Dunes.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 112,
+                          "relid": 8,
+                          "summary": "Catfish",
+                          "content": "Catfish are Medallion Fish that can be caught if the fishing player is in a hex with a Mouse Hut.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 113,
+                          "relid": 9,
+                          "summary": "Piranha",
+                          "content": "Piranhas are Medallion Fish that can be caught if the fishing player is fishing in a hex where a Mouse has died in the current period or previous period.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 114,
+                          "relid": 10,
+                          "summary": "Pufferfish",
+                          "content": "Pufferfish are Medallion Fish that can be caught when the bait being used has 5 or higher Mischief.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 115,
+                          "relid": 11,
+                          "summary": "Clownfish",
+                          "content": "Clownfish are Medallion Fish that can be caught when the bait being used has 5 or higher Curiosity.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 116,
+                          "relid": 12,
+                          "summary": "Blue Whale",
+                          "content": "Blue Whales are Medallion Fish that can be caught if the mass of Lake that the fishing player is fishing in has a size of 5 or higher.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 117,
+                          "relid": 13,
+                          "summary": "Anglerfish",
+                          "content": "Anglerfish are Medallion Fish that can be caught if the bait being used has 2 or lower Wit.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 118,
+                          "relid": 14,
+                          "summary": "Plankton",
+                          "content": "Plankton are Medallion Fish that can be caught if the fishing player failed their two previous attempts at fishing.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 119,
+                          "relid": 15,
+                          "summary": "Jellyfish",
+                          "content": "Jellyfish are Medallion Fish that can be caught if the fishing player did not use any bait when fishing.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 120,
+                          "relid": 16,
+                          "summary": "Blobfish",
+                          "content": "Blobfish are Medallion Fish that can be caught if the bait being used has 2 or lower Mischief.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 121,
+                          "relid": 17,
+                          "summary": "FFFFFFish",
+                          "content": "FFFFFFish are Medallion Fish that can be caught if the bait being used has 2 or lower Curiosity.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 122,
+                          "relid": 18,
+                          "summary": "Crocodile",
+                          "content": "Crocodiles are Medallion Fish that can be caught if the bait being used has 9 or higher Power.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 123,
+                          "relid": 19,
+                          "summary": "Swordfish",
+                          "content": "Swordfish are Medallion Fish that can be caught if the bait being used has 3 or lower Power.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 124,
+                          "relid": 20,
+                          "summary": "Pefisula",
+                          "content": "Pefisula are Medallion Fish that can be caught if the fishing player is in a hex that has exactly 5 Lake hexes connected to it.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 125,
+                          "relid": 21,
+                          "summary": "Oarfish",
+                          "content": "Oarfish are Medallion Fish that can be caught if the mass of Lake that the fishing player is fishing in has a size of 3 or higher and has a Hamiltonian path such that no two hexes that are not in adjacent positions in the path are adjacent in the mass.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 126,
+                          "relid": 22,
+                          "summary": "Aligned Fish",
+                          "content": "Aligned Fish are Medallion Fish that can be caught if the centre of the origin, the centre of the hex the fishing player is in, and the centre of the hex the fishing player is fishing in are collinear.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 127,
+                          "relid": 23,
+                          "summary": "Vanille",
+                          "content": "Vanille are Medallion Fish that can be caught if the fishing player is using a Starter Rod.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 128,
+                          "relid": 24,
+                          "summary": "Gudgeon",
+                          "content": "Gudgeons are Medallion Fish that can be caught if the fishing player is in a hex with Forest.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 129,
+                          "relid": 25,
+                          "summary": "Flying Fish",
+                          "content": "Flying Fish are Medallion Fish that can be caught if the fishing player is in a hex with Perilous Pass.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 130,
+                          "relid": 26,
+                          "summary": "SvGCMkWr_zQ",
+                          "content": "SvGCMkWr_zQ are Medallion Fish that can be caught if the Lake hex the fishing player is fishing in is corrupted.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 1,
+                              "time": 1655674591
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 147,
+                          "relid": 27,
+                          "summary": "Fishy Fish",
+                          "content": "Fishy Fish is a Medallion Fish that can be caught if the player is on a lake hex.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655968329
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 148,
+                          "relid": 28,
+                          "summary": "Megalodon",
+                          "content": "Megalodons are Medallion Fish that can be caught if the mass of the lake that the fishing player is fishing in is at least size 18.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655968329
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 149,
+                          "relid": 29,
+                          "summary": "Cronus Ampora",
+                          "content": "Cronus Ampora is a Medallion Fish that can be caught in a corrupted lake hex that has 6 adjacent corrupted hexes.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655968329
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 153,
+                          "relid": 30,
+                          "summary": "Mudskipper",
+                          "content": "Mudskippers are Medallion Fish that can be caught if the fishing player is in a Swamp hex.",
+                          "tags": [
+                            "fish"
+                          ],
+                          "history": [
+                            {
+                              "player": 2,
+                              "time": 1656244442
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 176,
+                          "relid": 31,
+                          "summary": "Coelacanth",
+                          "content": "Coelacanths are a Medallion Fish that can be caught in a pool dungeon hex.",
+                          "tags": [
+                            "fish",
+                            "dungeon"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1656897252
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 177,
+                          "relid": 32,
+                          "summary": "Dead Fish",
+                          "content": "Dead Fish are a Medallion Fish that can be caught in a pool dungeon hex adjacent to at least 1 minotaur.",
+                          "tags": [
+                            "fish",
+                            "dungeon"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1656897252
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 178,
+                          "relid": 33,
+                          "summary": "Eridan Ampora",
+                          "content": "Eridan Ampora is a Medallion Fish that can be caught in a pool dungeon hex adjacent to at least 1 other pool dungeon hex.",
+                          "tags": [
+                            "fish",
+                            "dungeon"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1656897252
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 179,
+                          "relid": 34,
+                          "summary": "Chest (Fish?)",
+                          "content": "Chest (Fish?) is a Medallion Fish that can be caught in a pool dungeon hex.\nA player may open the Chest (Fish?) to gain 3 different and random pieces of chest loot, with h=2. This removes the Chest (Fish?) from their inventory.",
+                          "tags": [
+                            "fish",
+                            "dungeon"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1656897252
+                            }
+                          ],
+                          "subrules": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 131,
+                  "relid": 2,
+                  "summary": "Fishing Rods",
+                  "content": "All players start with a Starter Rod.\nFishing Rods can provide extra bonuses to players who are fishing.",
+                  "tags": [
+                    "world",
+                    "fish"
+                  ],
+                  "history": [
+                    {
+                      "player": 1,
+                      "time": 1655674591
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 132,
+                      "relid": 1,
+                      "summary": "Advanced Rod",
+                      "content": "The Advanced Rod is a Fishing Rod that can be made with 2 Wood and 1 Thread.\nThe Advanced Rod increases the odds of catching a fish when fishing by 5% additively.",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 133,
+                      "relid": 2,
+                      "summary": "Classic Rod",
+                      "content": "The Classic Rod is a Fishing Rod that can be made with 1 Wood, 1 Thread, and 1 Hide.\nThe Classic Rod increases the odds of catching a fish when fishing by 15% additively, but cannot be used to catch Medallion Fish.",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 134,
+                      "relid": 3,
+                      "summary": "Reinforced Rod",
+                      "content": "The Reinforced Rod is a Fishing Rod that can be made with 2 Steel and 1 Thread.\nThe Reinforced Rod increases the odds of catching a fish when fishing by 10% additively.",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 135,
+                      "relid": 4,
+                      "summary": "Midas' Rod",
+                      "content": "The Midas' Rod is a Fishing Rod that can be made with 2 Gold, 1 Quartz, 1 Thread, and 1 Steel.\nThe Midas' Rod reduces the odds of catching a fish when fishing to 10%, but if a player successfully catches a fish with it, that fish will always be a Medallion Fish of quality 4 or higher if they are eligible to catch a Medallion Fish.",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 136,
+                      "relid": 5,
+                      "summary": "Morbius' Rod",
+                      "content": "The Morbius' Rod is a Fishing Rod that can be made with 2 Morbium and 1 Thread.\nThe Morbius' Rod increases the odds of catching a fish when fishing to 100%.",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 1,
+                          "time": 1655674591
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 204,
+                      "relid": 6,
+                      "summary": "Fishing Net",
+                      "content": "The Fishing Net is a fishing rod that can be made with 2× Thread.\nThe Fishing Net increases the odds of catching a fish by (20 - t)%, where t is the number of hexes in the targeted lake's mass (minimum of +0% bonus > thus 70% fishing chance).",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1658215548
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 205,
+                      "relid": 7,
+                      "summary": "Harpoon",
+                      "content": "The Harpoon is a fishing rod that can be made with 1× Steel and 1× Thread.\nThe Harpoon increases the odds of catching a fish by t%, where t is the number of hexes in the targeted lake's mass (maximum of +20% bonus > thus 90% fishing chance).",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1658215548
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "relid": 3,
+          "summary": "Generation",
+          "content": "When a hex is generated, a biome, and then a landmark are determined for the tile.",
+          "tags": [
+            "world"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1653739239
+            },
+            {
+              "player": 4,
+              "time": 1654061467
+            },
+            {
+              "player": 4,
+              "time": 1654315938
+            },
+            {
+              "player": 0,
+              "time": 1654863175
+            }
+          ],
+          "subrules": [
+            {
+              "id": 58,
+              "relid": 1,
+              "summary": "Biomes",
+              "content": "When a new hex is generated, each adjacent hex is added to a randomisation pool, where its weight in the pool is equal to B/M.\n  \"Weight\" refers to how many times it appears in the pool, and can be a fractional value.\n  \"B\" = The \"bias\" of a biome. This is a constant, equal to 10 unless otherwise specified.\n  \"M\" = The size of the mass to which the hex belongs (where \"size\" refers to how many hexes are in the mass).\nAn additional \"random\" entry with weight 2 is added to the pool.\nThe biome of the new hex is then drawn from the pool.\nIn case the \"random\" entry is chosen, a new randomisation pool is constructed with the weights of every possible biome (as listed within the relevant biome rules). The biome of the new hex is then drawn from this new pool.",
+              "tags": [
+                "world"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1654061467
+                },
+                {
+                  "player": 0,
+                  "time": 1654863175
+                },
+                {
+                  "player": 0,
+                  "time": 1655329636
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 59,
+                  "relid": 1,
+                  "summary": "Deceased Dunes",
+                  "content": "Weight: 4\nWhen a player moves into a Deceased Dunes hex, there is a 20% chance that they are moved by the buffeting winds into a random adjacent hex (generating it if it is not already) for no additional action point cost. When generating next to a swamp, the weight of Deceased Dunes is 0.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654061467
+                    },
+                    {
+                      "player": 2,
+                      "time": 1656244442
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 89,
+                  "relid": 2,
+                  "summary": "Meadow",
+                  "content": "Weight: 7\nPlayers on Meadow hex are considered Exposed.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 0,
+                      "time": 1654863175
+                    },
+                    {
+                      "player": 2,
+                      "time": 1656244442
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 90,
+                  "relid": 3,
+                  "summary": "Corruption",
+                  "content": "When a hex is generated, there is a 5% chance that the biome is replaced by its corrupted variant. A corrupted biome always generates with nothing landmarks. All biomes have a corrupted variant which acts like the normal form unless otherwise specified.\nThe corruption Biome may spread to other biomes, corrupting them.\n\n<i><u>The architect's Journal</u>\n...I rise with a scowl etched upon my face, scanning the dimly lit laboratory.\n'How many times shall we endure this blasted repetition?' A voice echoes in my skull. I bite my arm instinctively in response, griping for a long minute as sickly pink blood oozes from my maw, coating my stained fangs. Releasing, I admire the fine new scar I will have added to my blackened and torn body. Now a leathery texture not dissimilar to a crocodile. Like one of those cartoon ones, a deep green in hue. Though I detest the thought.\nThese 'seasons' as I have come to call them are a blight that has far overstated their welcome. They must cease their folly. And I plot to end it. A virus, one that gnaws at the fabric of reality, converting all that is 'real' to those of it's like. A perfect weapon. A flawless solution.\n'You don't know the answer.'\nA hiss escapes my chitinous jaw as I reach for the vial. A viscous black liquid bubbles inside as if aroused by its approaching escape. I stare admirably at it as a malicious grin consumes me...</i>",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655328182
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 91,
+                      "relid": 1,
+                      "summary": "Spreading",
+                      "content": "When a player moves into a corruption hex, there is a +5% chance (maximum 85%) for each corrupt hex in the mass that a random hex adjacent to the edge of the mass will become 'corrupt', having its biome changed to its corrupted variant (being generated first if necessary). Its landmark is left unchanged unless it is a town, and then is replaced by the ruins landmark.",
+                      "tags": [
+                        "world"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1655328182
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
+                },
+                {
+                  "id": 93,
+                  "relid": 4,
+                  "summary": "Forest",
+                  "content": "The Forest biome has Weight: 5.\nIf a player uses the mouse action Explore on this hex there is a 20% chance that the mouse is killed by predators (this deletes the mouse). However, for each wits statistic that the mouse has this decreases by 5% and for each curiosity statistic increases by 1% (minimum of 0%), applied additively.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    },
+                    {
+                      "player": 4,
+                      "time": 1655674605
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 96,
+                  "relid": 5,
+                  "summary": "Perilous Pass",
+                  "content": "The Perilous Pass biome has Weight: 3 and Bias: 5.\nThe traverse action costs 1 additional action point to use if the player is on a Perilous Pass hex unless otherwise stated (deferring to pure statistics).",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655470427
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 99,
+                  "relid": 6,
+                  "summary": "Lake",
+                  "content": "Lakes cannot be generated under normal means.\nIf a hex that has not been generated is not attached to the infinitely large section of not-generated hexes, it generates with a Lake biome and a Nothing landmark.\nIf a player would move or be moved onto a Lake hex, they do not move.",
+                  "tags": [
+                    "world",
+                    "fish"
+                  ],
+                  "history": [
+                    {
+                      "player": 1,
+                      "time": 1655674591
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 150,
+                  "relid": 7,
+                  "summary": "Swamp",
+                  "content": "Weight: 5\nIf a player who is in a swamp attempts to leave swamp for another biome (swamp to meadow etc.) they must roll a d100 if the result is 17 or lower, they remain in the swamp and do not move however they do use up one action. Players on Swamp tiles are considered Soaked. When generating next to a Deceased Dunes hex, the weight of Swamp is 0.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 2,
+                      "time": 1656244442
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 60,
+              "relid": 2,
+              "summary": "Landmarks",
+              "content": "A landmark is determined by randomly selecting an element from the list below (with 'Weight' referring to the number of times it is in the draw): \n- Nothing (Weight: 20)\n- Town (Weight: 2 or Weight: 1 if a biome other than Meadow is selected)\n- Mouse Hut (Weight: 1 or Weight: 0 if a Meadow biome is selected)\n- Dungeon (Weight: 1.5)\nIf new landmarks are added (through a proposition or otherwise), this list is updated to reflect them.",
+              "tags": [
+                "world"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1654315938
+                },
+                {
+                  "player": 0,
+                  "time": 1654863175
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 61,
+                  "relid": 1,
+                  "summary": "Mouse Hut",
+                  "content": "Weight: 1 or Weight: 0 if a Meadow Biome is selected.\nA player located in a hex with a mouse hut may use the exercise or enrich mouse action for 1 energy instead.",
+                  "tags": [
+                    "world",
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654315938
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 84,
+                  "relid": 2,
+                  "summary": "Town",
+                  "content": "",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654725038
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 85,
+                      "relid": 1,
+                      "summary": "Economy",
+                      "content": "When a player is on a hex with the Town landmark, they may buy and sell items from/to that town. Every town has an initial budget of 2500<m> and an initial inventory dependent on the biome of their hex.",
+                      "tags": [
+                        "world",
+                        "trade"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1654725038
+                        }
+                      ],
+                      "subrules": [
+                        {
+                          "id": 86,
+                          "relid": 1,
+                          "summary": "Meadow",
+                          "content": "Towns in the Meadow biome have the following initial inventory:\n- Wood ×25\n- Stone ×12\n- Steel ×5\n- Thread ×7\n- Hide ×2\n- Resin ×1",
+                          "tags": [
+                            "world",
+                            "trade"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1654725038
+                            },
+                            {
+                              "player": 4,
+                              "time": 1655328182
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 87,
+                          "relid": 2,
+                          "summary": "Deceased Dunes",
+                          "content": "Towns in the Deceased Dunes biome have the following initial inventory:\n- Wood ×10\n- Stone ×15\n- Steel ×4\n- Thread ×5\n- Hide ×1\n- Quartz ×1",
+                          "tags": [
+                            "world",
+                            "trade"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1654725038
+                            },
+                            {
+                              "player": 4,
+                              "time": 1655328182
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 88,
+                          "relid": 3,
+                          "summary": "Transactions",
+                          "content": "When a player purchases or sells items, there is a transfer of items and Moustaches between the player and the town.\nWhen a player purchases an item, the cost (value) is added to the town's budget and subtracted from the player.\nWhen a player sells an item, the profit (value) is subtracted from the town's budget and added to the player.\nA player or town's budget or inventory (individual item stock) cannot be negative, if a player attempts to buy or sell and this would result in either of these conditions, the transaction does not occur.",
+                          "tags": [
+                            "world",
+                            "trade"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1654725038
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 94,
+                          "relid": 4,
+                          "summary": "Forest",
+                          "content": "Towns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×9\n- Hide ×3\n- Resin ×1",
+                          "tags": [
+                            "world",
+                            "trade"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655470427
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 97,
+                          "relid": 5,
+                          "summary": "Perilous Pass",
+                          "content": "Towns in the Perilous Pass biome have the following initial inventory:\n- Wood ×15 Value: 100<m>\n- Stone ×20 Value: 250<m>\n- Steel ×7 Value: 5000<m>\n- Thread ×4 Value: 1000<m>\n- Quartz ×2 Value: 12500<m>\n- Copper ×1 Value: 20000<m>",
+                          "tags": [
+                            "world",
+                            "trade"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1655470427
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 152,
+                          "relid": 6,
+                          "summary": "Swamp",
+                          "content": "Towns in the swamp biome have the following initial inventory:\nWood ×10\nStone ×4\nThread ×8\nHide ×8\nResin ×5",
+                          "tags": [
+                            "world",
+                            "trade"
+                          ],
+                          "history": [
+                            {
+                              "player": 2,
+                              "time": 1656244442
+                            }
+                          ],
+                          "subrules": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 166,
+                  "relid": 3,
+                  "summary": "Dungeon",
+                  "content": "The Dungeon landmark has Weight: 1.5.\nWhen a hex generates with a Dungeon landmark, a dungeon is generated.\nMice cannot explore on dungeon hexes.\nPure statistics have no effects in dungeons.",
+                  "tags": [
+                    "world",
+                    "dungeon"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656897252
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 167,
+                      "relid": 1,
+                      "summary": "Generation",
+                      "content": "When a dungeon is generated, a unique space separate from the World is created with 1 centre dungeon hex d:(0,0,h) (note that h is 1 for the first level of the dungeon), then the other 60 dungeon hexes are placed in the following configuration:\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/992995080069718047/unknown.png\" alt=\"[Image]\" width=\"400\">",
+                      "tags": [
+                        "world",
+                        "dungeon"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1656897252
+                        }
+                      ],
+                      "subrules": [
+                        {
+                          "id": 168,
+                          "relid": 1,
+                          "summary": "Dungeon Hexes",
+                          "content": "When a dungeon is generated, the type of all dungeon hexes except for the centre (blank) are determined for a random dungeon.\nA random (weighted) type is chosen:\n- Blank (Weight: 16 - 2h, for h<8, if h≥8, Weight: 1)\n- Dark (Weight: 10)\n- Cobwebs (Weight: h² - 2h + 4)\n- Stone Wall (Weight: 11 + h²)\n- Steel Wall (Weight: 4 + 2h)\n- Pool (Weight: 2 + h)\n- Chest (Weight: 2 + 2h)\n- Minotaur (Weight: 2h - 1)\n- Pit (Weight: 2)\n- Switch (Weight: h)\nWhere 'h' refers to the depth of the dungeon, starting at 1 and succeeding with each nested pit.\nDungeon hexes cannot be corrupt.",
+                          "tags": [
+                            "world",
+                            "dungeon"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1656897252
+                            }
+                          ],
+                          "subrules": [
+                            {
+                              "id": 169,
+                              "relid": 1,
+                              "summary": "Dark",
+                              "content": "A player without a Torch cannot traverse onto a dark dungeon hex.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": []
+                            },
+                            {
+                              "id": 171,
+                              "relid": 2,
+                              "summary": "Cobwebs",
+                              "content": "If an entity moves into a cobwebs dungeon hex, they are considered stuck. After a player becomes stuck, they cannot perform actions or move for their turn and their following turn.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": []
+                            },
+                            {
+                              "id": 172,
+                              "relid": 3,
+                              "summary": "Stone Wall",
+                              "content": "A player cannot traverse onto a stone wall dungeon hex.\nIf a player is adjacent to a stone wall dungeon hex, they may use a Pickaxe (if they have one in their inventory) to break it, replacing it with a blank dungeon hex.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": []
+                            },
+                            {
+                              "id": 174,
+                              "relid": 4,
+                              "summary": "Steel Wall",
+                              "content": "A player cannot traverse onto a steel wall dungeon hex.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": []
+                            },
+                            {
+                              "id": 175,
+                              "relid": 5,
+                              "summary": "Pool",
+                              "content": "Pools act as lakes.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": []
+                            },
+                            {
+                              "id": 180,
+                              "relid": 6,
+                              "summary": "Chest",
+                              "content": "A player adjacent to a chest dungeon hex may open the chest (at any time), giving that player rewards from a loot table and replacing the chest dungeon hex with a blank dungeon hex.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": [
+                                {
+                                  "id": 181,
+                                  "relid": 1,
+                                  "summary": "Loot",
+                                  "content": "When a chest is opened, loot is generated depending on the depth that the chest is located in. 3 different of the following are randomly (weighted) selected with random quantities of those in parentheses:\n- Nothing (0) Weight: 10 - 3h, for h<4, if h≥4, Weight: 0\n- Nothing (0) Weight: 8\n- Wood (3-20) Weight: 16 - h, for h<16, if h≥16, Weight: 1\n- Wood (7-9) Weight: 12\n- Wood (11-18) Weight: 11\n- Steel (1-8) Weight: 9 + h²\n- Steel (1-5) Weight: 9 + h²\n- Steel (2-3) Weight: 6 + h³\n- Thread (1-4) Weight: 8 + h\n- Thread (1-2) Weight: 9\n- Hide (1-3) Weight: 6\n- Hide (1) Weight: 4 + 2h\n- Quartz (1-3) Weight: 3 + 2h²\n- Quartz (2) Weight: 3 + 2h\n- Quartz (1-2) Weight: 5 + h\n- Copper (1-2) Weight: 4 + h² - h\n- Copper (1) Weight: 5 + h²\n- Gold (1) Weight: 2 + h\n- Gold (0-1) Weight: 2 + 2h\n- Morbium (1) Weight: h - 1\n- Dungeon Key (1) Weight: 6 + h",
+                                  "tags": [
+                                    "world",
+                                    "dungeon"
+                                  ],
+                                  "history": [
+                                    {
+                                      "player": 4,
+                                      "time": 1656897252
+                                    }
+                                  ],
+                                  "subrules": []
+                                },
+                                {
+                                  "id": 182,
+                                  "relid": 2,
+                                  "summary": "Regeneration",
+                                  "content": "When a chest dungeon hex is generated, each adjacent blank dungeon hex (excluding the centre dungeon hex if necessary) is regenerated with the weight of minotaur changed to 3h, dark to 12, cobwebs to h² + 4, stone wall to 13 + h² - 3h and steel wall to h² + 6.",
+                                  "tags": [
+                                    "world",
+                                    "dungeon"
+                                  ],
+                                  "history": [
+                                    {
+                                      "player": 4,
+                                      "time": 1656897252
+                                    }
+                                  ],
+                                  "subrules": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": 183,
+                              "relid": 7,
+                              "summary": "Minotaur",
+                              "content": "A minotaur dungeon hex describes the position of a minotaur and is replaced by the blank dungeon hex when it moves.\nIf a minotaur and a player occupy the same dungeon hex, that player is removed from the dungeon (effected as leaving the dungeon).",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": [
+                                {
+                                  "id": 184,
+                                  "relid": 1,
+                                  "summary": "Entities",
+                                  "content": "The following are considered entities:\n- Players\n- Minotaurs",
+                                  "tags": [
+                                    "world",
+                                    "dungeon"
+                                  ],
+                                  "history": [
+                                    {
+                                      "player": 4,
+                                      "time": 1656897252
+                                    }
+                                  ],
+                                  "subrules": [
+                                    {
+                                      "id": 185,
+                                      "relid": 1,
+                                      "summary": "Turns",
+                                      "content": "All entities take turns to optionally perform an action in a dungeon or level. This does not occur if there are no players in a dungeon or level.\nOn each level (depth) of a dungeon, the turn order is the list in <a href=\"#rule-184\">World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities</a> (with relevant elements of each in random orders). An entity entering a dungeon or level has their turn placed after the previous last element of their entity type (ie. player, minotaur, etc.). Should an entity leave the dungeon or level they are removed from the list and no longer have a turn in that dungeon or level.\nIf a player does not move within 24 hours of their turn commencing, they forfeit their turn (do nothing).",
+                                      "tags": [
+                                        "world",
+                                        "dungeon"
+                                      ],
+                                      "history": [
+                                        {
+                                          "player": 4,
+                                          "time": 1656897252
+                                        }
+                                      ],
+                                      "subrules": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": 186,
+                                  "relid": 2,
+                                  "summary": "Movement",
+                                  "content": "A minotaur cannot move into pool, chest, minotaur and pit dungeon hexes or end a turn on the centre dungeon hex d:(0,0,h).\nA minotaur will target players, acting to move into their hex.\nWhen a minotaur has its turn, it will act in one of 4 ways; charging, leaping, random movement or no movement.\nIf a minotaur does not perform any of the first 3, it does not move (no movement).\nWhen a minotaur enters the hex of a stone wall or steel wall, that dungeon hex is replaced by the blank dungeon hex. A minotaur can exist in dark, cobwebs or switch dungeon hexes.",
+                                  "tags": [
+                                    "world",
+                                    "dungeon"
+                                  ],
+                                  "history": [
+                                    {
+                                      "player": 4,
+                                      "time": 1656897252
+                                    }
+                                  ],
+                                  "subrules": [
+                                    {
+                                      "id": 187,
+                                      "relid": 1,
+                                      "summary": "Charging",
+                                      "content": "If there is a path from the minotaur to a player (perpendicular to the edges of its dungeon hex), it will charge at the player, moving 3 hexes (in one turn) in that direction or until entering the hex of a stone wall, steel wall or player (or stopping due to being unable to move into the desired hex).\nFor multiple eligable players, it will target the closest player.",
+                                      "tags": [
+                                        "world",
+                                        "dungeon"
+                                      ],
+                                      "history": [
+                                        {
+                                          "player": 4,
+                                          "time": 1656897252
+                                        }
+                                      ],
+                                      "subrules": []
+                                    },
+                                    {
+                                      "id": 188,
+                                      "relid": 2,
+                                      "summary": "Leaping",
+                                      "content": "Alternatively, if a player cannot be targeted, there is a 30% chance that it will leap to a player's dungeon hex (random). It remains airborne for its turn (then landing for the following turn). (The minotaur effectively skips 2 turns.) If a player moves from their dungeon hex after a minotaur leaps, the minotaur lands on the hex where they were at the time of leaping.\nA minotaur will not leap onto a hex with another minotaur, and attempting to do so causes the leap destination to be determined again.",
+                                      "tags": [
+                                        "world",
+                                        "dungeon"
+                                      ],
+                                      "history": [
+                                        {
+                                          "player": 4,
+                                          "time": 1656897252
+                                        }
+                                      ],
+                                      "subrules": []
+                                    },
+                                    {
+                                      "id": 189,
+                                      "relid": 3,
+                                      "summary": "Random Movement",
+                                      "content": "If a minotaur does not leap when a player cannot be targeted, there is a 50% chance that it will move randomly. When this occurs, a random valid direction is chosen such that the minotaur can move into the adjacent hex in that direction. It then does so.",
+                                      "tags": [
+                                        "world",
+                                        "dungeon"
+                                      ],
+                                      "history": [
+                                        {
+                                          "player": 4,
+                                          "time": 1656897252
+                                        }
+                                      ],
+                                      "subrules": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": 190,
+                              "relid": 8,
+                              "summary": "Pit",
+                              "content": "If a player enters a pit dungeon hex, they immediately fall into a deeper level of the dungeon, being placed at the centre d:(0,0,h) of a 'new dungeon' that is a subset of the previous, with h increased by 1. This is generated when a player enters a pit.",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": [
+                                {
+                                  "id": 191,
+                                  "relid": 1,
+                                  "summary": "Locked",
+                                  "content": "When a pit generates, there is a 40% chance that it is locked. Players cannot move onto a locked pit dungeon hex.\nA player adjacent to a locked pit may use a Dungeon Key (removing 1 from their inventory) if they have at least 1 to remove the lock.",
+                                  "tags": [
+                                    "world",
+                                    "dungeon"
+                                  ],
+                                  "history": [
+                                    {
+                                      "player": 4,
+                                      "time": 1656897252
+                                    }
+                                  ],
+                                  "subrules": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": 192,
+                              "relid": 9,
+                              "summary": "Switch",
+                              "content": "Whilst an entity occupies the same hex as a switch, that switch is active. If all switches on a level are active any locked pit dungeon hexes are temporarily unlocked (for as long as all switches are active).",
+                              "tags": [
+                                "world",
+                                "dungeon"
+                              ],
+                              "history": [
+                                {
+                                  "player": 4,
+                                  "time": 1656897252
+                                }
+                              ],
+                              "subrules": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 193,
+                      "relid": 2,
+                      "summary": "Entering",
+                      "content": "A player can enter a dungeon once per period.\nWhen a player enters a dungeon they are placed on the centre hex.\nA player can leave a dungeon at any time, removing them and placing them back on the hex with the associated Dungeon landmark in the World.\nWhilst a player is inside a dungeon, the traverse action costs 0 action points for them, though players must move in single steps.",
+                      "tags": [
+                        "world",
+                        "dungeon"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1656897252
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
+                },
+                {
+                  "id": 207,
+                  "relid": 4,
+                  "summary": "Quarry",
+                  "content": "Weight: 1 in Meadow, 0.5 in Swamp, 2 otherwise.\nA Quarry landmark mines for resources depending on the biome of the hex it is on.\nThe resources are:\n- Meadow: 2× Wood, 1× Stone\n- Deceased Dunes: 1× Stone, 1× Quartz\n- Perilous Pass: 3× Stone, 1× Steel\n- Forest: 5× Wood, 1× Thread\n- Swamp: 3× Wood, 1× Resin\nOnce each period, one player may request that all quarries are checked. If this occurs, the relevant resources are deposited into the inventory of the quarry. A player may remove any resources stored in a quarry's inventory if they are on its hex.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1659498520
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "relid": 4,
+          "summary": "Trading",
+          "content": "Players can participate in 1 on 1 trades with other players provided they are situated within the same hex. Players may 'swap' items (including mice), not invoking any penalties or avoiding any restrictions of exceeding item limits (until after the trade where they must discard or kill in the case of mice accordingly).",
+          "tags": [
+            "world",
+            "trade"
+          ],
+          "history": [
+            {
+              "player": 5,
+              "time": 1654515056
+            },
+            {
+              "player": 4,
+              "time": 1658788167
+            }
+          ],
+          "subrules": [
+            {
+              "id": 69,
+              "relid": 1,
+              "summary": "Currency",
+              "content": "Players can earn the currency \"Moustaches\", with the symbol <m>. As an example, 50 Moustaches would be represented by 50<m>. These can be earned through working, or can be obtained by trading with another player. All Moustaches are stored in a player's \"spacious Pants Hole\" in their inventory.",
+              "tags": [
+                "world",
+                "trade"
+              ],
+              "history": [
+                {
+                  "player": 5,
+                  "time": 1654515056
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 206,
+              "relid": 2,
+              "summary": "Discarding",
+              "content": "A player may discard any items from their inventory or spacious pants hole at any time, removing them. A player cannot discard mice.",
+              "tags": [
+                "world",
+                "trade"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1658788167
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "relid": 5,
+          "summary": "Masses",
+          "content": "A mass, in the context of the board, is defined as a continuous (may have holes, but must be entirely navigable by moving in only single steps) section of the board such that all hexes within that section are of one Biome, and all adjacent hexes are of a different Biome.",
+          "tags": [
+            "world"
+          ],
+          "history": [
+            {
+              "player": 1,
+              "time": 1654599509
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 199,
+          "relid": 6,
+          "summary": "Directions",
+          "content": "Radiating out from the origin are 6 cardinal directions with the following names (going clockwise):\n1 - North\n2 - Yeast\n3 - Mouth\n4 - South\n5 - Zest\n6 - Weast\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/998080558619959376/Compass.png\" alt=\"[Compass Image]\" width=\"256\">",
+          "tags": [
+            "world"
+          ],
+          "history": [
+            {
+              "player": 0,
+              "time": 1658134120
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "relid": 6,
+      "summary": "Miscellaneous",
+      "content": "",
+      "tags": [
+        "misc"
+      ],
+      "history": [
+        {
+          "player": 1,
+          "time": 1653790511
+        },
+        {
+          "player": 0,
+          "time": 1654327752
+        }
+      ],
+      "subrules": [
+        {
+          "id": 47,
+          "relid": 1,
+          "summary": "Dice",
+          "content": "An expression of the form xdy or xDy, where x and y are natural numbers, means to roll x dice, each with y faces labelled with integers from 1 to y (or any other method of generating y random integers from 1 to y), and take the sum of all of their results.\nThe x can be omitted, in which case it is assumed to be 1.",
+          "tags": [
+            "misc"
+          ],
+          "history": [
+            {
+              "player": 1,
+              "time": 1653790511
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 64,
+          "relid": 2,
+          "summary": "Periods",
+          "content": "Every week (commencing on Sunday 00:00 UTC) is divided into a 72 hour period, followed by a 96 hour period.",
+          "tags": [
+            "misc"
+          ],
+          "history": [
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "relid": 7,
+      "summary": "Mice",
+      "content": "Players can own and train mice. Each player can have up to 3 mice in their inventory at a time. Players can perform up to 3 Mouse Actions in each period.",
+      "tags": [
+        "mice"
+      ],
+      "history": [
+        {
+          "player": 2,
+          "time": 1653894736
+        },
+        {
+          "player": 4,
+          "time": 1655328182
+        }
+      ],
+      "subrules": [
+        {
+          "id": 49,
+          "relid": 1,
+          "summary": "Mice",
+          "content": "",
+          "tags": [
+            "mice"
+          ],
+          "history": [
+            {
+              "player": 2,
+              "time": 1653894736
+            }
+          ],
+          "subrules": [
+            {
+              "id": 50,
+              "relid": 1,
+              "summary": "Aquisition",
+              "content": "A player can create a new mouse every 4 periods. When creating a mouse, the player must create a name, eye colour, favourite food and age for the mouse as well as a short blurb describing them, and use dice to determine their statistics. An image may be included.",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 0,
+                  "time": 1654327752
+                },
+                {
+                  "player": 4,
+                  "time": 1658788167
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 51,
+              "relid": 2,
+              "summary": "Killing",
+              "content": "<i>Well, down the toilet it is! They can't all be winners…</i>\nA mouse can be killed by the player who owns it, removing it from Nomic, and that player's list of mice. For 6 periods after killing a mouse, all Mouse Actions have a 1 in 3 chance to fail, instead doing nothing.",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 0,
+                  "time": 1654327752
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "relid": 2,
+          "summary": "Statistics",
+          "content": "Mice have the following starting statistics; 1 energy, 1d2 Mischief, 1d2 Wits, 2d3 Power and 1d4 Curiosity. None of these statistics can become negative. A mouse cannot have the sum of their statistics (excluding energy) exceed 23. Energy cannot exceed 20.",
+          "tags": [
+            "mice"
+          ],
+          "history": [
+            {
+              "player": 2,
+              "time": 1653894736
+            },
+            {
+              "player": 0,
+              "time": 1654327752
+            }
+          ],
+          "subrules": [
+            {
+              "id": 75,
+              "relid": 1,
+              "summary": "Pure Statistics",
+              "content": "If a mouse has a total of 23 statistics, the owner may use 20 of that mouse's energy to gain a pure statistic of their choice for that mouse. A mouse may only have a maximum of 1 pure statistic and this cannot be changed once determined.",
+              "tags": [
+                "mice",
+                "pure stats"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1654581951
+                },
+                {
+                  "player": 4,
+                  "time": 1657623581
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 76,
+                  "relid": 1,
+                  "summary": "Duplicates",
+                  "content": "For multiple mice with pure statistics, the effects are applied additively where applicable (denoted with a '+' for the same effect).",
+                  "tags": [
+                    "mice",
+                    "pure stats"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 77,
+                  "relid": 2,
+                  "summary": "Speedrunner",
+                  "content": "If the owner uses the traverse action, (in the same period) they may move +1 hex for no additional action point cost per period (doing so is not classified as performing an action). Additionally, the traverse action always costs at most 1 action point.",
+                  "tags": [
+                    "mice",
+                    "pure stats"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 78,
+                  "relid": 3,
+                  "summary": "Vigor",
+                  "content": "After the owner uses an (regular, not mouse) action, there is a +10% chance that they will gain 1 action point (for use in the same period).",
+                  "tags": [
+                    "mice",
+                    "pure stats"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 79,
+                  "relid": 4,
+                  "summary": "Farsight",
+                  "content": "If the owner uses the scout action, each hex adjacent to the generated hex has a +20% chance to be generated if it is not already. This also occurs for hexes generated through this process.",
+                  "tags": [
+                    "mice",
+                    "pure stats",
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 80,
+                  "relid": 5,
+                  "summary": "World Bender",
+                  "content": "If the owner uses the scout action on a generated hex, there is a +25% chance that it is re-generated.",
+                  "tags": [
+                    "mice",
+                    "pure stats",
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 81,
+                  "relid": 6,
+                  "summary": "Manipulator",
+                  "content": "If the player uses the scout action, they may choose the Biome that would be generated for the selected hex with a +25% chance for this to occur. The player does not determine the landmark.",
+                  "tags": [
+                    "mice",
+                    "pure stats",
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1654581951
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 195,
+                  "relid": 7,
+                  "summary": "Capitalist",
+                  "content": "If the owner uses the work action, they earn +50% additional Moustaches. Additionally, the work action always costs at most 1 action point (taking precedence over <a href=\"#rule-70\">World > Actions > Work</a>).",
+                  "tags": [
+                    "mice",
+                    "pure stats"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1657623581
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "relid": 3,
+          "summary": "Mouse Actions",
+          "content": "Mouse Actions are as follows; eat, exercise, enrich, entice and explore.",
+          "tags": [
+            "mice"
+          ],
+          "history": [
+            {
+              "player": 2,
+              "time": 1653894736
+            }
+          ],
+          "subrules": [
+            {
+              "id": 54,
+              "relid": 1,
+              "summary": "Eat",
+              "content": "Making a mouse eat causes the mouse to gain 1 energy. A player may use up to 1 food item for additional effects.",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 4,
+                  "time": 1656546448
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 155,
+                  "relid": 1,
+                  "summary": "Salmon",
+                  "content": "Smoked Salmon is a food item that mice can eat. It can be cooked from 1× Salmon at a campfire landmark.\nAdditional Effects: Exercising instead has a 100% chance to increase wits this period.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656546448
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 156,
+                  "relid": 2,
+                  "summary": "Eel",
+                  "content": "Fried Eel is a food item that mice can eat. It can be cooked from 1× Eel at a campfire landmark.\nAdditional Effects: Exercising instead has a 100% chance to increase power this period.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656546448
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 157,
+                  "relid": 3,
+                  "summary": "Tilapia",
+                  "content": "Baked Tilapia is a food item that mice can eat. It can be cooked from 1× Tilapia at a campfire landmark.\nAdditional Effects: Enriching instead has a 100% chance to increase curiosity this period.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656546448
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 158,
+                  "relid": 4,
+                  "summary": "Pike",
+                  "content": "Stuffed Pike is a food item that mice can eat. It can be cooked from 1× Northern Pike at a campfire landmark.\nAdditional Effects: Enriching instead has a 100% chance to increase mischief this period.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656546448
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 159,
+                  "relid": 5,
+                  "summary": "Filet",
+                  "content": "Trout Filet is a food item that mice can eat. It can be cooked from 1× Trout at a campfire landmark.\nAdditional Effects: +2 mouse actions this period.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656546448
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 160,
+                  "relid": 6,
+                  "summary": "Banquet",
+                  "content": "Fishy Banquet is a food item that mice can eat. It can be cooked from any 3 Standard Fish at a campfire landmark.\nAdditional Effects: +4 energy.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1656546448
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 200,
+                  "relid": 7,
+                  "summary": "Eel Purge",
+                  "content": "Eel Purge is a food item that mice can eat. It can be cooked from 1× Eel and 1× Trout at a campfire landmark.\nAdditional Effects: Power is decreased by 1 (minimum 0).",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1658215548
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 201,
+                  "relid": 8,
+                  "summary": "Salmon Lobotomy",
+                  "content": "Salmon Lobotomy is a food item that mice can eat. It can be cooked from 1× Salmon and 1× Trout at a campfire landmark.\nAdditional Effects: Wits is decreased by 1 (minimum 0).",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1658215548
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 202,
+                  "relid": 9,
+                  "summary": "Pike Puncturing",
+                  "content": "Pike Puncturing is a food item that mice can eat. It can be cooked from 1× Northern Pike and 1× Trout at a campfire landmark.\nAdditional Effects: Mischief is decreased by 1 (minimum 0).",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1658215548
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 203,
+                  "relid": 10,
+                  "summary": "Tilapia Decapitatia",
+                  "content": "Tilapia Decapitatia is a food item that mice can eat. It can be cooked from 1× Tilapia and 1× Trout at a campfire landmark.\nAdditional Effects: Curiosity is decreased by 1 (minimum 0).",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1658215548
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            },
+            {
+              "id": 55,
+              "relid": 2,
+              "summary": "Exercise",
+              "content": "Exercising a mouse costs 2 of that mouse's energy. After exercising a mouse, there is an 80% chance the mouse's Power increases by one or a 60% chance the mouse's Wit increases by one (player's choice).",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 4,
+                  "time": 1655470427
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 56,
+              "relid": 3,
+              "summary": "Enrich",
+              "content": "Enriching a mouse costs 2 of that mouse's energy. After enriching a mouse there is a 70% chance that the mouse's Curiosity or Mischief increases (player's choice) by one.",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 57,
+              "relid": 4,
+              "summary": "Entice",
+              "content": "Enticing a mouse costs one of that mouse's energy. The mouse becomes \"enticed\" for two complete periods. During this time, attempts to Exercise or Enrich the mouse have a 10% increased (additively) chance to succeed, however the mouse cannot Explore during this time.",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 2,
+                  "time": 1653894736
+                },
+                {
+                  "player": 4,
+                  "time": 1655470427
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 137,
+              "relid": 5,
+              "summary": "Explore",
+              "content": "Making a mouse explore costs 3 of that mouse's energy. After, it has a chance to give the player items or effects based on their current hex and the statistics of the mouse they used to explore. The following table summarises the rewards for exploring (Note: numbers in parentheses denote quantities (range) and percentage is the chance to gain that reward):\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/1003956069699174421/unknown.png\" alt=\"[Table]\" width=\"600\">\nThe number of a reward they gain is randomly decided (between the range, inclusive) for all rewards they gain.\nEach mouse can only Explore a maximum of once in each period.\nIf a player earns '+Energy' that mouse receives energy points (the number determined by random chance within the range).\nIf a player earns '+Statistic' that mouse receives +1 to a random statistic. If this would cause the mouse's total statistics to exceed 23, they instead gain nothing.",
+              "tags": [
+                "mice"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1655674605
+                },
+                {
+                  "player": 4,
+                  "time": 1659498520
+                }
+              ],
+              "subrules": [
+                {
+                  "id": 138,
+                  "relid": 1,
+                  "summary": "Mischief",
+                  "content": "For each mischief statistic that the mouse has, the player has a +5% chance (maximum 100%) to be able to reroll their rewards for that Explore action. They may optionally do this once per Explore action. This percentage is applied additively.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655674605
+                    },
+                    {
+                      "player": 4,
+                      "time": 1658215548
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 139,
+                  "relid": 2,
+                  "summary": "Wits",
+                  "content": "For each wits statistic that the mouse has, all probabilities of finding a reward when exploring increase by 1%. This percentage is applied additively.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655674605
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 140,
+                  "relid": 3,
+                  "summary": "Power",
+                  "content": "For each power statistic, the mouse earns +10% (of the items they would earn) number of items rounded down to the nearest integer quantity. This percentage is applied additively.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655674605
+                    }
+                  ],
+                  "subrules": []
+                },
+                {
+                  "id": 141,
+                  "relid": 4,
+                  "summary": "Curiosity",
+                  "content": "For each curiosity statistic, the mouse has a +1% chance to replace a regular item it would earn with a [Rare] item of the same category (biome and landmark). The quantity of items gained is determined randomly with the range of the new item. This percentage is applied additively.",
+                  "tags": [
+                    "mice"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1655674605
+                    }
+                  ],
+                  "subrules": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "relid": 8,
+      "summary": "Resources",
+      "content": "The following comprises a list of the primary resources and their value at towns.\n- Wood Value: 100<m>\n- Stone Value: 250<m>\n- Steel Value: 5000<m>\n- Thread Value: 1000<m>\n- Hide Value: 3000<m>\n- Resin Value: 6000<m>\n- Quartz Value: 12500<m>\n- Copper Value: 20000<m>\n- Gold Value: 50000<m>\n- Morbium Value: 163000000<m>",
+      "tags": [
+        "resources",
+        "trade"
+      ],
+      "history": [
+        {
+          "player": 4,
+          "time": 1655328182
+        }
+      ],
+      "subrules": [
+        {
+          "id": 170,
+          "relid": 1,
+          "summary": "Torch",
+          "content": "A player may create a Torch using 3× Wood, 1× Thread and 1× Resin. A player with a Torch in their inventory can traverse onto dark dungeon hexes.",
+          "tags": [
+            "resources"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1656897252
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 173,
+          "relid": 2,
+          "summary": "Pickaxe",
+          "content": "A player may create a Pickaxe using 2× Wood and 3× Steel. When a player uses a Pickaxe there is a 10% chance that it is destroyed, being removed from that player's inventory.",
+          "tags": [
+            "resources"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1656897252
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "relid": 9,
+      "summary": "Construction",
+      "content": "If a player is adjacent to or on a non-corrupt hex with the nothing landmark, they may build a constructed (not naturally generating) landmark on that hex, replacing the nothing landmark. This requires the relevant resource cost to be spent. The landmark is immediately constructed after this condition is met.\nConstructed landmarks act as the nothing landmark in all ways unless otherwise stated. ",
+      "tags": [
+        "world",
+        "construction"
+      ],
+      "history": [
+        {
+          "player": 4,
+          "time": 1655968329
+        }
+      ],
+      "subrules": [
+        {
+          "id": 143,
+          "relid": 1,
+          "summary": "Pylon of Purity",
+          "content": "Resource Cost: 100× Wood, 20× Steel, 5× Gold\nCannot be constructed on lake hexes.\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms.",
+          "tags": [
+            "world",
+            "construction"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1655968329
+            },
+            {
+              "player": 4,
+              "time": 1656897252
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 144,
+          "relid": 2,
+          "summary": "Stag Station",
+          "content": "Resource Cost: 50× Stone, 10× Steel\nCannot be constructed on lake hexes.\nA player located on a hex with the stag station landmark may travel the stagways (teleport) to any hex with the stag station landmark. This does not act as moving into that hex. If they do so, they cannot perform any more actions for the period and cannot move from this hex until the next period.",
+          "tags": [
+            "world",
+            "construction"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1655968329
+            },
+            {
+              "player": 4,
+              "time": 1656897252
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 145,
+          "relid": 3,
+          "summary": "Boardwalk",
+          "content": "Resource Cost: 10× Wood\nA lake with a boardwalk landmark can be traversed onto and a player can fish targeting the hex they are on.\nAny other hex with the boardwalk landmark does not apply its status effect, penalty, etc.",
+          "tags": [
+            "world",
+            "construction"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1655968329
+            },
+            {
+              "player": 4,
+              "time": 1656897252
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 154,
+          "relid": 4,
+          "summary": "Campfire",
+          "content": "Resource Cost: 5× Wood\nCannot be constructed on lake hexes.\nA player may cook food items at a campfire.",
+          "tags": [
+            "world",
+            "construction"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1656546448
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "relid": 10,
+      "summary": "Gnomes",
+      "content": "For the cost of 5× Stone, a player can create a Gnome. This is placed on their current hex. Multiple Gnomes stack together to increase storage and rewards.\nA Gnome cannot exist on a corrupted hex and dies (is removed) if it does.",
+      "tags": [
+        "gnomes"
+      ],
+      "history": [
+        {
+          "player": 4,
+          "time": 1656816659
+        }
+      ],
+      "subrules": [
+        {
+          "id": 162,
+          "relid": 1,
+          "summary": "Anthony",
+          "content": "If the player named Anthony has at least 1 mouse in his inventory, the cost of a Gnome is reduced to 3× Stone for him and 4× Stone for every other player.",
+          "tags": [
+            "gnomes"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1656816659
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 163,
+          "relid": 2,
+          "summary": "Storage",
+          "content": "Each Gnome on a hex can store up to the following:\n- 3× Wood\n- 2× Stone\n- 1× Thread\n- 1× Quartz\nIf not listed it is assumed to be 0× for that item.\nIf a Gnome would gain items causing it to exceed storage capacity it instead does not gain the items in conflict.",
+          "tags": [
+            "gnomes"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1656816659
+            }
+          ],
+          "subrules": [
+            {
+              "id": 164,
+              "relid": 1,
+              "summary": "Collection",
+              "content": "A player on the hex of a Gnome may collect any items from the Gnomes on that hex, transferring them to that player's inventory.\nA player may also deposite resources into Gnomes' inventories if they are on the same hex (provided it does not exceed the Gnome's storage capacity).",
+              "tags": [
+                "gnomes"
+              ],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1656816659
+                }
+              ],
+              "subrules": []
+            }
+          ]
+        },
+        {
+          "id": 165,
+          "relid": 3,
+          "summary": "Rewards",
+          "content": "Once in every period, up to one player may request that all Gnomes are checked. If this occurs, depending on the biomes the Gnomes reside on there are altered rewards and chances to gain 1 of the resource. For multiple Gnomes on a hex, the check is performed once for each Gnome.\nThe following is a list of rewards with chance to gain each in parentheses:\n- Meadow: Wood (20%), Stone (5%)\n- Deceased Dunes: Stone (15%), Quartz (2%)\n- Forest: Wood (30%), Wood (10%), Thread (3%)\n- Perilous Peaks: Stone (50%), Stone (10%)\n- Lake: Thread (10%)\n- Swamp: Wood (15%), Thread (1%)",
+          "tags": [
+            "gnomes"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1656816659
+            }
+          ],
+          "subrules": []
+        }
+      ]
+    }
+  ]
+}

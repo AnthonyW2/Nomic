@@ -19,12 +19,12 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 4
+        "amount": 5
       },
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 3
+        "amount": 4
       },
       {
         "type": "fish",
@@ -34,12 +34,12 @@
       {
         "type": "fish",
         "name": "Northern pike",
-        "amount": 3
+        "amount": 4
       },
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 3
+        "amount": 4
       },
       {
         "type": "medallion-fish",
@@ -121,7 +121,7 @@
         "blurb": "Bunnings Warehouse! Lowest prices are just the beginning.\nhttps://youtu.be/D3qgALBoR1A\nWhere you find a competitor's lower price on the same stocked item, we'll beat it by 10%.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1002732271486373948/Bunnings_Waremouse.jpg",
         "statistics": {
-          "energy": 4,
+          "energy": 7,
           "mischief": 1,
           "wits": 1,
           "power": 5,
@@ -201,7 +201,7 @@
           "energy": 1,
           "mischief": 2,
           "wits": 2,
-          "power": 3,
+          "power": 7,
           "curiosity": 1
         }
       }
@@ -267,7 +267,7 @@
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
           "energy": 5,
-          "mischief": 4,
+          "mischief": 5,
           "wits": 1,
           "power": 3,
           "curiosity": 1
@@ -295,22 +295,27 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 5
+        "amount": 6
       },
       {
         "type": "fish",
-        "name": "Tilapia",
-        "amount": 4
-      },
-      {
-        "type": "fish",
-        "name": "Northern pike",
+        "name": "Salmon",
         "amount": 2
       },
       {
         "type": "fish",
+        "name": "Tilapia",
+        "amount": 5
+      },
+      {
+        "type": "fish",
+        "name": "Northern pike",
+        "amount": 3
+      },
+      {
+        "type": "fish",
         "name": "Trout",
-        "amount": 6
+        "amount": 7
       },
       {
         "type": "medallion-fish",
@@ -329,7 +334,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Jellyfish",
-        "amount": 1,
+        "amount": 2,
         "medallion_fish_type": "Jellyfish",
         "quality": 1
       },
@@ -352,6 +357,34 @@
         "name": "Bronze Blue Whale",
         "amount": 1,
         "medallion_fish_type": "Blue Whale",
+        "quality": 2
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Civilised Fish",
+        "amount": 1,
+        "medallion_fish_type": "Civilised Fish",
+        "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Gudgeon",
+        "amount": 1,
+        "medallion_fish_type": "Gudgeon",
+        "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Bronze Gudgeon",
+        "amount": 1,
+        "medallion_fish_type": "Gudgeon",
+        "quality": 2
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Bronze Vanille",
+        "amount": 1,
+        "medallion_fish_type": "Vanille",
         "quality": 2
       }
     ],
@@ -388,12 +421,12 @@
       2,
       -3
     ],
-    "moustaches": 100,
+    "moustaches": 2500,
     "inventory": [
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 5
+        "amount": 6
       },
       {
         "type": "fish",
@@ -403,17 +436,17 @@
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 2
-      },
-      {
-        "type": "fish",
-        "name": "Northern pike",
         "amount": 3
       },
       {
         "type": "fish",
-        "name": "Trout",
+        "name": "Northern pike",
         "amount": 4
+      },
+      {
+        "type": "fish",
+        "name": "Trout",
+        "amount": 7
       },
       {
         "type": "medallion-fish",
@@ -505,6 +538,20 @@
         "amount": 1,
         "medallion_fish_type": "Goldfish",
         "quality": 3
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Blue Whale",
+        "amount": 1,
+        "medallion_fish_type": "Blue Whale",
+        "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Aligned Fish",
+        "amount": 1,
+        "medallion_fish_type": "Aligned Fish",
+        "quality": 1
       }
     ],
     "mice": [
@@ -516,7 +563,7 @@
         "blurb": "raidshadowlegendsquaza is extremely spritely despite his intense age and declining relevance as an internet meme. He is greatly driven by an obscene desire to sponsor morally dubious Youtubers to promote the game of his namesake. In addition, His long serpentine body assists him in worming his way into Google's targeting advertisements. He also has a big d-",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/980755036869107712/unknown.png",
         "statistics": {
-          "energy": 8,
+          "energy": 17,
           "mischief": 5,
           "wits": 5,
           "power": 10,
@@ -524,6 +571,7 @@
         }
       },
       {
+        "deceased": true,
         "name": "Mousetache",
         "eye_color": "Black",
         "fav_food": "Tea",
@@ -584,6 +632,21 @@
           "power": 5,
           "curiosity": 2
         }
+      },
+      {
+        "name": "Moose",
+        "eye_color": "Green",
+        "fav_food": "Grass",
+        "age": "3 years",
+        "blurb": "idk",
+        "image": "https://cdn.discordapp.com/attachments/980754575944458260/1005636181662380064/unknown.png",
+        "statistics": {
+          "energy": 1,
+          "mischief": 2,
+          "wits": 1,
+          "power": 4,
+          "curiosity": 3
+        }
       }
     ]
   },
@@ -607,12 +670,17 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 2
+        "amount": 4
+      },
+      {
+        "type": "fish",
+        "name": "Salmon",
+        "amount": 3
       },
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 2
+        "amount": 3
       },
       {
         "type": "fish",
@@ -873,18 +941,33 @@
     "inventory": [
       {
         "type": "fish",
-        "name": "Salmon",
+        "name": "Eel",
         "amount": 1
       },
       {
         "type": "fish",
+        "name": "Salmon",
+        "amount": 2
+      },
+      {
+        "type": "fish",
         "name": "Tilapia",
+        "amount": 3
+      },
+      {
+        "type": "fish",
+        "name": "Northern pike",
+        "amount": 1
+      },
+      {
+        "type": "fish",
+        "name": "Trout",
         "amount": 1
       },
       {
         "type": "medallion-fish",
         "name": "Garbage Blue Whale",
-        "amount": 2,
+        "amount": 3,
         "medallion_fish_type": "Blue Whale",
         "quality": 1
       },
@@ -918,10 +1001,24 @@
       },
       {
         "type": "medallion-fish",
+        "name": "Garbage Jellyfish",
+        "amount": 2,
+        "medallion_fish_type": "Jellyfish",
+        "quality": 1
+      },
+      {
+        "type": "medallion-fish",
         "name": "Bronze Jellyfish",
         "amount": 1,
         "medallion_fish_type": "Jellyfish",
         "quality": 2
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Silver Gudgeon",
+        "amount": 1,
+        "medallion_fish_type": "Gudgeon",
+        "quality": 3
       }
     ],
     "mice": [

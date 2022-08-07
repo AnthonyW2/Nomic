@@ -96,7 +96,7 @@ var displayPlayerInfo = (player) => {
   //Inventory
   var inventory = document.createElement("details");
   inventory.innerHTML = "<summary>Inventory</summary>";
-  if(player.inventory.length > 0){
+  if(player.inventory.length > 0 || player.mice.length > 0){
     playerDetails.appendChild(inventory);
   }
   var inventoryContent = document.createElement("div");
