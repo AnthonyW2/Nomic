@@ -137,9 +137,9 @@ var displayPlayerInfo = (player) => {
   //Mice
   if(player.mice.length > 0){
     
-    playerDetails.appendChild(document.createElement("br"));
+    //inventoryContent.appendChild(document.createElement("br"));
     
-    playerDetails.appendChild(displayMice(player));
+    inventoryContent.appendChild(displayMice(player));
     
   }
   
@@ -173,7 +173,7 @@ var displayMice = (player) => {
       mouse.innerHTML += "<br><i>Eye Colour:</i> "+player.mice[m].eye_color;
       mouse.innerHTML += "<br><i>Favourite Food:</i> "+player.mice[m].fav_food;
       mouse.innerHTML += "<br><i>Age:</i> "+player.mice[m].age;
-      mouse.innerHTML += "<br><i>Description:</i> "+player.mice[m].blurb;
+      mouse.innerHTML += "<br><i>Description:</i> "+player.mice[m].blurb.replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll("\n","<br>\n");
       mouse.innerHTML += "<br>";
       
       var mouseStats = document.createElement("ul");

@@ -1064,6 +1064,23 @@
                     }
                   ],
                   "subrules": []
+                },
+                {
+                  "id": 208,
+                  "relid": 13,
+                  "summary": "Quarry",
+                  "content": "When a player uses the work action on a hex with the quarry landmark, they earn +200<m>.",
+                  "tags": [
+                    "world",
+                    "work"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1659498520
+                    }
+                  ],
+                  "subrules": []
                 }
               ]
             },
@@ -2600,6 +2617,22 @@
                       "subrules": []
                     }
                   ]
+                },
+                {
+                  "id": 207,
+                  "relid": 4,
+                  "summary": "Quarry",
+                  "content": "Weight: 1 in Meadow, 0.5 in Swamp, 2 otherwise.\nA Quarry landmark mines for resources depending on the biome of the hex it is on.\nThe resources are:\n- Meadow: 2× Wood, 1× Stone\n- Deceased Dunes: 1× Stone, 1× Quartz\n- Perilous Pass: 3× Stone, 1× Steel\n- Forest: 5× Wood, 1× Thread\n- Swamp: 3× Wood, 1× Resin\nOnce each period, one player may request that all quarries are checked. If this occurs, the relevant resources are deposited into the inventory of the quarry. A player may remove any resources stored in a quarry's inventory if they are on its hex.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1659498520
+                    }
+                  ],
+                  "subrules": []
                 }
               ]
             }
@@ -3249,7 +3282,7 @@
               "id": 137,
               "relid": 5,
               "summary": "Explore",
-              "content": "Making a mouse explore costs 3 of that mouse's energy. After, it has a chance to give the player items or effects based on their current hex and the statistics of the mouse they used to explore. The following table summarises the rewards for exploring (Note: numbers in parentheses denote quantities (range) and percentage is the chance to gain that reward):\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/992995975931105410/unknown.png\" alt=\"[Table]\" width=\"400\">\nThe number of a reward they gain is randomly decided (between the range, inclusive) for all rewards they gain.\nEach mouse can only Explore a maximum of once in each period.\nIf a player earns '+Energy' that mouse receives energy points (the number determined by random chance within the range).\nIf a player earns '+Statistic' that mouse receives +1 to a random statistic. If this would cause the mouse's total statistics to exceed 23, they instead gain nothing.",
+              "content": "Making a mouse explore costs 3 of that mouse's energy. After, it has a chance to give the player items or effects based on their current hex and the statistics of the mouse they used to explore. The following table summarises the rewards for exploring (Note: numbers in parentheses denote quantities (range) and percentage is the chance to gain that reward):\n<img src=\"https://cdn.discordapp.com/attachments/960036851022979092/1003956069699174421/unknown.png\" alt=\"[Table]\" width=\"600\">\nThe number of a reward they gain is randomly decided (between the range, inclusive) for all rewards they gain.\nEach mouse can only Explore a maximum of once in each period.\nIf a player earns '+Energy' that mouse receives energy points (the number determined by random chance within the range).\nIf a player earns '+Statistic' that mouse receives +1 to a random statistic. If this would cause the mouse's total statistics to exceed 23, they instead gain nothing.",
               "tags": [
                 "mice"
               ],
@@ -3257,6 +3290,10 @@
                 {
                   "player": 4,
                   "time": 1655674605
+                },
+                {
+                  "player": 4,
+                  "time": 1659498520
                 }
               ],
               "subrules": [

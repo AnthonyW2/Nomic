@@ -1350,6 +1350,69 @@
       ],
       [
         5,
+        13,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1001741216624427049",
+    "multimessage": true,
+    "messages": [
+      "1001741216624427049",
+      "1001741347121791037",
+      "1001741449672523877",
+      "1001741500184535050"
+    ]
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Landmarks > Quarry*\nWeight: 1 in Meadow, 0.5 in Swamp, 2 otherwise\nA Quarry landmark mines for resources depending on the biome of the hex it is on.\nThe resources are:\n- Meadow: 2× Wood, 1× Stone\n- Deceased Dunes: 1× Stone, 1× Quartz\n- Perilous Pass: 3× Stone, 1× Steel\n- Forest: 5× Wood, 1× Thread\n- Swamp: 3× Wood, 1× Resin\nOnce each period, one player may request that all quarries are checked. If this occurs, the relevant resources are deposited into the inventory of the quarry. A player may remove any resources stored in a quarry's inventory if they are on its hex. \n\n**Addition**\n> *World > Actions > Work > Quarry*\nWhen a player uses the work action on a hex with the quarry landmark, they earn +200*~~m~~*. \n\n**Miscellaneous Change**\n> *Mice > Mouse Actions > Explore*\nThe table is replaced by [Attached Image].",
+    "timestamp": 1659432180,
+    "messageID": "1003956070030520330",
+    "votes": [
+      [
+        3,
+        5,
+        13,
+        9
+      ],
+      [],
+      [
+        1
+      ],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1003956070030520330"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *World > Generation > Landmarks > Market*\nWeight: 2.5\nA Market landmark acts as the nothing landmark unless specified otherwise.\nWhen a hex with a Market landmark is generated, any other market landmarks are replaced by the nothing landmark.\nA player on the hex of Market landmark may purchase items (for their Market Value). Unlike towns, Markets do not have an 'inventory', and as such items are created when purchased and Moustaches removed. \n\n**Addition**\n> *World > Generation > Landmarks > Market > Shop*\nThe list of available purchases at a market is outlined below with their associated market values:\n- 10× Wood => Market Value: 800*~~m~~*\n- 10× Stone => Market Value: 2000*~~m~~*\n- 5× Steel => Market Value: 10000*~~m~~*\n- 3× Thread => Market Value: 2500*~~m~~*\n- 2× Hide => Market Value: 5000*~~m~~*\n- 3× Quartz => Market Value: 25000*~~m~~*\n- 5× Copper => Market Value: 50000*~~m~~*\n- Arcane Tome => Market Value: 5000*~~m~~*\n- Custom Mouse => Market Value: 2000*~~m~~* \n\n**Addition**\n> *World > Generation > Landmarks > Market > Arcane Tome*\nA player may use an arcane tome (removing it from their inventory) to generate a random ungenerated hex within a 25 hex radius of their location (taken from the centre of their hex and any hex where the center and this circle intersect are valid) as a dungeon landmark with random (weighted) biome and is always uncorrupted. \n\n**Addition**\n> *World > Generation > Landmarks > Market > Custom Mouse*\nA player can only purchase a custom mouse if they have less than 3 mice in their inventory. When a player purchases a custom mouse, they complete all the normal steps for mouse acquisition, however, choose the statistics they would like (abiding by the rules of minimum of 0 in one statistic and the total of the statistics cannot exceed 23). For each statistic, the player must spend an additional 1000*~~m~~*.",
+    "timestamp": 1659745529,
+    "messageID": "1005270352466821243",
+    "votes": [
+      [
+        0,
+        13,
+        2
+      ],
+      [],
+      [],
+      [
         6,
         7,
         8,
@@ -1360,13 +1423,6 @@
       ]
     ],
     "majority": false,
-    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1001741216624427049",
-    "multimessage": true,
-    "messages": [
-      "1001741216624427049",
-      "1001741347121791037",
-      "1001741449672523877",
-      "1001741500184535050"
-    ]
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1005270352466821243"
   }
 ]
