@@ -24,7 +24,7 @@
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 4
+        "amount": 6
       },
       {
         "type": "fish",
@@ -39,7 +39,7 @@
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 4
+        "amount": 5
       },
       {
         "type": "medallion-fish",
@@ -58,7 +58,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Vanille",
-        "amount": 2,
+        "amount": 3,
         "medallion_fish_type": "Vanille",
         "quality": 1
       },
@@ -100,7 +100,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Blue Whale",
-        "amount": 1,
+        "amount": 2,
         "medallion_fish_type": "Blue Whale",
         "quality": 1
       },
@@ -121,11 +121,26 @@
         "blurb": "Bunnings Warehouse! Lowest prices are just the beginning.\nhttps://youtu.be/D3qgALBoR1A\nWhere you find a competitor's lower price on the same stocked item, we'll beat it by 10%.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1002732271486373948/Bunnings_Waremouse.jpg",
         "statistics": {
-          "energy": 7,
+          "energy": 10,
           "mischief": 1,
           "wits": 1,
           "power": 5,
           "curiosity": 4
+        }
+      },
+      {
+        "name": "Christopher Columouse",
+        "eye_color": "Hazel",
+        "fav_food": "Vegetables",
+        "age": "54 years",
+        "blurb": "An Italian explorer and navigator mouse. Very well-travelled - especially on sea voyages - and largely self-educated.",
+        "image": "https://cdn.discordapp.com/attachments/980754575944458260/1006856199708344360/Christopher_Columouse.jpg",
+        "statistics": {
+          "energy": 1,
+          "mischief": 2,
+          "wits": 1,
+          "power": 6,
+          "curiosity": 2
         }
       }
     ]
@@ -393,6 +408,13 @@
         "amount": 1,
         "medallion_fish_type": "Vanille",
         "quality": 2
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Vanille",
+        "amount": 1,
+        "medallion_fish_type": "Vanille",
+        "quality": 1
       }
     ],
     "mice": [
@@ -677,12 +699,12 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 4
+        "amount": 5
       },
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 4
+        "amount": 5
       },
       {
         "type": "fish",
@@ -697,7 +719,7 @@
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 4
+        "amount": 5
       },
       {
         "type": "medallion-fish",
@@ -964,7 +986,7 @@
       {
         "type": "fish",
         "name": "Northern pike",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "fish",
@@ -974,7 +996,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Blue Whale",
-        "amount": 3,
+        "amount": 4,
         "medallion_fish_type": "Blue Whale",
         "quality": 1
       },
@@ -1026,6 +1048,20 @@
         "amount": 1,
         "medallion_fish_type": "Gudgeon",
         "quality": 3
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Plankton",
+        "amount": 1,
+        "medallion_fish_type": "Plankton",
+        "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Platinum Gudgeon",
+        "amount": 1,
+        "medallion_fish_type": "Gudgeon",
+        "quality": 5
       }
     ],
     "mice": [
