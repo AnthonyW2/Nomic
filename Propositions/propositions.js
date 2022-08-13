@@ -106,7 +106,7 @@ var ParseProposition = () => {
     
     output.innerHTML += "<b>"+mod.type+"</b><br>";
     output.innerHTML += "<span class=\"discord-quote-indent\"></span><i>"+mod.path+"</i><br>";
-    output.innerHTML += mod.content.replaceAll("\n","<br>\n")+"<br><br>";
+    output.innerHTML += (mod.content != undefined ? mod.content.replaceAll("\n","<br>\n")+"<br>" : "")+"<br>";
     
   }
   

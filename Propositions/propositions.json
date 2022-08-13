@@ -1407,6 +1407,7 @@
     "votes": [
       [
         0,
+        5,
         13,
         2
       ],
@@ -1422,7 +1423,90 @@
         14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/1005270352466821243"
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> winning > morbium\nThe player or players with the most Morbium on January 1, 0200 UTC wins Nomic season 3.\n\n**Deletion**\n> 5.2.4.2.5",
+    "timestamp": 1659948812,
+    "messageID": "1006122983351390258",
+    "votes": [
+      [
+        3,
+        5,
+        4,
+        13
+      ],
+      [
+        1,
+        0
+      ],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1006122983351390258"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n> *5.2.4.2.2 - Classic Rod*\nThe Classic Rod is a Fishing Rod that can be made with 1 Wood, 1 Thread, and 1 Hide.\nThe Classic Rod increases the odds of catching a fish when fishing by 25% additively, but cannot be used to catch Medallion Fish. \n\n**Content Edit**\n> *5.2.4.2.4 - Midas' Rod*\nThe Midas' Rod is a Fishing Rod that can be made with 2 Gold, 1 Quartz, 1 Thread, and 1 Copper.\nThe Midas' Rod reduces the odds of catching a fish when fishing to 20%, but if a player successfully catches a fish with it, that fish will always be a Medallion Fish of quality 4 or higher if they are eligible to catch a Medallion Fish. \n\n**Content Edit**\n> *5.2.4.2.1 - Advanced Rod*\nThe Advanced Rod is a Fishing Rod that can be made with 2 Wood and 1 Thread.\nThe Advanced Rod increases the odds of catching a fish when fishing by 10% additively. \n\n**Content Edit**\n> *5.2.4.2.3 - Reinforced Rod*\nThe Reinforced Rod is a Fishing Rod that can be made with 2 Steel and 1 Thread.\nThe Reinforced Rod increases the odds of catching a fish when fishing by 15% additively. \n\n**Addition**\n> *5.2.4.2.7 - Handline Reel*\nThe Handline Reel is a Fishing Rod that can be made with 1 Thread.\nThe Handline Reel increases the odds of catching a fish when fishing by 5% additively.",
+    "timestamp": 1659950533,
+    "messageID": "1006130200498683954",
+    "votes": [
+      [
+        1,
+        0,
+        5,
+        2
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1006130200498683954"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n*World > Generation > Landmarks > Market > Shop*\nThe list of available purchases at a market is outlined below with their associated market values:\n- 10× Wood => Market Value: 800*~~m~~*\n- 10× Stone => Market Value: 2000*~~m~~*\n- 5× Steel => Market Value: 10000*~~m~~*\n- 3× Thread => Market Value: 2500*~~m~~*\n- 2× Hide => Market Value: 5000*~~m~~*\n- 3× Quartz => Market Value: 25000*~~m~~*\n- 5× Copper => Market Value: 50000*~~m~~*\n- Arcane Tome => Market Value: 5000*~~m~~*\n- Dungeon Key => Market Value: 3000*~~m~~*\n- Custom Mouse => Market Value: 2000*~~m~~*",
+    "timestamp": 1660301435,
+    "messageID": "1007601989229760523",
+    "votes": [
+      [
+        0,
+        5,
+        13
+      ],
+      [],
+      [],
+      [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1007601989229760523"
   }
 ]

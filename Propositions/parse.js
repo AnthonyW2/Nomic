@@ -175,7 +175,10 @@ var parse = (proposition) => {
       }
       
       if(line.includes("*")){
-        confidence ++;
+        var splitPath = (line.includes(">") ? line.split(">") : line.split("."));
+        if(splitPath[0].includes("*") && splitPath[splitPath.length-1].includes("*")){
+          confidence ++;
+        }
       }
       
       if(persistentType && l > 0 && lines[l-1] == ""){
@@ -295,33 +298,37 @@ var parse = (proposition) => {
   //Clean up the content
   for(var m = 0;m < modifications.length;m ++){
     
-    var arr = modifications[m].content.split("\n");
-    
-    var reachedContent = false;
-    
-    for(var a = arr.length-1;a >= 0;a --){
+    if(modifications[m].content != undefined){
       
-      if(!reachedContent && (arr[a] == "" || arr[a] == " ")){
-        //Remove unnecessary newlines
-        arr.pop();
+      var arr = modifications[m].content.split("\n");
+      
+      var reachedContent = false;
+      
+      for(var a = arr.length-1;a >= 0;a --){
         
-      }else{
-        reachedContent = true;
-        
-        //Remove trailing spaces
-        arr[a] = arr[a].trim();
+        if(!reachedContent && (arr[a] == "" || arr[a] == " ")){
+          //Remove unnecessary newlines
+          arr.pop();
+          
+        }else{
+          reachedContent = true;
+          
+          //Remove trailing spaces
+          arr[a] = arr[a].trim();
+          
+        }
         
       }
       
+      modifications[m].content = arr.join("\n");
+      
+      //Replace currency symbol
+      modifications[m].content = modifications[m].content.replaceAll("*~~m~~*","<m>").replaceAll("~~*m*~~","<m>").replaceAll("~~m~~","<m>").replaceAll(" <m>","<m>");
+      
+      //Replace different apostrophes and quotes
+      modifications[m].content = modifications[m].content.replaceAll("“","\"").replaceAll("”","\"").replaceAll("‘","'").replaceAll("’","'");
+      
     }
-    
-    modifications[m].content = arr.join("\n");
-    
-    //Replace currency symbol
-    modifications[m].content = modifications[m].content.replaceAll("*~~m~~*","<m>").replaceAll("~~*m*~~","<m>").replaceAll("~~m~~","<m>").replaceAll(" <m>","<m>");
-    
-    //Replace different apostrophes and quotes
-    modifications[m].content = modifications[m].content.replaceAll("“","\"").replaceAll("”","\"").replaceAll("‘","'").replaceAll("’","'");
     
   }
   

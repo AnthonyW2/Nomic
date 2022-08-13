@@ -190,5 +190,23 @@
     "timestamp": 1659498520,
     "proposition": 50,
     "summary": "Quarry added by Ryan"
+  },
+  {
+    "ruleset": 32,
+    "timestamp": 1659947902,
+    "proposition": 51,
+    "summary": "Market added by Ryan"
+  },
+  {
+    "ruleset": 33,
+    "timestamp": 1659994728,
+    "proposition": 52,
+    "summary": "Win condition (most Morbium) added by Lime"
+  },
+  {
+    "ruleset": 34,
+    "timestamp": 1660026842,
+    "proposition": 53,
+    "summary": "Fishing rods modified by Ryan"
   }
 ]

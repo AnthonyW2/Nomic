@@ -46,6 +46,23 @@
             }
           ],
           "subrules": []
+        },
+        {
+          "id": 213,
+          "relid": 2,
+          "summary": "Morbium",
+          "content": "The player or players with the most Morbium on January 1, 0200 UTC wins Nomic season 3.",
+          "tags": [
+            "initial",
+            "winning"
+          ],
+          "history": [
+            {
+              "player": 2,
+              "time": 1659994728
+            }
+          ],
+          "subrules": []
         }
       ]
     },
@@ -1740,7 +1757,7 @@
                       "id": 132,
                       "relid": 1,
                       "summary": "Advanced Rod",
-                      "content": "The Advanced Rod is a Fishing Rod that can be made with 2 Wood and 1 Thread.\nThe Advanced Rod increases the odds of catching a fish when fishing by 5% additively.",
+                      "content": "The Advanced Rod is a Fishing Rod that can be made with 2 Wood and 1 Thread.\nThe Advanced Rod increases the odds of catching a fish when fishing by 10% additively.",
                       "tags": [
                         "world",
                         "fish"
@@ -1749,6 +1766,10 @@
                         {
                           "player": 1,
                           "time": 1655674591
+                        },
+                        {
+                          "player": 4,
+                          "time": 1660026842
                         }
                       ],
                       "subrules": []
@@ -1757,7 +1778,7 @@
                       "id": 133,
                       "relid": 2,
                       "summary": "Classic Rod",
-                      "content": "The Classic Rod is a Fishing Rod that can be made with 1 Wood, 1 Thread, and 1 Hide.\nThe Classic Rod increases the odds of catching a fish when fishing by 15% additively, but cannot be used to catch Medallion Fish.",
+                      "content": "The Classic Rod is a Fishing Rod that can be made with 1 Wood, 1 Thread, and 1 Hide.\nThe Classic Rod increases the odds of catching a fish when fishing by 25% additively, but cannot be used to catch Medallion Fish.",
                       "tags": [
                         "world",
                         "fish"
@@ -1766,6 +1787,10 @@
                         {
                           "player": 1,
                           "time": 1655674591
+                        },
+                        {
+                          "player": 4,
+                          "time": 1660026842
                         }
                       ],
                       "subrules": []
@@ -1774,7 +1799,7 @@
                       "id": 134,
                       "relid": 3,
                       "summary": "Reinforced Rod",
-                      "content": "The Reinforced Rod is a Fishing Rod that can be made with 2 Steel and 1 Thread.\nThe Reinforced Rod increases the odds of catching a fish when fishing by 10% additively.",
+                      "content": "The Reinforced Rod is a Fishing Rod that can be made with 2 Steel and 1 Thread.\nThe Reinforced Rod increases the odds of catching a fish when fishing by 15% additively.",
                       "tags": [
                         "world",
                         "fish"
@@ -1783,6 +1808,10 @@
                         {
                           "player": 1,
                           "time": 1655674591
+                        },
+                        {
+                          "player": 4,
+                          "time": 1660026842
                         }
                       ],
                       "subrules": []
@@ -1791,7 +1820,7 @@
                       "id": 135,
                       "relid": 4,
                       "summary": "Midas' Rod",
-                      "content": "The Midas' Rod is a Fishing Rod that can be made with 2 Gold, 1 Quartz, 1 Thread, and 1 Steel.\nThe Midas' Rod reduces the odds of catching a fish when fishing to 10%, but if a player successfully catches a fish with it, that fish will always be a Medallion Fish of quality 4 or higher if they are eligible to catch a Medallion Fish.",
+                      "content": "The Midas' Rod is a Fishing Rod that can be made with 2 Gold, 1 Quartz, 1 Thread, and 1 Copper.\nThe Midas' Rod reduces the odds of catching a fish when fishing to 20%, but if a player successfully catches a fish with it, that fish will always be a Medallion Fish of quality 4 or higher if they are eligible to catch a Medallion Fish.",
                       "tags": [
                         "world",
                         "fish"
@@ -1800,30 +1829,17 @@
                         {
                           "player": 1,
                           "time": 1655674591
-                        }
-                      ],
-                      "subrules": []
-                    },
-                    {
-                      "id": 136,
-                      "relid": 5,
-                      "summary": "Morbius' Rod",
-                      "content": "The Morbius' Rod is a Fishing Rod that can be made with 2 Morbium and 1 Thread.\nThe Morbius' Rod increases the odds of catching a fish when fishing to 100%.",
-                      "tags": [
-                        "world",
-                        "fish"
-                      ],
-                      "history": [
+                        },
                         {
-                          "player": 1,
-                          "time": 1655674591
+                          "player": 4,
+                          "time": 1660026842
                         }
                       ],
                       "subrules": []
                     },
                     {
                       "id": 204,
-                      "relid": 6,
+                      "relid": 5,
                       "summary": "Fishing Net",
                       "content": "The Fishing Net is a fishing rod that can be made with 2× Thread.\nThe Fishing Net increases the odds of catching a fish by (20 - t)%, where t is the number of hexes in the targeted lake's mass (minimum of +0% bonus > thus 70% fishing chance).",
                       "tags": [
@@ -1840,7 +1856,7 @@
                     },
                     {
                       "id": 205,
-                      "relid": 7,
+                      "relid": 6,
                       "summary": "Harpoon",
                       "content": "The Harpoon is a fishing rod that can be made with 1× Steel and 1× Thread.\nThe Harpoon increases the odds of catching a fish by t%, where t is the number of hexes in the targeted lake's mass (maximum of +20% bonus > thus 90% fishing chance).",
                       "tags": [
@@ -1851,6 +1867,23 @@
                         {
                           "player": 4,
                           "time": 1658215548
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 214,
+                      "relid": 7,
+                      "summary": "Handline Reel",
+                      "content": "The Handline Reel is a Fishing Rod that can be made with 1 Thread.\nThe Handline Reel increases the odds of catching a fish when fishing by 5% additively.",
+                      "tags": [
+                        "world",
+                        "fish"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1660026842
                         }
                       ],
                       "subrules": []
@@ -2633,6 +2666,71 @@
                     }
                   ],
                   "subrules": []
+                },
+                {
+                  "id": 209,
+                  "relid": 5,
+                  "summary": "Market",
+                  "content": "Weight: 2.5\nA Market landmark acts as the nothing landmark unless specified otherwise.\nWhen a hex with a Market landmark is generated, any other market landmarks are replaced by the nothing landmark.\nA player on the hex of Market landmark may purchase items (for their Market Value). Unlike towns, Markets do not have an 'inventory', and as such items are created when purchased and Moustaches removed.",
+                  "tags": [
+                    "world"
+                  ],
+                  "history": [
+                    {
+                      "player": 4,
+                      "time": 1659947902
+                    }
+                  ],
+                  "subrules": [
+                    {
+                      "id": 210,
+                      "relid": 1,
+                      "summary": "Shop",
+                      "content": "The list of available purchases at a market is outlined below with their associated market values:\n- 10× Wood => Market Value: 800<m>\n- 10× Stone => Market Value: 2000<m>\n- 5× Steel => Market Value: 10000<m>\n- 3× Thread => Market Value: 2500<m>\n- 2× Hide => Market Value: 5000<m>\n- 3× Quartz => Market Value: 25000<m>\n- 5× Copper => Market Value: 50000<m>\n- Arcane Tome => Market Value: 5000<m>\n- Custom Mouse => Market Value: 2000<m>",
+                      "tags": [
+                        "world"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1659947902
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 211,
+                      "relid": 2,
+                      "summary": "Arcane Tome",
+                      "content": "A player may use an arcane tome (removing it from their inventory) to generate a random ungenerated hex within a 25 hex radius of their location (taken from the centre of their hex and any hex where the center and this circle intersect are valid) as a dungeon landmark with random (weighted) biome and is always uncorrupted.",
+                      "tags": [
+                        "world"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1659947902
+                        }
+                      ],
+                      "subrules": []
+                    },
+                    {
+                      "id": 212,
+                      "relid": 3,
+                      "summary": "Custom Mouse",
+                      "content": "A player can only purchase a custom mouse if they have less than 3 mice in their inventory. When a player purchases a custom mouse, they complete all the normal steps for mouse acquisition, however, choose the statistics they would like (abiding by the rules of minimum of 0 in one statistic and the total of the statistics cannot exceed 23). For each statistic, the player must spend an additional 1000<m>.",
+                      "tags": [
+                        "world"
+                      ],
+                      "history": [
+                        {
+                          "player": 4,
+                          "time": 1659947902
+                        }
+                      ],
+                      "subrules": []
+                    }
+                  ]
                 }
               ]
             }

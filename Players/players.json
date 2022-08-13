@@ -237,7 +237,7 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "fish",
@@ -247,7 +247,7 @@
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "medallion-fish",
@@ -255,6 +255,13 @@
         "amount": 1,
         "medallion_fish_type": "Aligned Fish",
         "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Silver Jellyfish",
+        "amount": 1,
+        "medallion_fish_type": "Jellyfish",
+        "quality": 3
       }
     ],
     "mice": [
@@ -266,7 +273,7 @@
         "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
-          "energy": 5,
+          "energy": 8,
           "mischief": 5,
           "wits": 1,
           "power": 3,
