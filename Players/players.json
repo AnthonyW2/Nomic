@@ -985,7 +985,7 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "fish",
@@ -995,7 +995,7 @@
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 3
+        "amount": 5
       },
       {
         "type": "fish",
@@ -1076,6 +1076,27 @@
         "amount": 1,
         "medallion_fish_type": "Gudgeon",
         "quality": 5
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Silver Megalodon",
+        "amount": 1,
+        "medallion_fish_type": "Megalodon",
+        "quality": 3
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Gold Vanille",
+        "amount": 1,
+        "medallion_fish_type": "Vanille",
+        "quality": 4
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Civilised Fish",
+        "amount": 1,
+        "medallion_fish_type": "Civilised Fish",
+        "quality": 1
       }
     ],
     "mice": [
