@@ -3161,7 +3161,7 @@
                 {
                   "id": 155,
                   "relid": 1,
-                  "summary": "Salmon",
+                  "summary": "Smoked Salmon",
                   "content": "Smoked Salmon is a food item that mice can eat. It can be cooked from 1× Salmon at a campfire landmark.\nAdditional Effects: Exercising instead has a 100% chance to increase wits this period.",
                   "tags": [
                     "mice"
@@ -3177,7 +3177,7 @@
                 {
                   "id": 156,
                   "relid": 2,
-                  "summary": "Eel",
+                  "summary": "Fried Eel",
                   "content": "Fried Eel is a food item that mice can eat. It can be cooked from 1× Eel at a campfire landmark.\nAdditional Effects: Exercising instead has a 100% chance to increase power this period.",
                   "tags": [
                     "mice"
@@ -3193,7 +3193,7 @@
                 {
                   "id": 157,
                   "relid": 3,
-                  "summary": "Tilapia",
+                  "summary": "Baked Tilapia",
                   "content": "Baked Tilapia is a food item that mice can eat. It can be cooked from 1× Tilapia at a campfire landmark.\nAdditional Effects: Enriching instead has a 100% chance to increase curiosity this period.",
                   "tags": [
                     "mice"
@@ -3209,7 +3209,7 @@
                 {
                   "id": 158,
                   "relid": 4,
-                  "summary": "Pike",
+                  "summary": "Stuffed Pike",
                   "content": "Stuffed Pike is a food item that mice can eat. It can be cooked from 1× Northern Pike at a campfire landmark.\nAdditional Effects: Enriching instead has a 100% chance to increase mischief this period.",
                   "tags": [
                     "mice"
@@ -3225,7 +3225,7 @@
                 {
                   "id": 159,
                   "relid": 5,
-                  "summary": "Filet",
+                  "summary": "Trout Filet",
                   "content": "Trout Filet is a food item that mice can eat. It can be cooked from 1× Trout at a campfire landmark.\nAdditional Effects: +2 mouse actions this period.",
                   "tags": [
                     "mice"
@@ -3241,7 +3241,7 @@
                 {
                   "id": 160,
                   "relid": 6,
-                  "summary": "Banquet",
+                  "summary": "Fishy Banquet",
                   "content": "Fishy Banquet is a food item that mice can eat. It can be cooked from any 3 Standard Fish at a campfire landmark.\nAdditional Effects: +4 energy.",
                   "tags": [
                     "mice"
