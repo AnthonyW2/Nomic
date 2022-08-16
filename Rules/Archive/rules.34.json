@@ -2686,7 +2686,7 @@
                       "id": 210,
                       "relid": 1,
                       "summary": "Shop",
-                      "content": "The list of available purchases at a market is outlined below with their associated market values:\n- 10× Wood => Market Value: 800<m>\n- 10× Stone => Market Value: 2000<m>\n- 5× Steel => Market Value: 10000<m>\n- 3× Thread => Market Value: 2500<m>\n- 2× Hide => Market Value: 5000<m>\n- 3× Quartz => Market Value: 25000<m>\n- 5× Copper => Market Value: 50000<m>\n- Arcane Tome => Market Value: 5000<m>\n- Dungeon Key => Market Value: 3000<m>\n- Custom Mouse => Market Value: 2000<m>",
+                      "content": "The list of available purchases at a market is outlined below with their associated market values:\n- 10× Wood => Market Value: 800<m>\n- 10× Stone => Market Value: 2000<m>\n- 5× Steel => Market Value: 10000<m>\n- 3× Thread => Market Value: 2500<m>\n- 2× Hide => Market Value: 5000<m>\n- 3× Quartz => Market Value: 25000<m>\n- 5× Copper => Market Value: 50000<m>\n- Arcane Tome => Market Value: 5000<m>\n- Custom Mouse => Market Value: 2000<m>",
                       "tags": [
                         "world"
                       ],
@@ -2694,10 +2694,6 @@
                         {
                           "player": 4,
                           "time": 1659947902
-                        },
-                        {
-                          "player": 4,
-                          "time": 1660560823
                         }
                       ],
                       "subrules": []
