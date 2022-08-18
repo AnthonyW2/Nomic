@@ -13,6 +13,8 @@ var activePlayerListElement;
 var inactivePlayerListElement;
 var quitPlayerListElement;
 
+var selectedPlayer;
+
 body.addEventListener("playerload", e => {
   
   //Display the players when the players finish loading from players.json
@@ -23,6 +25,8 @@ body.addEventListener("playerload", e => {
 
 var DisplayPlayers = () => {
   
+  selectedPlayer = parseInt(new URL(location.href).searchParams.get("p"));
+  
   //Get the reference to the player-list element
   activePlayerListElement = document.getElementById("active-player-list");
   inactivePlayerListElement = document.getElementById("inactive-player-list");
@@ -32,20 +36,33 @@ var DisplayPlayers = () => {
   inactivePlayerListElement.innerHTML = "";
   quitPlayerListElement.innerHTML = "";
   
+  var selectedPlayerElement;
+  
   for(var p = 0;p < players.length;p ++){
     
+    var playerInfoElement;
+    
     if(players[p].active && players[p].playing){
-      activePlayerListElement.appendChild(displayPlayerInfo(players[p]));
+      playerInfoElement = displayPlayerInfo(players[p]);
+      activePlayerListElement.appendChild(playerInfoElement);
       //activePlayerListElement.appendChild(document.createElement("br"));
     }else if(!players[p].active && players[p].playing){
-      inactivePlayerListElement.appendChild(displayPlayerInfo(players[p]));
+      playerInfoElement = displayPlayerInfo(players[p]);
+      inactivePlayerListElement.appendChild(playerInfoElement);
       //inactivePlayerListElement.appendChild(document.createElement("br"));
     }else{
-      quitPlayerListElement.appendChild(displayPlayerInfo(players[p]));
+      playerInfoElement = displayPlayerInfo(players[p]);
+      quitPlayerListElement.appendChild(playerInfoElement);
       //quitPlayerListElement.appendChild(document.createElement("br"));
     }
     
+    if(p == selectedPlayer){
+      selectedPlayerElement = playerInfoElement
+    }
+    
   }
+  
+  selectedPlayerElement.scrollIntoView();
   
 }
 
@@ -148,6 +165,11 @@ var displayPlayerInfo = (player) => {
   //Add position
   //Add remaining actions (?)
   
+  if(player.PID == selectedPlayer){
+    inventory.open = true;
+    fish.open = true;
+  }
+  
   return playerBlock;
   
 }
@@ -160,6 +182,9 @@ var displayMice = (player) => {
   var miceContent = document.createElement("div");
   mice.appendChild(miceContent);
   miceContent.classList.add("detail-content");
+  if(player.PID == selectedPlayer){
+    mice.open = true;
+  }
   
   for(var m = 0;m < player.mice.length;m ++){
     

@@ -1497,6 +1497,7 @@
       [],
       [],
       [
+        2,
         6,
         7,
         8,
@@ -1506,7 +1507,31 @@
         14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/1007601989229760523"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *Environment*\nEach period, an environmental effect is applied. Environmental effects cycle in the order outlined in *Environment > Effects*, the first effect proceeding the last to form a cycle.\nThe influence of each is applied for the entirety of the period.\nThe period that this rule is added is deemed to be Equable (2). \n\n**Addition**\n> *Environment > Effects*\nThe following is the list of available environmental effects and their resultant influences:\n- Equable (1): Nothing \n\n- Wind (1): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus \n\n- Rain (1): 110% Fishing Chance, +10% Medallion Bonus, +5% Lake Explore Bonus \n\n- Thunderstorm (1): 90% Fishing Chance, +10% Medallion Bonus, +5% Forest Explore Bonus \n\n- Hail: 90% Fishing Chance, +20% Medallion Bonus, +5% Perilous Pass Explore Bonus \n\n- Rain (2): 110% Fishing Chance, +10% Medallion Bonus, +5% Lake Explore Bonus \n\n- Wind (2): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus \n\n- Equable (2): Nothing \n\n- Wind (3): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus \n\n- Dust Storm (1): 100% Fishing Chance, +10% Medallion Chance, +5% Deceased Dunes Explore Bonus \n\n- Thunderstorm (2): 90% Fishing Chance, +10% Medallion Bonus, +5% Forest Explore Bonus \n\n- Drought: 90% Fishing Chance, -10% Medallion Chance, +5% Swamp Explore Bonus \n\n- Dust Storm (2): 100% Fishing Chance, +10% Medallion Chance, +5% Deceased Dunes Explore Bonus \n\n- Wind (4): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus\n\n**Addition**\n> *Environment > Effects > Fishing Chance*\nIf an environmental effect that modifies fishing chance is applied, when a player fishes, their chance to catch a fish is multiplied by the fishing chance of that environmental effect. Final chance to catch a fish is capped at 100%. \n\n**Addition**\n> *Environment > Effects > Medallion Bonus*\nThe medallion bonus is applied additively, increasing the chance to catch a medallion fish. The chance to catch a Medallion fish cannot exceed 100%. \n\n**Addition**\n> *Environment > Effects > Explore Bonus*\nThe explore bonus is applied as an additive increase of 5% to the chance of receiving each reward when a player uses the explore mouse action in the relevant biome. Maximum 100% chance to gain a reward.\n\n**Addition**\n> *5.2.4.1.2.35 - Kraken*\nKraken is a medallion fish that can be caught is the environmental effect of the period is Rain or Hail. \n\n**Addition**\n> *5.2.4.1.2.36 - Sharknado*\nSharknado is a medallion fish that can be caught is the environmental effect of the period is Dust Storm or Drought. \n\n**Addition**\n> *8.3 - Moon Plate*\nA player can create a moon plate using 5× Steel, 5× Quartz and 2× Copper. 1 moon plate can be used (single use) to set the environmental effect of the period to Equable (1). The next period follows this as the new position in the cycle. \n\n**Addition**\n> *8.3 - Sun Plate*\nA player can create a sun plate using 1× Gold, 5× Quartz and 1× Copper. 1 sun plate can be used (single use) to set the environmental effect of the period to Equable (2). The next period follows this as the new position in the cycle.",
+    "timestamp": 1660730584,
+    "messageID": "1009401985834954802",
+    "votes": [
+      [
+        13,
+        2
+      ],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1009401972216045589",
+    "multimessage": true,
+    "messages": [
+      "1009401972216045589",
+      "1009401985834954802"
+    ]
   }
 ]

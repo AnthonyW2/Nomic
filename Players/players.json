@@ -143,7 +143,7 @@
         "blurb": "An Italian explorer and navigator mouse. Very well-travelled - especially on sea voyages - and largely self-educated.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1006856199708344360/Christopher_Columouse.jpg",
         "statistics": {
-          "energy": 4,
+          "energy": 7,
           "mischief": 2,
           "wits": 1,
           "power": 6,
@@ -295,7 +295,7 @@
         "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
-          "energy": 8,
+          "energy": 7,
           "mischief": 5,
           "wits": 1,
           "power": 3,
@@ -460,6 +460,21 @@
     "moustaches": 2500,
     "inventory": [
       {
+        "type": "resource",
+        "name": "Steel",
+        "amount": 8
+      },
+      {
+        "type": "resource",
+        "name": "Quartz",
+        "amount": 2
+      },
+      {
+        "type": "resource",
+        "name": "Copper",
+        "amount": 4
+      },
+      {
         "type": "fish",
         "name": "Eel",
         "amount": 6
@@ -599,12 +614,13 @@
         "blurb": "raidshadowlegendsquaza is extremely spritely despite his intense age and declining relevance as an internet meme. He is greatly driven by an obscene desire to sponsor morally dubious Youtubers to promote the game of his namesake. In addition, His long serpentine body assists him in worming his way into Google's targeting advertisements. He also has a big d-",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/980755036869107712/unknown.png",
         "statistics": {
-          "energy": 20,
+          "energy": 2,
           "mischief": 5,
           "wits": 5,
           "power": 10,
           "curiosity": 3
-        }
+        },
+        "pure_stat": "speedrunner"
       },
       {
         "deceased": true,
@@ -896,7 +912,7 @@
       false,
       false
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
@@ -990,12 +1006,12 @@
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 2
+        "amount": 3
       },
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 5
+        "amount": 7
       },
       {
         "type": "fish",
@@ -1010,7 +1026,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Blue Whale",
-        "amount": 4,
+        "amount": 5,
         "medallion_fish_type": "Blue Whale",
         "quality": 1
       },
@@ -1094,7 +1110,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Civilised Fish",
-        "amount": 1,
+        "amount": 2,
         "medallion_fish_type": "Civilised Fish",
         "quality": 1
       }
