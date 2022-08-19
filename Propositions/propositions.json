@@ -1517,16 +1517,24 @@
     "messageID": "1009401985834954802",
     "votes": [
       [
+        0,
         13,
-        2
+        2,
+        9
       ],
       [],
       [],
       [
-        6
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/1009401972216045589",
     "multimessage": true,
     "messages": [

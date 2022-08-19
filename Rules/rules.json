@@ -1732,6 +1732,40 @@
                             }
                           ],
                           "subrules": []
+                        },
+                        {
+                          "id": 220,
+                          "relid": 35,
+                          "summary": "Kraken",
+                          "content": "Kraken is a medallion fish that can be caught if the environmental effect of the period is Rain or Hail.",
+                          "tags": [
+                            "fish",
+                            "environment"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1660811490
+                            }
+                          ],
+                          "subrules": []
+                        },
+                        {
+                          "id": 221,
+                          "relid": 36,
+                          "summary": "Sharknado",
+                          "content": "Sharknado is a medallion fish that can be caught if the environmental effect of the period is Dust Storm or Drought.",
+                          "tags": [
+                            "fish",
+                            "environment"
+                          ],
+                          "history": [
+                            {
+                              "player": 4,
+                              "time": 1660811490
+                            }
+                          ],
+                          "subrules": []
                         }
                       ]
                     }
@@ -3520,6 +3554,42 @@
             }
           ],
           "subrules": []
+        },
+        {
+          "id": 222,
+          "relid": 3,
+          "summary": "Moon Plate",
+          "content": "A player can create a moon plate using 5× Steel, 5× Quartz and 2× Copper. 1 moon plate can be used (single use) to set the environmental effect of the period to Equable (1). The next period follows this as the new position in the cycle.",
+          "tags": [
+            "resources",
+            "trade",
+            "environment"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1660811490
+            }
+          ],
+          "subrules": []
+        },
+        {
+          "id": 223,
+          "relid": 4,
+          "summary": "Sun Plate",
+          "content": "A player can create a sun plate using 1× Gold, 5× Quartz and 1× Copper. 1 sun plate can be used (single use) to set the environmental effect of the period to Equable (2). The next period follows this as the new position in the cycle.",
+          "tags": [
+            "resources",
+            "trade",
+            "environment"
+          ],
+          "history": [
+            {
+              "player": 4,
+              "time": 1660811490
+            }
+          ],
+          "subrules": []
         }
       ]
     },
@@ -3700,6 +3770,78 @@
             }
           ],
           "subrules": []
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "relid": 11,
+      "summary": "Environment",
+      "content": "Each period, an environmental effect is applied. Environmental effects cycle in the order outlined in *Environment > Effects*, the first effect proceeding the last to form a cycle.\nThe influence of each is applied for the entirety of the period.\nThe period that this rule is added is deemed to be Equable (2).",
+      "tags": ["environment"],
+      "history": [
+        {
+          "player": 4,
+          "time": 1660811490
+        }
+      ],
+      "subrules": [
+        {
+          "id": 216,
+          "relid": 1,
+          "summary": "Effects",
+          "content": "The following is the list of available environmental effects and their resultant influences:\n- Equable (1): Nothing\n\n- Wind (1): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus\n\n- Rain (1): 110% Fishing Chance, +10% Medallion Bonus, +5% Lake Explore Bonus\n\n- Thunderstorm (1): 90% Fishing Chance, +10% Medallion Bonus, +5% Forest Explore Bonus\n\n- Hail: 90% Fishing Chance, +20% Medallion Bonus, +5% Perilous Pass Explore Bonus\n\n- Rain (2): 110% Fishing Chance, +10% Medallion Bonus, +5% Lake Explore Bonus\n\n- Wind (2): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus\n\n- Equable (2): Nothing\n\n- Wind (3): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus\n\n- Dust Storm (1): 100% Fishing Chance, +10% Medallion Chance, +5% Deceased Dunes Explore Bonus\n\n- Thunderstorm (2): 90% Fishing Chance, +10% Medallion Bonus, +5% Forest Explore Bonus\n\n- Drought: 90% Fishing Chance, -10% Medallion Chance, +5% Swamp Explore Bonus\n\n- Dust Storm (2): 100% Fishing Chance, +10% Medallion Chance, +5% Deceased Dunes Explore Bonus\n\n- Wind (4): 120% Fishing Chance, -10% Medallion Bonus, +5% Meadow Explore Bonus",
+          "tags": ["environment"],
+          "history": [
+            {
+              "player": 4,
+              "time": 1660811490
+            }
+          ],
+          "subrules": [
+            {
+              "id": 217,
+              "relid": 1,
+              "summary": "Fishing Chance",
+              "content": "If an environmental effect that modifies fishing chance is applied, when a player fishes, their chance to catch a fish is multiplied by the fishing chance of that environmental effect. Final chance to catch a fish is capped at 100%.",
+              "tags": ["environment","fish"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1660811490
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 218,
+              "relid": 2,
+              "summary": "Medallion Bonus",
+              "content": "The medallion bonus is applied additively, increasing the chance to catch a medallion fish. The chance to catch a Medallion fish cannot exceed 100%.",
+              "tags": ["environment","fish"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1660811490
+                }
+              ],
+              "subrules": []
+            },
+            {
+              "id": 219,
+              "relid": 3,
+              "summary": "Explore Bonus",
+              "content": "The explore bonus is applied as an additive increase of 5% to the chance of receiving each reward when a player uses the explore mouse action in the relevant biome. Maximum 100% chance to gain a reward.",
+              "tags": ["environment","mice"],
+              "history": [
+                {
+                  "player": 4,
+                  "time": 1660811490
+                }
+              ],
+              "subrules": []
+            }
+          ]
         }
       ]
     }
