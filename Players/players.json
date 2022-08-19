@@ -34,7 +34,7 @@
       {
         "type": "fish",
         "name": "Northern pike",
-        "amount": 5
+        "amount": 6
       },
       {
         "type": "fish",
@@ -117,6 +117,13 @@
         "amount": 1,
         "medallion_fish_type": "Gudgeon",
         "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Bronze Gudgeon",
+        "amount": 1,
+        "medallion_fish_type": "Gudgeon",
+        "quality": 2
       }
     ],
     "mice": [
