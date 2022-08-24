@@ -919,7 +919,7 @@
       false,
       false
     ],
-    "active": false,
+    "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
@@ -1003,7 +1003,7 @@
       0,
       0
     ],
-    "moustaches": 1200,
+    "moustaches": 2400,
     "inventory": [
       {
         "type": "fish",
@@ -1061,7 +1061,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Vanille",
-        "amount": 1,
+        "amount": 2,
         "medallion_fish_type": "Vanille",
         "quality": 1
       },
@@ -1117,7 +1117,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Civilised Fish",
-        "amount": 2,
+        "amount": 4,
         "medallion_fish_type": "Civilised Fish",
         "quality": 1
       }
