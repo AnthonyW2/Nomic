@@ -14,8 +14,18 @@
       -1,
       1
     ],
-    "moustaches": 0,
+    "moustaches": 1950,
     "inventory": [
+      {
+        "type": "resource",
+        "name": "Stone",
+        "amount": 3
+      },
+      {
+        "type": "resource",
+        "name": "Steel",
+        "amount": 1
+      },
       {
         "type": "fish",
         "name": "Eel",
@@ -307,7 +317,7 @@
         "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
-          "energy": 6,
+          "energy": 5,
           "mischief": 5,
           "wits": 1,
           "power": 3,
@@ -323,7 +333,7 @@
       true,
       true
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
@@ -641,7 +651,7 @@
         "blurb": "raidshadowlegendsquaza is extremely spritely despite his intense age and declining relevance as an internet meme. He is greatly driven by an obscene desire to sponsor morally dubious Youtubers to promote the game of his namesake. In addition, His long serpentine body assists him in worming his way into Google's targeting advertisements. He also has a big d-",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/980755036869107712/unknown.png",
         "statistics": {
-          "energy": 1,
+          "energy": 4,
           "mischief": 5,
           "wits": 5,
           "power": 10,
@@ -1028,7 +1038,7 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 2
+        "amount": 3
       },
       {
         "type": "fish",

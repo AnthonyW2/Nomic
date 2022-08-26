@@ -1566,13 +1566,47 @@
         14
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/1010836820247986176",
     "multimessage": true,
     "messages": [
       "1010836820247986176",
       "1010836940263800832",
       "1010836946743992371"
+    ]
+  },
+  {
+    "author": 4,
+    "content": "Content Edit\n7.3.5 - Explore\nThe Table is replaced by [Image].\n\nAddition\n5.2.4.3 - Worms\nWhen fishing, a player may use up to 1 worms from their inventory (single use) to increase their odds to catch a fish by 5% additively (to rod chance).\nWhen the Environmental effect is Rain, worms have an additive +15% chance to be obtained when exploring on Meadow Nothing and Forest Nothing hexes.\nWhen the Environmental effect is Drought, worms have an additive -15% chance (Minimum 0%) to be obtained when exploring on Meadow Nothing and Forest Nothing hexes.\n\nContent Edit\n5.3.2.5.3 - Custom Mouse\nA player can only purchase a custom mouse if they have less than 3 mice in their inventory, and when doing so, it does not count towards their mouse acquisition cooldown. When a player purchases a custom mouse, they complete all the normal steps for mouse acquisition, however, choose the statistics they would like (abiding by the rules of minimum of 0 in one statistic and the total of the statistics cannot exceed 23). For each statistic, the player must spend an additional 1000m.\n\nAddition\nConstruction > Destruction\nWhen a landmark is destroyed, it is replaced by the nothing landmark. Landmarks can be destroyed through different means.\nA player may destroy the following landmarks if they have a torch in their inventory:\n- Campfire\n- Boardwalk\nA player may destroy any landmark if they use explosives.\n\nAddition\nResources > Explosives\nExplosives can be created from 8× Wood, 3× Thread and 2× Resin. A player may use 1 explosives to destroy every landmark on or adjacent to their hex. Explosives may be used in dungeons to replace stone wall, steel wall and cobwebs dungeon hexes with blank dungeon hexes and locked pits with pits. In addition, any Gnomes on the hexes affected by explosives are removed.\n\nAddition\n8.5 - Wheelbarrow\nA wheelbarrow can be made from 8× Wood, 7× Steel and 4× Copper. A player with a Wheelbarrow may pilot the wheelbarrow, and other players may sit in the wheelbarrow if they are on the same hex as the pilot. This alters the pilot's use of the traverse action depending on the number of players in the wheelbarrow. When piloting or sitting inside a wheelbarrow, the players cannot use the traverse, work or fish action.\nA player may stop piloting or exit the wheelbarrow at any time, provided the wheelbarrow is not mid-movement (must have completed all hexes travelled in a traverse action).\n\nAddition\n8.5.1 - Wheelbarrow > Traverse\nWhen the pilot of a wheelbarrow uses the traverse action, all players sitting inside the wheelbarrow move with the pilot.\nWheelbarrows move in straight lines (the start, all hexes moved over and the end being colinear) for each traverse action. The number of hexes moved is equal to one greater than the number of players sitting in the wheelbarrow.\nThe speedrunner pure statistic cannot be used whilst piloting a wheelbarrow.\n\nAddition\n8.5.1.1 - Wheelbarrow > Traverse > Deceased Dunes\nThe use of the traverse action into a deceased dunes hex when piloting a wheelbarrow with greater than one passenger has a 0% chance of buffeting the players.\n\nAddition\n8.5.1.2 - Wheelbarrow > Traverse > Forest\nThe movement over a forest hex (line from start to end intersects a forest hex) when piloting a wheelbarrow reduces the total hexes moved by one.\n\nAddition\n8.5.1.3 - Wheelbarrow > Traverse > Perilous Pass\nA player cannot traverse when piloting a wheelbarrow if the line from start to finish intersects a Perilous Pass hex.\n\nAddition\n8.5.1.4 - Wheelbarrow > Traverse > Swamp\nThe traverse action in a swamp hex when piloting a wheelbarrow has a (20 + 5x)% chance to fail (max 75%), where x is the number of players sitting in the wheelbarrow. This occurs instead of the usual dice roll.\n\nAddition\n8.6 - Boulder\nA boulder can be made from 12× Stone. A player piloting a wheelbarrow with at least one boulder in their inventory receives the movement bonus of having one additional player in their wheelbarrow.",
+    "timestamp": 1661335731,
+    "messageID": "1011940542306844692",
+    "votes": [
+      [
+        0,
+        13,
+        2
+      ],
+      [],
+      [],
+      [
+        5,
+        6,
+        3,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1011940141608210442",
+    "multimessage": true,
+    "messages": [
+      "1011940141608210442",
+      "1011940242892279918",
+      "1011940542306844692"
     ]
   }
 ]
