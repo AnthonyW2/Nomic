@@ -484,7 +484,7 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 5
+        "amount": 3
       },
       {
         "type": "resource",
@@ -494,7 +494,7 @@
       {
         "type": "resource",
         "name": "Steel",
-        "amount": 8
+        "amount": 5
       },
       {
         "type": "resource",
@@ -535,6 +535,11 @@
         "type": "fish",
         "name": "Trout",
         "amount": 7
+      },
+      {
+        "type": "tool",
+        "name": "Pickaxe",
+        "amount": 1
       },
       {
         "type": "medallion-fish",
@@ -757,6 +762,16 @@
     "moustaches": 3000,
     "inventory": [
       {
+        "type": "resource",
+        "name": "Wood",
+        "amount": 5
+      },
+      {
+        "type": "resource",
+        "name": "Thread",
+        "amount": 1
+      },
+      {
         "type": "fish",
         "name": "Eel",
         "amount": 5
@@ -843,6 +858,13 @@
         "amount": 1,
         "medallion_fish_type": "Jellyfish",
         "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Silver Penfish",
+        "amount": 1,
+        "medallion_fish_type": "Penfish",
+        "quality": 3
       },
       {
         "type": "medallion-fish",
