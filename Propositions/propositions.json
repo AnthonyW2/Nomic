@@ -1608,5 +1608,39 @@
       "1011940242892279918",
       "1011940542306844692"
     ]
+  },
+  {
+    "author": 2,
+    "content": "**Content edit**\n> 5.3.2.3.1.1 \nWhen a dungeon is generated, the type of all dungeon hexes except for the centre (blank) are determined for a random dungeon.\nA random (weighted) type is chosen:\n- Blank (Weight: 10 - h, for h<8, if h≥8, Weight: 2)\n- Dark (Weight: 2, for h<5, if h≥5, Weight: 10 )\n- Cobwebs (Weight: h² - 2h)\n- Stone Wall (Weight: 8 + h²)\n- Steel Wall (Weight: 4 + 2h)\n- Pool (Weight: 2 + h)\n- Chest (Weight: 2 + 2h)\n- Minotaur (Weight: 2h - 3)\n- Pit (Weight: 3 + h÷2)\n- Switch (Weight: h)\nWhere 'h' refers to the depth of the dungeon, starting at 1 and succeeding with each nested pit.\nDungeon hexes cannot be corrupt.\n\n**content edit**\n> 5.3.2.3.1.1.6.1\nWhen a chest is opened, loot is generated depending on the depth that the chest is located in. 3 different of the following are randomly (weighted) selected with random quantities of those in parentheses:\n- Nothing (0) Weight: 10 - 3h, for h<4, if h≥4, Weight: 0\n- Nothing (0) Weight: 8\n- Wood (3-20) Weight: 16 - h, for h<16, if h≥16, Weight: 1\n- Wood (7-9) Weight: 12\n- Wood (11-18) Weight: 11\n- Steel (1-8) Weight: 9 + h²\n- Steel (1-5) Weight: 9 + h²\n- Steel (2-3) Weight: 6 + h³\n- Resin (1-2) Weight: 4 + (h÷2) \n- Thread (1-4) Weight: 8 + h\n- Thread (1-2) Weight: 9\n- Hide (1-3) Weight: 6\n- Hide (1) Weight: 4 + 2h\n- Quartz (1-3) Weight: 3 + 2h²\n- Quartz (2) Weight: 3 + 2h\n- Quartz (1-2) Weight: 5 + h\n- Copper (1-2) Weight: 4 + h² - h\n- Copper (1) Weight: 5 + h²\n- Gold (1) Weight: 2 + h\n- Gold (0-1) Weight: 2 + 2h\n- Morbium (1) Weight: h - 1\n- Dungeon Key (1) Weight: 6 + h\n\n**content edit**\n> 5.3.2.2.1.5\nTowns in the Perilous Pass biome have the following initial inventory:\n- Wood ×12\n- Stone ×20\n- Steel ×7\n- Thread ×4\n- Quartz ×3\n- Copper ×2\n\n**content edit**\n> 5.3.2.2.1.4 \nTowns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×10\n- Hide ×5\n- Resin ×1\n\n**content edit**\n> 8.1\nA player may create a Torch using 2× Wood, 1× Thread and 1× Resin. A player with a Torch in their inventory can traverse onto dark dungeon hexes.\n\n**content edit**\n> 8.2\nA player may create a Pickaxe using 2× Wood and 2× Steel. When a player uses a Pickaxe there is a 5% chance that it is destroyed, being removed from that player's inventory.\n\n**content edit**\n> 9.1\nResource Cost: 30× Wood, 5× Steel, 2× Gold\nCannot be constructed on lake hexes.\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms.\n\n**content edit**\n> 9.2\nResource Cost: 10× Stone, 1× Steel,  1× Hide\nCannot be constructed on lake hexes.\nA player located on a hex with the stag station landmark may travel the stagways (teleport) to any hex with the stag station landmark. This does not act as moving into that hex. If they do so, they cannot perform any more actions for the period and cannot move from this hex until the next period.",
+    "timestamp": 1661556578,
+    "messageID": "1012866519509774336",
+    "votes": [
+      [],
+      [],
+      [
+        0,
+        4,
+        9
+      ],
+      [
+        5,
+        6,
+        1,
+        3,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1012866441143394304",
+    "multimessage": true,
+    "messages": [
+      "1012866441143394304",
+      "1012866519509774336"
+    ]
   }
 ]

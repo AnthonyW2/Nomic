@@ -19,12 +19,12 @@
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 3
+        "amount": 6
       },
       {
         "type": "resource",
         "name": "Steel",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "fish",
@@ -160,10 +160,10 @@
         "blurb": "An Italian explorer and navigator mouse. Very well-travelled - especially on sea voyages - and largely self-educated.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1006856199708344360/Christopher_Columouse.jpg",
         "statistics": {
-          "energy": 13,
+          "energy": 10,
           "mischief": 2,
           "wits": 1,
-          "power": 6,
+          "power": 8,
           "curiosity": 2
         }
       }
@@ -176,7 +176,7 @@
       true,
       true
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
@@ -317,7 +317,7 @@
         "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
-          "energy": 5,
+          "energy": 8,
           "mischief": 5,
           "wits": 1,
           "power": 3,
@@ -484,7 +484,7 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 3
+        "amount": 17
       },
       {
         "type": "resource",
@@ -499,17 +499,22 @@
       {
         "type": "resource",
         "name": "Thread",
-        "amount": 1
+        "amount": 10
       },
       {
         "type": "resource",
-        "name": "Quartz",
+        "name": "Hide",
         "amount": 3
       },
       {
         "type": "resource",
+        "name": "Quartz",
+        "amount": 6
+      },
+      {
+        "type": "resource",
         "name": "Copper",
-        "amount": 4
+        "amount": 5
       },
       {
         "type": "fish",
@@ -535,11 +540,6 @@
         "type": "fish",
         "name": "Trout",
         "amount": 7
-      },
-      {
-        "type": "tool",
-        "name": "Pickaxe",
-        "amount": 1
       },
       {
         "type": "medallion-fish",
@@ -656,7 +656,7 @@
         "blurb": "raidshadowlegendsquaza is extremely spritely despite his intense age and declining relevance as an internet meme. He is greatly driven by an obscene desire to sponsor morally dubious Youtubers to promote the game of his namesake. In addition, His long serpentine body assists him in worming his way into Google's targeting advertisements. He also has a big d-",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/980755036869107712/unknown.png",
         "statistics": {
-          "energy": 4,
+          "energy": 3,
           "mischief": 5,
           "wits": 5,
           "power": 10,
@@ -1058,6 +1058,16 @@
     "moustaches": 2400,
     "inventory": [
       {
+        "type": "resource",
+        "name": "Wood",
+        "amount": 5
+      },
+      {
+        "type": "resource",
+        "name": "Thread",
+        "amount": 1
+      },
+      {
         "type": "fish",
         "name": "Eel",
         "amount": 3
@@ -1070,7 +1080,7 @@
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 7
+        "amount": 8
       },
       {
         "type": "fish",
@@ -1080,7 +1090,7 @@
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "medallion-fish",
@@ -1127,7 +1137,7 @@
       {
         "type": "medallion-fish",
         "name": "Bronze Jellyfish",
-        "amount": 1,
+        "amount": 2,
         "medallion_fish_type": "Jellyfish",
         "quality": 2
       },
@@ -1172,6 +1182,13 @@
         "amount": 4,
         "medallion_fish_type": "Civilised Fish",
         "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Bronze Goldfish",
+        "amount": 1,
+        "medallion_fish_type": "Goldfish",
+        "quality": 2
       }
     ],
     "mice": [
