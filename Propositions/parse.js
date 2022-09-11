@@ -209,7 +209,8 @@ var parse = (proposition) => {
           path = split[0];
         }
         
-        title = split[split.length-1];
+        //title = split[split.length-1];
+        title = lines[l].replaceAll("–","-").split(" - ")[1];
         
         pathType = "id";
         

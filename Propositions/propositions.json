@@ -1642,5 +1642,122 @@
       "1012866441143394304",
       "1012866519509774336"
     ]
+  },
+  {
+    "author": 2,
+    "content": "**Content edit**\n> 5.3.2.3.1.1 \nWhen a dungeon is generated, the type of all dungeon hexes except for the centre (blank) are determined for a random dungeon.\nA random (weighted) type is chosen:\n- Blank (Weight: 10 - h, for h<8, if h≥8, Weight: 2)\n- Dark (Weight: 2, for h<5, if h≥5, Weight: 10 )\n- Cobwebs (Weight: h²+1 - 2h)\n- Stone Wall (Weight: 8 + h²)\n- Steel Wall (Weight: 4 + 2h)\n- Pool (Weight: 2 + h)\n- Chest (Weight: 2 + 2h)\n- Minotaur (Weight: 2h - 2)\n- Pit (Weight: 3 + h÷2)\n- Switch (Weight: h)\nWhere 'h' refers to the depth of the dungeon, starting at 1 and succeeding with each nested pit.\nDungeon hexes cannot be corrupt.\n\n**content edit**\n> 5.3.2.3.1.1.6.1\nWhen a chest is opened, loot is generated depending on the depth that the chest is located in. 3 different of the following are randomly (weighted) selected with random quantities of those in parentheses:\n- Nothing (0) Weight: 10 - 3h, for h<4, if h≥4, Weight: 0\n- Nothing (0) Weight: 8\n- Wood (3-20) Weight: 16 - h, for h<16, if h≥16, Weight: 1\n- Wood (7-9) Weight: 12\n- Wood (11-18) Weight: 11\n- Steel (1-8) Weight: 9 + h²\n- Steel (1-5) Weight: 9 + h²\n- Steel (2-3) Weight: 6 + h³\n- Resin (1-2) Weight: 4 + (h÷2) \n- Thread (1-4) Weight: 8 + h\n- Thread (1-2) Weight: 9\n- Hide (1-3) Weight: 6\n- Hide (1) Weight: 4 + 2h\n- Quartz (1-3) Weight: 3 + 2h²\n- Quartz (2) Weight: 3 + 2h\n- Quartz (1-2) Weight: 5 + h\n- Copper (1-2) Weight: 4 + h² - h\n- Copper (1) Weight: 5 + h²\n- Gold (1) Weight: 2 + h\n- Gold (0-1) Weight: 2 + 2h\n- Morbium (1) Weight: h - 1\n- Dungeon Key (1) Weight: 6 + h\n\n**content edit**\n> 5.3.2.2.1.5\nTowns in the Perilous Pass biome have the following initial inventory:\n- Wood ×12 Value\n- Stone ×20 Value\n- Steel ×7 Value\n- Thread ×4 Value\n- Quartz ×3 Value\n- Copper ×2 Value\n\n**content edit**\n> 5.3.2.2.1.4 \nTowns in the Forest biome have the following initial inventory:\n- Wood ×30\n- Stone ×8\n- Steel ×2\n- Thread ×10\n- Hide ×5\n- Resin ×1\n\n**content edit**\n> 8.1\nA player may create a Torch using 2× Wood, 1× Thread and 1× Resin. A player with a Torch in their inventory can traverse onto dark dungeon hexes.\n\n**content edit**\n> 8.2\nA player may create a Pickaxe using 2× Wood and 2× Steel. When a player uses a Pickaxe there is a 5% chance that it is destroyed, being removed from that player's inventory.\n\n**content edit**\n> 9.1\nResource Cost: 30× Wood, 5× Steel, 2× Gold\nCannot be constructed on lake hexes.\nAll adjacent hexes and the hex of the pylon of purity cannot be corrupted. Attempts to do so fail.\nWhen this landmark is constructed, any corrupted hexes adjacent to it are converted to their normal (uncorrupted) forms.\n\n**content edit**\n> 9.2\nResource Cost: 8× Stone, 5× Steel,  1× Hide\nCannot be constructed on lake hexes.\nA player located on a hex with the stag station landmark may travel the stagways (teleport) to any hex with the stag station landmark. This does not act as moving into that hex. If they do so, they cannot perform any more actions for the period and cannot move from this hex until the next period.",
+    "timestamp": 1662251702,
+    "messageID": "1015782051942760459",
+    "votes": [
+      [
+        1,
+        0,
+        4,
+        13
+      ],
+      [],
+      [],
+      [
+        5,
+        6,
+        3,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1015782002932330668",
+    "multimessage": true,
+    "messages": [
+      "1015782002932330668",
+      "1015782051942760459"
+    ]
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n> *8.5 - Wheelbarrow*\nA wheelbarrow can be made from 8× Wood, 4× Steel, 2× Hide and 2× Copper. A player with a Wheelbarrow may pilot the wheelbarrow, and other players may sit in the wheelbarrow if they are on the same hex as the pilot. This alters the pilot's use of the traverse action depending on the number of players in the wheelbarrow. When piloting or sitting inside a wheelbarrow, the players cannot use the work or fish actions. A passenger cannot use the traverse action.\nA player may stop piloting or exit the wheelbarrow at any time, provided the wheelbarrow is not mid-movement (must have completed all hexes traveled in a traverse action). \n\n**Content Edit**\n> *8.5.1.3 - Perilous Pass*\nA player cannot use the traverse action into a Perilous Pass hex whilst piloting a wheelbarrow. Additionally, should a wheelbarrow attempt to move into a Perilous Pass Hex, it instead does not (this means that even if the wheelbarrow has more straight line to move, it terminates). In the case of a Perilous Pass hex generating within the path, the hex is generated but the wheelbarrow does not move into that hex. \n\n**Addition**\n> *8.8 - Binoculars*\nA player can create Binoculars using 2× Wood, 1× Hide and 2× Quartz. When a player with at least 1 Binoculars in their inventory uses the scout action, they may target up to two adjacent hexes to their location.\n\n**Addition**\n> *8.9 - Periscope*\nA player can create a Periscope using 2× Wood, 2× Hide and 1× Quartz. When a player with at least one Periscope in their inventory uses the scout action, they may target any hex within a two hex radius of their location.\n\n**Addition**\n> *8.9.1 - Duality*\nIf a player has both Binoculars and a Periscope, they may choose to apply either of the effects when scouting (but not both simultaneously).\n\n**Content Edit**\n> *5.3.1.7 - Swamp*\nWeight: 5\nIf a player who is in a swamp attempts to leave swamp for another biome (swamp to meadow etc.) they have a 15% chance to remain in the swamp and do not move however they do use up one action and the hex they moved onto is kept generated. Players on Swamp tiles are considered Soaked. When generating next to a Deceased Dunes hex, the weight and bias of Swamp is 0. \n\n**Content Edit**\n> *5.3.2.3.1.1.7.2.1 - Charging*\nIf there is a path from the minotaur to a player (perpendicular to the edges of its dungeon hex), it will charge at the player, moving 3 hexes (in one turn) in that direction or until entering the hex of a stone wall, steel wall or cobwebs (or stopping due to being unable to move into the desired hex).\nFor multiple eligible players, it will target the closest player. \n\n**Content Edit**\n> *5.3.2.3.1.1.2 - Cobwebs*\nIf an entity moves into a cobwebs dungeon hex, they are considered stuck. After an entity becomes stuck, the remainder of their actions or movements for their turn and their following turn are nullified.",
+    "timestamp": 1662254495,
+    "messageID": "1015793725152165898",
+    "votes": [
+      [
+        0,
+        2,
+        9
+      ],
+      [],
+      [],
+      [
+        6,
+        3,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1015793720337121400",
+    "multimessage": true,
+    "messages": [
+      "1015793720337121400",
+      "1015793725152165898"
+    ]
+  },
+  {
+    "author": 2,
+    "content": "**addition**\n> resources > blunderbuss\nA player may create a blunderbuss with 5 Steel and 2 Hide. A player can use a blunderbuss to fire golden bullets or holy bullets at any creature in a cardinal direction from them when within a dungeon.\n\n**addition**\n> resources > golden bullets\nA player can create golden bullets with 2 Gold and 3000 ~~m~~ when on a meadow hex with the town landmark. When golden bullets are fired from a blunderbuss, they cover a line of 4 hexes, unless one of the hexes in this line is a stone wall or steel wall, in which case they do not affect that hex or any hexes that would have been in the line after it. If a creature is on an affected hex, they cannot move for 2 turns after the golden bullets affect it. \n\n**addition**\n> resources > holy bullets\nA player can create holy bullets with 2 Gold, 1 Quartz and 7000 ~~m~~ when on a hex that has the mouse hut landmark. When holy bullets are fired from a blunderbuss, they cover a line of 6 hexes, unless one of the hexes in this line is a steel wall, in which case they do not affect that hex or any hexes that would have been in the line after it. If a minotaur is on an affected hex, they cannot move for 3 turns after the holy bullets affect it. If a player is on an affected hex, then they cannot move for 1 turn after the holy bullets affect it. Any stone wall hexes that are affected are replaced by blank hexes.",
+    "timestamp": 1662768473,
+    "messageID": "1017949500008046602",
+    "votes": [
+      [],
+      [],
+      [
+        0,
+        3,
+        4,
+        13
+      ],
+      [
+        6,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1017949500008046602"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n*5.3.2.3.1.1 - Dungeon Hexes*\nWhen a dungeon is generated, the type of all dungeon hexes except for the centre (blank) are determined for a random dungeon.\nA random (weighted) type is chosen:\n- Blank (Weight: 16 - h, for h<8, if h≥8, Weight: 4)\n- Dark (Weight: h² - h + 4)\n- Cobwebs (Weight: h² - 3h + 4)\n- Stone Wall (Weight: h² + 5)\n- Steel Wall (Weight: 2h + 3)\n- Pool (Weight: h + 1)\n- Chest (Weight: 2h + 1)\n- Minotaur (Weight: 2h - 2)\n- Pit (Weight: h + 2, if greater than 1 pit already on a level, Weight: h, if 3 pits have already generated on a level, Weight: 0)\n- Switch (Weight: 2)\nWhere 'h' refers to the depth of the dungeon, starting at 1 and succeeding with each nested pit.\nDungeon hexes cannot be corrupt. \n\n**Content Edit**\n> *5.3.2.3.1.1.6.1 - Loot*\nWhen a chest is opened, loot is generated depending on the depth that the chest is located in. Each chest contains the following:\n- 1× Tier h loot, or if h>5, tier 5 loot.\n- 1× Tier h - 1 loot, if h=1, Tier 1 loot, if h>5, tier 4 loot.\n- 1× Tier h - 3 loot, nothing if h=1, if h=2 or h=3, tier 1 loot, if h=4, tier 2 loot, if h>7, tier 4 loot.\n- If h>5, the number of the tier of the first loot item is subtracted from h and this number has 5 repeatedly subtracted until the value is less than 5. If at any point after this the value is zero, the proceeding subtractions are not applied. Then, 4 is subtracted unless less than 4, followed by 3 if greater than 2, 2 if greater than 1 and finally 1. The number of subtracted 5s is tier 5 loot items earned. If a 4 was subtracted, an additional tier 4 item is selected. Likewise a tier 3 item if 3 was, tier 2 for 2 and tier 1 for 1.\nWhen a loot item is selected, a random item from the list in *5.3.2.3.1.1.6.1.1 - Tiers* is determined for the appropriate tier.\n\n**Addition**\n> *5.3.2.3.1.1.6.1.1 - Tiers*\nTiered loot\nTier 5:\n2× Morbium \n\nTier 4:\n1× Morbium\n3× Gold\n2× Resin \n\nTier 3:\n12× Steel\n9× Steel\n5× Steel\n1× Resin\n5× Copper\n3× Copper\n1× Gold\n1× Gold\n1× Arcane Tome\n1× Dungeon Key\n1× Dungeon Key\n1× Sun Plate\n1× Moon Plate \n\nTier 2:\n16× Wood\n10× Stone\n6× Steel\n5× Steel\n2× Steel\n3× Thread\n3× Hide\n1× Hide\n4× Quartz\n3× Copper\n2× Copper\n1× Gold\n1× Pickaxe\n1× Dungeon Key\n1× Sun Plate\n1× Moon Plate\n1× Wheelbarrow\n1× Binoculars\n1× Periscope\n1× Classic Rod \n\nTier 1:\n7× Wood\n5× Stone\n3× Stone\n2× Steel\n1× Steel\n1× Thread\n1× Thread\n2× Hide\n1× Quartz\n1× Boulder\n1× Handline Reel \n\n**Content Edit**\n> *5.2.4.1.2.34 - Chest (Fish?)*\nChest (Fish?) Is a medallion fish that can be caught in pool dungeon hexes.\nA player may 'open' a Chest (Fish?) to gain chest loot as if h=3. This removes the Chest (Fish?) from their inventory.\n\n**Content Edit**\n> *5.3.2.3.1.1.7.1.1 - Turns*\nAll entities take turns to optionally perform an action in a dungeon or level. This does not occur if there are no players in a dungeon or level.\nOn each level (depth) of a dungeon, the turn order is the list in World > Generation > Landmarks > Dungeon > Generation > Dungeon Hexes > Minotaur > Entities (with relevant elements of each in order of their position left to right, top to bottom in the dungeon). An entity entering a dungeon or level has their turn placed after the previous last element of their entity type (ie. player, minotaur, etc.). Should an entity leave the dungeon or level they are removed from the list and no longer have a turn in that dungeon or level.\nIf a player does not move within 24 hours of their turn commencing, they forfeit their turn (do nothing). \n\n**Content Edit**\n> *5.3.2.3.1.1.7.2 - Movement*\nA minotaur cannot move into pool, minotaur and pit dungeon hexes or end a turn on the centre dungeon hex d:(0,0,h).\nA minotaur will target players, acting to move into their hex.\nWhen a minotaur has its turn, it will act in one of 4 ways; charging, leaping, random movement or no movement.\nIf a minotaur does not perform any of the first 3, it does not move (no movement).\nWhen a minotaur enters the hex of a stone wall or steel wall, that dungeon hex is replaced by the blank dungeon hex. \n\n**Content Edit**\n> *5.3.2.3.1.1.7.2.1 - Charging*\nIf there is a straight line of hexes from a minotaur to a player (perpendicular to the edges of its dungeon hex) and has no stone walls or steel walls between the player and minotaur, it will charge at the player, moving 3 hexes (in one turn) in that direction or until entering the dungeon hex of cobwebs (or stopping due to being unable to move into the desired hex).\nFor multiple eligable players, it will target the closest player.",
+    "timestamp": 1662791043,
+    "messageID": "1018044245812199455",
+    "votes": [
+      [],
+      [],
+      [],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1018044165319303178",
+    "multimessage": true,
+    "messages": [
+      "1018044165319303178",
+      "1018044182205579295",
+      "1018044245812199455"
+    ]
   }
 ]

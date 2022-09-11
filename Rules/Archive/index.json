@@ -201,7 +201,7 @@
     "ruleset": 33,
     "timestamp": 1659994728,
     "proposition": 52,
-    "summary": "Win condition (most Morbium) added by Lime"
+    "summary": "Win condition (most Morbium) added by lime"
   },
   {
     "ruleset": 34,
@@ -226,5 +226,17 @@
     "timestamp": 1661406707,
     "proposition": 57,
     "summary": "Wheelbarrows and other things added by Ryan"
+  },
+  {
+    "ruleset": 38,
+    "timestamp": 1662358773,
+    "proposition": 59,
+    "summary": "Dungeons modified by lime"
+  },
+  {
+    "ruleset": 39,
+    "timestamp": 1662535225,
+    "proposition": 60,
+    "summary": "Binoculars added and minor changes made by Ryan"
   }
 ]
