@@ -163,7 +163,7 @@
           "energy": 10,
           "mischief": 2,
           "wits": 1,
-          "power": 9,
+          "power": 11,
           "curiosity": 2
         }
       }
@@ -319,7 +319,7 @@
         "statistics": {
           "energy": 11,
           "mischief": 5,
-          "wits": 1,
+          "wits": 2,
           "power": 3,
           "curiosity": 1
         }
@@ -484,17 +484,17 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 19
+        "amount": 35
       },
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 1
+        "amount": 6
       },
       {
         "type": "resource",
         "name": "Steel",
-        "amount": 5
+        "amount": 16
       },
       {
         "type": "resource",
@@ -504,17 +504,37 @@
       {
         "type": "resource",
         "name": "Hide",
-        "amount": 3
+        "amount": 4
+      },
+      {
+        "type": "resource",
+        "name": "Resin",
+        "amount": 2
       },
       {
         "type": "resource",
         "name": "Quartz",
-        "amount": 6
+        "amount": 17
       },
       {
         "type": "resource",
         "name": "Copper",
-        "amount": 5
+        "amount": 7
+      },
+      {
+        "type": "resource",
+        "name": "Gold",
+        "amount": 2
+      },
+      {
+        "type": "resource",
+        "name": "Pickaxe",
+        "amount": 1
+      },
+      {
+        "type": "resource",
+        "name": "Dungeon Key",
+        "amount": 1
       },
       {
         "type": "fish",
@@ -656,7 +676,7 @@
         "blurb": "raidshadowlegendsquaza is extremely spritely despite his intense age and declining relevance as an internet meme. He is greatly driven by an obscene desire to sponsor morally dubious Youtubers to promote the game of his namesake. In addition, His long serpentine body assists him in worming his way into Google's targeting advertisements. He also has a big d-",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/980755036869107712/unknown.png",
         "statistics": {
-          "energy": 5,
+          "energy": 11,
           "mischief": 5,
           "wits": 5,
           "power": 10,
@@ -1055,21 +1075,36 @@
       0,
       0
     ],
-    "moustaches": 4200,
+    "moustaches": 2200,
     "inventory": [
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 9
+        "amount": 16
       },
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 2
+        "amount": 3
+      },
+      {
+        "type": "resource",
+        "name": "Steel",
+        "amount": 3
       },
       {
         "type": "resource",
         "name": "Thread",
+        "amount": 1
+      },
+      {
+        "type": "resource",
+        "name": "Hide",
+        "amount": 1
+      },
+      {
+        "type": "resource",
+        "name": "Torch",
         "amount": 1
       },
       {
