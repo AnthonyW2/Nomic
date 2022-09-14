@@ -34,7 +34,7 @@ var parse = (proposition) => {
   //Loop through each line of the proposition
   for(var l = 0;l < lines.length;l ++){
     
-    var line = lines[l].toLowerCase().replaceAll("–","-");
+    var line = lines[l].toLowerCase().replaceAll("–","-").replaceAll(" "," ");
     
     //console.log(line);
     
@@ -168,6 +168,8 @@ var parse = (proposition) => {
       }else if(prevLineType == "path"){
         //May need to just prevent it from choosing a "path" as the type if the last line was a path, since this measure doesn't appear to be enough.
         confidence -= 2;
+      }else if(prevLineType == "content"){
+        confidence -= 1;
       }
       
       if(line.charAt(0) == ">"){
@@ -210,7 +212,7 @@ var parse = (proposition) => {
         }
         
         //title = split[split.length-1];
-        title = lines[l].replaceAll("–","-").replaceAll("*","").split(" - ")[1];
+        title = lines[l].replaceAll("–","-").replaceAll(" "," ").replaceAll("*","").split(" - ")[1];
         
         pathType = "id";
         
@@ -259,6 +261,8 @@ var parse = (proposition) => {
         lineType = "path";
         
         //If the current line is a path, there should be enough information to add a new modification to the list
+        
+        console.log(line,confidence);
         
         modifications.push({
           type: modType,
