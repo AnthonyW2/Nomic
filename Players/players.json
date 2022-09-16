@@ -163,7 +163,7 @@
           "energy": 10,
           "mischief": 2,
           "wits": 1,
-          "power": 11,
+          "power": 12,
           "curiosity": 2
         }
       }
@@ -266,7 +266,7 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 6
+        "amount": 18
       },
       {
         "type": "resource",
@@ -277,6 +277,11 @@
         "type": "resource",
         "name": "Steel",
         "amount": 5
+      },
+      {
+        "type": "resource",
+        "name": "Resin",
+        "amount": 4
       },
       {
         "type": "fish",
@@ -484,12 +489,12 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 35
+        "amount": 37
       },
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 6
+        "amount": 7
       },
       {
         "type": "resource",
