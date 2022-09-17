@@ -62,7 +62,9 @@ var DisplayPlayers = () => {
     
   }
   
-  selectedPlayerElement.scrollIntoView();
+  if(selectedPlayerElement != undefined){
+    selectedPlayerElement.scrollIntoView();
+  }
   
 }
 
@@ -120,6 +122,24 @@ var displayPlayerInfo = (player) => {
   inventory.appendChild(inventoryContent);
   inventoryContent.classList.add("detail-content");
   
+  //Morbium (winning condition)
+  if(player.inventory.length > 0 && player.inventory[0].name == "Morbium"){
+    var morbium = document.createElement("div");
+    morbium.innerHTML = "&#x2022 " + player.inventory[0].amount + "× <b>Morbium</b><br>";
+    inventoryContent.appendChild(morbium);
+  }
+  
+  //Items
+  for(var i = 0;i < player.inventory.length;i ++){
+    
+    if(player.inventory[i].type != "medallion-fish" && player.inventory[i].name != "Morbium"){
+      var item = document.createElement("div");
+      item.innerHTML = "&#x2022 " + player.inventory[i].amount + "× " + player.inventory[i].name + "<br>";
+      inventoryContent.appendChild(item);
+    }
+    
+  }
+  
   //Medallion Fish
   var fish = document.createElement("details");
   fish.innerHTML = "<summary>Medallion Fish</summary>";
@@ -138,17 +158,6 @@ var displayPlayerInfo = (player) => {
   }
   if(hasMedFish){
     inventoryContent.appendChild(fish);
-  }
-  
-  //Items
-  for(var i = 0;i < player.inventory.length;i ++){
-    
-    if(player.inventory[i].type != "medallion-fish"){
-      var item = document.createElement("div");
-      item.innerHTML = "&#x2022 " + player.inventory[i].amount + "× " + player.inventory[i].name + "<br>";
-      inventoryContent.appendChild(item);
-    }
-    
   }
   
   //Mice
