@@ -329,7 +329,7 @@
         "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
-          "energy": 13,
+          "energy": 16,
           "mischief": 5,
           "wits": 2,
           "power": 4,
@@ -496,27 +496,27 @@
       {
         "type": "resource",
         "name": "Morbium",
-        "amount": 1
+        "amount": 3
       },
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 106
+        "amount": 134
       },
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 46
+        "amount": 60
       },
       {
         "type": "resource",
         "name": "Steel",
-        "amount": 38
+        "amount": 39
       },
       {
         "type": "resource",
         "name": "Thread",
-        "amount": 21
+        "amount": 26
       },
       {
         "type": "resource",
@@ -526,7 +526,7 @@
       {
         "type": "resource",
         "name": "Resin",
-        "amount": 2
+        "amount": 9
       },
       {
         "type": "resource",
@@ -536,7 +536,7 @@
       {
         "type": "resource",
         "name": "Copper",
-        "amount": 6
+        "amount": 13
       },
       {
         "type": "resource",
@@ -576,7 +576,7 @@
       {
         "type": "resource",
         "name": "Moon plate",
-        "amount": 1
+        "amount": 2
       },
       {
         "type": "resource",
@@ -726,7 +726,7 @@
       {
         "type": "medallion-fish",
         "name": "Platinum Penfish",
-        "amount": 2,
+        "amount": 3,
         "medallion_fish_type": "Penfish",
         "quality": 5
       },
@@ -764,6 +764,27 @@
         "amount": 1,
         "medallion_fish_type": "Penfish",
         "quality": 7
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Gold Penfish",
+        "amount": 2,
+        "medallion_fish_type": "Penfish",
+        "quality": 4
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Morbium Gudgeon",
+        "amount": 1,
+        "medallion_fish_type": "Gudgeon",
+        "quality": 6
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Morbium Penfish",
+        "amount": 1,
+        "medallion_fish_type": "Penfish",
+        "quality": 6
       }
     ],
     "mice": [
@@ -1235,7 +1256,7 @@
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 9
+        "amount": 11
       },
       {
         "type": "fish",
@@ -1292,7 +1313,7 @@
       {
         "type": "medallion-fish",
         "name": "Bronze Jellyfish",
-        "amount": 2,
+        "amount": 3,
         "medallion_fish_type": "Jellyfish",
         "quality": 2
       },
@@ -1334,7 +1355,7 @@
       {
         "type": "medallion-fish",
         "name": "Garbage Civilised Fish",
-        "amount": 5,
+        "amount": 6,
         "medallion_fish_type": "Civilised Fish",
         "quality": 1
       },
@@ -1358,6 +1379,13 @@
         "amount": 2,
         "medallion_fish_type": "Gudgeon",
         "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Silver Sharknado",
+        "amount": 1,
+        "medallion_fish_type": "Sharknado",
+        "quality": 3
       }
     ],
     "mice": [
