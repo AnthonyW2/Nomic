@@ -1770,5 +1770,32 @@
       "1018044182205579295",
       "1018044245812199455"
     ]
+  },
+  {
+    "author": 2,
+    "content": "**addition**\n> resources > blunderbuss\nA player may create a blunderbuss with 4 Steel and 2 Hide. A player can use a blunderbuss to fire any valid type of bullet at any entity in a cardinal direction from them when within a dungeon.\n\n**addition**\n> resources > golden bullet\nA player can create a golden bullet with 2 Gold and 3000 ~~m~~ when on a meadow hex with the town landmark. When golden bullets are fired from a blunderbuss, they cover a line of 4 hexes, unless one of the hexes in this line is a stone wall or steel wall, in which case they do not affect that hex or any hexes that would have been in the line after it. If an entity is on an affected hex, they cannot move for 2 turns after the golden bullets affect it. When a golden bullet is fired from a blunderbuss, they are removed from the player’s inventory.\n\n**addition**\n> resources > holy bullet\nA player can create a holy bullet with 2 Gold, 1 Quartz and 7000 ~~m~~ when on a hex that has the mouse hut landmark. When holy bullets are fired from a blunderbuss, they cover a line of 6 hexes, unless one of the hexes in this line is a steel wall, in which case they do not affect that hex or any hexes that would have been in the line after it. If a minotaur is on an affected hex, they cannot move for 3 turns after the holy bullets affect it. If a player is on an affected hex, then they cannot move for 1 turn after the holy bullets affect it. Any stone wall hexes that are affected are replaced by blank hexes. When a holy bullet is fired from a blunderbuss, they are removed from the player’s inventory.",
+    "timestamp": 1665972627,
+    "messageID": "1031388694780837898",
+    "votes": [
+      [
+        1,
+        0
+      ],
+      [],
+      [],
+      [
+        5,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1031388694780837898"
   }
 ]

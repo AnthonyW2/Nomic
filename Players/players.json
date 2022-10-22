@@ -160,10 +160,10 @@
         "blurb": "An Italian explorer and navigator mouse. Very well-travelled - especially on sea voyages - and largely self-educated.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1006856199708344360/Christopher_Columouse.jpg",
         "statistics": {
-          "energy": 8,
+          "energy": 13,
           "mischief": 2,
           "wits": 1,
-          "power": 16,
+          "power": 18,
           "curiosity": 2
         }
       }
@@ -839,10 +839,10 @@
         "blurb": "Uh I don't know. There's not much to say about this one. Canon fodder I guess. Hopefully it will catch some good fish before it dies. It's pretty generic I guess. And that's a good or bad thing, depending on your perspective. Anyway, I'm just rambling here, trying to extend the word count. If history is repeats, It will take me more time to type this up than this mouse's lifespan. Oh well, I've met my quota. Bye.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1000578701647433778/unknown.png",
         "statistics": {
-          "energy": 15,
-          "mischief": 3,
+          "energy": 3,
+          "mischief": 5,
           "wits": 1,
-          "power": 5,
+          "power": 11,
           "curiosity": 2
         }
       },
