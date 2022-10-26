@@ -160,7 +160,7 @@
         "blurb": "An Italian explorer and navigator mouse. Very well-travelled - especially on sea voyages - and largely self-educated.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1006856199708344360/Christopher_Columouse.jpg",
         "statistics": {
-          "energy": 16,
+          "energy": 19,
           "mischief": 2,
           "wits": 1,
           "power": 18,
@@ -295,6 +295,11 @@
       },
       {
         "type": "fish",
+        "name": "Tilapia",
+        "amount": 1
+      },
+      {
+        "type": "fish",
         "name": "Northern pike",
         "amount": 1
       },
@@ -334,7 +339,7 @@
         "blurb": "\"The cutest got damn mouse you've ever seen, that's me! I, Rat God will grant you, a poor little mouse 1 wish, to fulfil your life before you die! We all deserve a happy death, don't we?\"\nRat God is a born liar and filled with more bloodlust than most frogs. With their ability to cause vivid auditory and visual hallucinations, Rat God is one to be wary of. While they can fly, their wings are entirely decorative.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/981461688798814298/unknown.png",
         "statistics": {
-          "energy": 13,
+          "energy": 12,
           "mischief": 5,
           "wits": 2,
           "power": 4,
@@ -506,12 +511,12 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 141
+        "amount": 148
       },
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 61
+        "amount": 62
       },
       {
         "type": "resource",
@@ -521,7 +526,7 @@
       {
         "type": "resource",
         "name": "Thread",
-        "amount": 26
+        "amount": 27
       },
       {
         "type": "resource",
@@ -877,10 +882,10 @@
         "blurb": "Uh I don't know. There's not much to say about this one. Canon fodder I guess. Hopefully it will catch some good fish before it dies. It's pretty generic I guess. And that's a good or bad thing, depending on your perspective. Anyway, I'm just rambling here, trying to extend the word count. If history is repeats, It will take me more time to type this up than this mouse's lifespan. Oh well, I've met my quota. Bye.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1000578701647433778/unknown.png",
         "statistics": {
-          "energy": 0,
+          "energy": 1,
           "mischief": 5,
           "wits": 1,
-          "power": 14,
+          "power": 15,
           "curiosity": 2
         }
       },
@@ -1263,17 +1268,17 @@
       {
         "type": "fish",
         "name": "Eel",
-        "amount": 6
+        "amount": 7
       },
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 5
+        "amount": 7
       },
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 11
+        "amount": 14
       },
       {
         "type": "fish",
@@ -1283,7 +1288,7 @@
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 4
+        "amount": 7
       },
       {
         "type": "medallion-fish",
@@ -1330,7 +1335,7 @@
       {
         "type": "medallion-fish",
         "name": "Bronze Jellyfish",
-        "amount": 3,
+        "amount": 4,
         "medallion_fish_type": "Jellyfish",
         "quality": 2
       },
@@ -1402,6 +1407,27 @@
         "name": "Silver Sharknado",
         "amount": 1,
         "medallion_fish_type": "Sharknado",
+        "quality": 3
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Garbage Penfish",
+        "amount": 2,
+        "medallion_fish_type": "Penfish",
+        "quality": 1
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Bronze Vanille",
+        "amount": 1,
+        "medallion_fish_type": "Vanille",
+        "quality": 2
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Silver Goldfish",
+        "amount": 1,
+        "medallion_fish_type": "Goldfish",
         "quality": 3
       }
     ],
