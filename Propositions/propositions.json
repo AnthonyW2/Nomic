@@ -1797,5 +1797,25 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/960036851022979092/1031388694780837898"
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> mice > statistics > pure statistics > builder\nIf the owner uses a traverse or scout action, they may choose to guarantee that there will be a landmark on the hex that is generated. They do not choose the landmark.",
+    "timestamp": 1667096476,
+    "messageID": "1036102457517932664",
+    "votes": [
+      [],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1036102457517932664"
   }
 ]

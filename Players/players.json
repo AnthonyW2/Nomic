@@ -145,8 +145,8 @@
         "blurb": "Bunnings Warehouse! Lowest prices are just the beginning.\nhttps://youtu.be/D3qgALBoR1A\nWhere you find a competitor's lower price on the same stocked item, we'll beat it by 10%.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1002732271486373948/Bunnings_Waremouse.jpg",
         "statistics": {
-          "energy": 10,
-          "mischief": 1,
+          "energy": 9,
+          "mischief": 2,
           "wits": 1,
           "power": 5,
           "curiosity": 4
@@ -160,12 +160,13 @@
         "blurb": "An Italian explorer and navigator mouse. Very well-travelled - especially on sea voyages - and largely self-educated.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1006856199708344360/Christopher_Columouse.jpg",
         "statistics": {
-          "energy": 19,
+          "energy": 0,
           "mischief": 2,
           "wits": 1,
           "power": 18,
           "curiosity": 2
-        }
+        },
+        "pure_stat": "world bender"
       }
     ]
   },
@@ -261,12 +262,12 @@
       -1,
       1
     ],
-    "moustaches": 1300,
+    "moustaches": 300,
     "inventory": [
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 18
+        "amount": 16
       },
       {
         "type": "resource",
@@ -286,7 +287,12 @@
       {
         "type": "resource",
         "name": "Resin",
-        "amount": 4
+        "amount": 3
+      },
+      {
+        "type": "resource",
+        "name": "Torch",
+        "amount": 1
       },
       {
         "type": "fish",
