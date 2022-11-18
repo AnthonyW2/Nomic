@@ -51,7 +51,7 @@
           "id": 213,
           "relid": 2,
           "summary": "Morbium",
-          "content": "The player or players with the most Morbium on January 1, 0200 UTC wins Nomic season 3.",
+          "content": "The player(s) with the most Morbium on December 16, 0000 UTC wins Nomic season 3.",
           "tags": [
             "initial",
             "winning"
@@ -60,6 +60,10 @@
             {
               "player": 2,
               "time": 1659994728
+            },
+            {
+              "player": 4,
+              "time": 1668235906
             }
           ],
           "subrules": []

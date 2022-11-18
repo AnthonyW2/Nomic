@@ -250,5 +250,11 @@
     "timestamp": 1666261344,
     "proposition": 63,
     "summary": "Blunderbuss added by lime"
+  },
+  {
+    "ruleset": 42,
+    "timestamp": 1668235906,
+    "proposition": 66,
+    "summary": "Win condition updated by Ryan"
   }
 ]

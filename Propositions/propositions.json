@@ -1809,13 +1809,130 @@
         4
       ],
       [
-        0
+        0,
+        13
       ],
+      [
+        6,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1036102457517932664"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *Challenges*\n*Q: What season would be complete without shitty challenges?!\nA:*\nThere are now challenges... again. They are unbelievably shitty.\nA player may perform a challenge of the listed subrules at any point. \n\n**Addition**\n> *Challenges - Ball Kick*\nBall kick is a challenge. Players may kick a ball. This does nothing. When a player kicks a ball a random number is generated. The player who has the highest number wins absolutely fucking nothing (×1). If a player gets a higher score, the absolutely fucking nothing is removed from the previous idiot to the new one. Woooooo! \n\n**Addition**\n> *Challenges - Counting*\nCounting is a challenge. It's really not, you just type some numbers, this is bullshit. The player with the greatest counts has their name retconned as the winner of Nomic Season 1. Even if they weren't playing.",
+    "timestamp": 1667622958,
+    "messageID": "1038310684565442660",
+    "votes": [
+      [
+        3,
+        13
+      ],
+      [
+        1,
+        2
+      ],
+      [],
+      [
+        0,
+        6,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1038310684565442660"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n> *1.2 - Morbium*\nThe player or players with the most Morbium on December 16, 0000 UTC wins Nomic season 3.",
+    "timestamp": 1667968178,
+    "messageID": "1039758640191643730",
+    "votes": [
+      [
+        0,
+        13
+      ],
+      [
+        5
+      ],
+      [],
+      [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1039758640191643730"
+  },
+  {
+    "author": 5,
+    "content": "Content Edit\n1.2 - Morbium\nThe player named jeck on December 16, 0000 UTC wins Nomic season 3.",
+    "timestamp": 1667968395,
+    "messageID": "1039759553459388486",
+    "votes": [
+      [
+        3
+      ],
+      [
+        0,
+        4,
+        13
+      ],
+      [],
+      [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1039759553459388486"
+  },
+  {
+    "author": 4,
+    "content": "**Addition**\n> *Mice > Statistics > Pure Statistics > Builder*\nWhen the owner uses the scout action, they may choose to have all generated hexes from this process be generated with +1 (1 for each iteration of the Builder Pure Statistic) landmarks set to a weight of 0. The owner selects the landmarks to remove.",
+    "timestamp": 1668744577,
+    "messageID": "1043015095187411064",
+    "votes": [
+      [
+        13,
+        2
+      ],
+      [],
+      [],
       [
         6
       ]
     ],
     "majority": false,
-    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1036102457517932664"
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1043015095187411064"
   }
 ]

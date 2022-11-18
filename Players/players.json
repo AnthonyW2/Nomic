@@ -145,11 +145,11 @@
         "blurb": "Bunnings Warehouse! Lowest prices are just the beginning.\nhttps://youtu.be/D3qgALBoR1A\nWhere you find a competitor's lower price on the same stocked item, we'll beat it by 10%.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1002732271486373948/Bunnings_Waremouse.jpg",
         "statistics": {
-          "energy": 9,
+          "energy": 6,
           "mischief": 2,
           "wits": 1,
-          "power": 5,
-          "curiosity": 4
+          "power": 7,
+          "curiosity": 6
         }
       },
       {
@@ -512,52 +512,52 @@
       {
         "type": "resource",
         "name": "Morbium",
-        "amount": 3
+        "amount": 17
       },
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 148
+        "amount": 106
       },
       {
         "type": "resource",
         "name": "Stone",
-        "amount": 62
+        "amount": 83
       },
       {
         "type": "resource",
         "name": "Steel",
-        "amount": 37
+        "amount": 75
       },
       {
         "type": "resource",
         "name": "Thread",
-        "amount": 27
+        "amount": 33
       },
       {
         "type": "resource",
         "name": "Hide",
-        "amount": 12
+        "amount": 15
       },
       {
         "type": "resource",
         "name": "Resin",
-        "amount": 9
+        "amount": 15
       },
       {
         "type": "resource",
         "name": "Quartz",
-        "amount": 22
+        "amount": 30
       },
       {
         "type": "resource",
         "name": "Copper",
-        "amount": 13
+        "amount": 22
       },
       {
         "type": "resource",
         "name": "Gold",
-        "amount": 2
+        "amount": 14
       },
       {
         "type": "resource",
@@ -567,7 +567,7 @@
       {
         "type": "resource",
         "name": "Handline Reel",
-        "amount": 3
+        "amount": 5
       },
       {
         "type": "resource",
@@ -587,7 +587,7 @@
       {
         "type": "resource",
         "name": "Dungeon Key",
-        "amount": 3
+        "amount": 5
       },
       {
         "type": "resource",
@@ -601,8 +601,13 @@
       },
       {
         "type": "resource",
+        "name": "Sun plate",
+        "amount": 1
+      },
+      {
+        "type": "resource",
         "name": "Binoculars",
-        "amount": 2
+        "amount": 3
       },
       {
         "type": "resource",
@@ -613,6 +618,11 @@
         "type": "resource",
         "name": "Boulder",
         "amount": 4
+      },
+      {
+        "type": "resource",
+        "name": "Wheelbarrow",
+        "amount": 1
       },
       {
         "type": "fish",
@@ -834,6 +844,13 @@
         "amount": 1,
         "medallion_fish_type": "Chest (Fish?)",
         "quality": 4
+      },
+      {
+        "type": "medallion-fish",
+        "name": "Platinum Vanille",
+        "amount": 3,
+        "medallion_fish_type": "Vanille",
+        "quality": 5
       }
     ],
     "mice": [
@@ -909,7 +926,7 @@
         "blurb": "Uh I don't know. There's not much to say about this one. Canon fodder I guess. Hopefully it will catch some good fish before it dies. It's pretty generic I guess. And that's a good or bad thing, depending on your perspective. Anyway, I'm just rambling here, trying to extend the word count. If history is repeats, It will take me more time to type this up than this mouse's lifespan. Oh well, I've met my quota. Bye.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1000578701647433778/unknown.png",
         "statistics": {
-          "energy": 1,
+          "energy": 19,
           "mischief": 5,
           "wits": 1,
           "power": 15,
@@ -972,7 +989,7 @@
       false,
       true
     ],
-    "active": false,
+    "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
@@ -1192,7 +1209,7 @@
       false,
       false
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
