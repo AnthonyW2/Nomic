@@ -1923,16 +1923,52 @@
     "messageID": "1043015095187411064",
     "votes": [
       [
+        0,
         13,
         2
       ],
       [],
       [],
       [
-        6
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1043015095187411064"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit**\n> *1.2 - Morbium*\nThe player or players with the most Morbium (Ryan) in the immediate moment following the introduction of this proposition wins Nomic season 3.",
+    "timestamp": 1669072247,
+    "messageID": "1044389444544909433",
+    "votes": [
+      [
+        5,
+        2
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
       ]
     ],
     "majority": false,
-    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1043015095187411064"
+    "link": "https://discord.com/channels/701269326518419547/960036851022979092/1044389444544909433"
   }
 ]

@@ -3268,23 +3268,6 @@
                     }
                   ],
                   "subrules": []
-                },
-                {
-                  "id": 241,
-                  "relid": 8,
-                  "summary": "Builder",
-                  "content": "When the owner uses the scout action, they may choose to have all generated hexes from this process be generated with +1 (1 for each iteration of the Builder Pure Statistic) landmarks set to a weight of 0. The owner selects the landmarks to remove.",
-                  "tags": [
-                    "mice",
-                    "pure stats"
-                  ],
-                  "history": [
-                    {
-                      "player": 4,
-                      "time": 1669010090
-                    }
-                  ],
-                  "subrules": []
                 }
               ]
             }

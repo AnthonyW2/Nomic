@@ -148,7 +148,7 @@
           "energy": 6,
           "mischief": 2,
           "wits": 1,
-          "power": 7,
+          "power": 9,
           "curiosity": 6
         }
       },
@@ -625,29 +625,39 @@
         "amount": 1
       },
       {
+        "type": "food",
+        "name": "Smoked Salmon",
+        "amount": 1
+      },
+      {
+        "type": "food",
+        "name": "Fishy Banquet",
+        "amount": 5
+      },
+      {
         "type": "fish",
         "name": "Eel",
-        "amount": 7
+        "amount": 0
       },
       {
         "type": "fish",
         "name": "Salmon",
-        "amount": 7
+        "amount": 5
       },
       {
         "type": "fish",
         "name": "Tilapia",
-        "amount": 6
+        "amount": 0
       },
       {
         "type": "fish",
         "name": "Northern pike",
-        "amount": 8
+        "amount": 0
       },
       {
         "type": "fish",
         "name": "Trout",
-        "amount": 12
+        "amount": 0
       },
       {
         "type": "medallion-fish",
@@ -973,10 +983,10 @@
         "blurb": "A practitioner of the purest of arts; the song. She weaves symphonies with her baton, leaving audiences' hearts carved like a blade in the hands of a seasoned warrior. Don't start a conversation about classical music, else you wont see the end of it. Prone to being a little shy at first, though will hastily warm to any who appreciate her works.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1036083352849088532/unknown.png",
         "statistics": {
-          "energy": 1,
+          "energy": 10,
           "mischief": 1,
-          "wits": 2,
-          "power": 2,
+          "wits": 15,
+          "power": 3,
           "curiosity": 4
         }
       }
