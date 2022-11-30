@@ -1,0 +1,103 @@
+/**
+ * These CSS rules apply to all pages on the site
+ * These rules are for input/form elements
+ * 
+ * Anthony Wilson
+ */
+
+
+
+/* Override button styles */
+button {
+  
+  color: inherit;
+  
+  font-family: inherit;
+  
+  /* For iOS */
+  border-radius: 0;
+  
+  /* Prevent double-tap zoom */
+  touch-action: manipulation;
+  
+}
+
+
+/* Set the colors of all input elements */
+/*input {
+  
+}*/
+input:hover {
+  background-color: var(--BG-Input-Hover);
+}
+input:focus {
+  background-color: var(--BG-Input-Focus);
+}
+
+
+/* Textbox placeholder opacity needs to be reset, due to the "all: unset" rule being applied to textboxes */
+::placeholder {
+  color: var(--Text-Alt);
+  opacity: 0.5;
+}
+
+
+/* Style all textboxes */
+input[type="text"] {
+  
+  /* Clear all default textbox styles */
+  all: unset;
+  
+  box-sizing: border-box;
+  
+  padding-top: 1px;
+  padding-left: 10px;
+  
+  font-family: inherit;
+  font-size: 24px;
+  text-align: left;
+  
+  color: var(--Text-Input);
+  background-color: var(--BG-Input);
+  border: 2px solid var(--Border);
+  
+  transition: color 250ms, background 250ms;
+  
+}
+input[type="text"]:hover {
+  color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
+}
+input[type="text"]:focus {
+  color: var(--Text-Input-Focus);
+  background-color: var(--BG-Input-Focus);
+}
+input[type="text"]:hover::placeholder {
+  color: var(--Text-Input-Hover);
+}
+input[type="text"]:focus::placeholder {
+  color: var(--Text-Input-Focus);
+}
+
+select {
+  
+  /* For iOS */
+  border-radius: 0;
+  /*-webkit-appearance: none;*/ /* This removes the arrow too, which I don't want */
+  
+  color: var(--Text-Input);
+  background-color: var(--BG-Input);
+  border: 2px solid var(--Border);
+  
+  cursor: pointer;
+  
+}
+select:hover {
+  color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
+}
+select:focus {
+  color: var(--Text-Input-Focus);
+  background-color: var(--BG-Input-Focus);
+}
+

@@ -1,0 +1,862 @@
+/**
+ * These CSS rules apply to all pages on the site
+ * These rules are for specific element IDs and classes (specific parts of pages)
+ * 
+ * Anthony Wilson
+ */
+
+
+
+/*
+Z-Indexes:
+0   - body
+50  - #overflow-menu
+99  - #dimmer
+100 - #nav-bar
+*/
+
+
+
+/* ======== Navigation Bar ======== */
+
+/* Styles for the navigation bar at the top of the screen */
+#nav-bar {
+  
+  z-index: 100;
+  
+  position: fixed;
+  
+  left: 0px;
+  top: 0px;
+  
+  width: 100%;
+  min-width: 350px;
+  height: 50px;
+  
+  background-color: var(--BG-Menu);
+  border: 2px solid var(--Border);
+  
+}
+
+
+/* Styles shared by all the links in the navigation bar */
+.nav-link {
+  
+  position: absolute;
+  
+  top: -2px;
+  
+  width: 12.5%;
+  height: 50px;
+  
+  padding-top: 10px;
+  
+  font-size: 24px;
+  text-align: center;
+  
+  white-space: nowrap;
+  
+  color: var(--Text-Input);
+  background-color: var(--BG-Input);
+  border: 2px solid var(--Border);
+  
+}
+/* Change the color of the navigation links when the mouse hovers over them */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
+}
+/* Style the link which corresponds to the current page */
+/*.nav-link[currentpage] {
+  background-color: var(--BG-Main);
+}*/
+/* Style unavailable links */
+/*.nav-link[unavailable] {
+  
+  text-decoration: none;
+  
+  background-color: var(--BG2);
+  color: var(--Text2);
+  
+  cursor: not-allowed;
+  
+}*/
+
+/* Styles for the individual links in the navigation bar */
+#nav-link-site-logo {
+  
+  left: -2px;
+  
+  width: 160px;
+  
+  padding-top: 7px;
+  
+  font-size: 28px;
+  
+}
+
+#nav-link-rules {
+  left: 156px;
+}
+
+#nav-link-players {
+  left: calc(12.5% + 154px);
+}
+
+#nav-link-docs {
+  left: calc(25% + 152px);
+}
+#nav-link-docs-text-1 {
+  font-size: inherit;
+  display: inline;
+}
+#nav-link-docs-text-2 {
+  font-size: inherit;
+  display: none;
+}
+
+#nav-link-propositions {
+  left: calc(37.5% + 150px);
+}
+#nav-link-propositions-text-1 {
+  font-size: inherit;
+  display: inline;
+}
+#nav-link-propositions-text-2 {
+  font-size: inherit;
+  display: none;
+}
+
+#nav-link-world {
+  left: calc(50% + 148px);
+}
+
+
+
+/* ======== Search ======== */
+
+/* Search bar at the top of the page */
+#nav-search {
+  
+  position: absolute;
+  
+  top: -2px;
+  width: calc(37.5% - 192px);
+  
+  left: calc(62.5% + 146px);
+  height: 50px;
+  
+}
+
+#search-menu {
+  
+  position: absolute;
+  
+  top: 46px;
+  width: calc(37.5% - 192px);
+  
+  left: calc(62.5% + 146px);
+  height: 50px;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  
+  font-size: 24px;
+  text-align: left;
+  
+  overflow-y: auto;
+  
+  color: var(--Text);
+  background-color: var(--BG-Menu);
+  border: 2px solid var(--Border);
+  
+}
+
+
+
+/* ======== Overflow Menu ======== */
+
+/* Overflow menu button in the top-right corner of the page */
+#nav-menu-btn {
+  
+  position: absolute;
+  
+  top: -2px;
+  width: 50px;
+  
+  right: -2px;
+  height: 50px;
+  
+  padding: 0px;
+  
+  color: var(--Text-Input);
+  --nav-menu-btn-icon-color: var(--Text-Input);
+  background-color: var(--BG-Input);
+  border: 2px solid var(--Border);
+  
+  cursor: pointer;
+  
+}
+#nav-menu-btn:hover,
+#nav-menu-btn:focus {
+  color: var(--Text-Input-Hover);
+  --nav-menu-btn-icon-color: var(--Text-Input-Hover);
+  background-color: var(--BG-Input-Hover);
+}
+/* Change the color of the menu button when the menu is open */
+#nav-menu-btn[menuopen="true"] {
+  color: var(--Text-Input-Focus);
+  --nav-menu-btn-icon-color: var(--Text-Input-Focus);
+  background-color: var(--BG-Input-Focus);
+}
+
+#nav-menu-btn-icon {
+  
+  width: 25px;
+  height: 20px;
+  
+  /* Centre the icon */
+  margin: auto;
+  
+}
+
+.nav-menu-btn-icon-bar {
+  
+  height: 2px;
+  
+  padding: 0px;
+  margin-bottom: 7px;
+  border: none;
+  
+  /*background-color: var(--Text);*/
+  background-color: var(--nav-menu-btn-icon-color);
+  
+}
+
+
+/* The container for the overflow menu */
+#overflow-menu {
+  
+  z-index: 99;
+  
+  position: fixed;
+  
+  top: 48px;
+  right: 0px;
+  
+  width: calc(12.5% + 96px);
+  height: calc(100% - 48px);
+  
+  background-color: var(--BG-Menu);
+  border: 2px solid var(--Border);
+  
+}
+
+/* Make the overflow menu a set width if the screen width is smaller than 1800px */
+@media screen and (max-width: 1200px) {
+  
+  #overflow-menu {
+    width: 245px;
+  }
+  
+}
+
+/* Dim the rest of the page when the overflow menu is open */
+#dimmer {
+  
+  z-index: 50;
+  
+  position: fixed;
+  
+  top: 0px;
+  right: 0px;
+  
+  width: 100%;
+  height: 100%;
+  
+  background-color: #00000080;
+  
+}
+
+.overflow-menu-subtitle {
+  
+  position: absolute;
+  
+  /*left: -2px;*/
+  left: 25px;
+  
+  /*width: calc(100% + 4px);*/
+  width: calc(100% - 50px);
+  height: 50px;
+  
+  padding-top: 10px;
+  padding-left: 10px;
+  
+  font-size: 24px;
+  text-align: left;
+  
+  white-space: nowrap;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+
+/* Color-theme settings selector */
+#settings-color-theme-title {
+  top: 25px;
+}
+
+#settings-color-theme-select {
+  
+  position: absolute;
+  
+  top: 73px;
+  left: 25px;
+  
+  width: calc(100% - 50px);
+  height: 50px;
+  
+  /*padding-top: 10px;*/
+  padding-left: 8px;
+  
+  font-size: 24px;
+  
+}
+
+
+/* Font theme settings selector */
+#settings-font-theme-title {
+  top: 148px;
+}
+
+#settings-font-theme-select {
+  
+  position: absolute;
+  
+  top: 196px;
+  left: 25px;
+  
+  width: calc(100% - 50px);
+  height: 50px;
+  
+  /*padding-top: 10px;*/
+  padding-left: 8px;
+  
+  font-size: 24px;
+  
+}
+
+
+
+/* ======== Navigation Bar Responsiveness ======== */
+
+@media screen and (max-width: 1400px) {
+  
+  #nav-link-docs-text-1 {
+    display: none;
+  }
+  #nav-link-docs-text-2 {
+    display: inline;
+  }
+  
+}
+
+@media screen and (max-width: 1150px) {
+  
+  #nav-link-propositions-text-1 {
+    display: none;
+  }
+  #nav-link-propositions-text-2 {
+    display: inline;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  
+  #nav-bar {
+    height: 98px;
+  }
+  
+  /*#nav-link-site-logo {
+    
+  }*/
+  
+  #nav-link-rules {
+    left: 156px;
+    width: calc(33.4% - 50px);
+  }
+  
+  #nav-link-players {
+    left: calc(33.3% + 104px);
+    width: calc(33.4% - 50px);
+  }
+  
+  #nav-link-docs {
+    left: calc(66.6% + 52px);
+    width: calc(33.3% - 49px);
+  }
+  #nav-link-docs-text-1 {
+    display: inline;
+  }
+  #nav-link-docs-text-2 {
+    display: none;
+  }
+  
+  #nav-link-propositions {
+    left: -2px;
+    top: 46px;
+    width: 25%;
+  }
+  #nav-link-propositions-text-1 {
+    display: inline;
+  }
+  #nav-link-propositions-text-2 {
+    display: none;
+  }
+  
+  #nav-link-world {
+    left: calc(25% - 4px);
+    top: 46px;
+    width: 25%;
+  }
+  
+  #nav-search {
+  
+    top: 46px;
+    width: calc(50% - 40px);
+    
+    left: calc(50% - 6px);
+    
+  }
+  
+  #search-menu {
+    
+    top: 94px;
+    width: calc(50% - 40px);
+    
+    left: calc(50% - 6px);
+    
+  }
+  
+  #nav-menu-btn {
+  
+    top: 46px;
+    
+  }
+  
+  #overflow-menu {
+    
+    top: 96px;
+    
+    height: calc(100% - 96px);
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+    #nav-link-docs-text-1 {
+      display: none;
+    }
+    #nav-link-docs-text-2 {
+      display: inline;
+    }
+  
+    #nav-link-propositions-text-1 {
+      display: none;
+    }
+    #nav-link-propositions-text-2 {
+      display: inline;
+    }
+    
+  }
+  
+}
+
+
+
+/* ======== Main Page ======== */
+
+/* */
+
+
+
+/* ======== Rules ======== */
+
+/*.rule {
+  
+}*/
+
+.rule-style-boxes {
+  
+  margin-top: 1em;
+  
+  padding: 1em;
+  
+  border: 1px solid var(--Border);
+  
+}
+
+.rule-style-tree {
+  
+  position: relative;
+  
+  padding-top: 1em;
+  padding-left: 1em;
+  
+}
+
+.rule-tree-branch-line-horizontal {
+  
+  position: absolute;
+  
+  height: 0px;
+  width: 1.8em;
+  
+  margin-top: 0.6em;
+  margin-left: -2em;
+  
+  border-top: 2px solid var(--Border);
+  
+}
+.rule-tree-branch-line-horizontal-end {
+  height: calc(100% - 2em);
+  background-color: var(--BG-Main);
+}
+
+.rule-tree-branch-line-vertical {
+  
+  position: absolute;
+  
+  height: calc(100% - 3.5em);
+  width: 0px;
+  
+  margin-top: calc(0.6em + 2px);
+  margin-left: -1em;
+  
+  border-left: 2px solid var(--Border);
+  
+}
+
+.rule-style-table {
+  
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  
+  border-top: 1px solid var(--Border);
+  
+}
+
+.rule-tag {
+  
+  display: inline;
+  
+  padding-left: 2px;
+  padding-right: 2px;
+  
+  background-color: var(--BG-Vote-Tag);
+  border-radius: 4px;
+  
+}
+
+
+#rule-display-control-container {
+  
+  /*width: 100%;*/
+  
+  background-color: var(--BG-Menu);
+  border: 2px solid var(--Border);
+  
+}
+
+.rule-display-control-subcontainer {
+  
+  display: inline-block;
+  
+  /*margin-left: 1em;*/
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  
+  padding: 0.5em;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+.rule-display-control-shown-elements-div {
+  
+  display: inline-block;
+  
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+/*#rule-summary-table {
+  
+}
+#rule-summary-table > tr {
+  
+}
+#rule-summary-table > * > td {
+  
+  text-align: left;
+  
+  padding-left: 5px;
+  padding-right: 1em;
+  
+  padding-top: 2px;
+  padding-bottom: 2px;
+  
+}*/
+
+
+
+/* ======== Players ======== */
+
+.player-list-block {
+  
+  padding: 0.5em;
+  
+  margin: 0.5em;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+.player-mice-container {
+  
+  /*display: none;*/
+  
+  border: 1px solid var(--Border);
+  
+}
+
+.player-mouse {
+  
+  padding: 0.5em;
+  
+  margin-bottom: 0.5em;
+  
+  border: 1px solid var(--Border);
+  
+}
+
+
+
+/* ======== Documentation ======== */
+
+.syntax-example-box {
+  
+  display: inline-block;
+  
+  padding: 0.5em;
+  margin-top: 0px;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+/*#proposition-syntax-template {
+  
+  padding: 0.5em;
+  margin-top: 0px;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}
+
+#proposition-syntax-example {
+  
+  padding: 0.5em;
+  margin-top: 0px;
+  
+  background-color: var(--BG-Submenu);
+  border: 2px solid var(--Border);
+  
+}*/
+
+.discord-quote-indent {
+  
+  height: 1em;
+  width: 0px;
+  
+  margin-right: 0.5em;
+  
+  border-left: 3px solid var(--Text-Alt);
+  
+}
+
+
+
+/* ======== Propositions ======== */
+
+.proposition {
+  
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+  padding: 1em;
+  
+  border: 1px solid var(--Border);
+  
+}
+
+#proposition-parse-ID-input {
+  
+  width: 3em;
+  
+  padding-left: 2px;
+  
+  font-size: 18px;
+  
+}
+
+#proposition-parse-text-input {
+  
+  width: 90%;
+  height: 20em;
+  
+  font-size: 18px;
+  
+}
+
+#proposition-parse-JSON-output {
+  
+  width: 90%;
+  height: 40em;
+  
+  font-family: var(--FontMono);
+  font-size: 14px;
+  
+}
+
+#parser-HR-output {
+  
+  padding-left: 0.5em;
+  
+  border: 2px solid var(--Border);
+  
+}
+
+#proposition-parse-rule-output {
+  
+  width: 90%;
+  height: 20em;
+  
+  font-family: var(--FontMono);
+  font-size: 14px;
+  
+}
+
+
+
+/* ======== World ======== */
+
+#world-map {
+  
+  --World-Hex-Border-Color: #000000;
+  
+  display: block;
+  
+  
+  
+  border: 2px solid var(--Border);
+  
+}
+
+.map-hex {
+  
+  --World-Meadow-Color: #25a000;
+  --World-Meadow-Color: #60c018;
+  --World-Deceased-Dunes-Color: #ffd900;
+  --World-Lake-Color: #0066ff;
+  --World-Forest-Color: #005e00;
+  --World-Perilous-Pass-Color: #868686;
+  --World-Swamp-Color: #658616;
+  
+  --World-Corruption-Color: #7500b9;
+  
+  fill: none;
+  stroke: var(--World-Hex-Border-Color);
+  stroke-width: 1;
+  
+}
+
+.map-hex-meadow {
+  
+  fill: var(--World-Meadow-Color);
+  
+}
+
+.map-hex-dunes {
+  
+  fill: var(--World-Deceased-Dunes-Color);
+  
+}
+
+.map-hex-lake {
+  
+  fill: var(--World-Lake-Color);
+  
+}
+
+.map-hex-forest {
+  
+  fill: var(--World-Forest-Color);
+  
+}
+
+.map-hex-pass {
+  
+  fill: var(--World-Perilous-Pass-Color);
+  
+}
+
+.map-hex-swamp {
+  
+  fill: var(--World-Swamp-Color);
+  
+}
+
+.map-hex-corrupt-overlay {
+  
+  stroke: var(--World-Corruption-Color);
+  stroke-width: 5;
+  
+}
+
+.map-landmark {
+  
+  --World-Boardwalk-Color: #7e4700;
+  
+  pointer-events: none;
+  
+}
+
+.map-landmark-boardwalk {
+  
+  fill: var(--World-Boardwalk-Color);
+  
+}
+
+.map-player-icon {
+  
+  stroke: #000000;
+  stroke-width: 1;
+  
+}

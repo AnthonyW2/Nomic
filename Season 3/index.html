@@ -1,5 +1,5 @@
 <!--
-  BS Nomic Automation System main webpage
+  Nomic Automation System main webpage
   
   Anthony Wilson
   
@@ -40,7 +40,7 @@
     <!-- Navigation Bar -->
     <div id="nav-bar">
       
-      <a id="nav-link-site-logo" class="nav-link" href="./">BS Nomic</a>
+      <a id="nav-link-site-logo" class="nav-link" href="./">Nomic S3</a>
       
       <a id="nav-link-rules" class="nav-link" href="./Rules">Rules</a>
       
@@ -56,7 +56,7 @@
         <span id="nav-link-propositions-text-2">Props</span>
       </a>
       
-      <!--a id="nav-link-world" class="nav-link" href="./World">World</a-->
+      <a id="nav-link-world" class="nav-link" href="./World">World</a>
       
       <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
       <div id="search-menu" hidden></div>
@@ -100,22 +100,14 @@
     <!-- Page Content -->
     <div class="page-content-container">
       
-      <h1>Blue Sheep Nomic Season</h1>
+      <h1>Blue Sheep Nomic Season 3</h1>
       
       <p>
-        This is the website for a series of Nomic games which goes by the name "Blue Sheep Nomic", or "BS Nomic" for short.<br>
+        Blue Sheep Nomic Season 3 ended at 10:35am on Friday the 25th of November 2022 AEDT (24 November 2022 23:35 UTC).<br>
+        One of the main themes of this season was a 2 dimensional "world" with hexagonal tiles, where players moved around and interacted with the tiles that generated in different ways.
+        Some notable features of this season include: mice; fishing; dungeons; and various resources to use or trade.<br>
         <br>
-        We are currently waiting for Season 4 to begin, expected in early December.<br>
-        <br>
-        This site is closely tied into a custom Discord bot - <a href="https://github.com/AnthonyW2/Nomic-Bot">Nomic Bot</a> - built specifically for the varying mechanics of BS Nomic.<br>
-      </p>
-      
-      <br>
-      
-      <h2>Past Seasons</h2>
-      <p>
-        During seasons 1 & 2 a Google Docs document was used to track all game information, hence why no information about those seasons exists on this website.<br>
-        Season 3 was the first season to use a website, which can be found here: <a href="https://anthonyw2.github.io/Nomic/Season%203">BS Nomic Season 3</a>.
+        The winner of this season of BS Nomic is <b>Ryan</b>.
       </p>
       
       <br>
@@ -174,7 +166,7 @@
       body.addEventListener("ruleload", e => {
         
         document.getElementById("rule-count").innerHTML = rules.getSubruleCount()+1;
-        document.getElementById("largest-rule-id").innerHTML = rules.getLargestID();
+        //document.getElementById("largest-rule-id").innerHTML = rules.getLargestID();
         
       });
       
@@ -217,8 +209,8 @@
         }
         
         document.getElementById("proposition-count").innerHTML = propositions.length;
-        var activePropContainer = document.getElementById("active-propositions-container");
-        activePropContainer.innerHTML = "";
+        //var activePropContainer = document.getElementById("active-propositions-container");
+        //activePropContainer.innerHTML = "";
         /*
         var active = 0;
         

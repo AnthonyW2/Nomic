@@ -1,0 +1,397 @@
+<!--
+  Documentation page
+  
+  Anthony Wilson
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    
+    <link rel="stylesheet" type="text/css" href="./global-styles.css">
+    <link rel="stylesheet" type="text/css" href="./input-styles.css">
+    <link rel="stylesheet" type="text/css" href="./specific-styles.css">
+    
+    <meta name="author" content="Anthony Wilson">
+    <meta name="description" content="Documentation for Nomic Season 3">
+    
+    <link rel="icon" type="image/png" href="./Resources/Favicon128x128.png" sizes="128x128">
+    
+    <meta property="og:title" content="Nomic Season 3">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://AnthonyW2.github.io/Nomic/docs.html">
+    <meta property="og:image" content="./Resources/OGImage.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta property="og:description" content="Documentation for Nomic Season 3">
+    
+  </head>
+  <body onload="StartJS()">
+    
+    <!-- Navigation Bar -->
+    <div id="nav-bar">
+      
+      <a id="nav-link-site-logo" class="nav-link" href="./">Nomic S3</a>
+      
+      <a id="nav-link-rules" class="nav-link" href="./Rules">Rules</a>
+      
+      <a id="nav-link-players" class="nav-link" href="./Players">Players</a>
+      
+      <a id="nav-link-docs" class="nav-link" href="./docs.html">
+        <span id="nav-link-docs-text-1">Documentation</span>
+        <span id="nav-link-docs-text-2">Docs</span>
+      </a>
+      
+      <a id="nav-link-propositions" class="nav-link" href="./Propositions">
+        <span id="nav-link-propositions-text-1">Propositions</span>
+        <span id="nav-link-propositions-text-2">Props</span>
+      </a>
+      
+      <a id="nav-link-world" class="nav-link" href="./World">World</a>
+      
+      <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
+      <div id="search-menu" hidden></div>
+      
+      <button id="nav-menu-btn" title="Open/Close the overflow menu" onclick="toggleOverflowMenu()" menuopen="false">
+        <div id="nav-menu-btn-icon">
+          <div id="nav-menu-btn-icon-bar-1" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-2" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-3" class="nav-menu-btn-icon-bar"></div>
+        </div>
+      </button>
+      
+    </div>
+    
+    
+    <!-- Overflow Menu -->
+    <div id="overflow-menu" hidden>
+      
+      <div id="settings-color-theme-title" class="overflow-menu-subtitle">Colour Theme:</div>
+      <select id="settings-color-theme-select" onchange="updateColorTheme()"></select>
+      
+      <div id="settings-font-theme-title" class="overflow-menu-subtitle">Font Theme:</div>
+      <select id="settings-font-theme-select" onchange="updateFontTheme()">
+        <option value="0">Default</option>
+        <option value="1">Serif</option>
+        <option value="2">Sans-Serif</option>
+        <option value="3">Comic Sans</option>
+      </select>
+      
+      <!--<a id="settings-link-leave-feedback" class="settings-menu-subtitle inherit-color" href="">Leave Feedback</a>-->
+      
+      <!--<a id="settings-link-docs" class="settings-menu-subtitle inherit-color" href="">Documentation</a>-->
+      
+      <!--<a id="settings-link-about" class="settings-menu-subtitle inherit-color" href="">About</a>-->
+      
+    </div>
+    
+    <div id="dimmer" onclick="toggleOverflowMenu()" hidden></div>
+    
+    
+    <!-- Page Content -->
+    <div class="page-content-container">
+      
+      <h1>Documentation</h1>
+      <!--span>Nomic Automation System</span-->
+      
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#website">Website</a></li>
+        <li><a href="#nomic-bot">Nomic Bot</a></li>
+        <li><a href="#propositions">Propositions</a></li>
+      </ul>
+      
+      <!--<h2 id="NAS">Nomic Automation System (NAS)</h2>-->
+      
+      
+      
+      <br>
+      
+      <h2 id="website">Website</h2>
+      
+      <p>
+        
+        This website serves two main purposes:
+        <ul>
+          <li>To be a repository of all information related to this season of Nomic.</li>
+          <li>To interact with the automation system (Nomic Bot).</li>
+        </ul>
+        
+      </p>
+      
+      <br>
+      
+      <h2 id="nomic-bot">Nomic Bot</h2>
+      
+      <p>
+        The Nomic Bot Discord bot is used to manage the NAS from the Nomic Discord server, or through Discord direct messages.
+        
+      </p>
+      
+      <h3 id="nomic-bot-commands">Commands</h3>
+      <p>
+        Nomic Bot commands can be executed through global/guild-specific slash commands, or by prepending the command prefix <code>$</code> to the command and space-delimited arguments.
+      </p>
+      <ul id="nomic-bot-command-list">
+        <li>
+          <code id="nomic-bot-commands-help">help</code><br>
+          Send a list of commands to control Nomic Bot<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-ping">ping</code><br>
+          Test to see if Nomic Bot is online, and get ping time in ms<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-players">players</code><br>
+          Get a list of players in the turn order<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-votes">votes [message ID]</code><br>
+          Get the votes on a proposition<br>
+          To get the ID of a message, ensure "Developer Mode" is on in Discord's Advanced Settings, right-click the message, and select "Copy ID".<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-rand">rand [lower bound] [upper bound]</code><br>
+          Generate a random integer between the lower and upper bounds (inclusive).<br>
+          If no bounds are given, this command returns a random number between 0 (inclusive) and 1 (exclusive).<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-roll">roll [XdY]</code><br>
+          Roll X dice of size Y.<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-listrand">listrand [list]</code><br>
+          Randomise a given space-/comma-separated list.<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-randplayer">randplayer</code><br>
+          Return a random player.<br>
+          <br>
+        </li>
+        <li>
+          <code id="nomic-bot-commands-randplayerlist">randplayerlist</code><br>
+          Return the list of players in a random order.<br>
+          <br>
+        </li>
+      </ul>
+      
+      <br>
+      
+      <h2 id="propositions">Propositions</h2>
+      
+      <p>
+        All in-game propositions should be made in the <a href="https://discord.com/channels/701269326518419547/960036851022979092">#propositions channel</a> on the Nomic Discord guild.
+      </p>
+      
+      <h3 id="proposition-syntax">Syntax</h3>
+      
+      When making a proposition, it is always best to use a syntax the same as, or similar to, that of the other players.<br>
+      This is mostly for clarity and human-readability, though in the future the automation system will attempt to automatically parse your propositions, and if they use invalid syntax that may cause issues.<br>
+      If you don't like the syntax that other players are using, you can modify it (within reason) to suit your needs, but if you do, ensure that you remain consistent for the rest of the game.<br>
+      <br>
+      So with that said, it is preferable that you use recent propositions as a reference on how to format your proposition. If you need any more clarity, see below:<br>
+      <br>
+      The following is the <b>official template</b> you should use to format your propositions:
+      <br>
+      <div id="proposition-syntax-template" class="syntax-example-box">
+        **[Modification Type]**<br>
+        &gt; [Path] - [Title]<br>
+        [Content]<br>
+        <br>
+        **[Modification Type]**<br>
+        &gt; [Path] - [Title]<br>
+        [Content]<br>
+        <br>
+        [Repeat as necessary]
+      </div>
+      <br><br>
+      
+      [Modification Type] = The type of modification being made to the rule tree.<br>
+      Options include:
+      <ul>
+        <li>
+          <details>
+            <summary>Addition</summary>
+            <div class="detail-content">
+              Add a new rule to the rule tree.<br>
+              This requires a path and a title. Content is optional.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Content Edit</summary>
+            <div class="detail-content">
+              Replace the content of a rule.<br>
+              This requires a path and the complete new rule content.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Path Edit</summary>
+            <div class="detail-content">
+              Moves a rule on the rule tree (changes its path).<br>
+              This requires the original path and the new path.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Title Edit</summary>
+            <div class="detail-content">
+              Change the title of a rule.<br>
+              This requires a path and the new title of the rule.<br>
+              <br>
+              If using a title path, the recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Title Edit**<br>
+                &gt; [Path]<br>
+                [New Title]<br>
+              </div>
+              <br><br>
+              If using an ID path, the recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Title Edit**<br>
+                &gt; [Path] - [New Title]<br>
+              </div>
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Deletion</summary>
+            <div class="detail-content">
+              Delete a rule.<br>
+              This requires a path.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Content Appendication</summary>
+            <div class="detail-content">
+              Append more content to the end of a rule.<br>
+              This requires a path and the content to append.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Transmutation</summary>
+            <div class="detail-content">
+              Transmute a rule.<br>
+              This requires a path.
+            </div>
+            <br>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Miscellaneous Change</summary>
+            <div class="detail-content">
+              Make a change to the game which has no dedicated modification type.<br>
+              This requires a description of the modification to be made to the game.
+            </div>
+          </details>
+        </li>
+      </ul>
+      
+      <br>
+      
+      [Path] = The "path" (location on the rule tree) of the rule you are adding/modifying/removing.<br>
+      There are 2 accepted ways to format the path:
+      <ul>
+        <li>
+          <u>Title Path</u><br>
+          A string of rule titles going down the tree, joined by "&gt;".<br>
+          Example: <i>Propositions &gt; Paths &gt; Title Path</i>
+        </li>
+        <li>
+          <u>ID Path</u><br>
+          A string of rule "relative IDs" going down the tree.<br>
+          Example: 3.3.1
+        </li>
+      </ul>
+      Note: Every rule has a unique "Global ID" which is an integer assigned to it when it is accepted into the rule tree (which makes the global ID chronological).
+      This can also be used to refer to rules, though for the purposes of human readability it is recommended that you use a path.
+      
+      <br>
+      <br>
+      
+      [Title] = The title of the rule you are adding/modifying/removing.<br>
+      If you use a Title Path to refer to your rule, the title of the rule should be included as part of the path, so including the title separately is redundant and should be avoided to prevent confusion.<br>
+      If you use the ID Path, although not strictly necessary in modifications, it is highly recommended that you include the title of the rule. If it is an addition, a title is always necessary.
+      
+      <br>
+      <br>
+      
+      [Content] = The functional part of your rule.<br>
+      For most purposes, this is the only part of your proposition that <i>really</i> matters.<br>
+      The content of a rule needs to be easily understandable and entirely objective. Anything up to interpretation can (and will) cause loopholes or other issues, so ensure that you check your wording (and spelling) to prevent those issues from ever appearing.
+      
+      <br>
+      <br>
+      
+      The following is a portion of an exemplar proposition (<a href="https://discord.com/channels/701269326518419547/960036851022979092/982495874376683540">link</a>) made using all recommended syntax:
+      <br>
+      <div id="proposition-syntax-example" class="syntax-example-box">
+        
+        <b>Content Edit</b><br>
+        <span class="discord-quote-indent"></span> 4.2 - Suggestion Voting<br>
+        After the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached within 72 hours, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.<br>
+        <br>
+        <b>Addition</b><br>
+        <span class="discord-quote-indent"></span> 4.4 - Time Limit<br>
+        If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.<br>
+        <br>
+        <b>Title Edit</b><br>
+        <span class="discord-quote-indent"></span> 6 - Miscellaneous<br>
+        <br>
+        <b>Addition</b><br>
+        <span class="discord-quote-indent"></span> 6.2 - Periods<br>
+        Every week (commencing on Sunday 00:00 UTC) is divided into a 72 hour period, followed by a 96 hour period.<br>
+        <br>
+        <b>Title Edit</b><br>
+        <span class="discord-quote-indent"></span> 7.1.1 - Aquisition<br>
+        
+      </div>
+      
+      <br>
+      <br>
+      <br>
+      
+    </div>
+    
+    
+    <script>
+      const root = ".";
+    </script>
+    <script src="./main.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./themes.js"></script>
+    <script src="./search.js"></script>
+    <script src="./Rules/rule-class.js"></script>
+    
+  </body>
+</html>

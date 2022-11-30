@@ -1,0 +1,237 @@
+/**
+ * These CSS rules apply to all pages on the site
+ * These rules are for general elements and important variables
+ * 
+ * Anthony Wilson
+ */
+
+
+
+/*
+Z-Indexes:
+0   - body
+50  - #overflow-menu
+99  - #dimmer
+100 - #nav-bar
+*/
+
+
+
+/* ======== Declare Variables ======== */
+:root {
+  
+  /* Use the light color scheme by default */
+  --BG-Main: #FFFFFF;
+  --BG-Input: #F0F2F5;
+  --BG-Input-Hover: #EAEBEE;
+  --BG-Input-Focus: #E4E4E7;
+  --BG-Menu: #EAEBEE;
+  --BG-Submenu: #FFFFFF;
+  --BG-Vote-Tag: #F0F2F5;
+  --Text: #1F1F1F;
+  --Text-Link: #1A0DAB;
+  --Text-Alt: #303030;
+  --Text-Input: #1F1F1F;
+  --Text-Input-Hover: #1F1F1F;
+  --Text-Input-Focus: #1F1F1F;
+  --Symbol: #545F73;
+  --Border: #B8B8B8;
+  
+  
+  /* ==== Font Themes ==== */
+  
+  --Font-default: default;
+  --Font-serif: "Times New Roman", "serif";
+  --Font-sans-serif: "Arial", "Helvetica", "sans-serif";
+  --Font-comic-sans: "Comic Sans MS", "Comic Sans", "Chalkboard SE";
+  /*--Font-papyrus: "Papyrus";*/
+  
+  --Font: var(--Font-default);
+  --FontMono: monospace;
+  
+  
+  --FontSize: 20px;
+  --NavBtnFontSize: 24px;
+  
+}
+
+/* Change styles depending on the color theme */
+@media (prefers-color-scheme: dark) {
+  
+  :root {
+    /* Use the dark color scheme */
+    --BG-Main: #1E2228;
+    --BG-Input: #2D333B;
+    --BG-Input-Hover: #272D34;
+    --BG-Input-Focus: #22272E;
+    --BG-Menu: #272D34;
+    --BG-Submenu: #1E2228;
+    --BG-Vote-Tag: #2D333B;
+    --Text: #CDD9E5;
+    --Text-Link: #6997F4;
+    --Text-Alt: #ADBAC7;
+    --Text-Input: #CDD9E5;
+    --Text-Input-Hover: #CDD9E5;
+    --Text-Input-Focus: #CDD9E5;
+    --Symbol: #ADBAC7;
+    --Border: #434B55;
+  }
+  
+}
+
+
+
+/* ======== Global Styles ======== */
+
+* {
+  
+  /* This makes positions and dimensions unaffected by borders or padding */
+  box-sizing: border-box;
+  
+  /* Set fonts */
+  font-family: var(--Font);
+  
+  font-size: var(--FontSize);
+  
+  scroll-padding-top: 60px;
+  
+  /* Whenever any colors are changed, they should transition over 250ms */
+  transition: color 250ms, background 250ms;
+  
+}
+
+
+
+/* ========== Element Styles ========== */
+
+/* Body styles */
+body {
+  z-index: 0;
+  
+  position: absolute;
+  
+  /* Honestly this should be default */
+  width: 100%;
+  height: 100%;
+  /*min-width: 350px;*/
+  min-width: 750px;
+  
+  /* Unsetting the margin removes the small border around the edge of the page */
+  margin: unset;
+  padding: unset;
+  border: none;
+  
+  color: var(--Text);
+  background-color: var(--BG-Main);
+  
+}
+
+/* Override link styles */
+a {
+  color: var(--Text-Link);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+
+/* Mostly for re-coloring links */
+.inherit-color {
+  color: inherit;
+}
+
+
+.dim-text {
+  color: var(--Text-Alt);
+}
+
+
+h1 {
+  font-size: 30px;
+  /*font-family: var(--Font2);*/
+}
+
+h2 {
+  font-size: 24px;
+}
+.heading-link {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--Text);
+}
+
+
+table, th, td {
+  border: 1px solid var(--Border);
+  border-collapse: collapse;
+}
+
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+code {
+  font-family: var(--FontMono);
+  font-size: var(--FontSize);
+}
+
+
+summary {
+  cursor: pointer;
+}
+.detail-content {
+  padding-left: 0.5em;
+  border-left: 2px solid var(--Border);
+}
+
+
+.page-content-container {
+  
+  position: absolute;
+  
+  top: 50px;
+  
+  /*width: calc(100% - 1.5em);*/
+  
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+
+@media screen and (max-width: 900px) {
+  
+  .page-content-container {
+    top: 100px;
+  }
+  
+}
+
+
+.vote {
+  
+  display: inline;
+  
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  
+  background-color: var(--BG-Vote-Tag);
+  border-radius: 4px;
+  
+}
+
+.vote-icon {
+  
+  width: var(--FontSize);
+  height: var(--FontSize);
+  
+}
