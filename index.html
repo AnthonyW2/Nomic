@@ -100,36 +100,28 @@
     <!-- Page Content -->
     <div class="page-content-container">
       
-      <h1>Nomic Season 3</h1>
+      <h1>Blue Sheep Nomic Season 3</h1>
       
-      <br>
-      
-      <!--<p>
-        <a href="./docs.html" class="heading-link">Website</a>
+      <p>
+        Blue Sheep Nomic Season 3 ended at 10:35am on Friday the 25th of November 2022 AEDT (24 November 2022 23:35 UTC).<br>
+        One of the main themes of this season was a 2 dimensional "world" with hexagonal tiles, where players moved around and interacted with the tiles that generated in different ways.
+        Some notable features of this season include: mice; fishing; dungeons; and various resources to use or trade.<br>
         <br>
-        
-        This website serves two main purposes:
-        <ul>
-          <li>To be a repository of all information related to this season of Nomic.</li>
-          <li>To interact with the automation system (Nomic Bot).</li>
-        </ul>
-        
-        For information about how to use this site or the Discord bot, see the <a href="./docs.html">documentation</a> page.
-        
+        The winner of this season of BS Nomic is <b>Ryan</b>.
       </p>
       
-      <br>-->
+      <br>
       
       <p>
         <a href="./Propositions" class="heading-link">Propositions</a>
         <br>
         
-        Amount of propositions: <span id="proposition-count">NA</span><br>
-        Amount of active propositions: <span id="active-proposition-count">NA</span><br>
+        Number of propositions: <span id="proposition-count">NA</span><br>
+        <!-- Number of active propositions: <span id="active-proposition-count">NA</span><br>
         
         <h3>Active Propositions:</h3>
         <div id="active-propositions-container">NA</div>
-        
+        -->
       </p>
       
       <br>
@@ -150,8 +142,8 @@
         <a href="./Rules" class="heading-link">Rules</a>
         <br>
         
-        Amount of rules: <span id="rule-count">NA</span><br>
-        Largest global ID: <span id="largest-rule-id">NA</span><br>
+        Number of rules: <span id="rule-count">NA</span><br>
+        <!--Largest global ID: <span id="largest-rule-id">NA</span><br-->
         <!--Deleted rules: <span id="rule-count">NA</span><br> -->
         
       </p>
@@ -190,6 +182,10 @@
           playerLink.href = "./Players/?p="+p;
           playerLink.innerHTML = players[p].name;
           
+          if(players[p].winner){
+            playerLink.innerHTML += " 👑";
+          }
+          
           playerListElement.appendChild(playerLink);
           playerListElement.appendChild(document.createElement("br"));
           
@@ -215,7 +211,7 @@
         document.getElementById("proposition-count").innerHTML = propositions.length;
         var activePropContainer = document.getElementById("active-propositions-container");
         activePropContainer.innerHTML = "";
-        
+        /*
         var active = 0;
         
         for(var p = 0;p < propositions.length;p ++){
@@ -234,7 +230,7 @@
         }
         
         document.getElementById("active-proposition-count").innerHTML = active;
-        
+        */
       }
       
     </script>

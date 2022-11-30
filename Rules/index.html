@@ -128,13 +128,11 @@
           </select>
         </div>-->
         
-        <!--<div id="rule-display-control-archive-container" class="rule-display-control-subcontainer">
+        <div id="rule-display-control-archive-container" class="rule-display-control-subcontainer">
           <span>Archived Ruleset:</span>
-          <select>
-            <option value="0">0 - 2022-x-y</option>
-            <option value="1">1 - 2022-x-y</option>
+          <select id="rule-display-control-archive-selector" onchange="updateRuleTree()">
           </select>
-        </div>-->
+        </div>
         
         <!--<div id="rule-display-control-shown-elements-container" class="rule-display-control-subcontainer">
           <span>Show:</span>
@@ -176,6 +174,9 @@
       </table-->
       
       <br>
+      
+      <div id="ruleset-date">Ruleset date: Thu, 24 Nov 2022 23:35:34 GMT</div>
+      <div id="rule-count">Rule count: NA</div>
       
       <!-- Automatically populated by DisplayRules() in rules.js -->
       <div id="rule-tree">Loading rules...</div>

@@ -580,7 +580,7 @@ Z-Indexes:
   /*margin-left: 1em;*/
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: -4px;
+  margin-right: 1em;
   
   padding: 0.5em;
   
@@ -781,9 +781,15 @@ Z-Indexes:
 
 .map-hex {
   
-  --World-Meadow-Color: #009000;
+  --World-Meadow-Color: #25a000;
+  --World-Meadow-Color: #60c018;
   --World-Deceased-Dunes-Color: #ffd900;
   --World-Lake-Color: #0066ff;
+  --World-Forest-Color: #005e00;
+  --World-Perilous-Pass-Color: #868686;
+  --World-Swamp-Color: #658616;
+  
+  --World-Corruption-Color: #7500b9;
   
   fill: none;
   stroke: var(--World-Hex-Border-Color);
@@ -806,5 +812,51 @@ Z-Indexes:
 .map-hex-lake {
   
   fill: var(--World-Lake-Color);
+  
+}
+
+.map-hex-forest {
+  
+  fill: var(--World-Forest-Color);
+  
+}
+
+.map-hex-pass {
+  
+  fill: var(--World-Perilous-Pass-Color);
+  
+}
+
+.map-hex-swamp {
+  
+  fill: var(--World-Swamp-Color);
+  
+}
+
+.map-hex-corrupt-overlay {
+  
+  stroke: var(--World-Corruption-Color);
+  stroke-width: 5;
+  
+}
+
+.map-landmark {
+  
+  --World-Boardwalk-Color: #7e4700;
+  
+  pointer-events: none;
+  
+}
+
+.map-landmark-boardwalk {
+  
+  fill: var(--World-Boardwalk-Color);
+  
+}
+
+.map-player-icon {
+  
+  stroke: #000000;
+  stroke-width: 1;
   
 }

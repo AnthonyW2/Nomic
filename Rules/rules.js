@@ -10,9 +10,11 @@
 
 //Store a reference to the rules-list element
 var rulesListElement;
-///var ruleSummaryTableElement;
 
 var ruleDisplayStyle = "tree";
+
+var archiveIndex;
+var ruleset;
 
 body.addEventListener("ruleload", e => {
   
@@ -35,6 +37,15 @@ var DisplayRules = () => {
   var ruleTree = createRuleBranch(rules, true);
   
   rulesListElement.appendChild(ruleTree);
+  
+  
+  //Update the date of the tree
+  if(ruleset != undefined){
+    document.getElementById("ruleset-date").innerHTML = "Ruleset date: " + new Date(archiveIndex[parseInt(ruleset,10)].timestamp*1000).toUTCString();
+  }
+  
+  //Update the rule count
+  document.getElementById("rule-count").innerHTML = "Rule count: " + (rules.getSubruleCount()+1);
   
 }
 
@@ -114,3 +125,106 @@ var updateRuleDisplayStyle = () => {
   
 }
 
+
+//Load the rule (archive) index from Rules/Archive/index.json
+var LoadArchiveIndex = async () => {
+  
+  var xmlhttp = new XMLHttpRequest();
+  
+  xmlhttp.onreadystatechange = () => {
+    
+    //Test if the request is finished
+    if(xmlhttp.readyState == 4){
+      
+      //Test if the status resolved to 200
+      if(xmlhttp.status == 200){
+        
+        archiveIndex = JSON.parse(xmlhttp.responseText);
+        populateArchiveSelector();
+        
+      }else{
+        
+        console.error("Failed to retrieve rule index from index.json");
+        
+      }
+      
+    }
+    
+  }
+  
+  xmlhttp.open("GET", root+"/Rules/Archive/index.json?nocache="+(new Date()).getTime(), true);
+  xmlhttp.send();
+  
+}
+
+//Add all the archived rulesets to the selector element
+var populateArchiveSelector = () => {
+  
+  var archiveSelect = document.getElementById("rule-display-control-archive-selector");
+  
+  for(var a = 0;a < archiveIndex.length;a ++){
+    
+    var option = document.createElement("option");
+    
+    option.value = a.toString();
+    option.innerHTML = archiveIndex[a].summary;
+    
+    archiveSelect.appendChild(option);
+    
+  }
+  
+  archiveSelect.value = archiveIndex.length-1;
+  
+}
+
+//Change the rule tree to the corresponding archived version
+var updateRuleTree = () => {
+  
+  ruleset = document.getElementById("rule-display-control-archive-selector").value;
+  
+  //Get the reference to the rules-list element
+  rulesListElement = document.getElementById("rule-tree");
+  
+  rulesListElement.innerHTML = "";
+  
+  LoadArchivedRuleset();
+  
+}
+
+//Load the ruleset corresponding to the selected archive from Rules/Archive/rules.X.json
+var LoadArchivedRuleset = async () => {
+  
+  var xmlhttp = new XMLHttpRequest();
+  
+  xmlhttp.onreadystatechange = () => {
+    
+    //Test if the request is finished
+    if(xmlhttp.readyState == 4){
+      
+      //Test if the status resolved to 200
+      if(xmlhttp.status == 200){
+        
+        rawRules = JSON.parse(xmlhttp.responseText);
+        rules = new Rule(rawRules);
+        
+        //Trigger the custom ruleload event
+        body.dispatchEvent(ruleLoadEvent);
+        
+      }else{
+        
+        console.error("Failed to retrieve rules from rules.json");
+        
+      }
+      
+    }
+    
+  }
+  
+  xmlhttp.open("GET", root+"/Rules/Archive/rules."+ruleset+".json?nocache="+(new Date()).getTime(), true);
+  xmlhttp.send();
+  
+}
+
+
+//Load the rule archive index
+LoadArchiveIndex();

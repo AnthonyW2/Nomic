@@ -84,6 +84,9 @@ var displayPlayerInfo = (player) => {
   //Player name
   var playerName = document.createElement("summary");
   playerName.innerHTML = "<b>"+player.name+"</b>";
+  if(player.winner){
+    playerName.innerHTML += " 👑";
+  }
   playerDetails.appendChild(playerName);
   
   playerDetails.appendChild(document.createElement("br"));
@@ -217,6 +220,10 @@ var displayMice = (player) => {
       mouseStats.innerHTML += "<li>Wits: "+player.mice[m].statistics.wits+"</li>";
       mouseStats.innerHTML += "<li>Power: "+player.mice[m].statistics.power+"</li>";
       mouseStats.innerHTML += "<li>Curiosity: "+player.mice[m].statistics.curiosity+"</li>";
+      
+      if(player.mice[m].pure_stat != undefined){
+        mouse.innerHTML += "<i>Pure Statistic:</i> "+player.mice[m].pure_stat+"<br>";
+      }
       
       mouse.innerHTML += "<img src=\""+player.mice[m].image+"\" alt=\"\" width=\"400\">";
       

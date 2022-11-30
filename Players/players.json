@@ -11,9 +11,10 @@
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      -1,
-      1
+      -17,
+      18
     ],
+    "iconcolor": "#41a308",
     "moustaches": 1950,
     "inventory": [
       {
@@ -182,9 +183,10 @@
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      2,
-      -4
+      -3,
+      -1
     ],
+    "iconcolor": "#ee9bad",
     "moustaches": 0,
     "inventory": [
       {
@@ -259,9 +261,10 @@
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      -1,
-      1
+      -15,
+      21
     ],
+    "iconcolor": "#c4faf8",
     "moustaches": 300,
     "inventory": [
       {
@@ -366,9 +369,10 @@
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      -1,
-      2
+      -9,
+      9
     ],
+    "iconcolor": "#bf8dd0",
     "moustaches": 300,
     "inventory": [
       {
@@ -499,14 +503,16 @@
       true,
       true
     ],
+    "winner": true,
     "active": true,
     "playing": true,
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      0,
-      3
+      -6,
+      23
     ],
+    "iconcolor": "#0da6de",
     "moustaches": 2500,
     "inventory": [
       {
@@ -517,7 +523,7 @@
       {
         "type": "resource",
         "name": "Wood",
-        "amount": 106
+        "amount": 113
       },
       {
         "type": "resource",
@@ -527,12 +533,12 @@
       {
         "type": "resource",
         "name": "Steel",
-        "amount": 75
+        "amount": 76
       },
       {
         "type": "resource",
         "name": "Thread",
-        "amount": 33
+        "amount": 37
       },
       {
         "type": "resource",
@@ -557,7 +563,7 @@
       {
         "type": "resource",
         "name": "Gold",
-        "amount": 14
+        "amount": 15
       },
       {
         "type": "resource",
@@ -587,7 +593,7 @@
       {
         "type": "resource",
         "name": "Dungeon Key",
-        "amount": 5
+        "amount": 4
       },
       {
         "type": "resource",
@@ -936,12 +942,13 @@
         "blurb": "Uh I don't know. There's not much to say about this one. Canon fodder I guess. Hopefully it will catch some good fish before it dies. It's pretty generic I guess. And that's a good or bad thing, depending on your perspective. Anyway, I'm just rambling here, trying to extend the word count. If history is repeats, It will take me more time to type this up than this mouse's lifespan. Oh well, I've met my quota. Bye.",
         "image": "https://cdn.discordapp.com/attachments/980754575944458260/1000578701647433778/unknown.png",
         "statistics": {
-          "energy": 19,
+          "energy": 0,
           "mischief": 5,
           "wits": 1,
           "power": 15,
           "curiosity": 2
-        }
+        },
+        "pure_stat": "builder"
       },
       {
         "deceased": true,
@@ -1004,9 +1011,10 @@
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      -1,
-      -1
+      11,
+      1
     ],
+    "iconcolor": "#97dd26",
     "moustaches": 3000,
     "inventory": [
       {
@@ -1170,6 +1178,7 @@
       0,
       0
     ],
+    "iconcolor": "#f96995",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1189,6 +1198,7 @@
       0,
       0
     ],
+    "iconcolor": "#922853",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1208,6 +1218,7 @@
       0,
       0
     ],
+    "iconcolor": "#140c0c",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1227,6 +1238,7 @@
       0,
       0
     ],
+    "iconcolor": "#ff0000",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1246,6 +1258,7 @@
       0,
       0
     ],
+    "iconcolor": "#5d7f3e",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1265,6 +1278,7 @@
       0,
       0
     ],
+    "iconcolor": "#4fddf9",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1284,6 +1298,7 @@
       0,
       0
     ],
+    "iconcolor": "#00f2ff",
     "moustaches": 0,
     "inventory": [],
     "mice": []
@@ -1300,9 +1315,10 @@
     "jointimestamp": 1653098400,
     "quittimestamp": 0,
     "position": [
-      0,
-      0
+      -3,
+      9
     ],
+    "iconcolor": "#d2d2d2",
     "moustaches": 6200,
     "inventory": [
       {
@@ -1541,6 +1557,7 @@
       0,
       0
     ],
+    "iconcolor": "#ff781f",
     "moustaches": 0,
     "inventory": [],
     "mice": []
