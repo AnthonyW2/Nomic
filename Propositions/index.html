@@ -1,0 +1,177 @@
+<!--
+  Main propositions page
+  
+  Anthony Wilson
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Propositions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    
+    <link rel="stylesheet" type="text/css" href="../global-styles.css">
+    <link rel="stylesheet" type="text/css" href="../input-styles.css">
+    <link rel="stylesheet" type="text/css" href="../specific-styles.css">
+    
+    <meta name="author" content="Anthony Wilson">
+    <meta name="description" content="All propositions made in Nomic Season 3">
+    
+    <link rel="icon" type="image/png" href="../Resources/Favicon128x128.png" sizes="128x128">
+    
+    <meta property="og:title" content="Propositions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://AnthonyW2.github.io/Nomic/Propositions">
+    <meta property="og:image" content="../Resources/OGImage.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta property="og:description" content="All propositions made in Nomic Season 3">
+    
+  </head>
+  <body onload="StartJS(); FixSelectors()">
+    
+    <!-- Navigation Bar -->
+    <div id="nav-bar">
+      
+      <a id="nav-link-site-logo" class="nav-link" href="../">Nomic S3</a>
+      
+      <a id="nav-link-rules" class="nav-link" href="../Rules">Rules</a>
+      
+      <a id="nav-link-players" class="nav-link" href="../Players">Players</a>
+      
+      <a id="nav-link-docs" class="nav-link" href="../docs.html">
+        <span id="nav-link-docs-text-1">Documentation</span>
+        <span id="nav-link-docs-text-2">Docs</span>
+      </a>
+      
+      <a id="nav-link-propositions" class="nav-link" href="../Propositions">
+        <span id="nav-link-propositions-text-1">Propositions</span>
+        <span id="nav-link-propositions-text-2">Props</span>
+      </a>
+      
+      <a id="nav-link-world" class="nav-link" href="../World">World</a>
+      
+      <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
+      <div id="search-menu" hidden></div>
+      
+      <button id="nav-menu-btn" title="Open/Close the overflow menu" onclick="toggleOverflowMenu()" menuopen="false">
+        <div id="nav-menu-btn-icon">
+          <div id="nav-menu-btn-icon-bar-1" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-2" class="nav-menu-btn-icon-bar"></div>
+          <div id="nav-menu-btn-icon-bar-3" class="nav-menu-btn-icon-bar"></div>
+        </div>
+      </button>
+      
+    </div>
+    
+    
+    <!-- Overflow Menu -->
+    <div id="overflow-menu" hidden>
+      
+      <div id="settings-color-theme-title" class="overflow-menu-subtitle">Colour Theme:</div>
+      <select id="settings-color-theme-select" onchange="updateColorTheme()"></select>
+      
+      <div id="settings-font-theme-title" class="overflow-menu-subtitle">Font Theme:</div>
+      <select id="settings-font-theme-select" onchange="updateFontTheme()">
+        <option value="0">Default</option>
+        <option value="1">Serif</option>
+        <option value="2">Sans-Serif</option>
+        <option value="3">Comic Sans</option>
+      </select>
+      
+      <!--<a id="settings-link-leave-feedback" class="settings-menu-subtitle inherit-color" href="">Leave Feedback</a>-->
+      
+      <!--<a id="settings-link-docs" class="settings-menu-subtitle inherit-color" href="">Documentation</a>-->
+      
+      <!--<a id="settings-link-about" class="settings-menu-subtitle inherit-color" href="">About</a>-->
+      
+    </div>
+    
+    <div id="dimmer" onclick="toggleOverflowMenu()" hidden></div>
+    
+    
+    <!-- Page Content -->
+    <div class="page-content-container">
+      
+      <h1>Propositions</h1>
+      
+      <br>
+      
+      <details>
+        <summary><b>Proposition Parsing</b></summary>
+        <div class="detail-content">
+          Input:
+          <select id="parser-input-type-selector" onchange="UpdateInputType()">
+            <option value="existing">Existing</option>
+            <option value="custom">Custom</option>
+          </select>
+          <!--<br>-->
+          Output:
+          <select id="parser-output-type-selector" onchange="UpdateOutputType()">
+            <option value="json">JSON</option>
+            <option value="hr">Human Readable</option>
+          </select>
+          
+          <br><br>
+          
+          <div id="parser-existing-input">
+            Enter the proposition ID to parse:
+            <input type="text" id="proposition-parse-ID-input" placeholder="ID"></input>
+          </div>
+          <div id="parser-custom-input" hidden>
+            Enter the proposition text to parse:<br>
+            <textarea id="proposition-parse-text-input" placeholder="Input"></textarea>
+          </div>
+          
+          <br>
+          <button onclick="ParseProposition()">Parse</button>
+          <br><br>
+          
+          Main output:
+          <div id="parser-JSON-output">
+            <textarea id="proposition-parse-JSON-output" placeholder="Output"></textarea>
+          </div>
+          <div id="parser-HR-output" hidden></div>
+          <br>
+          
+          Extra data:<br>
+          Author:
+          <select id="parser-author-selector"></select><br>
+          Timestamp: <input type="text" id="parser-timestamp-input"></input>
+          
+          <br><br>
+          <button onclick="ApplyToTree()">Apply to Tree</button>
+          <br><br>
+          
+          <textarea id="proposition-parse-rule-output" placeholder="New rule tree"></textarea>
+          
+          <br>
+          
+        </div>
+      </details>
+      
+      <br>
+      
+      <div id="proposition-list"></div>
+      
+    </div>
+    
+    
+    <script>
+      const root = "..";
+    </script>
+    <script src="../main.js"></script>
+    <script src="../menu.js"></script>
+    <script src="../themes.js"></script>
+    <script src="../search.js"></script>
+    <script src="../Rules/rule-class.js"></script>
+    <script src="./propositions.js"></script>
+    <script src="./parse.js"></script>
+    
+  </body>
+</html>

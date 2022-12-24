@@ -654,6 +654,20 @@ Z-Indexes:
   
 }
 
+.player-icon-svg {
+  
+  margin-left: 0.4em;
+  margin-bottom: -2px;
+  
+}
+
+.player-icon-circle {
+  
+  stroke: var(--Border);
+  stroke-width: 1px;
+  
+}
+
 
 
 /* ======== Documentation ======== */

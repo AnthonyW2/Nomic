@@ -105,7 +105,7 @@
       <p>
         This is the website for a series of Nomic games which goes by the name "Blue Sheep Nomic", or "BS Nomic" for short.<br>
         <br>
-        We are currently waiting for Season 4 to begin, expected in early December.<br>
+        We are currently waiting for Season 4 to begin, expected...at some point soon(ish) (probably).<br>
         <br>
         This site is closely tied into a custom Discord bot - <a href="https://github.com/AnthonyW2/Nomic-Bot">Nomic Bot</a> - built specifically for the varying mechanics of BS Nomic.<br>
       </p>
@@ -151,7 +151,7 @@
         <br>
         
         Number of rules: <span id="rule-count">NA</span><br>
-        <!--Largest global ID: <span id="largest-rule-id">NA</span><br-->
+        Largest global ID: <span id="largest-rule-id">NA</span><br>
         <!--Deleted rules: <span id="rule-count">NA</span><br> -->
         
       </p>
@@ -173,8 +173,8 @@
       
       body.addEventListener("ruleload", e => {
         
-        document.getElementById("rule-count").innerHTML = rules.getSubruleCount()+1;
-        document.getElementById("largest-rule-id").innerHTML = rules.getLargestID();
+        document.getElementById("rule-count").innerHTML = rules.rules.length;
+        document.getElementById("largest-rule-id").innerHTML = rules.rules[rules.rules.length-1].id;
         
       });
       
@@ -193,6 +193,20 @@
           if(players[p].winner){
             playerLink.innerHTML += " 👑";
           }
+          
+          const iconRadius = 14;
+          var playerIconSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+          playerIconSVG.classList.add("player-icon-svg");
+          playerIconSVG.setAttribute("width",iconRadius+4);
+          playerIconSVG.setAttribute("height",iconRadius+4);
+          var playerIcon = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+          playerIcon.classList.add("player-icon-circle");
+          playerIcon.setAttribute("cx",iconRadius/2 + 2);
+          playerIcon.setAttribute("cy",iconRadius/2 + 2);
+          playerIcon.setAttribute("r",iconRadius/2);
+          playerIcon.setAttribute("fill",players[p].iconcolor);
+          playerIconSVG.appendChild(playerIcon);
+          playerLink.appendChild(playerIconSVG);
           
           playerListElement.appendChild(playerLink);
           playerListElement.appendChild(document.createElement("br"));

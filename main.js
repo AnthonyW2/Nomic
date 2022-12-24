@@ -17,7 +17,6 @@ var rawRules;
 var rules;
 var players;
 var propositions;
-var world;
 
 var largestRuleID;
 
@@ -25,10 +24,11 @@ var largestRuleID;
 const ruleLoadEvent = new Event("ruleload");
 const playerLoadEvent = new Event("playerload");
 const propositionLoadEvent = new Event("propositionload");
-const worldLoadEvent = new Event("worldload");
 
 
-//Run when the body finishes loading
+/**
+ * Run when the body finishes loading
+ */
 var StartJS = () => {
   
   console.log("Running startup scripts...");
@@ -36,7 +36,6 @@ var StartJS = () => {
   LoadRules();
   LoadPlayers();
   LoadPropositions();
-  LoadWorldData();
   
   populateColorThemeSelector();
   ApplyThemes();
@@ -44,7 +43,11 @@ var StartJS = () => {
 }
 
 
-//Run by StartJS() to load the rules from Rules/rules.json
+/**
+ * @async
+ * Called by StartJS() to load the rules from Rules/rules.json
+ * @emits ruleLoadEvent
+ */
 var LoadRules = async () => {
   
   var xmlhttp = new XMLHttpRequest();
@@ -57,8 +60,9 @@ var LoadRules = async () => {
       //Test if the status resolved to 200
       if(xmlhttp.status == 200){
         
-        rawRules = JSON.parse(xmlhttp.responseText);
-        rules = new Rule(rawRules);
+        //rawRules = JSON.parse(xmlhttp.responseText);
+        //rules = new Rule(rawRules);
+        rules = new RuleSet(xmlhttp.responseText);
         
         //Trigger the custom ruleload event
         body.dispatchEvent(ruleLoadEvent);
@@ -78,7 +82,11 @@ var LoadRules = async () => {
   
 }
 
-//Run by StartJS() to load the player list from Players/players.json
+/**
+ * @async
+ * Called by StartJS() to load the player list from Players/players.json
+ * @emits playerLoadEvent
+ */
 var LoadPlayers = async () => {
   
   var xmlhttp = new XMLHttpRequest();
@@ -111,7 +119,11 @@ var LoadPlayers = async () => {
   
 }
 
-//Run by StartJS() to load the proposition list from Propositions/propositions.json
+/**
+ * @async
+ * Called by StartJS() to load the proposition list from Propositions/propositions.json
+ * @emits propositionLoadEvent
+ */
 var LoadPropositions = async () => {
   
   var xmlhttp = new XMLHttpRequest();
@@ -144,48 +156,20 @@ var LoadPropositions = async () => {
   
 }
 
-//Run by StartJS() to load the world data from World/world.json
-var LoadWorldData = async () => {
-  
-  var xmlhttp = new XMLHttpRequest();
-  
-  xmlhttp.onreadystatechange = () => {
-    
-    //Test if the request is finished
-    if(xmlhttp.readyState == 4){
-      
-      //Test if the status resolved to 200
-      if(xmlhttp.status == 200){
-        
-        world = JSON.parse(xmlhttp.responseText);
-        
-        //Trigger the custom playerload event
-        body.dispatchEvent(worldLoadEvent);
-        
-      }else{
-        
-        console.error("Failed to retrieve world data from world.json");
-        
-      }
-      
-    }
-    
-  }
-  
-  xmlhttp.open("GET", root+"/World/world.json?nocache="+(new Date()).getTime(), true);
-  xmlhttp.send();
-  
-}
 
 
-
-//Generate a vote icon
-var VoteIcon = (type, amount) => {
+/**
+ * Generate a vote icon
+ * @param {String} type A string specifying the type of vote
+ * @param {int} number The number of votes of the specified type
+ * @returns {Element} A HTML element for the vote icon
+ */
+var VoteIcon = (type, number) => {
   
   var types = ["up","down","left","right"];
   var altStrings = ["UP","DOWN","LEFT","RIGHT"];
   
-  return "<div class=\"vote\"><img src=\"../Resources/"+types[type]+"vote.png\" alt=\""+altStrings[type]+"\" class=\"vote-icon\"> "+amount+"</div>";
+  return "<div class=\"vote\"><img src=\"../Resources/"+types[type]+"vote.png\" alt=\""+altStrings[type]+"\" class=\"vote-icon\"> "+number+"</div>";
   
 }
 
@@ -197,9 +181,7 @@ if(!String.prototype.replaceAll){
   console.warn("Browser does not support String.prototype.replaceAll(), defining function...");
   
   String.prototype.replaceAll = function(pattern, newSubstr){
-    
     return this.replace(new RegExp(pattern, "g"), newSubstr);
-    
   }
   
 }
