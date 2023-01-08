@@ -103,20 +103,5 @@
     "quittimestamp": 0,
     "iconcolor": "#000000",
     "inventory": []
-  },
-  {
-    "name": "chennyohh",
-    "PID": 7,
-    "pastseasons": [
-      false,
-      false,
-      false
-    ],
-    "active": true,
-    "playing": true,
-    "jointimestamp": 1672531200,
-    "quittimestamp": 0,
-    "iconcolor": "#000000",
-    "inventory": []
   }
 ]

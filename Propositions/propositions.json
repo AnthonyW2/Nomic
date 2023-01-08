@@ -1,14 +1,14 @@
 [
   {
     "author": 0,
-    "content": "",
+    "content": "This is a test proposition.",
     "proposedTimestamp": 1653105600,
-    "majorityTimestamp": 1653105600,
+    "majorityTimestamp": 1653109200,
     "messageID": "977420474000769074",
     "votes": [
-      [],
-      [],
-      [],
+      [1],
+      [2],
+      [3,4],
       []
     ],
     "majority": true,

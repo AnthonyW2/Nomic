@@ -91,34 +91,34 @@ var displayPlayerInfo = (player) => {
   
   playerDetails.appendChild(document.createElement("br"));
   
-  //Player wallet ("spacious pants hole")
-  var wallet = document.createElement("div");
-  wallet.innerHTML = "Spacious Pants Hole: " + player.moustaches + "<i><strike>m</strike></i>";
-  playerDetails.appendChild(wallet);
-  
-  playerDetails.appendChild(document.createElement("br"));
+  //Player wallet
+  //var wallet = document.createElement("div");
+  //wallet.innerHTML = "Spacious Pants Hole: " + player.moustaches + "<i><strike>m</strike></i>";
+  //playerDetails.appendChild(wallet);
+  //
+  //playerDetails.appendChild(document.createElement("br"));
   
   //Quality score & Action points
-  var score = document.createElement("div");
-  var totalQualityScore = 0;
-  for(var i = 0;i < player.inventory.length;i ++){
-    if(player.inventory[i].type == "medallion-fish"){
-      totalQualityScore += player.inventory[i].quality;
-    }
-  }
-  score.innerHTML = "Quality score: " + totalQualityScore;
-  playerDetails.appendChild(score);
-  
-  var actionPoints = document.createElement("div");
-  actionPoints.innerHTML = "Action points: " + (2 + Math.floor(Math.sqrt(totalQualityScore)));
-  playerDetails.appendChild(actionPoints);
-  
-  playerDetails.appendChild(document.createElement("br"));
+  //var score = document.createElement("div");
+  //var totalQualityScore = 0;
+  //for(var i = 0;i < player.inventory.length;i ++){
+  //  if(player.inventory[i].type == "medallion-fish"){
+  //    totalQualityScore += player.inventory[i].quality;
+  //  }
+  //}
+  //score.innerHTML = "Quality score: " + totalQualityScore;
+  //playerDetails.appendChild(score);
+  //
+  //var actionPoints = document.createElement("div");
+  //actionPoints.innerHTML = "Action points: " + (2 + Math.floor(Math.sqrt(totalQualityScore)));
+  //playerDetails.appendChild(actionPoints);
+  //
+  //playerDetails.appendChild(document.createElement("br"));
   
   //Inventory
   var inventory = document.createElement("details");
   inventory.innerHTML = "<summary>Inventory</summary>";
-  if(player.inventory.length > 0 || player.mice.length > 0){
+  if(player.inventory.length > 0){
     playerDetails.appendChild(inventory);
   }
   var inventoryContent = document.createElement("div");
@@ -126,11 +126,11 @@ var displayPlayerInfo = (player) => {
   inventoryContent.classList.add("detail-content");
   
   //Morbium (winning condition)
-  if(player.inventory.length > 0 && player.inventory[0].name == "Morbium"){
-    var morbium = document.createElement("div");
-    morbium.innerHTML = "&#x2022 " + player.inventory[0].amount + "× <b>Morbium</b><br>";
-    inventoryContent.appendChild(morbium);
-  }
+  //if(player.inventory.length > 0 && player.inventory[0].name == "Morbium"){
+  //  var morbium = document.createElement("div");
+  //  morbium.innerHTML = "&#x2022 " + player.inventory[0].amount + "× <b>Morbium</b><br>";
+  //  inventoryContent.appendChild(morbium);
+  //}
   
   //Items
   for(var i = 0;i < player.inventory.length;i ++){
@@ -144,33 +144,33 @@ var displayPlayerInfo = (player) => {
   }
   
   //Medallion Fish
-  var fish = document.createElement("details");
-  fish.innerHTML = "<summary>Medallion Fish</summary>";
-  var fishContent = document.createElement("div");
-  fish.appendChild(fishContent);
-  fishContent.classList.add("detail-content");
-  var hasMedFish = false;
-  
-  for(var i = 0;i < player.inventory.length;i ++){
-    
-    if(player.inventory[i].type == "medallion-fish"){
-      fishContent.innerHTML += "&#x2022 " + player.inventory[i].amount + "× " + player.inventory[i].name + "<br>";
-      hasMedFish = true;
-    }
-    
-  }
-  if(hasMedFish){
-    inventoryContent.appendChild(fish);
-  }
+  //var fish = document.createElement("details");
+  //fish.innerHTML = "<summary>Medallion Fish</summary>";
+  //var fishContent = document.createElement("div");
+  //fish.appendChild(fishContent);
+  //fishContent.classList.add("detail-content");
+  //var hasMedFish = false;
+  //
+  //for(var i = 0;i < player.inventory.length;i ++){
+  //  
+  //  if(player.inventory[i].type == "medallion-fish"){
+  //    fishContent.innerHTML += "&#x2022 " + player.inventory[i].amount + "× " + player.inventory[i].name + "<br>";
+  //    hasMedFish = true;
+  //  }
+  //  
+  //}
+  //if(hasMedFish){
+  //  inventoryContent.appendChild(fish);
+  //}
   
   //Mice
-  if(player.mice.length > 0){
-    
-    //inventoryContent.appendChild(document.createElement("br"));
-    
-    inventoryContent.appendChild(displayMice(player));
-    
-  }
+  //if(player.mice.length > 0){
+  //  
+  //  //inventoryContent.appendChild(document.createElement("br"));
+  //  
+  //  inventoryContent.appendChild(displayMice(player));
+  //  
+  //}
   
   
   
@@ -179,7 +179,7 @@ var displayPlayerInfo = (player) => {
   
   if(player.PID == selectedPlayer){
     inventory.open = true;
-    fish.open = true;
+    //fish.open = true;
   }
   
   return playerBlock;

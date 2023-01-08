@@ -2,7 +2,7 @@
 
 This is the website for a series of Nomic games which goes by the name "Blue Sheep Nomic", or "BS Nomic" for short.
 
-We are currently waiting for Season 4 to begin, expected in early December.
+We are currently waiting for Season 4 to begin.
 
 ## Past Seasons
 

@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../specific-styles.css">
     
     <meta name="author" content="Anthony Wilson">
-    <meta name="description" content="Rules for Nomic Season 3">
+    <meta name="description" content="Rules for Nomic Season 4">
     
     <link rel="icon" type="image/png" href="../Resources/Favicon128x128.png" sizes="128x128">
     
@@ -30,7 +30,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="256">
     <meta property="og:image:height" content="256">
-    <meta property="og:description" content="Rules for Nomic Season 3">
+    <meta property="og:description" content="Rules for Nomic Season 4">
     
   </head>
   <body onload="StartJS()">
@@ -38,7 +38,7 @@
     <!-- Navigation Bar -->
     <div id="nav-bar">
       
-      <a id="nav-link-site-logo" class="nav-link" href="../">Nomic S3</a>
+      <a id="nav-link-site-logo" class="nav-link" href="../">BS Nomic</a>
       
       <a id="nav-link-rules" class="nav-link" href="../Rules">Rules</a>
       
@@ -54,7 +54,7 @@
         <span id="nav-link-propositions-text-2">Props</span>
       </a>
       
-      <a id="nav-link-world" class="nav-link" href="../World">World</a>
+      <!--<a id="nav-link-world" class="nav-link" href="../World">World</a>-->
       
       <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
       <div id="search-menu" hidden></div>
@@ -114,9 +114,10 @@
         <div id="rule-display-control-style-container" class="rule-display-control-subcontainer">
           <span>Display Style:</span>
           <select id="rule-display-style-select" onchange="updateRuleDisplayStyle()">
+            <option value="list">List</option>
             <option value="tree">Tree</option>
-            <option value="boxes">Nested Boxes</option>
-            <option value="table">List</option>
+            <option value="table">Table</option>
+            <option value="boxes">Boxes</option>
           </select>
         </div>
         
@@ -175,11 +176,11 @@
       
       <br>
       
-      <div id="ruleset-date">Ruleset date: Thu, 24 Nov 2022 23:35:34 GMT</div>
+      <div id="ruleset-date">Ruleset date: NA</div>
       <div id="rule-count">Rule count: NA</div>
       
       <!-- Automatically populated by DisplayRules() in rules.js -->
-      <div id="rule-tree">Loading rules...</div>
+      <div id="rule-container">Loading rules...</div>
       
       <br>
       <br>

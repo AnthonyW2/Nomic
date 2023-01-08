@@ -21,18 +21,18 @@
     <link rel="stylesheet" type="text/css" href="./specific-styles.css">
     
     <meta name="author" content="Anthony Wilson">
-    <meta name="description" content="Website for Nomic Season 3">
+    <meta name="description" content="Website for Nomic Season 4">
     
     <link rel="icon" type="image/png" href="./Resources/Favicon128x128.png" sizes="128x128">
     
-    <meta property="og:title" content="Nomic Season 3">
+    <meta property="og:title" content="Nomic Season 4">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://AnthonyW2.github.io/Nomic">
     <meta property="og:image" content="./Resources/OGImage.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="256">
     <meta property="og:image:height" content="256">
-    <meta property="og:description" content="Website for Nomic Season 3">
+    <meta property="og:description" content="Website for Nomic Season 4">
     
   </head>
   <body onload="StartJS()">
@@ -100,12 +100,12 @@
     <!-- Page Content -->
     <div class="page-content-container">
       
-      <h1>Blue Sheep Nomic Season</h1>
+      <h1>Blue Sheep Nomic Season 4</h1>
       
       <p>
         This is the website for a series of Nomic games which goes by the name "Blue Sheep Nomic", or "BS Nomic" for short.<br>
         <br>
-        We are currently waiting for Season 4 to begin, expected...at some point soon(ish) (probably).<br>
+        We are currently waiting for Season 4 to begin.<br>
         <br>
         This site is closely tied into a custom Discord bot - <a href="https://github.com/AnthonyW2/Nomic-Bot">Nomic Bot</a> - built specifically for the varying mechanics of BS Nomic.<br>
       </p>
@@ -125,11 +125,10 @@
         <br>
         
         Number of propositions: <span id="proposition-count">NA</span><br>
-        <!-- Number of active propositions: <span id="active-proposition-count">NA</span><br>
+        Number of active propositions: <span id="active-proposition-count">NA</span><br>
         
         <h3>Active Propositions:</h3>
         <div id="active-propositions-container">NA</div>
-        -->
       </p>
       
       <br>
@@ -173,8 +172,8 @@
       
       body.addEventListener("ruleload", e => {
         
-        document.getElementById("rule-count").innerHTML = rules.rules.length;
-        document.getElementById("largest-rule-id").innerHTML = rules.rules[rules.rules.length-1].id;
+        document.getElementById("rule-count").innerHTML = rules.list.length;
+        document.getElementById("largest-rule-id").innerHTML = rules.list[rules.list.length-1].id;
         
       });
       
@@ -233,7 +232,7 @@
         document.getElementById("proposition-count").innerHTML = propositions.length;
         var activePropContainer = document.getElementById("active-propositions-container");
         activePropContainer.innerHTML = "";
-        /*
+        
         var active = 0;
         
         for(var p = 0;p < propositions.length;p ++){
@@ -252,7 +251,7 @@
         }
         
         document.getElementById("active-proposition-count").innerHTML = active;
-        */
+        
       }
       
     </script>

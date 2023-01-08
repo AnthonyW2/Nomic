@@ -11,7 +11,7 @@
 /**
  * The object which stores all rules and methods for working with rules
  * @param {string} json Raw rule data from rules.json
- * @property {array} rules List of Rule objects
+ * @property {array} list List of Rule objects
  */
 class RuleSet {
   
@@ -20,11 +20,11 @@ class RuleSet {
     
     var parsed = JSON.parse(json);
     
-    this.rules = [];
+    this.list = [];
     
     for(var r = 0;r < parsed.length;r ++){
       
-      this.rules.push(new Rule(parsed[r]));
+      this.list.push(new Rule(parsed[r]));
       
     }
     
@@ -38,9 +38,9 @@ class RuleSet {
     
     var output = [];
     
-    for(var r = 0;r < this.rules.length;r ++){
+    for(var r = 0;r < this.list.length;r ++){
       
-      output.push(this.rules[r].getRaw());
+      output.push(this.list[r].getRaw());
       
     }
     
@@ -57,10 +57,10 @@ class RuleSet {
     
     var output = [];
     
-    for(var r = 0;r < this.rules.length;r ++){
+    for(var r = 0;r < this.list.length;r ++){
       
-      if(this.rules[r].tags.includes(tag)){
-        output.push(this.rules[r]);
+      if(this.list[r].tags.includes(tag)){
+        output.push(this.list[r]);
       }
       
     }
@@ -81,25 +81,25 @@ class RuleSet {
     
     var output = [];
     
-    for(var r = 0;r < this.rules.length;r ++){
+    for(var r = 0;r < this.list.length;r ++){
       
       if(modified){
         
-        for(var m = 0;m < this.rules[r].history.length;m ++){
+        for(var m = 0;m < this.list[r].history.length;m ++){
           
-          if(this.rules[r].history[m].player == authorID){
-            output.push(this.rules[r]);
-            m = this.rules[r].history.length;
+          if(this.list[r].history[m].player == authorID){
+            output.push(this.list[r]);
+            m = this.list[r].history.length;
           }
           
         }
         
       }else{
         
-        if(created && this.rules[r].history[0].player == authorID){
-          output.push(this.rules[r]);
-        }else if(lastChanged && this.rules[r].history[this.rules[r].history.length-1].player == authorID){
-          output.push(this.rules[r]);
+        if(created && this.list[r].history[0].player == authorID){
+          output.push(this.list[r]);
+        }else if(lastChanged && this.list[r].history[this.list[r].history.length-1].player == authorID){
+          output.push(this.list[r]);
         }
         
       }
@@ -123,7 +123,7 @@ class RuleSet {
     
     var output = [];
     
-    for(var r = 0;r < this.rules.length;r ++){
+    for(var r = 0;r < this.list.length;r ++){
       
       
       

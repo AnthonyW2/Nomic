@@ -1,9 +1,9 @@
 [
   {
     "id": 0,
-    "summary": "Test 1",
-    "content": "Test 1 is a rule.",
-    "tags": [],
+    "summary": "Winning",
+    "content": "When a player or players win the game, the game is over.",
+    "tags": ["winning","core"],
     "history": [
       {
         "player": -1,
@@ -14,9 +14,308 @@
   },
   {
     "id": 1,
-    "summary": "Test 2",
-    "content": "Test 2 is a rule.",
-    "tags": [],
+    "summary": "Rules",
+    "content": "The game begins with a set of rules (the ruleset), which is modified by <a href=\"#rule-8\">propositions</a> made by the <a href=\"#rule-3\">players</a>.\nEvery rule has a unique ID number, a title, and content.\nThe ID and title of a rule are used to identify and differentiate it.\nThe content of a rule is what determines how this game of Nomic functions.",
+    "tags": ["core"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "summary": "End of Viable Play",
+    "content": "If the rules are changed so that further play is impossible, the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning (not overruled) a move appears equally legal and illegal, then a random player is the winner.\nThis rule takes precedence over every other rule determining the winner.",
+    "tags": ["core"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "summary": "Players",
+    "content": "A player is a person or group of people that must always abide by all the rules of Nomic currently in effect.",
+    "tags": ["core","players"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "summary": "ToS",
+    "content": "A player may not participate in Nomic in a way that violates rules, laws, terms of service, or other similar documents related to places or services being used to access Nomic.",
+    "tags": ["core"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "summary": "Entering",
+    "content": "A person or group of people, none of whom are currently acting as a player or a part of a player, may become a player at any time by posting so in #general.",
+    "tags": ["core","players"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "summary": "Exiting",
+    "content": "A player always has the option to forfeit the game. No penalty worse than losing, in the opinion of the player incurring the penalty, may be imposed.",
+    "tags": ["core","players"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "summary": "Player Groups",
+    "content": "In the case of a player consisting of multiple people, individual people may leave the player. A player only leaves the game when its last person does.",
+    "tags": ["core","players"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "summary": "Propositions",
+    "content": "A proposition consists of a set of modifications or additions to rules and/or the deletion of rules currently in effect, posted to #propositions.\nA player may submit a proposition at any time. When a proposition has been legally proposed it immediately becomes active.\nThe proponent must specify the type of modification(s) being made, for which the options are:\n- Addition\n- Content Edit\n- Title Edit\n- Deletion\n- Content Appendication\n- Miscellaneous Change",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "summary": "Rule Additions",
+    "content": "When propositing to add a rule, the proponent must supply the content for the rule, and optionally a title for the rule.\nIf a title is not supplied, another player may title it when the rule is added to the ruleset.",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "summary": "Rule Modifications",
+    "content": "When propositing to edit a rule, the proponent must identify the rule by its ID or title and describe the modification, according to the <a href=\"../docs.html#proposition-syntax\">syntax rules</a> which are dependant on the type of edit.",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "summary": "Proposition Time Limit",
+    "content": "If a proposition has not reached a majority 72 hours after it is made, voting ends and the majority is decided out of the current votes on the proposition, making it inactive.",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "summary": "Voting",
+    "content": "A proposition that is active may be voted on by all eligible voters.\nEach eligible voter - excluding the proponent - may cast exactly one vote per proposition, which they can cast as an up, down, or right vote.\nA rightvote is to abstain from voting. Should a rightvote majority occur, the outcome (up or down) with the second greatest votes occurs instead.\nAn eligible voter may change their vote at any time while the proposition is active.\nWhen a majority of votes is reached the proposition immediately becomes inactive.",
+    "tags": ["core","propositions","voting"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "summary": "Eligibility",
+    "content": "Every player is an eligible voter.",
+    "tags": ["core","propositions","voting"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "summary": "Adoption",
+    "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "summary": "Retroactivity",
+    "content": "A proposition has no retroactive effects, unless stated otherwise within the proposition.",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "summary": "Making Changes",
+    "content": "A proponent may make any changes to one of their active propositions while there are no votes cast on the proposition, and only spelling and grammar changes after votes have been cast.",
+    "tags": ["core","propositions"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "summary": "Conflicts",
+    "content": "If multiple rules conflict with one another, the rule edited most recently takes precedence. If at least one of the rules explicitly states that it defers to another rule or takes precedence over another rule, such provisions must supersede the chronological method of determining precedence. If multiple rules claim to take precedence over one another or to defer to one another, the chronological method must again govern.",
+    "tags": ["core"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "summary": "Player Activity",
+    "content": "A player is considered active if they have cast a vote on or proposed at least 1 of the 3 most recent propositions. Otherwise they are considered inactive.\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though this can be changed by casting a vote while the proposition is active.",
+    "tags": ["core","players"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "summary": "Clarification",
+    "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in propositions.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.\nSubrules of this rule are not affected by rules outside of this branch.",
+    "tags": ["core","clarification"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "summary": "Choosing a Judge",
+    "content": "The Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.",
+    "tags": ["core","clarification"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "summary": "Candidates",
+    "content": "At any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+    "tags": ["core","clarification"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "summary": "Suggestion Voting",
+    "content": "After the Judge has made a suggestion, all players may vote (up or down) on it.\nIf an upvote majority is reached within 72 hours, the suggestion is adopted.\nAfter 72 hours, the remaining votes are ignored. If there are more upvotes than downvotes the suggestion is adopted.\nOtherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.",
+    "tags": ["core","clarification"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "summary": "Judge Deferring",
+    "content": "If a player chosen to be the Judge does not wish to make a suggestion, a new Judge is chosen to make a suggestion.",
+    "tags": ["core","clarification"],
+    "history": [
+      {
+        "player": -1,
+        "proposition": -1,
+        "time": 1672531200
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "summary": "Time Limit",
+    "content": "If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.",
+    "tags": ["core","clarification"],
     "history": [
       {
         "player": -1,

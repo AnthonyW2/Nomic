@@ -19,18 +19,18 @@
     <link rel="stylesheet" type="text/css" href="./specific-styles.css">
     
     <meta name="author" content="Anthony Wilson">
-    <meta name="description" content="Documentation for Nomic Season 3">
+    <meta name="description" content="Documentation for Nomic Season 4">
     
     <link rel="icon" type="image/png" href="./Resources/Favicon128x128.png" sizes="128x128">
     
-    <meta property="og:title" content="Nomic Season 3">
+    <meta property="og:title" content="Nomic Season 4">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://AnthonyW2.github.io/Nomic/docs.html">
     <meta property="og:image" content="./Resources/OGImage.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="256">
     <meta property="og:image:height" content="256">
-    <meta property="og:description" content="Documentation for Nomic Season 3">
+    <meta property="og:description" content="Documentation for Nomic Season 4">
     
   </head>
   <body onload="StartJS()">
@@ -38,7 +38,7 @@
     <!-- Navigation Bar -->
     <div id="nav-bar">
       
-      <a id="nav-link-site-logo" class="nav-link" href="./">Nomic S3</a>
+      <a id="nav-link-site-logo" class="nav-link" href="./">BS Nomic</a>
       
       <a id="nav-link-rules" class="nav-link" href="./Rules">Rules</a>
       
@@ -54,7 +54,7 @@
         <span id="nav-link-propositions-text-2">Props</span>
       </a>
       
-      <a id="nav-link-world" class="nav-link" href="./World">World</a>
+      <!--a id="nav-link-world" class="nav-link" href="./World">World</a-->
       
       <input type="text" id="nav-search" placeholder="Search" title="Search for a location or staff member" onfocus="openSearchMenu()" onfocusout="closeSearchMenu()" onkeyup="updateSearch()">
       <div id="search-menu" hidden></div>
@@ -120,7 +120,7 @@
         
         This website serves two main purposes:
         <ul>
-          <li>To be a repository of all information related to this season of Nomic.</li>
+          <li>To be a repository of all information related to this season of BS Nomic.</li>
           <li>To interact with the automation system (Nomic Bot).</li>
         </ul>
         
@@ -131,33 +131,32 @@
       <h2 id="nomic-bot">Nomic Bot</h2>
       
       <p>
-        The Nomic Bot Discord bot is used to manage the NAS from the Nomic Discord server, or through Discord direct messages.
-        
+        The Nomic Bot Discord bot is used to manage the NAS (Nomic Automation System) from the Nomic Discord server, or through Discord direct messages.
       </p>
       
       <h3 id="nomic-bot-commands">Commands</h3>
       <p>
-        Nomic Bot commands can be executed through global/guild-specific slash commands, or by prepending the command prefix <code>$</code> to the command and space-delimited arguments.
+        Nomic Bot commands can be executed through global/guild-specific slash commands, or by prepending the command prefix <code>$</code> to the command with space-delimited arguments.
       </p>
       <ul id="nomic-bot-command-list">
         <li>
           <code id="nomic-bot-commands-help">help</code><br>
-          Send a list of commands to control Nomic Bot<br>
+          Send a list of commands that Nomic Bot supports.<br>
           <br>
         </li>
         <li>
           <code id="nomic-bot-commands-ping">ping</code><br>
-          Test to see if Nomic Bot is online, and get ping time in ms<br>
+          Test to see if Nomic Bot is online and get latency in ms.<br>
           <br>
         </li>
         <li>
           <code id="nomic-bot-commands-players">players</code><br>
-          Get a list of players in the turn order<br>
+          Get a list of players.<br>
           <br>
         </li>
         <li>
           <code id="nomic-bot-commands-votes">votes [message ID]</code><br>
-          Get the votes on a proposition<br>
+          Get the votes on a proposition.<br>
           To get the ID of a message, ensure "Developer Mode" is on in Discord's Advanced Settings, right-click the message, and select "Copy ID".<br>
           <br>
         </li>
@@ -194,41 +193,48 @@
       <h2 id="propositions">Propositions</h2>
       
       <p>
-        All in-game propositions should be made in the <a href="https://discord.com/channels/701269326518419547/960036851022979092">#propositions channel</a> on the Nomic Discord guild.
+        All in-game propositions should be made in the <a href="https://discord.com/channels/701269326518419547/1045491241728618496">#propositions channel</a> on the Nomic Discord guild.
       </p>
       
       <h3 id="proposition-syntax">Syntax</h3>
       
-      When making a proposition, it is always best to use a syntax the same as, or similar to, that of the other players.<br>
-      This is mostly for clarity and human-readability, though in the future the automation system will attempt to automatically parse your propositions, and if they use invalid syntax that may cause issues.<br>
-      If you don't like the syntax that other players are using, you can modify it (within reason) to suit your needs, but if you do, ensure that you remain consistent for the rest of the game.<br>
+      When making a proposition it is always best to use a syntax the same as, or similar to, that of the other players.<br>
+      This is partially for clarity and human-readability, though also because the automation system will attempt to automatically parse your propositions, and if they use invalid syntax that will cause issues.<br>
+      If you don't like the syntax that other players are using, you can modify it (within reason) to suit your needs, but if you do ensure that you remain consistent.<br>
       <br>
-      So with that said, it is preferable that you use recent propositions as a reference on how to format your proposition. If you need any more clarity, see below:<br>
+      With that said, it is preferable that you use recent propositions as a reference on how to format your proposition. If you need any more clarity, see below:<br>
       <br>
       The following is the <b>official template</b> you should use to format your propositions:
       <br>
       <div id="proposition-syntax-template" class="syntax-example-box">
         **[Modification Type]**<br>
-        &gt; [Path] - [Title]<br>
+        &gt; [Title/ID]<br>
         [Content]<br>
         <br>
         **[Modification Type]**<br>
-        &gt; [Path] - [Title]<br>
+        &gt; [Title/ID]<br>
         [Content]<br>
         <br>
         [Repeat as necessary]
       </div>
       <br><br>
       
-      [Modification Type] = The type of modification being made to the rule tree.<br>
+      [Modification Type] = The type of modification being made to the ruleset.<br>
       Options include:
       <ul>
         <li>
           <details>
             <summary>Addition</summary>
             <div class="detail-content">
-              Add a new rule to the rule tree.<br>
-              This requires a path and a title. Content is optional.
+              Add a new rule to the ruleset.<br>
+              This requires a title and content.<br>
+              <br>
+              The recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Addition**<br>
+                &gt; [Title]<br>
+                [Content]<br>
+              </div>
             </div>
             <br>
           </details>
@@ -238,17 +244,14 @@
             <summary>Content Edit</summary>
             <div class="detail-content">
               Replace the content of a rule.<br>
-              This requires a path and the complete new rule content.
-            </div>
-            <br>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Path Edit</summary>
-            <div class="detail-content">
-              Moves a rule on the rule tree (changes its path).<br>
-              This requires the original path and the new path.
+              This requires an ID or a title, and the complete new rule content.<br>
+              <br>
+              The recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Content Edit**<br>
+                &gt; [ID or Title]<br>
+                [New Content]<br>
+              </div>
             </div>
             <br>
           </details>
@@ -258,19 +261,13 @@
             <summary>Title Edit</summary>
             <div class="detail-content">
               Change the title of a rule.<br>
-              This requires a path and the new title of the rule.<br>
+              This requires an ID or old title, and the new title of the rule.<br>
               <br>
-              If using a title path, the recommended structure is:<br>
+              The recommended structure is:<br>
               <div class="syntax-example-box">
                 **Title Edit**<br>
-                &gt; [Path]<br>
+                &gt; [ID or Title]<br>
                 [New Title]<br>
-              </div>
-              <br><br>
-              If using an ID path, the recommended structure is:<br>
-              <div class="syntax-example-box">
-                **Title Edit**<br>
-                &gt; [Path] - [New Title]<br>
               </div>
             </div>
             <br>
@@ -281,7 +278,13 @@
             <summary>Deletion</summary>
             <div class="detail-content">
               Delete a rule.<br>
-              This requires a path.
+              This requires an ID or rule title.<br>
+              <br>
+              The recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Deletion**<br>
+                &gt; [ID or Title]<br>
+              </div>
             </div>
             <br>
           </details>
@@ -291,17 +294,14 @@
             <summary>Content Appendication</summary>
             <div class="detail-content">
               Append more content to the end of a rule.<br>
-              This requires a path and the content to append.
-            </div>
-            <br>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Transmutation</summary>
-            <div class="detail-content">
-              Transmute a rule.<br>
-              This requires a path.
+              This requires an ID or title and the content to append.<br>
+              <br>
+              The recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Content Appendication**<br>
+                &gt; [ID or Title]<br>
+                [Additional Content]<br>
+              </div>
             </div>
             <br>
           </details>
@@ -311,7 +311,13 @@
             <summary>Miscellaneous Change</summary>
             <div class="detail-content">
               Make a change to the game which has no dedicated modification type.<br>
-              This requires a description of the modification to be made to the game.
+              This requires a description of the modification to be made to the game.<br>
+              <br>
+              The recommended structure is:<br>
+              <div class="syntax-example-box">
+                **Misc Change**<br>
+                [Description of modification]<br>
+              </div>
             </div>
           </details>
         </li>
@@ -319,29 +325,16 @@
       
       <br>
       
-      [Path] = The "path" (location on the rule tree) of the rule you are adding/modifying/removing.<br>
-      There are 2 accepted ways to format the path:
-      <ul>
-        <li>
-          <u>Title Path</u><br>
-          A string of rule titles going down the tree, joined by "&gt;".<br>
-          Example: <i>Propositions &gt; Paths &gt; Title Path</i>
-        </li>
-        <li>
-          <u>ID Path</u><br>
-          A string of rule "relative IDs" going down the tree.<br>
-          Example: 3.3.1
-        </li>
-      </ul>
-      Note: Every rule has a unique "Global ID" which is an integer assigned to it when it is accepted into the rule tree (which makes the global ID chronological).
-      This can also be used to refer to rules, though for the purposes of human readability it is recommended that you use a path.
+      [ID] = The identification number of the rule you are adding/modifying/removing.<br>
+      Every rule has a unique global ID which is an integer assigned to it when it is accepted into the rule tree (which makes the global ID chronological).<br>
+      Note: When referring to a rule in a proposition it is advised to use both its ID and its Title.
       
       <br>
       <br>
       
       [Title] = The title of the rule you are adding/modifying/removing.<br>
-      If you use a Title Path to refer to your rule, the title of the rule should be included as part of the path, so including the title separately is redundant and should be avoided to prevent confusion.<br>
-      If you use the ID Path, although not strictly necessary in modifications, it is highly recommended that you include the title of the rule. If it is an addition, a title is always necessary.
+      The "title" of a rule could be more of a brief summary of the purpose of the rule.<br>
+      Note: When referring to a rule in a proposition it is advised to use both its ID and its Title.
       
       <br>
       <br>
@@ -353,28 +346,27 @@
       <br>
       <br>
       
-      The following is a portion of an exemplar proposition (<a href="https://discord.com/channels/701269326518419547/960036851022979092/982495874376683540">link</a>) made using all recommended syntax:
+      The following is an example proposition using all recommended syntax:
       <br>
       <div id="proposition-syntax-example" class="syntax-example-box">
         
+        <b>Addition</b><br>
+        <span class="discord-quote-indent"></span> First to 100 points wins<br>
+        The first player to reach at least 100 points wins the game.<br>
+        <br>
         <b>Content Edit</b><br>
-        <span class="discord-quote-indent"></span> 4.2 - Suggestion Voting<br>
-        After the Judge has made a suggestion, all players may vote (up or down) on it. If an upvote majority is reached within 72 hours, the suggestion is adopted. Otherwise, the Judge's suggestion is rejected and a new Judge is chosen to make a new suggestion.<br>
-        <br>
-        <b>Addition</b><br>
-        <span class="discord-quote-indent"></span> 4.4 - Time Limit<br>
-        If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.<br>
+        <span class="discord-quote-indent"></span> 5 - Entering<br>
+        A person or group of people, none of whom are currently acting as a player or a part of a player, may request to become a player at any time. All current players may vote (up or down) on allowing the player to join.<br>
+        When a play joins, they start with 0 points.<br>
         <br>
         <b>Title Edit</b><br>
-        <span class="discord-quote-indent"></span> 6 - Miscellaneous<br>
+        <span class="discord-quote-indent"></span> Passing<br>
+        Turn Passing<br>
         <br>
-        <b>Addition</b><br>
-        <span class="discord-quote-indent"></span> 6.2 - Periods<br>
-        Every week (commencing on Sunday 00:00 UTC) is divided into a 72 hour period, followed by a 96 hour period.<br>
-        <br>
-        <b>Title Edit</b><br>
-        <span class="discord-quote-indent"></span> 7.1.1 - Aquisition<br>
-        
+        <b>Content Edit</b><br>
+        <span class="discord-quote-indent"></span> 7 - Exiting<br>
+        A player always has the option of forfeiting the game. No penalty worse than losing, in the opinion of the player incurring the penalty, may be imposed.<br>
+        When a player exits, all the points they have are lost.<br>
       </div>
       
       <br>

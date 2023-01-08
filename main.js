@@ -60,8 +60,6 @@ var LoadRules = async () => {
       //Test if the status resolved to 200
       if(xmlhttp.status == 200){
         
-        //rawRules = JSON.parse(xmlhttp.responseText);
-        //rules = new Rule(rawRules);
         rules = new RuleSet(xmlhttp.responseText);
         
         //Trigger the custom ruleload event

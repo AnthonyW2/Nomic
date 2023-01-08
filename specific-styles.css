@@ -142,9 +142,11 @@ Z-Indexes:
   position: absolute;
   
   top: -2px;
-  width: calc(37.5% - 192px);
+  /*width: calc(37.5% - 192px);*/
+  width: calc(50% - 194px);
   
-  left: calc(62.5% + 146px);
+  /*left: calc(62.5% + 146px);*/
+  left: calc(50% + 148px);
   height: 50px;
   
 }
@@ -154,9 +156,11 @@ Z-Indexes:
   position: absolute;
   
   top: 46px;
-  width: calc(37.5% - 192px);
+  /*width: calc(37.5% - 192px);*/
+  width: calc(50% - 194px);
   
-  left: calc(62.5% + 146px);
+  /*left: calc(62.5% + 146px);*/
+  left: calc(50% + 148px);
   height: 50px;
   
   padding-top: 10px;
@@ -487,17 +491,27 @@ Z-Indexes:
 
 /* ======== Rules ======== */
 
+#rule-container {
+  width: 100%;
+}
+
 /*.rule {
   
 }*/
 
-.rule-style-boxes {
+#rule-list {
   
+  /*padding-left: 1em;*/
   margin-top: 1em;
   
-  padding: 1em;
+}
+
+.rule-style-list {
   
-  border: 1px solid var(--Border);
+  position: relative;
+  
+  margin-bottom: 1em;
+  /*margin-left: -1em;*/
   
 }
 
@@ -547,7 +561,51 @@ Z-Indexes:
   padding-top: 0.5em;
   margin-top: 0.5em;
   
-  border-top: 1px solid var(--Border);
+  /*border-top: 2px solid var(--Border);*/
+  
+}
+
+#rule-table {
+  
+  width: 100%;
+  
+}
+
+#rule-table tr, #rule-table th, #rule-table td {
+  
+  /*padding-left: 1em;
+  padding-right: 1em;*/
+  
+  border: 2px solid var(--Border);
+  border-collapse: collapse;
+  
+}
+#rule-table-ID-header {
+  width: 2.5em;
+}
+/*#rule-table-title-header {
+  width: 10em;
+}*/
+/*#rule-table-content-header {
+  width: 50%;
+}*/
+/*#rule-table-tag-header {
+  width: 3em;
+}*/
+#rule-table td {
+  
+  padding-left: 3px;
+  padding-right: 3px;
+  
+}
+
+.rule-style-boxes {
+  
+  margin-top: 1em;
+  
+  padding: 1em;
+  
+  border: 1px solid var(--Border);
   
 }
 
