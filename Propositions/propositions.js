@@ -60,7 +60,7 @@ var DisplayPropositions = () => {
     var majorityDate = new Date(propositions[p].majorityTimestamp*1000);
     var majorityDateStr = majorityDate.getFullYear() + "-" + majorityDate.getMonth().toString().padStart(2, "0") + "-" + majorityDate.getDate().toString().padStart(2, "0") + " " + majorityDate.getHours().toString().padStart(2, "0") + ":" + majorityDate.getMinutes().toString().padStart(2, "0") + ":" + majorityDate.getSeconds().toString().padStart(2, "0") + timezoneStr;
     var voteStr = "<img src=\"../Resources/upvote.png\" alt=\"UP\" class=\"vote-icon\"> "+propositions[p].votes[0].length;
-    var voteStr = VoteIcon(0,propositions[p].votes[0].length)+" "+VoteIcon(1,propositions[p].votes[1].length)+" "+VoteIcon(2,propositions[p].votes[2].length)+" "+VoteIcon(3,propositions[p].votes[3].length);
+    var voteStr = VoteIcon(0,propositions[p].votes[0].length)+" "+VoteIcon(1,propositions[p].votes[1].length)+" "+VoteIcon(2,propositions[p].votes[2].length);
     
     propositionElement.classList.add("proposition");
     propositionElement.id = "proposition-"+p;

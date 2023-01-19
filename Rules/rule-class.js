@@ -156,6 +156,11 @@ class Rule {
     this.content = obj.content;
     this.tags = obj.tags;
     
+    this.deleted = false;
+    if(obj.deleted){
+      this.deleted = true;
+    }
+    
     this.history = obj.history;
     
   }

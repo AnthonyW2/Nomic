@@ -236,7 +236,7 @@
   {
     "id": 18,
     "summary": "Player Activity",
-    "content": "A player is considered active if they have cast a vote on or proposed at least 1 of the 3 most recent propositions. Otherwise they are considered inactive.\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though this can be changed by casting a vote while the proposition is active.",
+    "content": "A player is classified as \"active\" if they have cast an up or down vote on or proposed at least 1 of the 4 most recent propositions. Otherwise, they are classified as inactive.\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though this can be changed by casting a vote while the proposition is active.",
     "tags": ["core","players"],
     "history": [
       {

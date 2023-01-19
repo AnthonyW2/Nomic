@@ -1,17 +1,43 @@
 [
   {
     "author": 0,
-    "content": "This is a test proposition.",
-    "proposedTimestamp": 1653105600,
-    "majorityTimestamp": 1653109200,
-    "messageID": "977420474000769074",
+    "content": "This is a test proposition, please vote on it.",
+    "proposedTimestamp": 1673747820,
+    "majorityTimestamp": 1673757505,
+    "messageID": "1064000219395653632",
     "votes": [
-      [1],
-      [2],
-      [3,4],
-      []
+      [
+        6
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        5
+      ]
     ],
     "majority": true,
-    "link": "https://discord.com/channels/701269326518419547/960036851022979092/977420474000769074"
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1064000219395653632"
+  },
+  {
+    "author": 0,
+    "content": "Test proposition 2: Please let this timeout. One player should upvote.",
+    "proposedTimestamp": 1674019482,
+    "majorityTimestamp": null,
+    "messageID": "1065139648600477696",
+    "votes": [
+      [
+        2
+      ],
+      [],
+      [
+        3,
+        5
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1065139648600477696"
   }
 ]

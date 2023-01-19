@@ -72,7 +72,9 @@ var DisplayRules = () => {
   
   //Add each rule to the list
   for(var r = 0;r < rules.list.length;r ++){
-    ruleList.appendChild(createRuleElement(rules.list[r]));
+    if(!rules.list[r].deleted){
+      ruleList.appendChild(createRuleElement(rules.list[r]));
+    }
   }
   
   ruleContainer.appendChild(ruleList);
