@@ -106,7 +106,7 @@
   {
     "id": 8,
     "summary": "Propositions",
-    "content": "A proposition consists of a set of modifications or additions to rules and/or the deletion of rules currently in effect, posted to #propositions.\nA player may submit a proposition at any time. When a proposition has been legally proposed it immediately becomes active.\nThe proponent must specify the type of modification(s) being made, for which the options are:\n- Addition\n- Content Edit\n- Title Edit\n- Deletion\n- Content Appendication\n- Miscellaneous Change",
+    "content": "A proposition consists of a set of modifications or additions to rules and/or the deletion of rules currently in effect, posted to #propositions as a single message.\nA player may submit a proposition at any time. When a proposition has been legally proposed it immediately becomes active.\nThe proponent must specify the type of modification(s) being made, for which the options are:\n- Addition\n- Content Edit\n- Title Edit\n- Deletion\n- Content Appendication\n- Miscellaneous Change",
     "tags": ["core","propositions"],
     "history": [
       {
@@ -184,7 +184,7 @@
   {
     "id": 14,
     "summary": "Adoption",
-    "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.\nVoting instantly ends when any majority is reached, making the proposition inactive.",
+    "content": "A proposition will be adopted if and when it receives majority of its possible votes as upvotes. The changes to the rules outlined in the proposition will then be applied.",
     "tags": ["core","propositions"],
     "history": [
       {
@@ -236,7 +236,7 @@
   {
     "id": 18,
     "summary": "Player Activity",
-    "content": "A player is classified as \"active\" if they have cast an up or down vote on or proposed at least 1 of the 4 most recent propositions. Otherwise, they are classified as inactive.\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though this can be changed by casting a vote while the proposition is active.",
+    "content": "A player is classified as active if they have cast an up or down vote on or proposed at least 1 of the 4 most recent propositions. Otherwise, they are classified as inactive.\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though this can be changed by casting a vote while the proposition is active.",
     "tags": ["core","players"],
     "history": [
       {
@@ -249,7 +249,7 @@
   {
     "id": 19,
     "summary": "Clarification",
-    "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in propositions.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.\nSubrules of this rule are not affected by rules outside of this branch.",
+    "content": "If a disagreement arises about how a rule and its effects are interpreted, the resolution is suggested by the Judge in propositions.\nThe Judge's suggestion message must contain the word \"Judge\" on the first line.",
     "tags": ["core","clarification"],
     "history": [
       {
@@ -261,8 +261,8 @@
   },
   {
     "id": 20,
-    "summary": "Choosing a Judge",
-    "content": "The Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.",
+    "summary": "Judge Candidates",
+    "content": "At any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
     "tags": ["core","clarification"],
     "history": [
       {
@@ -274,8 +274,8 @@
   },
   {
     "id": 21,
-    "summary": "Candidates",
-    "content": "At any time, players may choose to add or remove themselves to/from the list of Judge candidates.",
+    "summary": "Choosing a Judge",
+    "content": "The Judge is randomly selected from the list of Judge candidates.\nA player cannot be chosen as the Judge two times in a row.",
     "tags": ["core","clarification"],
     "history": [
       {
@@ -301,20 +301,7 @@
   {
     "id": 23,
     "summary": "Judge Deferring",
-    "content": "If a player chosen to be the Judge does not wish to make a suggestion, a new Judge is chosen to make a suggestion.",
-    "tags": ["core","clarification"],
-    "history": [
-      {
-        "player": -1,
-        "proposition": -1,
-        "time": 1672531200
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "summary": "Time Limit",
-    "content": "If a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.",
+    "content": "If a player chosen to be the Judge does not wish to make a suggestion, or a Judge does not suggest a fix to the issue within 48 hours, a new Judge is chosen to make a suggestion.",
     "tags": ["core","clarification"],
     "history": [
       {
