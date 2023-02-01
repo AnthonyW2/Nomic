@@ -56,9 +56,9 @@ var DisplayPropositions = () => {
     
     var proposedDate = new Date(propositions[p].proposedTimestamp*1000);
     var timezoneStr = " UTC" + (proposedDate.getTimezoneOffset() == 0 ? "" : (proposedDate.getTimezoneOffset() > 0 ? "-" : "+") + Math.abs(Math.floor(proposedDate.getTimezoneOffset()/60)).toString().padStart(2, "0") + ":" + (Math.abs(proposedDate.getTimezoneOffset())%60).toString().padStart(2, "0"));
-    var proposedDateStr = proposedDate.getFullYear() + "-" + proposedDate.getMonth().toString().padStart(2, "0") + "-" + proposedDate.getDate().toString().padStart(2, "0") + " " + proposedDate.getHours().toString().padStart(2, "0") + ":" + proposedDate.getMinutes().toString().padStart(2, "0") + ":" + proposedDate.getSeconds().toString().padStart(2, "0") + timezoneStr;
+    var proposedDateStr = proposedDate.getFullYear() + "-" + (proposedDate.getMonth()+1).toString().padStart(2, "0") + "-" + proposedDate.getDate().toString().padStart(2, "0") + " " + proposedDate.getHours().toString().padStart(2, "0") + ":" + proposedDate.getMinutes().toString().padStart(2, "0") + ":" + proposedDate.getSeconds().toString().padStart(2, "0") + timezoneStr;
     var majorityDate = new Date(propositions[p].majorityTimestamp*1000);
-    var majorityDateStr = majorityDate.getFullYear() + "-" + majorityDate.getMonth().toString().padStart(2, "0") + "-" + majorityDate.getDate().toString().padStart(2, "0") + " " + majorityDate.getHours().toString().padStart(2, "0") + ":" + majorityDate.getMinutes().toString().padStart(2, "0") + ":" + majorityDate.getSeconds().toString().padStart(2, "0") + timezoneStr;
+    var majorityDateStr = majorityDate.getFullYear() + "-" + (majorityDate.getMonth()+1).toString().padStart(2, "0") + "-" + majorityDate.getDate().toString().padStart(2, "0") + " " + majorityDate.getHours().toString().padStart(2, "0") + ":" + majorityDate.getMinutes().toString().padStart(2, "0") + ":" + majorityDate.getSeconds().toString().padStart(2, "0") + timezoneStr;
     var voteStr = "<img src=\"../Resources/upvote.png\" alt=\"UP\" class=\"vote-icon\"> "+propositions[p].votes[0].length;
     var voteStr = VoteIcon(0,propositions[p].votes[0].length)+" "+VoteIcon(1,propositions[p].votes[1].length)+" "+VoteIcon(2,propositions[p].votes[2].length);
     
