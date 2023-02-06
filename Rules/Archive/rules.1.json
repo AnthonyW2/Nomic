@@ -298,17 +298,5 @@
         "proposition": 1
       }
     ]
-  },
-  {
-    "id": 25,
-    "summary": "Humors",
-    "content": "Every player has 4 Humors: Red, Blue, Yellow and Black.\nEach of a player's Humors must be within 10 points of each other for the player to be considered \"Balanced\".\nIf each of a player's Humors is the exact same value, the player is considered to be in a state of \"Eukrasia\", unless all of the humors are at the value 0, then the player is considered to be in \"Unholy Eukrasia\".\nIf all of a player's humors are within 20 points of each other and do not fall into any of the above categories, they are \"Unbalanced\", and if they do not fall into any of the above categories, they are considered to be \"Fatally Unbalanced\".\nEach player starts with 29 + 1d4 of each Humor.",
-    "tags": ["humors"],
-    "history": [
-      {
-        "player": 2,
-        "proposition": 2
-      }
-    ]
   }
 ]

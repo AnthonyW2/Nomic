@@ -1,3 +1,58 @@
 [
-  
+  {
+    "author": 2,
+    "content": "**Addition**\n> Humors\nEvery player has 4 humors, Red, Blue, Yellow and Black. Each of a player’s Humors must be within 10 points of each other for the player to be considered “Balanced”. If each of a player’s Humors is the exact same value, the player is considered to be in a state of “Eukrasia”, unless all of the humors are at the value 0, then the player is considered to be in “Unholy Eukrasia”. If all of a player’s humors are within 20 points of each other, they are “Unbalanced”, and if they do not fall into any of the above categories, they are considered to be “Fatally Unbalanced”. Each player starts with 29 + 1d4 of each humor.",
+    "proposedTimestamp": 1675642921,
+    "majorityTimestamp": 1675644074,
+    "messageID": "1071948847036764200",
+    "votes": [
+      [],
+      [
+        1,
+        0,
+        4
+      ],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1071948847036764200"
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> Winning\nIf a player synthesises Gold while in Eukrasia, they win BS Nomic Season 4. If a player synthesises Gold with Lead as the base material and they are not in Unholy Eukrasia or considered Fatally Unbalanced, they win BS Nomic Season 4.",
+    "proposedTimestamp": 1675642936,
+    "majorityTimestamp": 1675643648,
+    "messageID": "1071948909800337511",
+    "votes": [
+      [
+        1,
+        0,
+        3,
+        4
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1071948909800337511"
+  },
+  {
+    "author": 2,
+    "content": "**Addition**\n> Humors\nEvery player has 4 humors, Red, Blue, Yellow and Black. Each of a player’s Humors must be within 10 points of each other for the player to be considered “Balanced”. If each of a player’s Humors is the exact same value, the player is considered to be in a state of “Eukrasia”, unless all of the humors are at the value 0, then the player is considered to be in “Unholy Eukrasia”. If all of a player’s humors are within 20 points of each other and do not fall into any of the above categories, they are “Unbalanced”, and if they do not fall into any of the above categories, they are considered to be “Fatally Unbalanced”. Each player starts with 29 + 1d4 of each humor.",
+    "proposedTimestamp": 1675643250,
+    "majorityTimestamp": 1675660337,
+    "messageID": "1071950227927482418",
+    "votes": [
+      [
+        1,
+        3,
+        4,
+        5
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1071950227927482418"
+  }
 ]

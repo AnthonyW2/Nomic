@@ -1,8 +1,20 @@
 [
   {
     "ruleset": 0,
-    "timestamp": 1672531200,
+    "timestamp": 1675642921,
     "proposition": null,
     "summary": "Initial"
+  },
+  {
+    "ruleset": 1,
+    "timestamp": 1675643648,
+    "proposition": 1,
+    "summary": "Lime introduced the 'synthesis of Gold while in Eukrasia' as the win condition"
+  },
+  {
+    "ruleset": 2,
+    "timestamp": 1675660337,
+    "proposition": 2,
+    "summary": "Lime introduced the 4 humors"
   }
 ]

@@ -12,7 +12,13 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#41a308",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 31,
+      "blue": 32,
+      "yellow": 30,
+      "black": 33
+    }
   },
   {
     "name": "Xeya",
@@ -27,7 +33,13 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#ee9bad",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 31,
+      "blue": 32,
+      "yellow": 30,
+      "black": 33
+    }
   },
   {
     "name": "lime",
@@ -42,7 +54,13 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#c4faf8",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 30,
+      "blue": 33,
+      "yellow": 32,
+      "black": 30
+    }
   },
   {
     "name": "Fathom",
@@ -57,7 +75,13 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#bf8dd0",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 31,
+      "blue": 31,
+      "yellow": 32,
+      "black": 31
+    }
   },
   {
     "name": "Ryan",
@@ -72,7 +96,13 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#5d3fd3",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 31,
+      "blue": 33,
+      "yellow": 31,
+      "black": 31
+    }
   },
   {
     "name": "flora246",
@@ -87,7 +117,13 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#d2d2d2",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 33,
+      "blue": 31,
+      "yellow": 31,
+      "black": 30
+    }
   },
   {
     "name": "will.b393",
@@ -97,11 +133,17 @@
       false,
       false
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#000000",
-    "inventory": []
+    "inventory": [],
+    "humors": {
+      "red": 30,
+      "blue": 31,
+      "yellow": 31,
+      "black": 31
+    }
   }
 ]

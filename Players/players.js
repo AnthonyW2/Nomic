@@ -115,6 +115,15 @@ var displayPlayerInfo = (player) => {
   //
   //playerDetails.appendChild(document.createElement("br"));
   
+  //Humors
+  var humors = document.createElement("details");
+  humors.innerHTML = "<summary>Humors</summary>";
+  humors.innerHTML += "&#x2022 Red: " + player.humors.red + "<br>";
+  humors.innerHTML += "&#x2022 Blue: " + player.humors.blue + "<br>";
+  humors.innerHTML += "&#x2022 Yellow: " + player.humors.yellow + "<br>";
+  humors.innerHTML += "&#x2022 Black: " + player.humors.black + "<br>";
+  playerDetails.appendChild(humors);
+  
   //Inventory
   var inventory = document.createElement("details");
   inventory.innerHTML = "<summary>Inventory</summary>";
@@ -124,13 +133,6 @@ var displayPlayerInfo = (player) => {
   var inventoryContent = document.createElement("div");
   inventory.appendChild(inventoryContent);
   inventoryContent.classList.add("detail-content");
-  
-  //Morbium (winning condition)
-  //if(player.inventory.length > 0 && player.inventory[0].name == "Morbium"){
-  //  var morbium = document.createElement("div");
-  //  morbium.innerHTML = "&#x2022 " + player.inventory[0].amount + "× <b>Morbium</b><br>";
-  //  inventoryContent.appendChild(morbium);
-  //}
   
   //Items
   for(var i = 0;i < player.inventory.length;i ++){
