@@ -164,8 +164,8 @@ var LoadPropositions = async () => {
  */
 var VoteIcon = (type, number) => {
   
-  var types = ["up","down","left","right"];
-  var altStrings = ["UP","DOWN","LEFT","RIGHT"];
+  var types = ["up","down","right"];
+  var altStrings = ["UP","DOWN","RIGHT"];
   
   return "<div class=\"vote\"><img src=\"../Resources/"+types[type]+"vote.png\" alt=\""+altStrings[type]+"\" class=\"vote-icon\"> "+number+"</div>";
   

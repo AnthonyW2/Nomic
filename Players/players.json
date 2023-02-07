@@ -70,7 +70,7 @@
       true,
       true
     ],
-    "active": true,
+    "active": false,
     "playing": true,
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
@@ -133,7 +133,7 @@
       false,
       false
     ],
-    "active": false,
+    "active": true,
     "playing": true,
     "jointimestamp": 1672531200,
     "quittimestamp": 0,

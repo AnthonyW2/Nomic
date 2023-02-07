@@ -54,5 +54,166 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1071950227927482418"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Oscillations__\nA singular Oscillation is a week (168 hours), commencing every Sunday at 00:00:00 UTC (<t:1675555200:T>). When this proposition is added it is deemed to be part-way through the first oscillation.",
+    "proposedTimestamp": 1675723183,
+    "majorityTimestamp": 1675766386,
+    "messageID": "1072285489069051985",
+    "votes": [
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        3
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072285489069051985"
+  },
+  {
+    "author": 4,
+    "content": "**Content Appendication:** __(#25) Humors__\nHumor points are always integers and are rounded to the nearest integer if a rule would provide for the possibility of real, non-integer values.",
+    "proposedTimestamp": 1675726402,
+    "majorityTimestamp": 1675752402,
+    "messageID": "1072298993645797447",
+    "votes": [
+      [
+        1,
+        2
+      ],
+      [],
+      [
+        0,
+        6,
+        5
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072298993645797447"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Definitely Not Magic__\nAny active player may become or un-become a Plague Doctor candidate at any time (either by stating so in the Blue Sheep Nomic server or reacting to a/the designated message).\nAt the start of every Oscillation (or slightly in advance), A random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. Whilst there is only 1 Plague Doctor candidate, they are always the Plague Doctor. Should there be 0, spells cannot be submitted.\n\nIf a Plague Doctor candidate becomes inactive they are no longer a Plague Doctor candidate.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resulved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nThe Plague Doctor cannot perform spells nor be targeted by spells in the Oscillation that they are the Plague Doctor.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation.\n\nAfter completing the updated humors, Spell Priority and effects of all players, the Plague Doctor must send this information to the Blue Sheep Nomic Server.\n\n**Addition:** __Spell Priority__\nEach player starts with a Spell Priority of 0. Spell Priority is always an integer and is rounded to the nearest integer if a rule makes it not.\nThe order spells (within spell slots) are performed in is determined by Spell Priority, with the player's spells being performed from highest to lowest Spell Priority. If multiple players have the same Spell Priority, the order between these players is random.",
+    "proposedTimestamp": 1675746442,
+    "majorityTimestamp": 1675789644,
+    "messageID": "1072383044972990475",
+    "votes": [
+      [
+        6,
+        2
+      ],
+      [],
+      [
+        1,
+        5,
+        0,
+        3
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072383044972990475"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Submitting Spells__\nEach player can DM the Plague Doctor up to 3 spells in any of the 3 'spell slots'. Any spell slot that is not filled with a spell at the end of the Oscillation is replaced by the 'Wait' spell. The spells in the slots are resolved sequentially with all slot 1 spells being performed before slot 2, and finally, 3.\n\n**Addition:** __Spells__\nSpells are divided into Basic spells and Humoral spells. Humoral spells are further divided into lower (1), mid (2) and higher (3) spells respectively. A spell can be categorised as multiple or none of these classifications.\n\n**Addition:** __Basic Spells__\n**Imbue:**\nCost: 5 points (any singular humor).\nThe caster chooses a humor then selects a player. This player then gains 7 points in the selected humor.\n\n**Purge:**\nCost: 5 points (any singular humor).\nThe caster chooses a humor then selects a player. This player then loses 7 points in the selected humor.\n\n**Transfuse:**\nCost: 0 points (any singular humor).\nSelect a player and 2 humors. Deduct 1d10 from the first humor and add the same value to the second humor.\n\n**Concentrate:**\nCost: 0 points.\nSelect a player and a humor. Add 1d10 points.\n\n**Dilution:**\nCost: 0 points.\nSelect a player and a humor. Subtract 1d10 points.\n\n**Cure:**\nCost: 7 points (any singular humor).\nThe caster selects a player. This player has all effects removed from them. If you target yourself increase your Spell Priority by 2.\n\n**Quick Attack:**\nCost: 15 points (any singular humor).\nThis spell is performed as if you had +100 Spell Priority. Select a Basic Spell and perform it's action.\n\n**Wait:**\nCost: 0 points.\nThis spell does nothing.",
+    "proposedTimestamp": 1675746464,
+    "majorityTimestamp": 1675759124,
+    "messageID": "1072383138132668467",
+    "votes": [
+      [
+        1,
+        6,
+        5,
+        2
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072383138132668467"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:**\n> If the Rule titled \"__Basic Spells__\" exists, remove \"a player and\" from under \"**Transfuse**\", remove \"a player and\" from under \"**Concentrate**\" and remove \"a player and\" from under \"**Dilution**\".",
+    "proposedTimestamp": 1675751592,
+    "majorityTimestamp": 1675759127,
+    "messageID": "1072404644665495552",
+    "votes": [
+      [
+        1,
+        6,
+        5,
+        2
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072404644665495552"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:**\n> In the Rule titled \"__Basic Spells__\", replace \"0 points\" from under \"**Concentrate**\" and \"**Dilution**\" with \"3 points (any singular humor).\". Remove \"(any singular humor)\" from under \"**Transfuse**\".",
+    "proposedTimestamp": 1675761497,
+    "majorityTimestamp": 1675804699,
+    "messageID": "1072446192811773952",
+    "votes": [
+      [
+        6
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072446192811773952"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:**\n> In the Rule titled \"__Basic Spells__\", replace \"0 points\" from under \"**Concentrate**\" and \"**Dilution**\" with \"2 points (any singular humor).\". Remove \"(any singular humor)\" from under \"**Transfuse**\".",
+    "proposedTimestamp": 1675804762,
+    "majorityTimestamp": null,
+    "messageID": "1072627657327530067",
+    "votes": [
+      [],
+      [
+        2
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072627657327530067"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit:** __Definitely Not Magic__\nAny player may become or un-become a Plague Doctor candidate at any time (by stating so in the Blue Sheep Nomic server).\n\nAt the start of every Oscillation (or slightly in advance), A random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. Whilst there is only 1 Plague Doctor candidate, they are always the Plague Doctor. Should there be 0, spells cannot be submitted.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resolved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nThe Plague Doctor cannot perform spells in the Oscillation that they are the Plague Doctor.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation. This (failed) Plague Doctor is removed as a Plague Doctor candidate.\n\nAfter updating the Humors, updating Spell Priority, and applying Effects to all players, the Plague Doctor must send this information to the Blue Sheep Nomic server.",
+    "proposedTimestamp": 1675809093,
+    "majorityTimestamp": null,
+    "messageID": "1072645821725687959",
+    "votes": [
+      [
+        0
+      ],
+      [],
+      []
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072645821725687959"
   }
 ]

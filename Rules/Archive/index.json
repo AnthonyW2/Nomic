@@ -16,5 +16,35 @@
     "timestamp": 1675660337,
     "proposition": 2,
     "summary": "Lime introduced the 4 humors"
+  },
+  {
+    "ruleset": 3,
+    "timestamp": 1675752402,
+    "proposition": 4,
+    "summary": "Ryan edited the Humors rule"
+  },
+  {
+    "ruleset": 4,
+    "timestamp": 1675759124,
+    "proposition": 6,
+    "summary": "Ryan introduced spells"
+  },
+  {
+    "ruleset": 5,
+    "timestamp": 1675759127,
+    "proposition": 7,
+    "summary": "Ryan modified the Basic Spells rule"
+  },
+  {
+    "ruleset": 6,
+    "timestamp": 1675766386,
+    "proposition": 3,
+    "summary": "Ryan introduced Oscillations"
+  },
+  {
+    "ruleset": 7,
+    "timestamp": 1675789644,
+    "proposition": 5,
+    "summary": "Ryan introduced the Plague Doctor"
   }
 ]
