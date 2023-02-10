@@ -12,6 +12,8 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#41a308",
+    "judgecandidate": true,
+    "pdcandidate": false,
     "inventory": [],
     "humors": {
       "red": 31,
@@ -33,6 +35,8 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#ee9bad",
+    "judgecandidate": false,
+    "pdcandidate": false,
     "inventory": [],
     "humors": {
       "red": 31,
@@ -54,6 +58,8 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#c4faf8",
+    "judgecandidate": false,
+    "pdcandidate": false,
     "inventory": [],
     "humors": {
       "red": 30,
@@ -70,11 +76,13 @@
       true,
       true
     ],
-    "active": false,
+    "active": true,
     "playing": true,
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#bf8dd0",
+    "judgecandidate": false,
+    "pdcandidate": false,
     "inventory": [],
     "humors": {
       "red": 31,
@@ -96,6 +104,9 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#5d3fd3",
+    "judgecandidate": true,
+    "pdcandidate": false,
+    "plaguedoctor": true,
     "inventory": [],
     "humors": {
       "red": 31,
@@ -117,6 +128,8 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#d2d2d2",
+    "judgecandidate": false,
+    "pdcandidate": false,
     "inventory": [],
     "humors": {
       "red": 33,
@@ -138,6 +151,8 @@
     "jointimestamp": 1672531200,
     "quittimestamp": 0,
     "iconcolor": "#000000",
+    "judgecandidate": false,
+    "pdcandidate": false,
     "inventory": [],
     "humors": {
       "red": 30,

@@ -46,5 +46,23 @@
     "timestamp": 1675789644,
     "proposition": 5,
     "summary": "Ryan introduced the Plague Doctor"
+  },
+  {
+    "ruleset": 8,
+    "timestamp": 1675894329,
+    "proposition": 10,
+    "summary": "Ryan edited the Definitely Not Magic rule"
+  },
+  {
+    "ruleset": 9,
+    "timestamp": 1675937978,
+    "proposition": 11,
+    "summary": "Anthony disabled player activity"
+  },
+  {
+    "ruleset": 10,
+    "timestamp": 1675980494,
+    "proposition": 12,
+    "summary": "Ryan edited the Definitely Not Magic rule again"
   }
 ]

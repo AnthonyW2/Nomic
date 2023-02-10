@@ -185,35 +185,83 @@
     "author": 4,
     "content": "**Miscellaneous Change:**\n> In the Rule titled \"__Basic Spells__\", replace \"0 points\" from under \"**Concentrate**\" and \"**Dilution**\" with \"2 points (any singular humor).\". Remove \"(any singular humor)\" from under \"**Transfuse**\".",
     "proposedTimestamp": 1675804762,
-    "majorityTimestamp": null,
+    "majorityTimestamp": 1675894861,
     "messageID": "1072627657327530067",
     "votes": [
-      [],
+      [
+        3
+      ],
       [
         2
       ],
       [
         0,
-        6
+        6,
+        5,
+        1
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072627657327530067"
   },
   {
     "author": 4,
     "content": "**Content Edit:** __Definitely Not Magic__\nAny player may become or un-become a Plague Doctor candidate at any time (by stating so in the Blue Sheep Nomic server).\n\nAt the start of every Oscillation (or slightly in advance), A random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. Whilst there is only 1 Plague Doctor candidate, they are always the Plague Doctor. Should there be 0, spells cannot be submitted.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resolved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nThe Plague Doctor cannot perform spells in the Oscillation that they are the Plague Doctor.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation. This (failed) Plague Doctor is removed as a Plague Doctor candidate.\n\nAfter updating the Humors, updating Spell Priority, and applying Effects to all players, the Plague Doctor must send this information to the Blue Sheep Nomic server.",
     "proposedTimestamp": 1675809093,
-    "majorityTimestamp": null,
+    "majorityTimestamp": 1675894329,
     "messageID": "1072645821725687959",
     "votes": [
       [
-        0
+        0,
+        3,
+        5
+      ],
+      [],
+      [
+        2
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072645821725687959"
+  },
+  {
+    "author": 0,
+    "content": "**Content Edit**\n> #18 - Player Activity\nAll players are always active.",
+    "proposedTimestamp": 1675894775,
+    "majorityTimestamp": 1675937978,
+    "messageID": "1073005198433337396",
+    "votes": [
+      [
+        3,
+        2
+      ],
+      [],
+      [
+        6,
+        4,
+        1
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1073005198433337396"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:** __Definitely Not Magic__\n> Replace:\n\"At the start of every Oscillation (or slightly in advance), A random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. Whilst there is only 1 Plague Doctor candidate, they are always the Plague Doctor. Should there be 0, spells cannot be submitted.\"\nwith:\n\"During every Oscillation (or slightly in advance), A random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. If there are no Plague Doctor candidates there is no Plague Doctor for that Oscillation unless someone becomes a Plague Doctor candidate. In which case, they are the Plague Doctor. Whilst there is only 1 Plague Doctor candidate, they are the Plague Doctor each Oscillation. No spells can be submitted without a Plague Doctor.\"",
+    "proposedTimestamp": 1675937839,
+    "majorityTimestamp": 1675980494,
+    "messageID": "1073185823815643196",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        2
       ],
       [],
       []
     ],
-    "majority": false,
-    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1072645821725687959"
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1073185823815643196"
   }
 ]

@@ -218,16 +218,12 @@
   {
     "id": 18,
     "summary": "Player Activity",
-    "content": "All players are always active.",
+    "content": "A player is classified as active if they have cast an up or down vote on or proposed at least 1 of the 4 most recent propositions. Otherwise, they are classified as inactive.\nAn inactive player's vote is automatically cast as a rightvote 12 hours after the proposition is made, though this can be changed by casting a vote while the proposition is active.",
     "tags": ["core","players"],
     "history": [
       {
         "player": -1,
         "proposition": -1
-      },
-      {
-        "player": 0,
-        "proposition": 11
       }
     ]
   },
@@ -374,7 +370,7 @@
   {
     "id": 30,
     "summary": "Definitely Not Magic",
-    "content": "Any player may become or un-become a Plague Doctor candidate at any time (by stating so in the Blue Sheep Nomic server).\n\nDuring every Oscillation (or slightly in advance), A random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. If there are no Plague Doctor candidates there is no Plague Doctor for that Oscillation unless someone becomes a Plague Doctor candidate. In which case, they are the Plague Doctor. Whilst there is only 1 Plague Doctor candidate, they are the Plague Doctor each Oscillation. No spells can be submitted without a Plague Doctor.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resolved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nThe Plague Doctor cannot perform spells in the Oscillation when they are the Plague Doctor.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation. This (failed) Plague Doctor is removed as a Plague Doctor candidate.\n\nAfter updating the Humors, updating Spell Priority, and applying Effects to all players, the Plague Doctor must send this information to the Blue Sheep Nomic server.",
+    "content": "Any player may become or un-become a Plague Doctor candidate at any time (by stating so in the Blue Sheep Nomic server).\n\nAt the start of every Oscillation (or slightly in advance), a random Plague Doctor candidate excluding the Plague Doctor of the previous Oscillation is selected as the Plague Doctor of this Oscillation. Whilst there is only 1 Plague Doctor candidate, they are always the Plague Doctor. Should there be 0, spells cannot be submitted.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resolved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nThe Plague Doctor cannot perform spells in the Oscillation when they are the Plague Doctor.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation. This (failed) Plague Doctor is removed as a Plague Doctor candidate.\n\nAfter updating the Humors, updating Spell Priority, and applying Effects to all players, the Plague Doctor must send this information to the Blue Sheep Nomic server.",
     "tags": ["magic"],
     "history": [
       {
