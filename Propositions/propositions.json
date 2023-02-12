@@ -263,5 +263,81 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1073185823815643196"
+  },
+  {
+    "author": 2,
+    "content": "**Content Edit**\n> Spells\nAppend the following line to this rule: \n“Lower tier spells fill one spell slot, mid tier spells fill two spell slots and higher tier spells fill three.”",
+    "proposedTimestamp": 1676152712,
+    "majorityTimestamp": 1676159281,
+    "messageID": "1074087066381582336",
+    "votes": [
+      [
+        5
+      ],
+      [
+        0,
+        6,
+        4
+      ],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074087066381582336"
+  },
+  {
+    "author": 2,
+    "content": "**Appendication**\n> Spells\nAppend the following line to this rule: “Lower tier spells fill one spell slot, mid tier spells fill two consecutive spell slots and higher tier spells fill three consecutive spell slots. Spells are cast in the earliest slot they fill.”",
+    "proposedTimestamp": 1676154624,
+    "majorityTimestamp": null,
+    "messageID": "1074095085056163860",
+    "votes": [
+      [],
+      [
+        6,
+        4
+      ],
+      [
+        0
+      ]
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074095085056163860"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Red Spells__\nRed spells are a sub-category of humoral spells, with the tier if applicable in brackets. \n\n**Bloodbath:** (1)\nCost: 10 red points.\nSelect a player other than yourself. This player gains 3d6 red points.\n\n**Evisceration:** (2)\nCost: 18 red points.\nSelect a player to target. Roll a (N+1)d(N+1), where N is the number of effects applied to the target. If this outputs any 1s, the player is inflicted with the 'bleeding' effect.\n\n**Dialysis:** (3)\nCost: 25 red points\nSelect a player and a humor.  The target gains 3 Spell Priority. If the player has greater than 250 total humor points, all of their humors are set to 0. The previous total is then divided by 4 rounding down, and this number is added to each of their humors. Additionally (occurring after the first process if applicable), If the selected humor for this player has greater than 100 points, multiply the total humor points they have by 0.3 and subtract this from the selected humor.\n\n**Addition:** __Effects__\nEach player has an effects list detailing their currently active effects. Duplicate effects have their operation applied multiple times. Effects are applied after all spells (and spell slots) have been performed each Oscillation unless otherwise specified.\n\nA list of some effects that players can be inflicted by includes:\n**Bleeding:** The player loses 5 red points each Oscillation.",
+    "proposedTimestamp": 1676155441,
+    "majorityTimestamp": 1676160348,
+    "messageID": "1074098510426804284",
+    "votes": [
+      [
+        0,
+        6,
+        5
+      ],
+      [],
+      [
+        2
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074098510426804284"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Blue Spells__\nBlue spells are a sub-category of humoral spells, with the tier if applicable in brackets. \n\n**Sedate:** (1)\nCost: 10 blue points.\nSelect a player and a humor. The target gains the 'sedated' effect for this humor. If the target has the 'sedated' effect of a player other than you, this is removed. After, decrease the Spell Priority of the target by 1.\n\n**Astray:** (2)\nCost: 18 blue points.\nSelect a player and a humor. Should the selected player perform a spell that directly alters the humor you selected (targeting either them or you) in this spell slot, the spell is replaced by 'Wait'. If another player (excluding you) has this humor altered by a spell performed by the selected player in this spell slot, the spell has double effect on this humor. After performing 'Astray' you are given the 'weakened' effect.\n\n**Transparency:** (3)\nCost: 25 blue points.\nYour Spell Priority is reduced by 2. Until all spells have been resolved in the Oscillation, any future spell targeting you instead targets a player with the highest Spell Priority that is lower than or equal to yours (or higher if you have the lowest). Any future Humoral spells you perform in the Oscillation are replaced by the 'Wait' spell.\n\n**Content Appendication:** __Effects__\n**Sedated:** The player who inflicted the effect gains 3 points (selected humor) for each mid (2) spell and 5 points (selected humor) for each higher (3) spell immediately after the target uses them for the selected humor.\n**Weakened:** Performing higher (3) spells costs 6 additional points.",
+    "proposedTimestamp": 1676167073,
+    "majorityTimestamp": null,
+    "messageID": "1074147299640475648",
+    "votes": [
+      [
+        0,
+        6
+      ],
+      [],
+      []
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074147299640475648"
   }
 ]

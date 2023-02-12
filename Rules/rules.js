@@ -105,7 +105,7 @@ var createRuleElement = (rule) => {
       ruleElement.value = rule.id;
       
       //Add the content
-      ruleElement.innerHTML += "<a href=\"#rule-" + rule.id + "\" class=\"inherit-color\">" + rule.summary + "</a>";
+      ruleElement.innerHTML += "<a href=\"#rule-" + rule.id + "\" class=\"inherit-color\"><b>" + rule.summary + "</b></a>";
       //ruleElement.innerHTML += " <span class=\"dim-text\">#" + rule.id + "</span>";
       ruleElement.innerHTML += "<br>";
       ruleElement.innerHTML += rule.content.replaceAll("\n","<br>\n").replaceAll("<m>","<i><strike>m</strike></i>");

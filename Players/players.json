@@ -16,9 +16,9 @@
     "pdcandidate": false,
     "inventory": [],
     "humors": {
-      "red": 31,
-      "blue": 32,
-      "yellow": 30,
+      "red": 40,
+      "blue": 36,
+      "yellow": 31,
       "black": 33
     }
   },
@@ -59,7 +59,8 @@
     "quittimestamp": 0,
     "iconcolor": "#c4faf8",
     "judgecandidate": false,
-    "pdcandidate": false,
+    "pdcandidate": true,
+    "plaguedoctor": true,
     "inventory": [],
     "humors": {
       "red": 30,
@@ -106,7 +107,6 @@
     "iconcolor": "#5d3fd3",
     "judgecandidate": true,
     "pdcandidate": false,
-    "plaguedoctor": true,
     "inventory": [],
     "humors": {
       "red": 31,

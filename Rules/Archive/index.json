@@ -9,7 +9,7 @@
     "ruleset": 1,
     "timestamp": 1675643648,
     "proposition": 1,
-    "summary": "Lime introduced the 'synthesis of Gold while in Eukrasia' as the win condition"
+    "summary": "Lime added the 'synthesis of Gold while in Eukrasia' as the win condition"
   },
   {
     "ruleset": 2,
@@ -64,5 +64,11 @@
     "timestamp": 1675980494,
     "proposition": 12,
     "summary": "Ryan edited the Definitely Not Magic rule again"
+  },
+  {
+    "ruleset": 11,
+    "timestamp": 1676160348,
+    "proposition": 15,
+    "summary": "Ryan added Red Spells and Effects"
   }
 ]
