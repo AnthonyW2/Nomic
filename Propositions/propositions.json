@@ -358,5 +358,21 @@
     ],
     "majority": false,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074236114199650324"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Yellow Spells__\nYellow spells are a sub-category of humoral spells, with the tier if applicable in brackets. \n\n**Focus:** (1)\nCost: 10 yellow points.\nYou may perform a synthesis in the Oscillation after this spell is performed.\n\n**Transform:** (2)\nCost: 18 yellow points.\nSelect a player. This player loses 20 black points and gains the 'necrosis' effect. You then gain 15 black points.\n\n**Invert:** (3)\nCost: 25 yellow points.\nSelect a player. If the sum of all of their humor points is less than 0, each of their humor points is multiplied by -1 to give their new humors. If not, the caster loses 50 yellow points.\n\n**Content Appendication:** __Effects__\n**Necrosis:** The player gains 1 black point each Oscillation.",
+    "proposedTimestamp": 1676235401,
+    "majorityTimestamp": null,
+    "messageID": "1074433889675788298",
+    "votes": [
+      [
+        5
+      ],
+      [],
+      []
+    ],
+    "majority": false,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074433889675788298"
   }
 ]
