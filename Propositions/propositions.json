@@ -327,17 +327,36 @@
     "author": 4,
     "content": "**Addition:** __Blue Spells__\nBlue spells are a sub-category of humoral spells, with the tier if applicable in brackets. \n\n**Sedate:** (1)\nCost: 10 blue points.\nSelect a player and a humor. The target gains the 'sedated' effect for this humor. If the target has the 'sedated' effect of a player other than you, this is removed. After, decrease the Spell Priority of the target by 1.\n\n**Astray:** (2)\nCost: 18 blue points.\nSelect a player and a humor. Should the selected player perform a spell that directly alters the humor you selected (targeting either them or you) in this spell slot, the spell is replaced by 'Wait'. If another player (excluding you) has this humor altered by a spell performed by the selected player in this spell slot, the spell has double effect on this humor. After performing 'Astray' you are given the 'weakened' effect.\n\n**Transparency:** (3)\nCost: 25 blue points.\nYour Spell Priority is reduced by 2. Until all spells have been resolved in the Oscillation, any future spell targeting you instead targets a player with the highest Spell Priority that is lower than or equal to yours (or higher if you have the lowest). Any future Humoral spells you perform in the Oscillation are replaced by the 'Wait' spell.\n\n**Content Appendication:** __Effects__\n**Sedated:** The player who inflicted the effect gains 3 points (selected humor) for each mid (2) spell and 5 points (selected humor) for each higher (3) spell immediately after the target uses them for the selected humor.\n**Weakened:** Performing higher (3) spells costs 6 additional points.",
     "proposedTimestamp": 1676167073,
-    "majorityTimestamp": null,
+    "majorityTimestamp": 1676192990,
     "messageID": "1074147299640475648",
     "votes": [
       [
         0,
-        6
+        6,
+        5,
+        2
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074147299640475648"
+  },
+  {
+    "author": 4,
+    "content": "**Content Edit:** __(#30) Definitely Not Magic__\nAny player may become or un-become a Plague Doctor candidate at any time (by stating so in the Blue Sheep Nomic server).\n\nDuring every Oscillation, a random Plague Doctor candidate is selected as the Plague Doctor of this Oscillation (if there are any candidates). Once a player becomes the Plague Doctor, they maintain that role until the end of the Oscillation.\nIf there are no Plague Doctor candidates and a player becomes a Plague Doctor candidate, they become the Plague Doctor.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resolved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nWithout a Plague Doctor, all spell slots are filled with 'Wait'.\n\nThe Plague Doctor's spell slots are all set to wait for the Oscillation when they are the Plague Doctor.\n\nAfter updating the Humors, updating Spell Priority, and applying Effects to all players, the Plague Doctor must send this information to the Blue Sheep Nomic server.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation. This (failed) Plague Doctor is removed as a Plague Doctor candidate.",
+    "proposedTimestamp": 1676188248,
+    "majorityTimestamp": null,
+    "messageID": "1074236114199650324",
+    "votes": [
+      [
+        0,
+        5
       ],
       [],
       []
     ],
     "majority": false,
-    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074147299640475648"
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074236114199650324"
   }
 ]
