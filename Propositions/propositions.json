@@ -367,12 +367,33 @@
     "messageID": "1074433889675788298",
     "votes": [
       [
-        5
+        0,
+        5,
+        2
       ],
       [],
       []
     ],
     "majority": false,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074433889675788298"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Black Spells__\nBlack spells are a sub-category of humoral spells, with the tier if applicable in brackets. \n\n**Meddle:** (1)\nCost: 10 black points.\nSelect two different players and a humor. The player with the most points in that humor looses 10 points from that humor and the other gains 10 points.\n\n**Enrage:** (2)\nCost: 18 black points.\nSelect a player. The target gains the 'enraged' effect.\n\n**Curse:** (3)\nCost: 25 black points.\nSelect a player. This player gains the 'cursed' effect.\n\n**Content Appendication:** __Effects__\n**Enraged:** The player gains 3 points of a random humor each Oscillation.\n**Cursed:** The player loses 2^x blue points each Oscillation. x is the number of effects the player has.",
+    "proposedTimestamp": 1676324564,
+    "majorityTimestamp": 1676353224,
+    "messageID": "1074807863115006172",
+    "votes": [
+      [
+        0,
+        6,
+        5,
+        2
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074807863115006172"
   }
 ]
