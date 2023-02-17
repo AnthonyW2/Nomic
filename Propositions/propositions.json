@@ -288,7 +288,7 @@
     "author": 2,
     "content": "**Appendication**\n> Spells\nAppend the following line to this rule: “Lower tier spells fill one spell slot, mid tier spells fill two consecutive spell slots and higher tier spells fill three consecutive spell slots. Spells are cast in the earliest slot they fill.”",
     "proposedTimestamp": 1676154624,
-    "majorityTimestamp": null,
+    "majorityTimestamp": 1676413827,
     "messageID": "1074095085056163860",
     "votes": [
       [],
@@ -300,7 +300,7 @@
         0
       ]
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074095085056163860"
   },
   {
@@ -346,35 +346,37 @@
     "author": 4,
     "content": "**Content Edit:** __(#30) Definitely Not Magic__\nAny player may become or un-become a Plague Doctor candidate at any time (by stating so in the Blue Sheep Nomic server).\n\nDuring every Oscillation, a random Plague Doctor candidate is selected as the Plague Doctor of this Oscillation (if there are any candidates). Once a player becomes the Plague Doctor, they maintain that role until the end of the Oscillation.\nIf there are no Plague Doctor candidates and a player becomes a Plague Doctor candidate, they become the Plague Doctor.\n\nIt is the Plague Doctor's role to be DMed the Spells performed by each player and apply their effects. If an action is not clear or there is a matter relating to the spells performed that would ordinarily be resolved via Judge, the Plague Doctor instead decides how to interpret the rules.\n\nWithout a Plague Doctor, all spell slots are filled with 'Wait'.\n\nThe Plague Doctor's spell slots are all set to wait for the Oscillation when they are the Plague Doctor.\n\nAfter updating the Humors, updating Spell Priority, and applying Effects to all players, the Plague Doctor must send this information to the Blue Sheep Nomic server.\n\nIf the Plague Doctor does not perform their task to completion before the conclusion of the following (next) Oscillation, the spells from that Oscillation are instead not performed and play resumes with a new Plague Doctor in the next (next next) Oscillation. This (failed) Plague Doctor is removed as a Plague Doctor candidate.",
     "proposedTimestamp": 1676188248,
-    "majorityTimestamp": null,
+    "majorityTimestamp": 1676447451,
     "messageID": "1074236114199650324",
     "votes": [
       [
         0,
+        3,
         5
       ],
       [],
       []
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074236114199650324"
   },
   {
     "author": 4,
     "content": "**Addition:** __Yellow Spells__\nYellow spells are a sub-category of humoral spells, with the tier if applicable in brackets. \n\n**Focus:** (1)\nCost: 10 yellow points.\nYou may perform a synthesis in the Oscillation after this spell is performed.\n\n**Transform:** (2)\nCost: 18 yellow points.\nSelect a player. This player loses 20 black points and gains the 'necrosis' effect. You then gain 15 black points.\n\n**Invert:** (3)\nCost: 25 yellow points.\nSelect a player. If the sum of all of their humor points is less than 0, each of their humor points is multiplied by -1 to give their new humors. If not, the caster loses 50 yellow points.\n\n**Content Appendication:** __Effects__\n**Necrosis:** The player gains 1 black point each Oscillation.",
     "proposedTimestamp": 1676235401,
-    "majorityTimestamp": null,
+    "majorityTimestamp": 1676430558,
     "messageID": "1074433889675788298",
     "votes": [
       [
         0,
+        3,
         5,
         2
       ],
       [],
       []
     ],
-    "majority": false,
+    "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074433889675788298"
   },
   {
@@ -395,5 +397,25 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1074807863115006172"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Furry Nomic__\nPlayers can now purchase cats from the pet shop owner: Fathom. If Fathom decides that the cat the player designed is in stock, he may offer a trade. If the player completes the trade to Fathom's satisfaction, they gain the cat they requested (10 business days shipping).\n\n**Addition:** __Designing Cats__\nWhen a player purchases a cat, they must specify the following:\nSpecies, Eye Colour, Eye Shape, Hair Colour, Hair Pattern, Hair Length, Tail Length, Paw Size, Ear Size, Ear Shape, Nose Wetness, Tongue Raspiness, Fang Size, Fang Shape, Claw Length, Meow Pitch, Meow Volume, Meow Length, Meow Frequency, Meow Tambre, Growl Pitch, Growl Volume, Growl Length, Growl Frequency, Growl Tambre, Hiss Pitch, Hiss Volume, Hiss Length, Hiss Frequency, Hiss Tambre, Purr Pitch, Purr Volume, Purr Length, Purr Chance, Purr Tambre, Temperament, The Value of Each Humor, Personality, Hidden Belly Rubs Likeness Factor, Excitement, Attitude, Playfulness, Viciousness and a Resumé for future employers. \n\n**Addition:** __Fathom Cat__\nFathom cannot purchase cats from himself. Instead he must trade with others through the Pet Shop to obtain cats.",
+    "proposedTimestamp": 1676501740,
+    "majorityTimestamp": 1676521280,
+    "messageID": "1075550996308168755",
+    "votes": [
+      [],
+      [
+        6,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1075550996308168755"
   }
 ]

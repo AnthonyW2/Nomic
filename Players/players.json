@@ -110,7 +110,7 @@
     "quittimestamp": 0,
     "iconcolor": "#5d3fd3",
     "judgecandidate": true,
-    "pdcandidate": false,
+    "pdcandidate": true,
     "spellpriority": 0,
     "inventory": [],
     "humors": {
