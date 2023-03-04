@@ -19,8 +19,8 @@
     "humors": {
       "red": 40,
       "blue": 36,
-      "yellow": 31,
-      "black": 33
+      "yellow": 46,
+      "black": 37
     }
   },
   {
@@ -90,10 +90,10 @@
     "spellpriority": 0,
     "inventory": [],
     "humors": {
-      "red": 31,
-      "blue": 31,
+      "red": 40,
+      "blue": 41,
       "yellow": 32,
-      "black": 31
+      "black": 40
     }
   },
   {
@@ -115,9 +115,9 @@
     "inventory": [],
     "humors": {
       "red": 31,
-      "blue": 33,
-      "yellow": 31,
-      "black": 31
+      "blue": 39,
+      "yellow": 34,
+      "black": 8
     }
   },
   {

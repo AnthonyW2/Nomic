@@ -417,5 +417,40 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1075550996308168755"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:**\n> In the Rule titled \"__Basic Spells__\", replace \"0 points\" from under \"**Concentrate**\" and \"**Dilution**\" with \"4 points (any singular humor).\". Remove \"(any singular humor)\" from under \"**Transfuse**\".",
+    "proposedTimestamp": 1677368219,
+    "majorityTimestamp": 1677627421,
+    "messageID": "1079185270747975782",
+    "votes": [
+      [],
+      [
+        2
+      ],
+      [
+        0
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1079185270747975782"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:**\n> In the Rule titled \"Basic Spells\", replace \"0 points\" from under \"Concentrate\" with \"4 points (any singular humor).\". Remove \"(any singular humor)\" from under \"Transfuse\".",
+    "proposedTimestamp": 1677477057,
+    "majorityTimestamp": 1677736259,
+    "messageID": "1079641770708701264",
+    "votes": [
+      [],
+      [],
+      [
+        0,
+        5
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1079641770708701264"
   }
 ]
