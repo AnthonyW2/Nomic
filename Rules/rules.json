@@ -3,7 +3,7 @@
     "id": 0,
     "summary": "Winning",
     "content": "When a player or players win the game, the game is over.",
-    "tags": ["winning","core"],
+    "tags": ["ending","core"],
     "history": [
       {
         "player": -1,
@@ -468,7 +468,7 @@
     ]
   },
   {
-    "id": 35,
+    "id": 36,
     "summary": "Yellow Spells",
     "content": "Yellow spells are a sub-category of humoral spells, with the tier if applicable in brackets.\n\n<b>Focus:</b> (1)\nCost: 10 yellow points.\nYou may perform a synthesis in the Oscillation after this spell is performed.\n\n<b>Transform:</b> (2)\nCost: 18 yellow points.\nSelect a player. This player loses 20 black points and gains the 'necrosis' effect. You then gain 15 black points.\n\n<b>Invert:</b> (3)\nCost: 25 yellow points.\nSelect a player. If the sum of all of their Humor points is less than 0, each of their Humor points is multiplied by -1 to give their new Humors. If not, the caster loses 50 yellow points.",
     "tags": ["magic"],
@@ -476,6 +476,18 @@
       {
         "player": 4,
         "proposition": 18
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "summary": "Bad Ending",
+    "content": "Should there ever occur a 10 day (240 hours) period within the lifespan of Blue Sheep Nomic Season 4 where no messages are sent to any channels under the \"SEASON 4\" category excluding #automation-system, #bot and any threads of these channels, Season 4 ends. All players are deemed to have lost in this event.",
+    "tags": ["ending"],
+    "history": [
+      {
+        "player": 4,
+        "proposition": 23
       }
     ]
   }

@@ -452,5 +452,24 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1079641770708701264"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Bad Ending__\nShould there ever occur a 10 day (240 hours) period within the lifespan of Blue Sheep Nomic Season 4 where no messages are sent to any channels under the \"SEASON 4\" category excluding <#1046331452071096360>, <#1045491372146311269> and any threads of these channels, Season 4 ends. All players are deemed to have lost in this event.",
+    "proposedTimestamp": 1677976190,
+    "majorityTimestamp": 1677981889,
+    "messageID": "1081735287853559880",
+    "votes": [
+      [
+        0,
+        3,
+        5,
+        2
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1081735287853559880"
   }
 ]

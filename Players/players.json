@@ -21,7 +21,10 @@
       "blue": 36,
       "yellow": 46,
       "black": 37
-    }
+    },
+    "effects": [
+      "enraged"
+    ]
   },
   {
     "name": "Xeya",
@@ -45,7 +48,8 @@
       "blue": 32,
       "yellow": 30,
       "black": 33
-    }
+    },
+    "effects": []
   },
   {
     "name": "lime",
@@ -70,7 +74,8 @@
       "blue": 33,
       "yellow": 32,
       "black": 30
-    }
+    },
+    "effects": []
   },
   {
     "name": "Fathom",
@@ -94,7 +99,8 @@
       "blue": 41,
       "yellow": 32,
       "black": 40
-    }
+    },
+    "effects": []
   },
   {
     "name": "Ryan",
@@ -118,7 +124,11 @@
       "blue": 39,
       "yellow": 34,
       "black": 8
-    }
+    },
+    "effects": [
+      "enraged",
+      "enraged"
+    ]
   },
   {
     "name": "flora246",
@@ -142,7 +152,8 @@
       "blue": 31,
       "yellow": 31,
       "black": 30
-    }
+    },
+    "effects": []
   },
   {
     "name": "will.b393",
@@ -166,6 +177,7 @@
       "blue": 31,
       "yellow": 31,
       "black": 31
-    }
+    },
+    "effects": []
   }
 ]
