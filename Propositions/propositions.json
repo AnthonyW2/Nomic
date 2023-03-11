@@ -471,5 +471,25 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1081735287853559880"
+  },
+  {
+    "author": 2,
+    "content": "**Appendication**\n> Red Spells\n**Bloodletting** (3)\nCost: 20 red points, 15 points of any single humor other than red\nChoose a player. They lose 2d10+10 red humor points and gain the effect bleeding. If the player’s red humor is their highest humor, they instead lose 2d10+20 red points, 3 points from each of their other humors and gain the bleeding and weakened effects.\n*We have to rebalance your humors, it's starting to get scaaary darling… what?… trust me, I’m a doctor, darling, it is perrrfectly safe…*",
+    "proposedTimestamp": 1678182176,
+    "majorityTimestamp": 1678441378,
+    "messageID": "1082599256235450370",
+    "votes": [
+      [
+        0,
+        3
+      ],
+      [],
+      [
+        4,
+        5
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1082599256235450370"
   }
 ]

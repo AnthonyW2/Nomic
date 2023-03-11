@@ -410,16 +410,12 @@
   {
     "id": 32,
     "summary": "Red Spells",
-    "content": "Red spells are a sub-category of Humoral spells, with the tier if applicable in brackets.\n\n<b>Bloodbath:</b> (1)\nCost: 10 red points.\nSelect a player other than yourself. This player gains 3d6 red points.\n\n<b>Evisceration:</b> (2)\nCost: 18 red points.\nSelect a player to target. Roll a (N+1)d(N+1), where N is the number of effects applied to the target. If this outputs any 1s, the player is inflicted with the 'bleeding' effect.\n\n<b>Dialysis:</b> (3)\nCost: 25 red points\nSelect a player and a Humor. The target gains 3 Spell Priority.\nIf the player has greater than 250 total Humor points, all of their Humors are set to 0. The previous total is then divided by 4 rounding down, and this number is added to each of their Humors.\nAdditionally (occurring after the first process if applicable), ff the selected Humor for this player has greater than 100 points, multiply the total Humor points they have by 0.3 and subtract this from the selected Humor.\n\n<b>Bloodletting:</b> (3)\nCost: 20 red points, 15 points of any single humor other than red.\nChoose a player. They lose 2d10+10 red humor points and gain the effect bleeding. If the player's red humor is their highest humor, they instead lose 2d10+20 red points, 3 points from each of their other humors and gain the bleeding and weakened effects.\nWe have to rebalance your humors, it's starting to get scaaary darling… what?… trust me, I'm a doctor, darling, it is perrrfectly safe...",
+    "content": "Red spells are a sub-category of Humoral spells, with the tier if applicable in brackets.\n\n<b>Bloodbath:</b> (1)\nCost: 10 red points.\nSelect a player other than yourself. This player gains 3d6 red points.\n\n<b>Evisceration:</b> (2)\nCost: 18 red points.\nSelect a player to target. Roll a (N+1)d(N+1), where N is the number of effects applied to the target. If this outputs any 1s, the player is inflicted with the 'bleeding' effect.\n\n<b>Dialysis:</b> (3)\nCost: 25 red points\nSelect a player and a Humor. The target gains 3 Spell Priority.\nIf the player has greater than 250 total Humor points, all of their Humors are set to 0. The previous total is then divided by 4 rounding down, and this number is added to each of their Humors.\nAdditionally (occurring after the first process if applicable), ff the selected Humor for this player has greater than 100 points, multiply the total Humor points they have by 0.3 and subtract this from the selected Humor.",
     "tags": ["magic"],
     "history": [
       {
         "player": 4,
         "proposition": 15
-      },
-      {
-        "player": 2,
-        "proposition": 24
       }
     ]
   },

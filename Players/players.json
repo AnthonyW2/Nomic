@@ -17,10 +17,10 @@
     "spellpriority": 0,
     "inventory": [],
     "humors": {
-      "red": 40,
-      "blue": 36,
+      "red": 49,
+      "blue": 42,
       "yellow": 46,
-      "black": 37
+      "black": 38
     },
     "effects": [
       "enraged"
@@ -70,8 +70,8 @@
     "spellpriority": 0,
     "inventory": [],
     "humors": {
-      "red": 30,
-      "blue": 33,
+      "red": 39,
+      "blue": 35,
       "yellow": 32,
       "black": 30
     },
@@ -120,9 +120,9 @@
     "spellpriority": 0,
     "inventory": [],
     "humors": {
-      "red": 31,
+      "red": 34,
       "blue": 39,
-      "yellow": 34,
+      "yellow": 37,
       "black": 8
     },
     "effects": [
