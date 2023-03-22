@@ -106,5 +106,11 @@
     "timestamp": 1678441378,
     "proposition": 24,
     "summary": "Lime added a new red spell"
+  },
+  {
+    "ruleset": 18,
+    "timestamp": 1679451359,
+    "proposition": 26,
+    "summary": "Ryan modified the Sedated effect"
   }
 ]

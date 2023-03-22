@@ -491,5 +491,39 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1082599256235450370"
+  },
+  {
+    "author": 2,
+    "content": "**Misc. Edit**\n> Yellow Spells\nChange the description of Focus to read “You may perform a synthesis in the Oscillation after this spell is performed, providing your humors are not Unbalanced or Fatally Unbalanced. If your humors are considered to be in either of those two categories, the synthesis fails. If the players Synth Time is not zero, the Synthesis automatically fails”\nChange the cost of Focus to be 8 yellow points.\n\n**Addition**\n> Synthesis\nWhen Synthesis is performed, the player decides how much they will increase their Synth Time by and what they want to attempt to synthesise from the Synthesis Tables, presented below. \nOnce the player selects these, they deduct the amount of humor sacrificed from the relevant humor(s) and rolls xd6+y, where x is the amount that Synth Time increases and Y is the amount of humor sacrificed. \nA synthesis fails if the player does not have the material listed in the “supplementary item” column or if they player rolls a number lower than the value in the “pass value” column.\nWhen synthesis succeeds, the material in the “result” column for that synthesis is awarded to the player. \nIf there are any supplementary items listed, they are removed from the players inventory only if the player succeeds in performing the synthesis.\n\n**Addition**\n> Synth Time\nSynth Time is always a positive integer or zero. Every period, it reduces by one, unless this would cause it to become a value lower than zero, in which case it becomes zero.",
+    "proposedTimestamp": 1679184698,
+    "majorityTimestamp": 1679191965,
+    "messageID": "1086804134541398106",
+    "votes": [
+      [],
+      [
+        0,
+        4,
+        5
+      ],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1086804134541398106"
+  },
+  {
+    "author": 4,
+    "content": "**Miscellaneous Change:** __Effects__\nReplace the \"**Sedated**\" section with:\n> **Sedated:** The player who inflicted the effect gains 2 points (selected humor) for each lower (1) spell, 5 points (selected humor) for each mid (2) spell and 10 points (selected humor) for each higher (3) spell immediately after the target uses them for the selected humor. The gained points are subtracted from the player with the effect.",
+    "proposedTimestamp": 1679192157,
+    "majorityTimestamp": 1679451359,
+    "messageID": "1086835420593139712",
+    "votes": [
+      [
+        0
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1086835420593139712"
   }
 ]
