@@ -17,10 +17,10 @@
     "spellpriority": 0,
     "inventory": [],
     "humors": {
-      "red": 55,
-      "blue": 45,
+      "red": 58,
+      "blue": 71,
       "yellow": 54,
-      "black": 34
+      "black": 70
     },
     "effects": [
       "enraged"
@@ -65,8 +65,7 @@
     "quittimestamp": 0,
     "iconcolor": "#c4faf8",
     "judgecandidate": false,
-    "pdcandidate": true,
-    "plaguedoctor": true,
+    "pdcandidate": false,
     "spellpriority": 0,
     "inventory": [],
     "humors": {
@@ -117,13 +116,14 @@
     "iconcolor": "#5d3fd3",
     "judgecandidate": true,
     "pdcandidate": true,
+    "plaguedoctor": true,
     "spellpriority": 0,
     "inventory": [],
     "humors": {
-      "red": 39,
-      "blue": 52,
-      "yellow": 37,
-      "black": 49
+      "red": 42,
+      "blue": 71,
+      "yellow": 55,
+      "black": 59
     },
     "effects": [
       "enraged",

@@ -525,5 +525,43 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1086835420593139712"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Quaternary Spells__\nA quaternary (4) spell is one that is performed as an additional effect (not taking a spell slot) when multiple higher tier (3) spells are performed in a particular order in the same oscillation. \n\n**Pyroclasm:** (4)\nPrerequisites: A Red higher tier (3) spell then a Yellow higher tier (3) spell\nAll players other than yourself gain the burned effect. \n\n**Starfall:** (4)\nPrerequestites: A Blue higher tier (3) spell then a Black higher tier (3) spell\nSelect 1 effect that another player has. This is removed from that player and given to you. Alternatively, you may choose to gain the starstruck effect. \n\n**Content Appendication:** __Effects__\n**Burned:** Your 'Concentrate' spells are replaced with 'None'.\n**Starstruck:** Whenever you DM the plague doctor that you will perform the 'None' spell, your Spell Priority increases by 1.",
+    "proposedTimestamp": 1679652001,
+    "majorityTimestamp": 1679911204,
+    "messageID": "1088764148504088586",
+    "votes": [
+      [
+        0,
+        2
+      ],
+      [],
+      [
+        5
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1088764148504088586"
+  },
+  {
+    "author": 2,
+    "content": "**Misc. Edit**\n> Basic Spells\nChange the text of the “Transfuse” subheading to read as follows:\n“Select two humors. If they are both the caster’s humors, deduct up to 10 points from one and add it to the other. If they belong to two different players or both belong to a player who is not the caster, deduct 1d10-1 from one of the humors and add this same amount to the other humor.”\n\n**Misc Edit**\n> Basic spells\nAdd the following spell to the rule “basic Spells”:\n**elemental shield**\nCost: 3 of the caster’s highest humor\nAny attempted Basic Spell that may affect you (purge, imbue etc) that is cast during this spell slot or the slot after it after you cast this spell instead does nothing. Any lower (1) spells of the same colour as the humor used that are cast during this spell slot after this spell is cast has a 50% chance to instead do nothing.",
+    "proposedTimestamp": 1680393570,
+    "majorityTimestamp": 1680652772,
+    "messageID": "1091874515241406554",
+    "votes": [
+      [
+        6
+      ],
+      [],
+      [
+        4,
+        5
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1091874515241406554"
   }
 ]
