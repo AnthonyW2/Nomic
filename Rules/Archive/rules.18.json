@@ -426,7 +426,7 @@
   {
     "id": 33,
     "summary": "Effects",
-    "content": "Each player has an effects list detailing their currently active effects. Duplicate effects have their operation applied multiple times. Effects are applied after all spells (and spell slots) have been performed each Oscillation unless otherwise specified.\n\nA list of some effects that players can be inflicted by includes:\n<b>Bleeding:</b> The player loses 5 red points each Oscillation.\n<b>Sedated:</b> The player who inflicted the effect gains 2 points (selected Humor) for each lower (1) spell, 5 points (selected Humor) for each mid (2) spell and 10 points (selected Humor) for each higher (3) spell immediately after the target uses them for the selected Humor. The gained points are subtracted from the player with the effect.\n<b>Weakened:</b> Performing higher (3) spells costs 6 additional points.\n<b>Enraged:</b> The player gains 3 points of a random humor each Oscillation.\n<b>Cursed:</b> The player loses 2^x blue points each Oscillation. x is the number of effects the player has.\n<b>Necrosis:</b> The player gains 1 black point each Oscillation.\n<b>Burned:</b> Your 'Concentrate' spells are replaced with 'None'.\n<b>Starstruck:</b> Whenever you DM the plague doctor that you will perform the 'None' spell, your Spell Priority increases by 1.",
+    "content": "Each player has an effects list detailing their currently active effects. Duplicate effects have their operation applied multiple times. Effects are applied after all spells (and spell slots) have been performed each Oscillation unless otherwise specified.\n\nA list of some effects that players can be inflicted by includes:\n<b>Bleeding:</b> The player loses 5 red points each Oscillation.\n<b>Sedated:</b> The player who inflicted the effect gains 2 points (selected Humor) for each lower (1) spell, 5 points (selected Humor) for each mid (2) spell and 10 points (selected Humor) for each higher (3) spell immediately after the target uses them for the selected Humor. The gained points are subtracted from the player with the effect.\n<b>Weakened:</b> Performing higher (3) spells costs 6 additional points.\n<b>Enraged:</b> The player gains 3 points of a random humor each Oscillation.\n<b>Cursed:</b> The player loses 2^x blue points each Oscillation. x is the number of effects the player has.\n<b>Necrosis:</b> The player gains 1 black point each Oscillation.",
     "tags": ["magic"],
     "history": [
       {
@@ -448,10 +448,6 @@
       {
         "player": 4,
         "proposition": 26
-      },
-      {
-        "player": 4,
-        "proposition": 27
       }
     ]
   },
@@ -500,18 +496,6 @@
       {
         "player": 4,
         "proposition": 23
-      }
-    ]
-  },
-  {
-    "id": 38,
-    "summary": "Quaternary Spells",
-    "content": "A quaternary (4) spell is one that is performed as an additional effect (not taking a spell slot) when multiple higher tier (3) spells are performed in a particular order in the same oscillation.\n\n<b>Pyroclasm:</b> (4)\nPrerequisites: A Red higher tier (3) spell then a Yellow higher tier (3) spell.\nAll players other than yourself gain the burned effect.\n\n<b>Starfall:</b> (4)\nPrerequestites: A Blue higher tier (3) spell then a Black higher tier (3) spell.\nSelect 1 effect that another player has. This is removed from that player and given to you. Alternatively, you may choose to gain the starstruck effect.",
-    "tags": ["magic"],
-    "history": [
-      {
-        "player": 4,
-        "proposition": 27
       }
     ]
   }
