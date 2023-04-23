@@ -563,5 +563,41 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1091874515241406554"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Marriage II__\nPlayers can now get married. Each player can have any number of spouses.\nUp to once per Oscillation per player, players may request a marriage by naming any number of players they would like to marry in <#1045491131481329790>. Then, all players excluding the named players and the requesting player may cast up to 1 vote as up (forever holding their peace) or down (objecting). Holly can also vote if they want too. If after 72 hours there is a greater number of up-votes than down-votes, the marriage occurs and these players are now married. (Celebratory noises.)\n\n**Addition:** __Unmarriage__\nA marriage can be undone too whenever if any player states their desire in <#1045491131481329790>, voted upon identically to marriage.",
+    "proposedTimestamp": 1681604021,
+    "majorityTimestamp": 1681863223,
+    "messageID": "1096951511562584094",
+    "votes": [
+      [],
+      [
+        2
+      ],
+      [
+        0
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1096951511562584094"
+  },
+  {
+    "author": 4,
+    "content": "**Addition:** __Humoral Flux__\nEach Oscillation is assigned a prominent humor and a repressed humor.\nThe first Oscillation was assumed to be prominent in red and repressed in red.\nNo adjustments for humoral flux are made to spells cast prior to this proposition's passing.\n\n**Addition:** __Humoral Prominence__\nEvery Oscillation, the prominent humor shifts in a cyclical manner of red, blue, yellow, black repeating.\nWhen a humor is prominent, all spells cast using this humor have their cost multiplied by 2/3.\n\n**Addition:** __Humoral Repression__\nEvery two Oscillations the repressed humor shifts in a cyclical manner of red, blue, yellow, black repeating.\nWhen a humor is repressed, all spells cast using this humor have their cost multiplied by 3/2.",
+    "proposedTimestamp": 1681609287,
+    "majorityTimestamp": 1681868489,
+    "messageID": "1096973601267265639",
+    "votes": [
+      [
+        0
+      ],
+      [],
+      [
+        2
+      ]
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1096973601267265639"
   }
 ]
