@@ -14,6 +14,7 @@
     "iconcolor": "#41a308",
     "judgecandidate": true,
     "pdcandidate": false,
+    "plaguedoctor": false,
     "spellpriority": 0,
     "inventory": [],
     "humors": {
@@ -116,7 +117,6 @@
     "iconcolor": "#5d3fd3",
     "judgecandidate": true,
     "pdcandidate": false,
-    "plaguedoctor": true,
     "spellpriority": 0,
     "inventory": [],
     "humors": {

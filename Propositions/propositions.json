@@ -599,5 +599,36 @@
     ],
     "majority": true,
     "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1096973601267265639"
+  },
+  {
+    "author": 2,
+    "content": "**Addition:** __Using materials__\nA player can use one spell slot to use a material they have. This then removes that material.\n\n**Addition:** __lead__\nA player can sacrifice 50 of any two humors each to synthesise one lead. This is a synthesis.\n\n**Addition:** __Gold__\nA player can sacrifice a total 100 points of any two humors then synthesise lead into gold or a total 50 points from any humors then synthesise gold from iron or mercury. This can only be performed in the second spell slot. If this spell is cast, a wait action must be taken in spell slot 3. This is a synthesis.\n\n**Addition:** __Copper__\nA player can reduce their red humor by 5 to create one Copper. This is a basic spell.\n\n**Addition:** __Tin__\nA player can reduce their black humor by 5 to create one Tin. This is a basic spell.\n\n**ADDITION:** __Chalk__\nA player can reduce their yellow humor by 5 to create one Chalk. This is a basic spell.\n\n**Addition:** __Limestone__\nA player can reduce their blue humor by 5 to create one Limestone. This is a basic spell.\n\n**Addition:** __Iron__\nA player can combine one Limestone and one Tin in their inventory to create one Iron. This is a synthesis.\n\n**Addition:** __Mercury__\nA player can combine one Chalk and one Copper in their inventory to create one Mercury. This is a synthesis.",
+    "proposedTimestamp": 1684549983,
+    "majorityTimestamp": 1684809186,
+    "messageID": "1109307773390422168",
+    "votes": [
+      [
+        0,
+        4
+      ],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1109307773390422168"
+  },
+  {
+    "author": 2,
+    "content": "**Addition** __Butter of Tin__\nA player can combine one Tin and one Chalk to create Butter of Tin. Butter of Tin can be used on a player, including the user, which affects them for the rest of the oscillation. A player affected by Butter of Tin ignores all effects of the Humoral Flux of that oscillation. Creating Butter of Tin is a synthesis.\n\n**Addition:** __Verdigris__\nA player can combine one Copper and one Limestone to create Verdigris. Verdigris can be used on a player, including the user, which affects them for the rest of the oscillation. A player affected by Verdigris has the effects of the Humoral Flux of that oscillation doubled. Creating Verdigris a synthesis.\n\n**Addition** __Sal Petre__\nA player can combine one chalk and one limestone to create Sal Petre. Sal Petre can be used on a player, including the user. It then affects them for the rest of the oscillation. A player affected by Sal Petre has each change in their humors reduced by 3 (+4 becomes +1, -7 becomes -4). Creating Sal Petre is a synthesis.\n\n**Addition:** __Horn Silver__\nA player can combine one Copper and one Tin to create Horn Silver. Horn Silver can be used on a player, including the user. It then affects them for the rest of the oscillation. A player affected by Horn Silver has each change in their humors increased by 3 (+3 becomes +6, -5 becomes -8). Creating Horn Silver is a synthesis.\n\n**Addition:** __Pearl White__\nA player can combine one Copper, one Chalk, one Tin and one Limestone to create Pearl White. Pearl White can be used on a player, including the user. It then affects them for the rest of the oscillation. A player affected by Pearl White has one of their spell slots taken in the oscillation after being affected by Pearl White changed to a Wait action, selected randomly. Creating Pearl White is a synthesis.",
+    "proposedTimestamp": 1684549986,
+    "majorityTimestamp": 1684809191,
+    "messageID": "1109307784304013472",
+    "votes": [
+      [],
+      [],
+      []
+    ],
+    "majority": true,
+    "link": "https://discord.com/channels/701269326518419547/1045491241728618496/1109307784304013472"
   }
 ]
