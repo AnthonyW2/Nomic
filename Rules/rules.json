@@ -662,5 +662,17 @@
         "proposition": 31
       }
     ]
+  },
+  {
+    "id": 51,
+    "summary": "Okay, this has gone on too long",
+    "content": "A random Blue Sheep Nomic Season 4 player is selected to win the game.",
+    "tags": ["winning"],
+    "history": [
+      {
+        "player": 4,
+        "proposition": 35
+      }
+    ]
   }
 ]

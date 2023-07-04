@@ -14,9 +14,14 @@
     "iconcolor": "#41a308",
     "judgecandidate": true,
     "pdcandidate": false,
-    "plaguedoctor": false,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [
+      "ewoibmFtZSI6ICJpdGVtcyIsCiJjb250ZW50IjogWyJzZWNyZXQgMSIsInNlY3JldCAyIl0KfQ==",
+      "ewoibmFtZSI6ICJ0cmFwcyIsCiJjb250ZW50IjogWyJ0ZXN0MSIsInRlc3QyIl0KfQ==",
+      "eyJuYW1lIjoiaXRlbXMiLCJjb250ZW50IjpbInNlY3JldCAxIiwic2VjcmV0IDIiXX0=",
+      "eyJuYW1lIjoidHJhcHMiLCJjb250ZW50IjpbInRlc3QxIiwidGVzdDIiXX0="
+    ],
     "humors": {
       "red": 72,
       "blue": 80,
@@ -44,6 +49,7 @@
     "pdcandidate": false,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [],
     "humors": {
       "red": 31,
       "blue": 32,
@@ -69,6 +75,7 @@
     "pdcandidate": false,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [],
     "humors": {
       "red": 57,
       "blue": 36,
@@ -94,6 +101,7 @@
     "pdcandidate": false,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [],
     "humors": {
       "red": 40,
       "blue": 41,
@@ -116,9 +124,11 @@
     "quittimestamp": 0,
     "iconcolor": "#5d3fd3",
     "judgecandidate": true,
-    "pdcandidate": false,
+    "pdcandidate": true,
+    "plaguedoctor": true,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [],
     "humors": {
       "red": 45,
       "blue": 77,
@@ -147,6 +157,7 @@
     "pdcandidate": false,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [],
     "humors": {
       "red": 33,
       "blue": 31,
@@ -172,6 +183,7 @@
     "pdcandidate": false,
     "spellpriority": 0,
     "inventory": [],
+    "vault": [],
     "humors": {
       "red": 30,
       "blue": 31,
